@@ -91,6 +91,28 @@ def slug(name: str) -> str:
     return s
 
 
+def short_ids(names: list[str]) -> dict[str, str]:
+    """An id for each name from the end of the name: the last part, and the parts before it only when two names
+    would get the same id. The ids are made over all names of tier 3, so that they do not change when a tier is
+    added."""
+    out, k = {}, 1
+    todo = list(names)
+    while todo:
+        cand = collections.defaultdict(list)
+        for n in todo:
+            parts = n.split(".")
+            cand[slug(".".join(parts[-k:]))].append(n)
+        todo = []
+        for c, ns in cand.items():
+            if len(ns) == 1 or k >= max(len(n.split(".")) for n in ns):
+                for i, n in enumerate(ns):
+                    out[n] = c if i == 0 else f"{c}-{i + 1}"
+            else:
+                todo.extend(ns)
+        k += 1
+    return out
+
+
 def folder_title(folder: str) -> str:
     """ThetaCorrespondence → Theta correspondence; GL3MeanSquares → GL3 mean squares."""
     last = folder.split(".")[-1]
@@ -133,6 +155,7 @@ def plan(rows: list[dict], minsize: int) -> dict:
         return 12
 
     planned = [r for r in rows if r["size"] >= minsize]
+    ids = short_ids(sorted(r["name"] for r in rows if r["size"] >= min(100, minsize)))
     vols = collections.defaultdict(list)
     for r in planned:
         vols[volume_of(r)].append(r)
@@ -162,7 +185,7 @@ def plan(rows: list[dict], minsize: int) -> dict:
         for folder, es in sorted(chapters.items(), key=lambda kv: min(order.get(r["name"], far) for r in kv[1])):
             es.sort(key=lambda r: order.get(r["name"], far))
             chs.append({"id": slug(folder.split(".")[-1]) or "top", "folder": folder, "title": folder_title(folder),
-                        "entries": [{"name": r["name"], "id": slug(r["name"]), "kind": r["kind"],
+                        "entries": [{"name": r["name"], "id": ids[r["name"]], "kind": r["kind"],
                                      "module": r["module"], "size": r["size"], "fanin": r.get("fanin", 0),
                                      "idom": r["idom"],
                                      "tier": 1 if r["size"] >= 1000 else 2 if r["size"] >= 300 else 3}

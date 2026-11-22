@@ -19,7 +19,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def pandoc_latex(md: str) -> str:
-    cmd = ["pandoc", "-f", "markdown-auto_identifiers-raw_tex", "-t", "latex",
+    cmd = ["pandoc", "-f", "markdown-auto_identifiers-raw_tex", "-t", "latex", "--columns=50",
            "--lua-filter", os.path.join(ROOT, "filters", "rhb.lua"),
            "--top-level-division=chapter", "--wrap=preserve", "--syntax-highlighting=pygments"]
     r = subprocess.run(cmd, input=md, capture_output=True, text=True)
@@ -70,7 +70,12 @@ def break_names(tex: str) -> str:
     inline code and in the text of a link. Without this, a name such as
     every_character_of_theta_integrals_local_matching runs into the margin."""
     tex = _TT.sub(lambda m: r"\texttt{" + _breaks(m[1]) + "}", tex)
-    return _HREF.sub(lambda m: m[1] + "{" + _breaks(m[2]) + "}", tex)
+    tex = _HREF.sub(lambda m: m[1] + "{" + _breaks(m[2]) + "}", tex)
+    # a bare module path in a table cell: ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin
+    return _PATH.sub(lambda m: _breaks(m[0]), tex)
+
+
+_PATH = re.compile(r"(?<![\\{\w/])[A-Z][A-Za-z0-9]*(?:/[A-Z][A-Za-z0-9]*)+(?![\w}])")
 
 
 _BARE_SCRIPT = re.compile(r"(?<!\\)([_^])(\\(?:math[a-z]+|operatorname\*?|text[a-z]*|boldsymbol)\{[^{}]*\})")

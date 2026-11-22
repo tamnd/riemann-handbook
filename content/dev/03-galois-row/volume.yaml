@@ -6,89 +6,89 @@ chapters:
   title: Galois representations
   folder: Development.AutomorphicArithmetic.Foundations.GaloisRepresentations
   entries:
-  - upper-theory-gal-int-galois-local-global-strong-rec-parameter
-  - upper-theory-gal-int-galois-representations-of-theta-lift
-  - upper-theory-gal-int-geo-geo-one-holds
-  - upper-theory-gal-int-geo-geometric-realization-of-weight-one
-  - upper-theory-gal-int-geo-steps-holds
-  - upper-theory-gal-seam-crys-step-holds
-  - upper-theory-gal-seam-crys-step-of
-  - upper-theory-gal-seam-mat-in-holds
-  - upper-theory-gal-g3-v-fin-holds
-  - upper-theory-gal-int-geo-jump-step-holds
-  - upper-theory-gal-seam-ht-ht-spec-good
-  - upper-theory-gal-seam-ht-ht-bij
-  - upper-theory-gal-int-geo-kodaira-spencer-of-weight-one
-  - upper-theory-gal-local-smooth-extension-ks-hodge-of-geo
-  - upper-theory-gal-fix-z-fix-k-holds
-  - upper-theory-gal-fix-z-tower-fixed-points-of-isogeny-data
-  - upper-theory-gal-w2-fixed-points-int-base-holds
-  - upper-theory-gal-int-geo-pl-plan-ex-holds
-  - upper-theory-gal-int-geo-weight-one-geometric-realization
-  - upper-theory-gal-int-galois-local-global-strong-of-geometry-lift
-  - upper-theory-gal-int-galois-local-global-of-geometry-lift
-  - upper-theory-gal-int-rest
-  - upper-theory-gal-toral-galois-r2-local-global-compat-at-iwahori-fixed-of-unlinked
-  - upper-theory-gal-toral-galois-r2-to-tor-holds
-  - upper-theory-gal-inertial-types-alt-supp-bc-outright
-  - upper-theory-gal-inertial-types-alt-supp-bc-holds
-  - upper-theory-gal-int-core-all-of
-  - upper-theory-tp-k-t-lift-k
-  - upper-theory-tp-t-lift-holds-k
-  - upper-theory-tp-tools-holds-k
-  - positivity-theory-siegel-weil-formula-fin-siegel-weil-std-k
-  - positivity-theory-siegel-weil-formula-fin-siegel-weil-std-of-ct-k
-  - positivity-theory-siegel-weil-formula-fin-siegel-weil-std-pre-k
+  - galois-local-global-strong-rec-parameter
+  - galois-representations-of-theta-lift
+  - geo-one-holds
+  - geometric-realization-of-weight-one
+  - steps-holds
+  - crys-step-holds
+  - crys-step-of
+  - mat-in-holds
+  - v-fin-holds
+  - jump-step-holds
+  - ht-spec-good
+  - ht-bij
+  - kodaira-spencer-of-weight-one
+  - ks-hodge-of-geo
+  - fix-k-holds
+  - tower-fixed-points-of-isogeny-data
+  - fixed-points-int-base-holds
+  - plan-ex-holds
+  - weight-one-geometric-realization
+  - galois-local-global-strong-of-geometry-lift
+  - galois-local-global-of-geometry-lift
+  - rest
+  - local-global-compat-at-iwahori-fixed-of-unlinked
+  - to-tor-holds
+  - supp-bc-outright
+  - supp-bc-holds
+  - core-all-of
+  - t-lift-k
+  - t-lift-holds-k
+  - tools-holds-k
+  - siegel-weil-std-k
+  - siegel-weil-std-of-ct-k
+  - siegel-weil-std-pre-k
 - id: etale-cohomology
   title: Etale cohomology
   folder: Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology
   entries:
-  - upper-theory-et-etale-finiteness-of-duality
-  - upper-theory-et-e4
-  - upper-theory-et-etale-topology-top
-  - upper-theory-et-etale-duality-trace-isomorphism
-  - upper-theory-et-d2-intersection-number-base-change
-  - upper-theory-et-d2-a0
-  - upper-theory-et-proper-base-change
-  - upper-theory-et-e2-main
-  - upper-theory-ru-crystalline-comparison-phi-step
+  - etale-finiteness-of-duality
+  - e4
+  - etale-topology-top
+  - etale-duality-trace-isomorphism
+  - d2-intersection-number-base-change
+  - a0
+  - proper-base-change
+  - e2-main
+  - phi-step
 - id: etale-cohomology-2
   title: Etale cohomology
   folder: Development.EtaleCohomology
   entries:
-  - lateral-theory-fix-etale-chapter-dtwo-s57
-  - lateral-theory-fix-etale-chapter-dtwo-s42
-  - lateral-theory-fix-etale-chapter-dtwo-s41
+  - s57
+  - s42
+  - s41
 - id: weil-bound
   title: Weil bound
   folder: Development.WeilBound
   entries:
-  - crystalline-semistable-comparison-onto-ht-bij-of
+  - ht-bij-of
 - id: divisor-proofs
   title: Divisor proofs
   folder: Development.AbelianVarietyTheory.Proofs.DivisorProofs
   entries:
-  - global-theory-et-c-projective-bundle-formula-vector-bundle-any-space
-  - global-theory-t-projective-bundle-formula-discrete-space
-  - global-theory-et-c-pbf-disc
-  - global-theory-upel-ht-model-nonempty
-  - global-theory-t-exists-quasi-projective-harris-taylor-family
-  - global-theory-upel-ht-exists-rep-fam-qproj
-  - global-theory-t-siegel-kernel-bounded-representable-of-coprime
-  - global-theory-upel-ht-sd-rep-of-coprime
+  - projective-bundle-formula-vector-bundle-any-space
+  - projective-bundle-formula-discrete-space
+  - pbf-disc
+  - model-nonempty
+  - exists-quasi-projective-harris-taylor-family
+  - exists-rep-fam-qproj
+  - siegel-kernel-bounded-representable-of-coprime
+  - sd-rep-of-coprime
 - id: abelian-variety-theory
   title: Abelian variety theory
   folder: Development.AbelianVarietyTheory
   entries:
-  - global-theory-t-lefschetz-fixed-point-finite-etale-correspondence
-  - global-theory-t-exists-chart-lift-of-finite-cover
+  - t-lefschetz-fixed-point-finite-etale-correspondence
+  - t-exists-chart-lift-of-finite-cover
 - id: etale-clopen-descent
   title: Etale clopen descent
   folder: Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent
   entries:
-  - upper-theory-cb-lefschetz-fixed-point-finite-etale-correspondence
-  - upper-theory-core-block-fixed
-  - upper-theory-cb-holomorphic-lefschetz-finite-etale-correspondence
-  - upper-theory-cb-holomorphic-lefschetz-finite-etale-integral
-  - upper-theory-cb-exists-chart-lift-of-finite-cover
+  - cb-lefschetz-fixed-point-finite-etale-correspondence
+  - block-fixed
+  - holomorphic-lefschetz-finite-etale-correspondence
+  - holomorphic-lefschetz-finite-etale-integral
+  - cb-exists-chart-lift-of-finite-cover
   - field0
