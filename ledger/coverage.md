@@ -1,18 +1,18 @@
-# Coverage of the spine (entries for subtrees of 1000 or more declarations)
+# Coverage of the spine (entries for subtrees of 300 or more declarations)
 
-Planned entries 591 (with the 8 trunk declarations of Volume 2), written 591.
+Planned entries 1,927 (with the 8 trunk declarations of Volume 2), written 602.
 
-Of the 753,805 declarations of the spine, 391,052 (51.9%) are in the subtree of a written entry below the trunk. Another 362,753 (48.1%) are in small shared subtrees that hang right under the trunk: no entry of this tier explains them, and the lower tiers must.
+Of the 753,805 declarations of the spine, 218,075 (28.9%) are in the subtree of a written entry below the trunk. Another 308,794 (41.0%) are in small shared subtrees that hang right under the trunk: no entry of this tier explains them, and the lower tiers must.
 
 | Volume | Title | Chapters | Planned | Written |
 |---|---|---|---|---|
-| 3 | The Galois row | 7 | 62 | 62 |
-| 4 | The window bound | 6 | 57 | 57 |
-| 5 | Volume estimates and positivity | 7 | 47 | 47 |
-| 6 | Theta integrals and the green window | 6 | 25 | 25 |
-| 7 | The unitary hypotheses | 17 | 220 | 220 |
-| 8 | Automorphic arithmetic | 3 | 36 | 36 |
-| 9 | Abelian varieties | 7 | 71 | 71 |
-| 10 | The Weil bound, the spectrum and resolution | 6 | 24 | 24 |
-| 11 | The formalism | 7 | 35 | 35 |
-| 12 | Ground theory | 3 | 6 | 6 |
+| 3 | The Galois row | 10 | 209 | 64 |
+| 4 | The window bound | 10 | 146 | 62 |
+| 5 | Volume estimates and positivity | 13 | 181 | 47 |
+| 6 | Theta integrals and the green window | 10 | 64 | 26 |
+| 7 | The unitary hypotheses | 28 | 565 | 220 |
+| 8 | Automorphic arithmetic | 4 | 75 | 38 |
+| 9 | Abelian varieties | 12 | 406 | 71 |
+| 10 | The Weil bound, the spectrum and resolution | 16 | 134 | 25 |
+| 11 | The formalism | 15 | 101 | 35 |
+| 12 | Ground theory | 14 | 38 | 6 |

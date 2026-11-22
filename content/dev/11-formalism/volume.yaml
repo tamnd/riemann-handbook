@@ -2,26 +2,81 @@
 title: The formalism
 summary: Local to global arguments, Hermitian curvature, sharp restriction, period integrals and the other folders of Formalism.
 chapters:
+- id: cokernel-glcounts
+  title: Cokernel GL counts
+  folder: Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts
+  entries:
+  - nc-tie-c-of-closed
+  - nc-tie0-all-of
+  - nc-tie-all-s-of
+  - nc-tie-c-of-leaves
+- id: closed-volume-statements
+  title: Closed volume statements
+  folder: Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedVolumeStatements
+  entries:
+  - real-bracket-holds
+  - aprime-inf-holds
+  - jac-gauge-holds
+  - fold-okc-holds
+  - mult-poly-holds
+- id: orbital-bounds-conclusion
+  title: Orbital bounds conclusion
+  folder: Formalism.PeriodIntegrals.OrbitalBoundsConclusion
+  entries:
+  - aprime-infinite-real
+  - aprime-inf-of-hinf-compact
+  - g-tlower-of
+  - level-s-all-split
+  - loc-mass-typ
+  - kappa-off-diagonal-dim-form-c
+- id: unitary-group-mass-formula
+  title: Unitary group mass formula
+  folder: Formalism.PeriodIntegrals.UnitaryGroupMassFormula
+  entries:
+  - aprime-inf-of-grp
+  - om-v-holds-x
+  - om-vz-holds-x
+  - wgl-g-tlower-of
+  - level-splitting-of-heisenberg-levi
+- id: siegel-lattice-theory
+  title: Siegel lattice theory
+  folder: Formalism.LocalToGlobal.SiegelLatticeTheory
+  entries:
+  - jac-gauge
+  - jac-gauge-of-rhs-w
+  - fold-okc-holds-of
+  - mult-poly-holds-of-prime-prime
+- id: hermitian-curvature-proofs
+  title: Hermitian curvature proofs
+  folder: Formalism.HermitianCurvature.HermitianCurvatureProofs
+  entries:
+  - actual-compact-theorem
+  - thm-pactual-cpt-of-r
+  - thm-pactual-cpt-of-spec
+  - thm-pactual-cpt-of-leaves
+  - gen-transfer-of-rot-k
+  - second-shift-gauge-holds
+  - g-tss-of-adj
+  - g-tss-of-adj-rad-t
+  - second-shift-phase-holds
+  - shift-extra
+  - curv
+  - model-scalar
+  - g-tconn-of-rot-k
+  - germ-rate
+  - pb-head-top-of-mk-top
+  - start-admissible
+  - start-ok
+  - start-is-start
+  - phi-zero-hermitian-curvature
+  - normal-form-from-module-statement
+  - theorem-s-ring
 - id: local-to-global
   title: Local to global
   folder: Formalism.LocalToGlobal
   entries:
-  - nc-tie-c-of-closed
-  - real-bracket-holds
-  - nc-tie0-all-of
-- id: period-integrals
-  title: Period integrals
-  folder: Formalism.PeriodIntegrals
-  entries:
-  - om-v-holds-x
-  - om-vz-holds-x
-- id: hermitian-curvature
-  title: Hermitian curvature
-  folder: Formalism.HermitianCurvature
-  entries:
-  - actual-compact-theorem
-  - thm-pactual-cpt-of-r
-  - gen-transfer-of-rot-k
+  - branching-interlacing-pairs
+  - eq-p-car
 - id: growth-bounds
   title: Growth bounds
   folder: Formalism.SharpRestriction.GrowthBounds
@@ -30,6 +85,14 @@ chapters:
   - alternative-mean-value-theorem
   - theorem-i-closed-form-holds
   - theorem-i-of-pairing-gl
+  - theorem-i-of-contraction
+  - theorem-i-of-two-letter-clauses-contraction
+  - tool-statements-hold
+  - splitting-package-holds
+  - first-theorem-threshold-functions
+  - first-theorem-uniform-thresholds
+  - first-theorem-with-constants
+  - first-theorem-admitted-closed
 - id: monomial-factorials
   title: Monomial factorials
   folder: Formalism.SharpRestriction.GrowthBounds.MonomialFactorials
@@ -54,14 +117,49 @@ chapters:
   - open-e-of-open4
   - rest-tm-closed
   - rest-tm-exists
+  - block-valuation-over-zp-holds
+  - block-valuation-zp-of-numeric-bound
 - id: theta-log-coordinates
   title: Theta log coordinates
   folder: Formalism.ThetaLogCoordinates
   entries:
   - top-theorem-mv7
+- id: partner-mean-proofs
+  title: Partner mean proofs
+  folder: Formalism.ThetaLogCoordinates.PartnerMeanCoordinates.PartnerMeanProofs
+  entries:
   - mc-theorem-mv7
+  - theorem-mv7-of
+  - theorem-mxb
+  - mean-gam-x
+  - gram-hypothesis-of-log-bound
 - id: admissible-designs
   title: Admissible designs
   folder: Formalism.AdmissibleDesigns
   entries:
   - theorem-n5-from-inputs
+  - theorem-n5-of-open-b
+  - theorem-n5-of-ring-inputs
+  - normalized-ring-data
+  - open-inputs-at-normalized
+- id: column-span-density
+  title: Column span density
+  folder: Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity
+  entries:
+  - theorem-i-of-explicit-minor-map
+  - theorem-i-of-model-identification
+  - theorem-i-of-lattice-functor-comparison
+  - theorem-i-of-finer-open-statements
+- id: sharp-restriction
+  title: Sharp restriction
+  folder: Formalism.SharpRestriction
+  entries:
+  - frobenius-lifting
+  - local-theory-of-admitted
+- id: gl3-mean-squares
+  title: GL3 mean squares
+  folder: Formalism.GL3MeanSquares
+  entries:
+  - li-stat
+  - li-ratio
+  - mass-const-succ

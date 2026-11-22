@@ -2,6 +2,39 @@
 title: The Weil bound, the spectrum and resolution
 summary: 'The other shared folders of the development: the Weil bound, the automorphic spectrum, discrete groups and the resolution of singularities.'
 chapters:
+- id: representation-theory-gl
+  title: Representation theory of GL
+  folder: Development.WeilBound.RepresentationTheoryGL
+  entries:
+  - occ
+  - field
+  - lit
+  - leibniz-ord
+  - k-type-holds
+  - asc-seed-holds2
+- id: weil-bound
+  title: Weil bound
+  folder: Development.WeilBound
+  entries:
+  - formal-thickening-formal-algebraisation
+  - ar-calc-direct
+  - s-weil-ex
+  - field-of-leaves
+- id: block-decomposition
+  title: Block decomposition
+  folder: Development.AutomorphicSpectrum.Proofs.BlockDecomposition
+  entries:
+  - grothendieck-existence-closed
+  - ge-closed
+  - statement-bot
+  - step-integral
+  - branch-proper-at-point
+  - local-order
+  - count-g
+  - phi-pg
+  - phi-pg-core
+  - unitary-siegel-domain-exists
+  - cov-main
 - id: resolution-of-singularities
   title: Resolution of singularities
   folder: Development.ResolutionOfSingularities
@@ -9,6 +42,7 @@ chapters:
   - canonical-algorithm-rules-is-correct
   - functorial-resolution-char-zero
   - strong-resolution-of-singularities-char-zero
+  - strong-resolution-of-singularities-char-zero-of-principalization-algorithm
 - id: ideal-principalization
   title: Ideal principalization
   folder: Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization
@@ -17,6 +51,12 @@ chapters:
   - is-correct-canonical-algorithm-rules-of-hypotheses
   - is-order-reduction-order-family-of-strict-transform-is-blowup
   - is-order-reduction-max-contact-of-is-boundary-position-invariant
+  - descent-properties-of-is-boundary-divisor-reduction
+  - is-max-order-reduction-canonical-algorithm-rules
+  - is-max-order-reduction-order-reduction-seq
+  - divisor-reduction-hypotheses-canonical-algorithm-rules
+  - divisor-reduction-step-properties-canonical-algorithm-rules
+  - divisor-reduction-properties-of-blowup-preserves-noetherian
 - id: automorphic-kernels
   title: Automorphic kernels
   folder: Development.WeilBound.CoreStatements.AutomorphicKernels
@@ -26,6 +66,17 @@ chapters:
   - abelian-de-rham
   - free-abelian-hodge-de-rham
   - abelian-hodge-de-rham-prime
+  - whit-gen-eq
+  - geom-urat-eq-geom-u
+  - fixed-p
+  - loc-c
+  - whit-gen-low
+- id: automorphic-spectrum
+  title: Automorphic spectrum
+  folder: Development.AutomorphicSpectrum
+  entries:
+  - harish-chandra-analyticity-density
+  - siegel-core
 - id: siegel-weil
   title: Siegel-Weil
   folder: Development.WeilBound.RepresentationTheoryGL.SiegelWeil
@@ -34,19 +85,118 @@ chapters:
   - siegel-deg
   - siegel-weil-rank-coefficient
   - siegel-frame
-- id: representation-theory-gl
-  title: Representation theory of GL
-  folder: Development.WeilBound.RepresentationTheoryGL
+  - siegel-weil-free-of-block-nonempty-frames
+  - sw-free-block
+  - sw-free-singular
+  - zero-block-coefficient-rank-increase
+  - hyp-step
+- id: siegel-weil-proof
+  title: Siegel-Weil proof
+  folder: Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof
   entries:
-  - field
-  - lit
+  - top7
+  - top6
+  - top5
+  - top3
+  - top2
+  - hol-lead-b
+  - loc-tau
+  - lc-of
+  - core-lc-of
+  - dens-eq
+  - base-one
+  - base-one-of
+- id: hodge-tate-points
+  title: Hodge-Tate points
+  folder: Development.WeilBound.CoreStatements.HodgeTatePoints
+  entries:
+  - k-twins
+  - a18
+  - a17
+  - a16
+- id: published-theorems
+  title: Published theorems
+  folder: Development.WeilBound.CoreStatements.PublishedTheorems
+  entries:
+  - multiplier-vanishing-nef-twist-ample
+  - vanishing-log-res-pushforward-and-local
+  - multiplier-vanishing-nef-twist
+  - vanishing-log-res-floor
+  - snc-boundary-ample-decomposition
+  - vanishing-ample-snc-cartier
+  - vanishing-ample-snc-char-zero
+  - kawamata-viehweg-spreading
+  - vanishing-char-zero-fibre-of-finite-type
+  - charp-vanishing-liftable
+  - kodaira-vanishing-mod-p-squared
+  - charp-of-lift
+  - casselman-wallach
+  - global-euler-char-full
+  - global-euler-char-of-lemma-x
+  - ratio-one-of-lemma-x
+  - poitou-tate-normalised-holds
+  - rs-pole
+  - rs-pole-of-inputs
+  - field-outright
+- id: metric-proofs
+  title: Metric proofs
+  folder: Development.AutomorphicSpectrum.Proofs.MetricProofs
+  entries:
+  - degree-and-coordinates-of-resolution
+  - gen-deg-and-pf-coord
+  - gen-deg-of-res-exists
+  - arith-intersection-system-of-poincare-lelong-res-k
+  - intersection-exists-of-poincare-lelong
+  - thm-iexists
+- id: constant-term-finiteness
+  title: Constant term finiteness
+  folder: Development.WeilBound.RepresentationTheoryGL.ConstantTermFiniteness
+  entries:
   - harish-chandra-finite
   - finite-const-term
-  - leibniz-ord
-  - eig-inert
-  - wave-existence-speed-multiplicity
-- id: weil-bound
-  title: Weil bound
-  folder: Development.WeilBound
+  - finite-forms-on
+  - finite-cusp-on
+  - finite-slices-gl-part
+  - finite-slices-u-part
+- id: discrete-groups
+  title: Discrete groups
+  folder: Development.DiscreteGroups
   entries:
-  - global-euler-char-full
+  - local-converse-gl
+- id: archimedean-base-change
+  title: Archimedean base change
+  folder: Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange
+  entries:
+  - multiplicity-formula-holds
+  - injective-decomposition-action-holds
+  - mult-g-of-mult-for
+  - count-g-holds
+  - eig-inert
+  - abs-eig
+  - extreme-u
+  - positivity-theory-rg-bc-b-f-match-all-match-lmb2-2
+  - h-m4
+  - archimedean-base-change-fourth
+  - m4
+  - wave-existence-speed-multiplicity
+  - ell-formula2-j
+  - class-vanish2
+  - class-vanish
+  - global-character-holds
+  - fin-half-holds
+  - euler-fin-holds
+  - separation-holds
+  - e-final-of
+- id: unitary-dual-proof
+  title: Unitary dual proof
+  folder: Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof
+  entries:
+  - bernstein-unitary-product-irreducible
+  - bern-at
+  - thm-b
+  - all-thm-t
+  - tp-final-thm-t
+  - tp-final-desc
+  - desc-final-desc
+  - t-final-thm-t
+  - van-all

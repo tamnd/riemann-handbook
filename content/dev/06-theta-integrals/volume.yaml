@@ -11,6 +11,8 @@ chapters:
   - shape-closed-link-n-of-green
   - closed-family-admissible-twist-link-alt
   - closed-serv-f-of-serv-t-of-d-gam-size
+  - link-brest-alt
+  - b-rest-all-alt
   - theta-integrals-agree-and-local-matching-of-literature
   - siegel-weil-std-of-literature
 - id: group-lattices
@@ -21,6 +23,9 @@ chapters:
   - loc-proved
   - link-g-concrete-no-ker
   - link-of-local-closed
+  - local-model-results
+  - link-g-fam-no-ker
+  - link-g-without-kernels
 - id: growth-bounds
   title: Growth bounds
   folder: Formalism.SharpRestriction.GrowthBounds
@@ -30,24 +35,74 @@ chapters:
   - stmt-e-of-pl
   - stmt-e-of-last
   - stmt-e-of-mem
+  - stmt-e-of-mp
+  - stmt-e-of-ten-mp
+  - stmt-e-of-ten-ns
+  - stmt-e-of-op-ns
+  - tensor-operators-holds
+  - proposition5-holds
+  - rest-mem-of-last
+  - second-part-closed
+  - stmt
+  - plane-gram-theorem-of-five-lemmas
+  - packet-statements-hold
+  - rests
+  - prv-and-kernel-commutation-up-to-units-of-rests
 - id: sharp-restriction
   title: Sharp restriction
   folder: Formalism.SharpRestriction
   entries:
   - sum-over-primes-service
+  - orbit-entry-bounds-hold
+  - orbit-entry-bounds-of-family
+- id: character-boxes
+  title: Character boxes
+  folder: Development.AutomorphicArithmetic.CharacterBoxes
+  entries:
+  - supply-chi
+  - supply-of-adm
+  - host-of-field
+  - zero-free-all-of-top-g
 - id: automorphic-arithmetic
   title: Automorphic arithmetic
   folder: Development.AutomorphicArithmetic
   entries:
-  - supply-chi
-  - supply-of-adm
-- id: weil-bound
-  title: Weil bound
-  folder: Development.WeilBound
+  - supply-of-adm-of
+  - host-of-field-of
+- id: mean-square-bounds
+  title: Mean square bounds
+  folder: Development.AutomorphicArithmetic.MeanSquareBounds
+  entries:
+  - pair-ex
+  - pair-exists
+  - pair-share
+  - stage
+  - thin-h
+  - thin
+  - psi-thin
+- id: gl3-mean-squares
+  title: GL3 mean squares
+  folder: Formalism.GL3MeanSquares
+  entries:
+  - pnt-progressions-relative-weak-holds
+- id: theta-lifts
+  title: Theta lifts
+  folder: Development.WeilBound.ThetaLifts
   entries:
   - theorem-k-head2
   - theorem-k-head2-of-mod
   - close-sph
+  - end-ab-sph
+- id: automorphic-kernels
+  title: Automorphic kernels
+  folder: Development.WeilBound.CoreStatements.AutomorphicKernels
+  entries:
   - siegel-weil-std
   - siegel-weil-std-of-ct
   - siegel-weil-std-pre
+  - siegel-weil-std-mid
+  - siegel-weil-std-of
+  - ct-split-of
+  - sec-unf-of
+  - sec-unf-of-c-law
+  - unf

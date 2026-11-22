@@ -14,39 +14,82 @@ chapters:
   - cuspidal-lift-smooth-at-of-cuspidal-lift
   - twisted-jets-assemble
   - twisted-jet-succ-eq-assembly
+  - twisted-jet-one-of-all
+  - twisted-pairing-identity
+  - twisted-lift-flip-invariant
+  - twist-sign-flip-succ
   - functionals-separate-of-howe-unram-of-siegel-weil
   - real-functionals-separate-of-hypothesis
+  - twist-core-surjective
+  - twist-core-surjective-of-local-components
   - fourier-coefficient-fit-of-join-alt
   - fitted-function-at-zero-close-alt
   - square-leading-term-bound
   - square-top-term-joined-estimates
+  - norm-big-of-l-ne
+  - norm-big-alt
+  - petersson-norm-bottom-theta-lift-eq
   - sum-size-bound-all-places
   - sum-size-finite-away-archimedean-combined
   - twisted-multiplicity-one
   - twisted-multiplicity-eq
   - unitary-theory-of-harish-chandra-langlands-alt
   - tower-alt-bis
+  - witt-tower-top-stage-theta-norm-formula
+  - theta-tower-top-stage-norm-eq
+  - theta-square-norm-comparison
+  - theta-square-comparison
+  - reg-const-eq-away-unit-mul-factor
+  - regulator-constant-eq
+  - theta-kernel-basic-properties
+  - bottom-field-is-number-field
+  - sums-mem-bottom-field
   - published-results-arithmetic
   - arith-hilbert-samuel-of-literature
   - good-chern-weil-of-literature
+  - formal-algebraisation-of-literature
+  - l2-extension-log-canonical-of-literature
   - siegel-toroidal-integral-of-literature
   - published-results-eigen
   - literature-nonexistence
   - join-out-of-literature
+  - bhatt-scholze-integral-of-literature
+  - harish-chandra-analyticity-of-literature
   - published-results-first
   - kudla-splitting-split-unitary-of-literature
+  - howe-duality-real-of-literature
+  - flath-factorisation-of-literature
+  - strong-approx-su-of-literature
+  - semi-abelian-lie-seminegative-of-literature
+  - casselman-wallach-of-literature
+- id: theta-correspondence
+  title: Theta correspondence
+  folder: Development.AutomorphicArithmetic.ThetaCorrespondence
+  entries:
+  - period-ne-of-eigen
+  - exists-cusp-form-theta-period-ne-zero
+  - real-input-e-holds
+  - weil-unitary
+  - prismatic-dieudonne-hodge
 - id: automorphic-arithmetic
   title: Automorphic arithmetic
   folder: Development.AutomorphicArithmetic
   entries:
-  - weil-unitary
-  - prismatic-dieudonne-hodge
   - core-g
-- id: foundations
-  title: Foundations
-  folder: Development.AutomorphicArithmetic.Foundations
-  entries:
   - frame-ex-of-fin
+  - frame-word-identity-frame-bound
+  - gen-fe
+  - low-iso2
+  - rec-texists
+- id: convolution
+  title: Convolution
+  folder: Development.AutomorphicArithmetic.Foundations.Convolution
+  entries:
   - gm-of-bcfl
   - gm-of-unit
-  - frame-word-identity-frame-bound
+  - term-ex
+  - g4
+  - loc-all
+  - loc-hecke-inert
+  - deep-hecke
+  - ram-sph

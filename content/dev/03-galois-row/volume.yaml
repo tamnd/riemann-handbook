@@ -18,12 +18,26 @@ chapters:
   - jump-step-holds
   - ht-spec-good
   - ht-bij
+  - hodge-tate-comparison-smooth-projective
+  - jump-step-of
   - kodaira-spencer-of-weight-one
   - ks-hodge-of-geo
+  - weighted-count-definite-unitary
+  - ks-hodge-of-inputs
+  - hodge-trace-of-lefschetz-and-group-side
+  - cnt-trace-definite-forms-identity
   - fix-k-holds
   - tower-fixed-points-of-isogeny-data
   - fixed-points-int-base-holds
+  - gunif-holds
+  - g-unif-of
+  - m-in
+  - cong-ks-link
   - plan-ex-holds
+  - spec-top-holds
+  - spec-top-g
+  - spec-data
+  - exists-unitary-group-datum-of-vector-exponent-spectral
   - weight-one-geometric-realization
   - galois-local-global-strong-of-geometry-lift
   - galois-local-global-of-geometry-lift
@@ -33,14 +47,32 @@ chapters:
   - supp-bc-outright
   - supp-bc-holds
   - core-all-of
+  - to-core-k
+  - seed-fin-odd-of-geo-one
+  - div-all-holds
+  - div-one-holds
+  - div-set-holds
+  - cong-fin-odd-of-ex
+  - cong-fin-g-of-ex
+  - cong-fin-g-of-step
+  - cong-uwg-of
   - t-lift-k
   - t-lift-holds-k
   - tools-holds-k
   - siegel-weil-std-k
   - siegel-weil-std-of-ct-k
   - siegel-weil-std-pre-k
+  - siegel-weil-std-mid-k
+  - siegel-weil-std-of-k
+  - ct-split-of-k
+  - sec-unf-of-k
+  - sec-unf-of-c-law-k
+  - unf-k
+  - weil-ex-k
+  - exists-is-weil-k
+  - t-lift-of-tools-k
 - id: etale-cohomology
-  title: Etale cohomology
+  title: Étale cohomology
   folder: Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology
   entries:
   - etale-finiteness-of-duality
@@ -51,19 +83,48 @@ chapters:
   - a0
   - proper-base-change
   - e2-main
+  - towers
   - phi-step
-- id: etale-cohomology-2
-  title: Etale cohomology
-  folder: Development.EtaleCohomology
+  - fin-all
+  - fin-all-of
+  - final
+  - crystalline-comparison-top
+  - etale-base-change-of-duality
+  - e3-main
+  - n8
+  - affine-proper-base-change
+  - quasi-affine-equivalence-intersection-number-base-change
+  - a33
+- id: etale-sheaves
+  title: Étale sheaves
+  folder: Development.EtaleCohomology.EtaleSheaves
   entries:
   - s57
   - s42
   - s41
-- id: weil-bound
-  title: Weil bound
-  folder: Development.WeilBound
+  - cup-product-tensor-holds-of
+  - s38
+  - s0
+  - leaf-a6nat-xy7-v2-cut-goal-of
+- id: padic-hodge-comparison
+  title: p-adic Hodge comparison
+  folder: Development.WeilBound.CoreStatements.PadicHodgeComparison
   entries:
   - ht-bij-of
+  - parts
+  - hodge-tate-of-etale-side
+  - ht-of
+  - hodge-iso-natural-cech
+  - pow-k-ne-zero
+  - pow-k-ne-zero-main
+  - pow-k-ne-zero-of
+  - local-of
+  - p-seam
+  - pmap
+  - out
+  - out-of-rin
+  - ls-seq
+  - lev-sys-ex
 - id: divisor-proofs
   title: Divisor proofs
   folder: Development.AbelianVarietyTheory.Proofs.DivisorProofs
@@ -71,24 +132,122 @@ chapters:
   - projective-bundle-formula-vector-bundle-any-space
   - projective-bundle-formula-discrete-space
   - pbf-disc
+  - t-etale-cohomology-projective-bundle-formula
+  - projective-bundle-formula-of-discrete-spaces
+  - pbf-of-disc
+  - pbf-of-model
+  - subsingleton-ht-one-generic-fibre-of-sh-etale-cover
+  - tate-twist-cohomology-generic-fibre-hensel-line-subsingleton
+  - pic-l
+  - pic-generic-fibre-quotient-strict-henselisation-no-torsion-alt
+  - pic-generic-fibre-quotient-strict-henselisation-no-torsion
+  - pic-localization-strict-henselisation-no-torsion
+  - torsor-trivial
+  - torsor-trivial-strict-henselisation-origin
+  - key-origin
+  - torsor-point-over-strict-henselisation-noetherian-normal
+  - torsor-point-of-ess-finite-type
+  - strict-henselisation-enlarge-good-at-origin
+  - enlarge-good
+  - etale-enlarge-by-uniformiser-roots
+  - etale-enlarge
+  - et-c-c2
   - model-nonempty
   - exists-quasi-projective-harris-taylor-family
   - exists-rep-fam-qproj
   - siegel-kernel-bounded-representable-of-coprime
   - sd-rep-of-coprime
-- id: abelian-variety-theory
-  title: Abelian variety theory
-  folder: Development.AbelianVarietyTheory
-  entries:
-  - t-lefschetz-fixed-point-finite-etale-correspondence
-  - t-exists-chart-lift-of-finite-cover
+  - exists-rep-principal-siegel-adjoint-order-action
+  - act-sieg-exists-rep
+  - siegel-family-exists-unique-classify-scheme
+  - exists-unique-classify
+  - exists-classify-affine
+  - siegel-family-classifies-noetherian
+  - classify-noetherian
+  - siegel-family-classifies-noetherian-local
+  - exists-point-of-principal
+  - siegel-family-classifies-complete-noetherian-local
+  - classified-of-complete
+  - siegel-point-lifts-to-artinian
+  - siegel-artin-main
+  - exists-sieg-pb-lift-of-quotient-lift
+  - classified-of-small
+  - exists-zarhin-trick-family-siegel-kernel-killed
+  - exists-zarhin-data-sieg-ker-by
+  - adjoint-actions-order-finite-unramified-scheme
+  - act-rep-finite-unramified
+  - exists-finite-scheme-adjoint-actions-abelian
+  - exists-act-rep-finite
+  - exists-finite-unramified-representing-polarized-homs
+  - exists-finite-unramified
+  - exists-finite-type-representing-polarized-homs-loc-noeth
+  - hom-fix-finite-type
+  - exists-finite-type-scheme-representing-polarized-homs
+  - exists-hom-fix-rep-finite-type
+  - exists-local-representing-scheme-hom-fixed-pullback
+  - exists-local-hom-fix-rep
+  - smooth-of-relative-dimension-rep-fam-of-is-qproj-over
+  - smooth-of-relative-dimension
+  - exists-universal-tangent-harris-taylor-representing-family
+  - exists-univ-tangent
+  - exists-universal-first-order-deformation-harris-taylor
+  - htuniv-main
+  - lkdef-trace-definite-forms-identity
+  - complex-points-classify-marked-periods
+  - fine-at-univ
+  - charpoly-de-rham-homology-endomorphism-eq-map-ladic
+  - charpoly-push-eq
+  - charpoly-push-eq-map-charpoly
+  - charpoly-de-rham-homology-abelian-variety-char-p
+  - charpoly-push
+  - theory
+  - harris-taylor-type-tj-isogenies-representable
+  - isog-rep-exists-rep
+  - isogeny-representable-finite-etale
+  - isogeny-rep
+  - t-exists-finite-etale-trivializing-torsion-abelian-scheme
 - id: etale-clopen-descent
-  title: Etale clopen descent
+  title: Étale clopen descent
   folder: Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent
   entries:
+  - cb-etale-cohomology-projective-bundle-formula
+  - pbf-all
+  - complex-count-regular-marked-points
+  - cb-exists-finite-etale-trivializing-torsion-abelian-scheme
+  - sub-rep-core
+  - exists-finite-etale-representing-clopen-subschemes
   - cb-lefschetz-fixed-point-finite-etale-correspondence
   - block-fixed
   - holomorphic-lefschetz-finite-etale-correspondence
   - holomorphic-lefschetz-finite-etale-integral
   - cb-exists-chart-lift-of-finite-cover
   - field0
+- id: automorphic-arithmetic
+  title: Automorphic arithmetic
+  folder: Development.AutomorphicArithmetic
+  entries:
+  - projective-bundle-formula-succ-of-forall
+  - projective-bundle-formula-rank-two
+  - period-ring-base-base
+- id: adelic-lattice-proofs
+  title: Adelic lattice proofs
+  folder: Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs
+  entries:
+  - class-number-finite-holds
+  - class-number-finite-integral-level-closed-subgroup-gl
+  - class-finite-integral-level
+  - finite-adelic-double-cosets-of-rational-sl-subgroup
+  - cf-of-is-qgroup
+- id: proofs
+  title: Proofs
+  folder: Development.AbelianVarietyTheory.Proofs
+  entries:
+  - t-lefschetz-fixed-point-finite-etale-correspondence
+  - t-exists-chart-lift-of-finite-cover
+  - exists-breuil-kisin-frame-semistable-bounded-jumps
+  - exists-frame-sst
+- id: etale-cohomology-2
+  title: Étale cohomology
+  folder: Development.EtaleCohomology
+  entries:
+  - goal-holds

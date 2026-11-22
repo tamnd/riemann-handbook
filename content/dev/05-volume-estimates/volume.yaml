@@ -11,7 +11,37 @@ chapters:
   - height-lower-bound-general-alt
   - ref-w-of-prints-deep-good-size-flat-deg
   - refined-sum-weight-of-size-alt
+  - sum-pt-of-size
+  - sum-pt-of-size-alt
+  - sum-pt-of-wt-pt-num-pt
+  - sum-pt-of-sizes-alt
+  - reference-core-of-size-and-sum-point
+  - ref-core-of-size-sum-pt
   - to-classical-theorems
+  - low-def-of-gram-of-anchor
+  - covering-low-defect-alt
+  - two-mul-def-bound-sub-le-mu-core-of-gram-at
+  - lifts-two-mul-def-bound-sub-unit-e-le-mu-core
+  - defect-bound-of-connected-alt
+  - flat-exists-at-last-index-of-fn-alg-closed
+  - flat-exists-at-core-alt
+  - deg-lie-eq-neg-flat-deg-val-at-last-index
+  - deg-lie-core-alt
+  - cover-height-sum-of-flat-deg-cover-degree-share
+  - hilbert-samuel-of-component-estimates-alt
+  - exists-degree-parameters-bound-alt-alt
+  - hs-claim-short-alt-alt
+  - hilbert-samuel-estimate-at-level
+  - orbits-separated-by-regular-cusp
+  - exists-cusp-regular-level-determinant
+  - separate-orbits-by-cusp
+  - log-canonical-criterion-boundary
+  - log-canonical-pair-iff
+  - log-canonical-divisor-refl
+  - log-canonical-refl-of-boundary
+  - exists-simple-log-pole-along-boundary
+  - log-pole-along-boundary-is-simple
+  - exists-log-pole-along-boundary
 - id: automorphic-kernels
   title: Automorphic kernels
   folder: Development.WeilBound.CoreStatements.AutomorphicKernels
@@ -20,14 +50,30 @@ chapters:
   - deep-st-r-of-use
   - good-tower-volume-theorem-bis
   - line-of-large-degree-of-use
+  - given-of-use
 - id: geometry-proofs
   title: Geometry proofs
   folder: Development.AutomorphicSpectrum.Proofs.GeometryProofs
   entries:
   - final-theorem-of-inputs-right
   - good-tower-volume-of-reduced
+  - tower-intersection-of-sandwich-split
+  - tower-good-of-sandwich-split
+  - root-model-flag-height
+  - fibre-input
+  - t-cusp-weight-regularisations-tied
+  - relay-cusp-weight-regularisations-tied
+  - base-setting-of-good-tower
+  - base-setting-of-good-origin
   - model-on-hodge-from-family
   - model-on-hodge-of-family-pos
+  - exists-geometric-height-constants
+  - nine-geo-u-of-given
+  - cusp-height-upper
+  - ht-u-of-given
+  - exists-good-root-tower
+  - exists-good-tower
+  - comp-data
   - family-pos-of-hodge-tate-inputs
   - family-exists-pos-holds
   - ordinary-curve-hodge-prime
@@ -38,10 +84,29 @@ chapters:
   - t-uniform-all-norm-height-bound
   - relay-uniform-all-norm-height-bound
   - slope-sub-cost-le-comp-vol-slope
+  - model-small-encard-le
+  - uniform-norm-all-tower-bound
+  - descent-small
+  - uniform-all-tower-bound
+  - vs-fin
   - final-theorem-of-inputs-left
   - given-of-inputs
   - slope-bound-of-line-large-degree
   - slope-bound-and-lemma-s-of-siegel
+  - slope-bound-of-large-degree-line
+  - top-slope-slope-bound
+  - line-of-key-degree
+  - line-of-key
+  - flat-degree-holds
+  - flat-degree
+  - germ-system-height-free
+  - hfree-at-component-stalks
+  - height-char-free-geometric
+  - hfree-geom
+  - finite-constant-all-holds
+  - fin-const-all
+  - eigen-line-p-adic-frame
+  - value-at-point
 - id: divisibility-proofs
   title: Divisibility proofs
   folder: Development.AutomorphicSpectrum.Proofs.DivisibilityProofs
@@ -54,26 +119,119 @@ chapters:
   - full-intersection-tower-i8-relation
   - tower-weil-inputs-combined
   - chain-tower
-- id: core-statements
-  title: Core statements
-  folder: Development.WeilBound.CoreStatements
+  - test-height-bound
+  - test-height-bound-slope-flat
+  - test-polynomial-remainder-bound
+  - test-rest-bound
+  - finite-bound
+  - good-tower-i5
+  - i5-and-i6-of-is-global-of-good-origin
+  - t-good-tower-intersection-extra
+  - relay-good-tower-intersection-extra
+  - t-good-tower-real-extra
+  - relay-good-tower-real-extra
+- id: multihomogeneous-squares
+  title: Multihomogeneous squares
+  folder: Development.WeilBound.CoreStatements.MultihomogeneousSquares
   entries:
   - good-tower-antisymmetry
   - antisymmetry-of-singular-statement
   - good-tower-antisymmetry-of
-  - t-c-sqsys
-- id: proofs
-  title: Proofs
-  folder: Development.AutomorphicSpectrum.Proofs
+  - tie-of
+- id: metric-proofs
+  title: Metric proofs
+  folder: Development.AutomorphicSpectrum.Proofs.MetricProofs
   entries:
+  - flag-model-exists-of-given
+  - flag-model-exists
+  - antisymmetry-prime
+  - antisymmetry
+  - adjacent-swap-height-polynomial-relation
+  - thm-a-swap
+  - height-polynomial-reflection-sum
+  - thm-a-limit
   - t-flag-cover-realisation-pullback
   - relay-flag-cover-realisation-pullback
+  - flag-adjacent-swap-square-system
+  - ansq-exists
+  - exists-theta-sup-bound-log-mean
+  - mean-log-sup
+  - theta-function-even-bound
+  - nform
+- id: heights-and-theta
+  title: Heights and theta
+  folder: GroundTheory.HeightsAndTheta
+  entries:
+  - rest-bound-full
+  - rest-prime-bound-full
+- id: core-statements
+  title: Core statements
+  folder: Development.WeilBound.CoreStatements
+  entries:
+  - t-c-sqsys
+  - global-model-tower-fifth-condition
+  - vol-eq-of-is-full-intersection-system
+  - global-model-tower-final-condition
+  - root-flat-on-hodge
+  - hodge-free-every-stalk
+  - at-point
+- id: algebra-proofs
+  title: Algebra proofs
+  folder: Development.AutomorphicSpectrum.Proofs.AlgebraProofs
+  entries:
   - arithmetic-relations-statement-holds
   - top-rel-relations
-- id: abelian-variety-theory
-  title: Abelian variety theory
-  folder: Development.AbelianVarietyTheory
+  - lattice-family-ck-relations
+  - ck-relations-of-model
+  - stage1
+  - stage1b
+  - stage2
+  - stage3
+  - stage4
+  - stage5
+  - cut-effective-divisor
+  - cut-closed-main
+  - mahler-section
+- id: divisor-proofs
+  title: Divisor proofs
+  folder: Development.AbelianVarietyTheory.Proofs.DivisorProofs
+  entries:
+  - sum-at-of-sizes
+  - depth-oscillation-le-bound-every-prime
+  - osc-le-e-of
+  - base-locus-exponent-le-oscillation-non-type-prime
+  - ref-exp-le-of-osc-le
+  - exists-harmonic-polynomial-local-depth-between
+  - exists-poly-between
+  - column-polynomial-local-depth-eq-place-depth
+  - nu-loc-of-eq-nu-p
+  - cm-object-definite-lie-eigen-lattice-degree-difference
+  - cm-diff-definite
+  - hilbert-samuel-component-short-basis-bound
+  - hs-claim-s-component-geo
+  - arithmetic-hilbert-samuel-bound
+  - geo-bound-of-quoted-prime
+  - det-line-trivial-of-toroidal
+- id: iwasawa-decomposition
+  title: Iwasawa decomposition
+  folder: Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition
   entries:
   - toroidal-flag-proportionality-of-good-chern-weil
   - mumford-proportionality-of-good-chern-weil
   - exists-good-base
+  - hodge-metric-chern-integral-eq-covolume-mul-flag-degree
+  - has-chern-integral-covol-flag-deg
+  - has-chern-integral-point-poly-covol
+  - pointwise-hodge
+  - hodge-metric-lie-gram-is-good-mumford
+  - lie-gram-is-good
+- id: automorphic-arithmetic
+  title: Automorphic arithmetic
+  folder: Development.AutomorphicArithmetic
+  entries:
+  - tamagawa-local-volume-factor
+- id: weil-bound
+  title: Weil bound
+  folder: Development.WeilBound
+  entries:
+  - plug-comp
