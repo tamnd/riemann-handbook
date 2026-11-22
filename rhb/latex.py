@@ -160,6 +160,9 @@ def build(book: Book, vol: Volume, md: str, outdir: str, edition: str, date: str
     t0 = time.time()
     open(os.path.join(outdir, "body.md"), "w").write(md)
     body = pandoc_latex(md)
+    # a long Lean term in a code block: let fvextra break it at any character, with a mark at the break
+    body = body.replace("\\begin{verbatim}", "\\begin{Verbatim}[breaklines=true,breakanywhere=true,fontsize=\\small]")
+    body = body.replace("\\end{verbatim}", "\\end{Verbatim}")
     t1 = time.time()
     fb = Fallback()
     body = fb.apply(body)
