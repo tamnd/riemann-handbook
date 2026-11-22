@@ -56,7 +56,7 @@ chapters:
   - orbit-entry-bounds-hold
   - orbit-entry-bounds-of-family
 - id: character-boxes
-  title: Character boxes
+  title: Hosts from the window bound
   folder: Development.AutomorphicArithmetic.CharacterBoxes
   entries:
   - supply-chi
@@ -64,13 +64,13 @@ chapters:
   - host-of-field
   - zero-free-all-of-top-g
 - id: automorphic-arithmetic
-  title: Automorphic arithmetic
+  title: Host builders
   folder: Development.AutomorphicArithmetic
   entries:
   - supply-of-adm-of
   - host-of-field-of
 - id: mean-square-bounds
-  title: Mean square bounds
+  title: Good pairs of primes
   folder: Development.AutomorphicArithmetic.MeanSquareBounds
   entries:
   - pair-ex
@@ -81,12 +81,12 @@ chapters:
   - thin
   - psi-thin
 - id: gl3-mean-squares
-  title: GL3 mean squares
+  title: Primes in progressions
   folder: Formalism.GL3MeanSquares
   entries:
   - pnt-progressions-relative-weak-holds
 - id: theta-lifts
-  title: Theta lifts
+  title: The two theta statements
   folder: Development.WeilBound.ThetaLifts
   entries:
   - theorem-k-head2
@@ -94,7 +94,7 @@ chapters:
   - close-sph
   - end-ab-sph
 - id: automorphic-kernels
-  title: Automorphic kernels
+  title: Siegel-Weil from the constant term
   folder: Development.WeilBound.CoreStatements.AutomorphicKernels
   entries:
   - siegel-weil-std
