@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.1.2
+
+- Volume 4, the window bound: all 52 tier 1 entries and an introduction. The entries cover the modularity argument for the cases I to Z, the Iwahori reduction and the Euler system of zeta classes.
+- Volume 5, volume estimates and positivity: all 43 tier 1 entries and an introduction. The entries cover the covolume bound, the good tower and the volume theorem, and the Siegel lemma.
+- One wide formula in Volume 4 is split. Volumes 0 to 5 build with no overfull lines.
+- The ledger now shows 189 of the 591 tier 1 entries written.
+
 ## v0.1.1
 
 - Volume 3, the Galois row: all 62 tier 1 entries, 54 of them new, and an introduction. Volume 3 is 73 pages.
