@@ -1,0 +1,292 @@
+# Written by `rhb ledger --write` from the spine. Edit titles here; the entry list follows the spine.
+title: The unitary hypotheses
+summary: 'The three large branches below the record HypsAlt: unramified exponents, the map onto X with the low lambda bound, and the open orbit.'
+chapters:
+- id: theta-pair-lifts
+  title: Theta pair lifts
+  folder: Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts
+  entries:
+  - global-theory-fc-s0-stage-u-hypotheses-nonempty-of-unramified-exponents-alt
+  - global-theory-fc-all-at-member-stage0-all-rows-of-open0-alt
+  - global-theory-local-rows-lg1-s-lp-s-o-h-tf
+  - global-theory-local-rows-s-lp-s-o-h-tf-of-siegel-weil
+  - global-theory-local-rows-at-choice-alt
+  - global-theory-t-h-serv-of-link-r
+  - global-theory-row-h-serv-of-link-alt
+  - global-theory-t-reciprocity-kernel-of-artin
+  - global-theory-svd-serv-h-row-link-r-alt
+  - global-theory-t-period-entries-tie-and-level-valuations-at-built
+  - global-theory-fc-six-rows-at-member-alt
+  - global-theory-count-row-by-name-row-counts-of-labels-alt
+  - global-theory-count-row-row-counts-of-ties-alt
+  - global-theory-t-large-unramified-exponent-bundles-exist-alt
+  - global-theory-fc-stage-one-u-member-bundles-large-unramified-exponents-alt
+  - global-theory-t-member-exists-base-lattice-alt
+  - global-theory-mem-top-bl-exists-base-lattice-of-prime-alt
+  - global-theory-mem-top-bl-exists-base-lattice-of-pair-alt
+  - global-theory-mem-top-closing-member-e-closing-alt-alt
+  - global-theory-t-has4-of-has3-of-lv3-mv
+  - global-theory-mem-sre-up-s-has4-of-has3-of-s-ext-none
+  - global-theory-mem-sre-exists-s-pack-integrable-alt
+  - global-theory-t-local-bessel-uniqueness-holds
+  - upper-theory-lit-exists-spectral-data-gap-alt
+  - global-theory-t-automorphy-of-hypotheses-alt-alt
+  - global-theory-mem-top-export-true-export-f-prm-r-alt-alt
+  - global-theory-export-first-export-f-is-built-e-alt-alt
+  - global-theory-t-series-realization-of-published-alt
+  - global-theory-export-close0-export-at-bundles-alt
+  - global-theory-t-realization-of-published-alt
+  - global-theory-export-close-export-at-of-bundles-alt
+  - global-theory-t-all-stages-at-member-of-specializations-alt
+  - global-theory-height-counting-up-all-stages-of-specializations-alt
+  - upper-theory-gal-c-final-alt-alt
+  - upper-theory-gal-c-final-of-alt
+  - upper-theory-gal-c-linked-at-link-n-of-bound-at-two-three
+  - upper-theory-gal-c-link-n-of-bound-at-two-three-slot
+  - upper-theory-gal-c-link-n-of-tw-good-galois-preconditions
+  - global-theory-t-concl-f-of-family-facts-and-bound-at-two-three
+  - global-theory-nlink-close-main-alt-alt
+  - global-theory-t-star-ad-and-bb-le-of-joint-cond
+  - global-theory-nlink-rows-ad-in-setting-alt
+  - global-theory-t-adm-at-inert-of-range
+  - global-theory-nlink-inert-step-main-alt-alt
+  - global-theory-t-eventually-cong-bound-of-facts
+  - global-theory-nlink-e-main-alt-alt
+  - global-theory-t-embedding-jumps-aux2-of-setup
+  - global-theory-theorem-bqd-main-alt-alt
+  - global-theory-t-exists-const-tie-chi-bound-of-facts
+  - global-theory-extra-from-facts-main-alt-alt
+  - global-theory-t-exists-bound-tie-chi-of-prints
+  - global-theory-norm-from-facts-main-alt-alt
+  - global-theory-t-conclusion41-of-p-adic-hodge-alt
+  - global-theory-closing-local-inputs-main-alt-alt
+  - global-theory-t-lift-inj-and-non-van-type-nz-of-given
+  - global-theory-core-rk-lift-onto-lift-inj-non-van-type-nz-of-hypotheses-alt
+  - global-theory-t-down-ne-of-euler-right-doubling
+  - global-theory-core-rk-exh-top-down-ne-k-of-hypotheses-prime
+  - global-theory-t-hyps-e-third-layer-ser-n-of-geometric-galois
+  - global-theory-member-close-exists-hyp-n-of-geometric-galois-compat
+  - global-theory-fc-s0-onto-x-and-lam-low-of-unitary-group-hypotheses-prime
+  - global-theory-big-on-onto-x-of-hypotheses-alt-alt
+  - global-theory-big-on-geo-st-of-page-st-alt
+  - global-theory-t-exp-st-of-base-change-and-crystalline-lattices
+  - global-theory-big-on-exponent-bound-of-unitary-theta-standard-theorems-alt
+  - global-theory-t-model-statement-of-crystalline-chebotarev-frame-gal
+  - global-theory-exp-model-model-st-of-small-frame-gal
+  - global-theory-t-exp-st-of-num-sum-exp-model
+  - global-theory-exp-tie-asm-exp-st-of-alt
+  - global-theory-t-open0-of-unitary-group-hypotheses
+  - global-theory-fc-s0-open0-proof-u-open-orbit-of-unramified-exponents-alt
+  - global-theory-t-main-theorem-published-inputs-third-alt-alt
+  - global-theory-mi-star-row-alt-alt
+  - global-theory-t-main-theorem-published-inputs-variant-alt-alt
+  - global-theory-mi-star-row-closing-alt-alt
+  - global-theory-t-main-theorem-published-results-final-alt-alt
+  - global-theory-fam-mi-star-row-alt-alt
+  - global-theory-t-main-theorem-from-published-results-alt-alt-alt-alt-alt
+  - global-theory-fam-mi-at-of-true-pack-alt-alt
+  - global-theory-t-main-theorem-from-published-results-alt-alt-alt-alt
+  - global-theory-fam-mi-star2-of-all-true-alt-alt
+  - global-theory-t-true-geometry-family-row-data-alt
+  - global-theory-mi-top-fam-all-q-of-all-true-alt
+  - global-theory-t-true-geometry-family-invariance-alt
+  - global-theory-fam-col-side-alt
+  - global-theory-t-true-geometry-family-final-alt
+  - global-theory-qcol-laws-laws-resc-alt
+  - global-theory-t-true-geometry-family-column-data-alt
+  - global-theory-fam-laws-links-of-geo-rows-cols-alt
+  - global-theory-t-exists-bot-dat-of-placed-p-framed
+  - global-theory-mi-top-exists-bot-dat-pin-of-placed-of-framed
+  - global-theory-t-weil-unitary-entries-prime
+  - global-theory-fc-rl-linked-at-prm-r-df-of-cusp-rapid-decay
+  - global-theory-fc-rl-def-side-linked-at-df-of-parameters
+  - global-theory-fc-rl-def-side-definite-side-condition-of-nprime-def-of-nu-full
+  - global-theory-t-kernel-columns-from-ties-alt
+  - global-theory-col-rows-rows-u-of-col-pins-alt
+- id: flag-measures
+  title: Flag measures
+  folder: Development.AbelianVarietyTheory.Proofs.FlagMeasures
+  entries:
+  - global-theory-carrier-gap-off-diag
+  - global-theory-carrier-gap-theorem-s-leaves-of-carrier-g
+  - global-theory-carrier-gap-carrier-p
+  - global-theory-carrier-needs-from-d
+  - global-theory-count-constants-count-constants-of-siegel-weil
+  - global-theory-count-bridge-count-typed-of-volume-step
+  - global-theory-t-unitary-automorphic-counting-of-compact-dual-volume-ratio
+  - global-theory-count-final-counting-theorem-of-volume-step
+  - global-theory-st-spectral-data-exists-setting
+- id: cokernel-glcounts
+  title: Cokernel GL counts
+  folder: Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts
+  entries:
+  - formalism-l2-sg-pf-coef-rows-datum-p-of-deep
+  - formalism-l2-sg-pf-coef-cut-at-of-deep
+  - formalism-l2-sg-pf-pcount-partner-count-holds-all
+  - formalism-l2-sg-ls-datum-a-integral-closure-rank-and-residue-trdeg-le
+- id: local-to-global
+  title: Local to global
+  folder: Formalism.LocalToGlobal
+  entries:
+  - formalism-l2-sg-closed-cut-leaves-deep-outright
+  - formalism-l2-ker-inert-adm-loc2-admissible-entries-small-chain
+- id: hermitian-curvature-proofs
+  title: Hermitian curvature proofs
+  folder: Formalism.HermitianCurvature.HermitianCurvatureProofs
+  entries:
+  - formalism-fourier-decay-alt-p-cut-mp-smooth-transfer-regularity-model-place-built-holds
+  - formalism-fourier-decay-alt-p-cut-mp-model-place-built2-of-chart-eqs
+  - formalism-fourier-decay-alt-p-cut-mp-model-place-built2-of-jf
+  - formalism-fourier-decay-alt-p-cut-mp-model-place-built2-of-poly-s
+  - formalism-fourier-decay-alt-p-built-bounds-compact
+  - formalism-fourier-decay-alt-p-pb-built-bounds2-cpt-of-mk-top
+  - formalism-fourier-decay-alt-p-built-bounds-compact-of-head-top
+  - formalism-fourier-decay-alt-p-lemma-model
+- id: hermitian-curvature
+  title: Hermitian curvature
+  folder: Formalism.HermitianCurvature
+  entries:
+  - formalism-fourier-decay-alt-final-pb-built-bounds2-cpt
+- id: satake-parameters
+  title: Satake parameters
+  folder: Development.AbelianVarietyTheory.Proofs.SatakeParameters
+  entries:
+  - global-theory-t-bundle-both-parts-of-standard-kernel-of-global-artin-reciprocity
+  - global-theory-svd-serv-h-row-of-artin
+  - global-theory-t-bundle-both-parts-of-standard-kernel-and-six-hypotheses
+  - global-theory-svd-serv-h-row
+  - global-theory-t-tuples-have-local-models-at-constructed-point-over-true-columns
+  - global-theory-svd-models-at-bpt
+  - global-theory-t-tuples-have-local-models-of-standard-column-objects
+  - global-theory-svd-models-at-of-part
+  - global-theory-t-theta-local-models-of-split-unramified-joints
+  - global-theory-tw-v-models-ok-of-joints
+  - global-theory-t-joint-site-chain-compared-carries-admitted-system
+  - global-theory-tw-v-site-cmp-lite-site-adm
+  - global-theory-tw-v-admissible-at-each-site
+  - global-theory-pdv-row-at-of-std-tie
+  - global-theory-t-kernel-datum-conditions-at-standard-kernel-comparison
+  - global-theory-pdv-tie-at-of-std-tie
+  - global-theory-pdv-close-at-of-true-columns
+  - global-theory-tw-v-lt-inert-theta-admissibility-of-complex-multiplication
+- id: global-interpolation
+  title: Global interpolation
+  folder: Development.AbelianVarietyTheory.Proofs.GlobalInterpolation
+  entries:
+  - global-theory-t-level-prime-column-valuations-bundle-points-over-columns
+  - global-theory-fc-cv-row-level-valuations
+  - global-theory-lv-t-built-true-cols-closing-true-cols
+  - global-theory-t-true-columns-row-sharp-bounds
+  - global-theory-lv-t-built-true-cols-row-true
+  - global-theory-lv-t-built-true-cols-true-columns-chain-last-step-sharp-bound
+  - global-theory-t-five-point-laws-true-chains
+  - global-theory-lv-t-built-true-laws-laws-true-fam
+  - global-theory-t-kernel-jets-level-place-integral-moments
+  - global-theory-mom-top-jet-moments
+  - global-theory-t-unit-period-translates-moments-finite
+  - global-theory-mom-fin-moments-fin
+- id: iwasawa-decomposition
+  title: Iwasawa decomposition
+  folder: Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition
+  entries:
+  - global-theory-t-exists-member-of-construction-steps-second-pass
+  - global-theory-mem-top-bl-member-e-of-steps2
+  - global-theory-t-exists-constructed-core-of-all-construction-stages
+  - global-theory-mem-top-bl-core-asm-step-w-core
+  - global-theory-hecke-member-hecke-int-transform-read-tie
+- id: inertia-eigenvalues
+  title: Inertia eigenvalues
+  folder: Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues
+  entries:
+  - global-theory-tw-export-top-twist-all-powers-of-galois-cohomology-class-field
+  - global-theory-t-local-lifting-theorem-b-of-bloch-kato-tate-duality-euler-char
+  - global-theory-theorem-b-closing
+  - global-theory-t-prv-twenty-five-of-bloch-kato-tate-duality-euler-char
+  - global-theory-ramified-coefficient-chains-prv-twenty-five
+  - global-theory-t-ramified-coefficient-chains-of-hypotheses
+  - global-theory-theorem-c-of-admitted-inputs
+  - global-theory-t-bloch-kato-top-of-local-tate-duality-euler-char
+  - global-theory-top-closing-bloch-kato-top-of-local-tate-duality-euler-char-alt
+  - global-theory-top-bridge-twisted-lattice-cohomology-theorem-top
+  - global-theory-t-theorem-e-corollary-a-closing-all-data
+  - global-theory-thm-ecor-a-closing
+  - global-theory-t-twisted-place-selmer-length-bound-of-local-duality
+  - global-theory-twisted-place-bound-closing
+  - global-theory-t-local-lifting-of-bloch-kato-tate-duality-euler-char
+  - global-theory-theorem-a-closing
+  - global-theory-t-integrality-from-metric-of-160-le
+  - global-theory-theorem-afinal-integrality-from-metric-of-le
+  - global-theory-t-crystalline-period-bound-all-constant-ge-forty
+  - global-theory-inertia-eigenvalues-theorem-t-all-records
+  - global-theory-t-lifting-step-theorem-t-of-bhatt-scholze-fontaine
+  - global-theory-theorem-tclosing-main
+  - global-theory-t-lift-surjection-good-crystalline-lattices
+  - global-theory-theorem-t-lift-f-of-is-good
+  - global-theory-t-exists-breuil-kisin-module-tame-descent-good-lattice
+  - global-theory-bkgal-exists-pack-is-of-type
+- id: decorated-lattice-proofs
+  title: Decorated lattice proofs
+  folder: Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs
+  entries:
+  - global-theory-t-theta-lift-adjoint-scalar-formula-injective
+  - global-theory-core-rk-up-inj-row-up-inj
+  - global-theory-t-theta-chain-step-positive-scalar-standing-hypotheses
+  - global-theory-core-rk-scalars-row-scalars
+  - global-theory-core-rk-scalars-row-scalars-of-hecke-form-ns
+  - global-theory-t-theta-chain-steps-positive-multiple-of-lvalue
+  - global-theory-chain-tw-scalars-of-given-all
+  - global-theory-t-see-saw-twist-place-laws-of-root-of-unity-rescaling
+  - global-theory-qtw-laws-of-pin-resc
+  - global-theory-t-see-saw-lattice-frame-pins-finite-integral-laws
+  - global-theory-see-saw-pins-finite-integrals
+- id: level-letter-cocycles
+  title: Level letter cocycles
+  folder: Formalism.SharpRestriction.LevelLetterCocycles
+  entries:
+  - formalism-main-notions-ramified-coefficient-chains-asm-theorem-of-literature-hypotheses
+  - formalism-main-notions-n-ln03-corollary-local-exists-constant
+  - formalism-main-notions-n-ln03-local-theorem-of-inputs
+  - formalism-main-notions-n-ln34-integrality-from-metric-of-large-constant
+- id: weil-bound
+  title: Weil bound
+  folder: Development.WeilBound
+  entries:
+  - positivity-theory-rg-rsw-res-core
+- id: height-proofs
+  title: Height proofs
+  folder: Development.AbelianVarietyTheory.Proofs.HeightProofs
+  entries:
+  - global-theory-final-join-run-holds-of-par-ok
+  - global-theory-t-exists-index-bound-hypotheses-with-net-all-valued-points
+  - global-theory-inputs-at-record-inputs-net-rec-plus
+  - global-theory-t-exists-prime-data-curve-lifting-height-bounds
+  - global-theory-run-prime-data-exists-prime-data-heights
+- id: divisor-proofs
+  title: Divisor proofs
+  folder: Development.AbelianVarietyTheory.Proofs.DivisorProofs
+  entries:
+  - global-theory-big-on-leaf-depth-all-record
+  - global-theory-exp-tie-asm-has-exp-bound-at
+  - global-theory-exp-tie-asm-jexp-u-le-jrec7
+  - global-theory-t-prime-power-lattice-inclusion-of-local-models
+  - global-theory-exp-tie-l-incl-of-models
+  - global-theory-t-member-rows-of-kernel-datum-sizes
+  - global-theory-col-rows-rows-body-of-ker-ties
+  - global-theory-t-columns-member-rows-of-log-level-le
+  - global-theory-col-rows-top-s-rows-body-col-face
+- id: jet-harmonics
+  title: Jet harmonics
+  folder: Development.AbelianVarietyTheory.Proofs.JetHarmonics
+  entries:
+  - global-theory-run-depth-leaf-depth-all-run
+  - global-theory-t-depth-table-good-primes-of-chart-form
+  - global-theory-leaf-depth-good-of-chart-form
+  - global-theory-t-all-good-prime-depth-data-exist-proof
+  - global-theory-good-prime-packages
+- id: automorphic-arithmetic
+  title: Automorphic arithmetic
+  folder: Development.AutomorphicArithmetic
+  entries:
+  - upper-theory-exists-pkg-cs-of-degree-bound-at-inert-primes
+  - upper-theory-orbit-family-restriction-exists-row-fam-s
+  - upper-theory-label-set-geo-of-even-of-rank-ok-of-not-dvd-discr

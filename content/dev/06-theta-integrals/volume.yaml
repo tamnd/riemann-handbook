@@ -1,0 +1,53 @@
+# Written by `rhb ledger --write` from the spine. Edit titles here; the entry list follows the spine.
+title: Theta integrals and the green window
+summary: 'The two branches of the theta chapter: the agreement of theta integrals with local matching, and the short branch that ends in the nonvanishing of L-functions.'
+chapters:
+- id: theta-pair-lifts
+  title: Theta pair lifts
+  folder: Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts
+  entries:
+  - upper-theory-top-every-character-of-green-v-win
+  - upper-theory-top-zero-free-all-of-green-v-win
+  - upper-theory-top-shape-closed-link-n-of-green
+  - global-theory-top-closed-family-admissible-twist-link-alt
+  - formalism-l2-g-serv-t-closed-serv-f-of-serv-t-of-d-gam-size
+  - upper-theory-literature-theorems-theta-integrals-agree-and-local-matching-of-literature
+  - upper-theory-literature-theorems-siegel-weil-std-of-literature
+- id: group-lattices
+  title: Group lattices
+  folder: Formalism.LocalToGlobal.GroupLattices
+  entries:
+  - formalism-l2-g-link-g-concrete5
+  - formalism-l2-g-loc-proved
+  - formalism-l2-g-link-g-concrete-no-ker
+  - formalism-l2-g-link-of-local-closed
+- id: growth-bounds
+  title: Growth bounds
+  folder: Formalism.SharpRestriction.GrowthBounds
+  entries:
+  - formalism-main-notions-trace-spectra-stmt-e
+  - formalism-main-notions-pair-membership-blocks-stmt-e-of-chain
+  - formalism-main-notions-pair-membership-blocks-stmt-e-of-pl
+  - formalism-main-notions-pair-membership-blocks-stmt-e-of-last
+  - formalism-main-notions-proposition5-numerics-stmt-e-of-mem
+- id: sharp-restriction
+  title: Sharp restriction
+  folder: Formalism.SharpRestriction
+  entries:
+  - formalism-main-notions-pk-sum-over-primes-service
+- id: automorphic-arithmetic
+  title: Automorphic arithmetic
+  folder: Development.AutomorphicArithmetic
+  entries:
+  - upper-theory-top-supply-chi
+  - upper-theory-top-supply-of-adm
+- id: weil-bound
+  title: Weil bound
+  folder: Development.WeilBound
+  entries:
+  - positivity-theory-th-kr-theorem-k-head2
+  - positivity-theory-th-kr-theorem-k-head2-of-mod
+  - positivity-theory-sph-tr-close-sph
+  - positivity-theory-siegel-weil-formula-fin-siegel-weil-std
+  - positivity-theory-siegel-weil-formula-fin-siegel-weil-std-of-ct
+  - positivity-theory-siegel-weil-formula-fin-siegel-weil-std-pre

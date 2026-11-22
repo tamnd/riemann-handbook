@@ -1,0 +1,85 @@
+# Written by `rhb ledger --write` from the spine. Edit titles here; the entry list follows the spine.
+title: The window bound
+summary: 'The proof of VWin from the row hypothesis: automorphy, descent and vanishing, and the bound on Tate-Shafarevich groups over the fields that a character cuts out.'
+chapters:
+- id: modularity-argument
+  title: Modularity argument
+  folder: Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument
+  entries:
+  - upper-theory-one-vwin-of-row
+  - upper-theory-one-join-automorphic-window-of-inputs
+  - upper-theory-one-join-v-window-of-depth-zero-residual-bc-cm
+  - upper-theory-v-v-window-of-literal-automorphy-n
+  - upper-theory-v-hv-descent-vanishing-reductions-v-window-of-automorphy-csd-ss-mono-odd
+  - upper-theory-v-hv-descent-vanishing-reductions-vwin-of-hypotheses-h-e-alt
+  - upper-theory-v-z-kato-weil-spherical-records-kato-two-w-of-prints-h
+  - upper-theory-v-z-kato-weil-spherical-records-kato-two-w-of-prints-h-of-r-t-of-quad-bc2
+  - upper-theory-v-z-kato-weil-spherical-records-two-s
+  - upper-theory-v-z-kato-final-zeta-ur
+  - upper-theory-v-z-kato-joint-kato-global-unit-law-of-smoothed-classes
+  - upper-theory-v-z-kato-joint-kato-global-admissibility-of-admissible
+  - upper-theory-v-z-kato-k5-smoothed-zeta-class-hodge-tate-law
+  - upper-theory-v-z-kato-k5-top
+  - upper-theory-v-z-kato-k5-hco
+  - upper-theory-v-hv-descent-vanishing-reductions-sp4-in0-alt
+  - upper-theory-v-z-bc-seed-iis-alt
+  - upper-theory-v-z-bc-seed-ii-z-alt
+  - upper-theory-esk-mix-seed-of-alt
+  - upper-theory-v-z-bc-ind-cs
+  - upper-theory-v-z-invariant-submodule-monic-polynomial-e-ind-cs-of-bcfl
+  - upper-theory-v-z-invariant-submodule-monic-polynomial-e-ind-cs-of-gm
+  - upper-theory-v-cu-sp4-in-alt
+  - upper-theory-v-cu-main4-alt
+  - upper-theory-v-z-sym-w-unitary-three-automorphy-dense-of-prints
+  - upper-theory-v-z-sym-w-unitary-three-automorphy-dense-of-prints-and-row
+  - upper-theory-v-z-sym-w-adjoint-automorphy-w-of-printed-hida-window
+  - upper-theory-v-z-sym-w-spec-out-s
+  - core
+  - upper-theory-v-z-sym-so-spec-f
+  - upper-theory-v-z-sym-glob-t-fid0
+  - upper-theory-v-zk-lemma-k-lit-n-alt
+  - upper-theory-v-zk-b-odd
+  - upper-theory-v-z-int-slope-all
+  - upper-theory-v-z-int-slope-all-of
+  - upper-theory-v-th-core-alt-bis
+  - upper-theory-v-th-ordinary-vanishing-two-of-printed-hida
+  - upper-theory-v-hv-descent-vanishing-reductions-published-hypotheses-from-patching-alt
+- id: foundation-proofs
+  title: Foundation proofs
+  folder: Development.AbelianVarietyTheory.Proofs.FoundationProofs
+  entries:
+  - global-theory-t-hecke-projector-newform-galois-image
+  - global-theory-kz-hecke-proj-hecke-proj-newform
+  - global-theory-t-siegel-unit-edge-class-kummer-dlog-congruence
+  - global-theory-pair-edge-dlog
+- id: iwahori-reduction
+  title: Iwahori reduction
+  folder: Development.AutomorphicArithmetic.Foundations.IwahoriReduction
+  entries:
+  - upper-theory-kd-l-thdiam
+  - upper-theory-kd-l-thcocd
+  - upper-theory-kd-l-twist
+  - upper-theory-kd-l-law
+  - upper-theory-kd-l-mackey
+  - upper-theory-kd-l-one
+  - upper-theory-kd-k4-kato-euler-system-integrality
+  - upper-theory-kd-k4-top
+- id: automorphic-forms
+  title: Automorphic forms
+  folder: PositivityTheory.AutomorphicForms
+  entries:
+  - upper-theory-esk-hol-wc
+- id: automorphic-arithmetic
+  title: Automorphic arithmetic
+  folder: Development.AutomorphicArithmetic
+  entries:
+  - positivity-theory-kb-b-odd-zk
+  - positivity-theory-kb-b-star-odd
+  - upper-theory-convolution-theory-rank-two-descent-desc-s
+  - upper-theory-convolution-theory-rank-two-descent-down-n
+- id: abelian-variety-theory
+  title: Abelian variety theory
+  folder: Development.AbelianVarietyTheory
+  entries:
+  - global-theory-jsw-jacquet-shalika-rigidity-holds
+  - global-theory-jsw-rigid-vanish

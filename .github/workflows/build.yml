@@ -1,0 +1,125 @@
+# The Riemann Handbook.
+# On each push and pull request: check the entries against the pinned sources.
+# On a tag v*, or by hand: build every volume and publish the release of the version in EDITION.
+name: build
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      release:
+        description: "Publish the books as the release v<version in EDITION>"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    outputs:
+      riemann: ${{ steps.ed.outputs.riemann }}
+      lean: ${{ steps.ed.outputs.lean }}
+      volumes: ${{ steps.vols.outputs.volumes }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - id: ed
+        run: |
+          echo "riemann=$(awk '/^riemann /{print $2}' EDITION)" >> "$GITHUB_OUTPUT"
+          echo "lean=$(awk '/^lean /{print $2}' EDITION)" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
+        with:
+          repository: tamnd/riemann
+          ref: ${{ steps.ed.outputs.riemann }}
+          path: riemann
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install .
+      - name: rhb check
+        run: python -m rhb --riemann riemann --lean none check --volume all
+      - id: vols
+        run: |
+          v=$(python -c "import glob,json,os,yaml; d=sorted(int(os.path.basename(x)[:2]) for x in glob.glob('content/dev/[0-9][0-9]-*') if any(glob.glob(x+'/*/*.md'))); print(json.dumps([0,1,2]+d))")
+          echo "volumes=$v" >> "$GITHUB_OUTPUT"
+
+  build:
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.ref, 'refs/tags/v')
+    needs: check
+    runs-on: ubuntu-24.04
+    env:
+      PANDOC: "3.12"
+    strategy:
+      fail-fast: false
+      matrix:
+        volume: ${{ fromJSON(needs.check.outputs.volumes) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: tamnd/riemann
+          ref: ${{ needs.check.outputs.riemann }}
+          path: riemann
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install .
+      - name: tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils epubcheck
+          curl -fsSL -o pandoc.deb "https://github.com/jgm/pandoc/releases/download/$PANDOC/pandoc-$PANDOC-1-amd64.deb"
+          sudo dpkg -i pandoc.deb
+          curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net | sh
+          sudo mv tectonic /usr/local/bin/
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/Tectonic
+          key: tectonic-${{ hashFiles('tex/handbook.sty') }}
+          restore-keys: tectonic-
+      - name: build
+        run: python -m rhb --riemann riemann --lean none build --volume ${{ matrix.volume }} --formats pdf,epub --out out
+      - name: epubcheck
+        run: epubcheck out/*.epub || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: volume-${{ matrix.volume }}
+          path: |
+            out/*.pdf
+            out/*.epub
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v') || (github.event_name == 'workflow_dispatch' && inputs.release)
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v4
+        with:
+          path: out
+          merge-multiple: true
+      - name: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          v="v$(awk '/^version /{print $2}' EDITION)"
+          cd out && sha256sum * > SHA256SUMS && cd ..
+          if gh release view "$v" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release upload "$v" out/* --clobber -R "$GITHUB_REPOSITORY"
+          else
+            gh release create "$v" out/* -R "$GITHUB_REPOSITORY" --title "The Riemann Handbook $v" --notes "The volumes of edition $v. See CHANGELOG.md."
+          fi

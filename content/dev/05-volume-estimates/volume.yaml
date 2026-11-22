@@ -1,0 +1,79 @@
+# Written by `rhb ledger --write` from the spine. Edit titles here; the entry list follows the spine.
+title: Volume estimates and positivity
+summary: 'The covolume bound of the literature layer: towers of good reduction, self-intersection volumes and the positivity statement of Arakelov geometry.'
+chapters:
+- id: theta-pair-lifts
+  title: Theta pair lifts
+  folder: Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts
+  entries:
+  - self-intersection-volume-estimates-top-covol-slim2-use-alt-alt
+  - self-intersection-volume-estimates-top-covol-g-alt-alt
+  - self-intersection-volume-estimates-height-lower-bound-general-alt
+  - global-theory-t-ref-w-of-prints-deep-good-size-flat-deg
+  - global-theory-ref-sum-refined-sum-weight-of-size-alt
+  - global-theory-cov-top-published-hodge-bundle-theorems-to-classical-theorems
+- id: automorphic-kernels
+  title: Automorphic kernels
+  folder: Development.WeilBound.CoreStatements.AutomorphicKernels
+  entries:
+  - positivity-theory-ht-pt-ah-deep-slim-use
+  - global-theory-companion-theory-ar-plug-deep-st-r-of-use
+  - global-theory-companion-theory-ar-link-good-tower-volume-theorem-bis
+  - global-theory-companion-theory-ar-giv-line-of-large-degree-of-use
+- id: geometry-proofs
+  title: Geometry proofs
+  folder: Development.AutomorphicSpectrum.Proofs.GeometryProofs
+  entries:
+  - global-theory-t-final-theorem-of-inputs-right
+  - global-theory-companion-theory-ar-top-good-tower-volume-of-reduced
+  - global-theory-t-model-on-hodge-from-family
+  - global-theory-companion-theory-ar-num-hodge-model-model-on-hodge-of-family-pos
+  - global-theory-t-family-pos-of-hodge-tate-inputs
+  - global-theory-companion-theory-ar-num-fam-ex-family-exists-pos-holds
+  - global-theory-t-ordinary-curve-hodge-prime
+  - global-theory-companion-theory-ar-num-fam-ex-test-pt-test-facts
+  - global-theory-companion-theory-ar-plug-deep-st-r-of-volume
+  - global-theory-t-abelian-cm-comp-laws-bound
+  - global-theory-companion-theory-ar-plug-top-mean-all
+  - global-theory-t-uniform-all-norm-height-bound
+  - global-theory-companion-theory-relay-uniform-all-norm-height-bound
+  - global-theory-companion-theory-ar-plug-slope-vol-m-slope-sub-cost-le-comp-vol-slope
+  - global-theory-t-final-theorem-of-inputs-left
+  - global-theory-companion-theory-ar-top-given-of-inputs
+  - global-theory-t-slope-bound-of-line-large-degree
+  - global-theory-companion-theory-ar-sl-slope-bound-and-lemma-s-of-siegel
+- id: divisibility-proofs
+  title: Divisibility proofs
+  folder: Development.AutomorphicSpectrum.Proofs.DivisibilityProofs
+  entries:
+  - global-theory-t-good-tower-volume-theorem
+  - global-theory-companion-theory-ar-top-good-tower-and-volume
+  - global-theory-t-volume-theorem-of-inputs
+  - global-theory-companion-theory-ar-cusp-volume-theorem-x-of-inputs
+  - global-theory-t-full-intersection-tower-i8-identity
+  - global-theory-companion-theory-ar-top-full-intersection-tower-i8-relation
+  - global-theory-t-tower-weil-inputs-combined
+  - global-theory-companion-theory-ar-top-chain-tower
+- id: core-statements
+  title: Core statements
+  folder: Development.WeilBound.CoreStatements
+  entries:
+  - square-statements-good-tower-antisymmetry
+  - square-statements-antisymmetry-of-singular-statement
+  - square-statements-good-tower-antisymmetry-of
+  - positivity-theory-xgp-t-c-sqsys
+- id: proofs
+  title: Proofs
+  folder: Development.AutomorphicSpectrum.Proofs
+  entries:
+  - global-theory-t-flag-cover-realisation-pullback
+  - global-theory-companion-theory-relay-flag-cover-realisation-pullback
+  - global-theory-t-arithmetic-relations-statement-holds
+  - global-theory-companion-theory-ar-num-top-rel-relations
+- id: abelian-variety-theory
+  title: Abelian variety theory
+  folder: Development.AbelianVarietyTheory
+  entries:
+  - global-theory-t-toroidal-flag-proportionality-of-good-chern-weil
+  - global-theory-proportionality-mumford-proportionality-of-good-chern-weil
+  - global-theory-lie-base-exists-good-base
