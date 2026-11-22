@@ -3935,7 +3935,7 @@ volumes:
         fanin: 2
         idom: UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.twisted_theta_integral_unfolds
         id: twisted-theta-integral-unfolds
         kind: theorem
@@ -3944,7 +3944,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.RowClaim.Join.thetaLift_row_properties_conj
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.RowUnfLast.twisted_theta_integral_unfolding
         id: twisted-theta-integral-unfolding
         kind: theorem
@@ -3953,7 +3953,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.twisted_theta_integral_unfolds
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.FlipRun.cuspStep_of_large_flipRun
         id: cusp-step-of-large-flip-run
         kind: theorem
@@ -3962,7 +3962,7 @@ volumes:
         fanin: 2
         idom: GlobalTheory.RowClaim.Join.thetaLift_row_properties_conj
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.cuspidal_lift_smooth_at_cusps
         id: cuspidal-lift-smooth-at-cusps
         kind: theorem
@@ -3971,7 +3971,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.FlipRun.cuspStep_of_large_flipRun
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.CuspSmoothLift.cuspidal_lift_smooth_at_of_cuspidal_lift
         id: cuspidal-lift-smooth-at-of-cuspidal-lift
         kind: theorem
@@ -3980,7 +3980,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.cuspidal_lift_smooth_at_cusps
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.twisted_jets_assemble
         id: twisted-jets-assemble
         kind: theorem
@@ -3989,7 +3989,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.RowClaim.Join.thetaLift_row_properties_conj
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.RowClaim.JetsAssembly.twistedJet_succ_eq_assembly
         id: twisted-jet-succ-eq-assembly
         kind: theorem
@@ -3998,7 +3998,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.twisted_jets_assemble
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.Lit.functionalsSeparate_of_howeUnram_of_siegelWeil
         id: functionals-separate-of-howe-unram-of-siegel-weil
         kind: theorem
@@ -4025,7 +4025,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.BigTop.Fun.Close.fittedFunction_at_zero_close_alt
         id: fitted-function-at-zero-close-alt
         kind: theorem
@@ -4034,7 +4034,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.BigTop.Fun.Close.fourier_coefficient_fit_of_join_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.square_leading_term_bound
         id: square-leading-term-bound
         kind: theorem
@@ -4043,7 +4043,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.BigTop.Fun.Close.fittedFunction_at_zero_close_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.SqTop.square_top_term_joined_estimates
         id: square-top-term-joined-estimates
         kind: theorem
@@ -4052,7 +4052,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.square_leading_term_bound
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.sum_size_bound_all_places
         id: sum-size-bound-all-places
         kind: theorem
@@ -4061,7 +4061,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.BigTop.Fun.Close.fittedFunction_at_zero_close_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.SumSize.Join.sum_size_finite_away_archimedean_combined
         id: sum-size-finite-away-archimedean-combined
         kind: theorem
@@ -4070,7 +4070,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.sum_size_bound_all_places
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.twisted_multiplicity_one
         id: twisted-multiplicity-one
         kind: theorem
@@ -4079,7 +4079,7 @@ volumes:
         fanin: 6
         idom: UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.MultEqFinal.twisted_multiplicity_eq
         id: twisted-multiplicity-eq
         kind: theorem
@@ -4088,7 +4088,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.twisted_multiplicity_one
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.Lit.I5.unitary_theory_of_harishChandra_langlands_alt
         id: unitary-theory-of-harish-chandra-langlands-alt
         kind: theorem
@@ -4097,7 +4097,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.MultEqFinal.twisted_multiplicity_eq
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.SqTower.tower_alt_bis
         id: tower-alt-bis
         kind: theorem
@@ -4106,7 +4106,7 @@ volumes:
         fanin: 2
         idom: UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.LiteratureTheorems.published_results_arithmetic
         id: published-results-arithmetic
         kind: theorem
@@ -4124,7 +4124,7 @@ volumes:
         fanin: 3
         idom: UpperTheory.LiteratureTheorems.published_results_arithmetic
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.LiteratureTheorems.good_chern_weil_of_literature
         id: good-chern-weil-of-literature
         kind: theorem
@@ -4133,7 +4133,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.LiteratureTheorems.published_results_arithmetic
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.LiteratureTheorems.siegel_toroidal_integral_of_literature
         id: siegel-toroidal-integral-of-literature
         kind: theorem
@@ -4142,7 +4142,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.LiteratureTheorems.published_results_eigen
         id: published-results-eigen
         kind: theorem
@@ -4160,7 +4160,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.LiteratureTheorems.published_results_eigen
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.LiteratureTheorems.join_out_of_literature
         id: join-out-of-literature
         kind: theorem
@@ -4169,7 +4169,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.LiteratureTheorems.literature_nonexistence
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.LiteratureTheorems.published_results_first
         id: published-results-first
         kind: theorem
@@ -4187,7 +4187,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.LiteratureTheorems.published_results_first
         tier: 1
-        written: false
+        written: true
     - id: automorphic-arithmetic
       folder: Development.AutomorphicArithmetic
       title: Automorphic arithmetic
@@ -4200,7 +4200,7 @@ volumes:
         fanin: 2
         idom: UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.Lit.prismaticDieudonneHodge
         id: prismatic-dieudonne-hodge
         kind: theorem
@@ -4209,7 +4209,7 @@ volumes:
         fanin: 2
         idom: UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.V.Z.GSp4Splitting.coreG
         id: core-g
         kind: theorem
@@ -4218,7 +4218,7 @@ volumes:
         fanin: 2
         idom: UpperTheory.FinalTheorems.everyCharacter
         tier: 1
-        written: false
+        written: true
     - id: foundations
       folder: Development.AutomorphicArithmetic.Foundations
       title: Foundations
@@ -4231,7 +4231,7 @@ volumes:
         fanin: 2
         idom: UpperTheory.FinalTheorems.everyCharacter
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.ConvolutionTheory.GM.gm_of_bcfl
         id: gm-of-bcfl
         kind: theorem
@@ -4240,7 +4240,7 @@ volumes:
         fanin: 5
         idom: UpperTheory.FinalTheorems.everyCharacter
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.ConvolutionTheory.GM.gm_of_unit
         id: gm-of-unit
         kind: theorem
@@ -4249,7 +4249,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.ConvolutionTheory.GM.gm_of_bcfl
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.BaseChangeIdentities.FrameWordIdentity.frameBound
         id: frame-word-identity-frame-bound
         kind: theorem
@@ -4258,7 +4258,7 @@ volumes:
         fanin: 2
         idom: UpperTheory.FinalTheorems.everyCharacter
         tier: 1
-        written: false
+        written: true
   9:
     number: 9
     id: abelian-varieties
