@@ -6,47 +6,47 @@ chapters:
   title: Resolution of singularities
   folder: Development.ResolutionOfSingularities
   entries:
-  - functorial-resolution-embedded-resolution-canonical-algorithm-rules-is-correct
-  - functorial-resolution-functorial-resolution-char-zero
-  - functorial-resolution-embedded-resolution-strong-resolution-of-singularities-char-zero
+  - canonical-algorithm-rules-is-correct
+  - functorial-resolution-char-zero
+  - strong-resolution-of-singularities-char-zero
 - id: ideal-principalization
   title: Ideal principalization
   folder: Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization
   entries:
-  - functorial-resolution-embedded-resolution-is-correct-canonical-algorithm-rules
-  - functorial-resolution-embedded-resolution-is-correct-canonical-algorithm-rules-of-hypotheses
-  - functorial-resolution-embedded-resolution-order-reduction-properties-is-order-reduction-order-family-of-strict-transform-is-blowup
-  - functorial-resolution-embedded-resolution-order-reduction-properties-is-order-reduction-max-contact-of-is-boundary-position-invariant
+  - is-correct-canonical-algorithm-rules
+  - is-correct-canonical-algorithm-rules-of-hypotheses
+  - is-order-reduction-order-family-of-strict-transform-is-blowup
+  - is-order-reduction-max-contact-of-is-boundary-position-invariant
 - id: automorphic-kernels
   title: Automorphic kernels
   folder: Development.WeilBound.CoreStatements.AutomorphicKernels
   entries:
-  - positivity-theory-pf1-hilbert-samuel-moriwaki-hs-chain
-  - positivity-theory-local-parameters-cuspidal-mb-hsm-theorem-hsmblock
-  - positivity-theory-dual-rt-abelian-de-rham
-  - main-statements-hodge-free-abelian-hodge-de-rham
-  - main-statements-hodge-free-abelian-hodge-de-rham-prime
+  - hs-chain
+  - theorem-hsmblock
+  - abelian-de-rham
+  - free-abelian-hodge-de-rham
+  - abelian-hodge-de-rham-prime
 - id: siegel-weil
   title: Siegel weil
   folder: Development.WeilBound.RepresentationTheoryGL.SiegelWeil
   entries:
-  - positivity-theory-rg-wsf-weil-siegel-formula
-  - global-theory-companion-theory-weil-siegel-deg-siegel-deg
-  - global-theory-t-siegel-weil-rank-coefficient
-  - global-theory-companion-theory-weil-siegel-frame-siegel-frame
+  - weil-siegel-formula
+  - siegel-deg
+  - siegel-weil-rank-coefficient
+  - siegel-frame
 - id: representation-theory-gl
   title: Representation theory GL
   folder: Development.WeilBound.RepresentationTheoryGL
   entries:
-  - positivity-theory-siegel-weil-coefficients-field
-  - positivity-theory-siegel-weil-coefficients-lit
-  - positivity-theory-rg-hf-harish-chandra-finite
-  - global-theory-companion-theory-hypotheses-const-fin-rg-finite-const-term
-  - global-theory-rg-gu-leib-hand-leibniz-ord
-  - positivity-theory-rg-bc-b-f-eig-eig-inert
-  - positivity-theory-rg-bc-c-wave-existence-speed-multiplicity
+  - field
+  - lit
+  - harish-chandra-finite
+  - finite-const-term
+  - leibniz-ord
+  - eig-inert
+  - wave-existence-speed-multiplicity
 - id: weil-bound
   title: Weil bound
   folder: Development.WeilBound
   entries:
-  - positivity-theory-lit1-gen-global-euler-char-full
+  - global-euler-char-full

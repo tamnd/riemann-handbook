@@ -6,62 +6,62 @@ chapters:
   title: Local to global
   folder: Formalism.LocalToGlobal
   entries:
-  - formalism-l2-sg-pf-nc-all-c-nc-tie-c-of-closed
-  - formalism-l2-sg-closed-real-bracket-holds
-  - formalism-l2-sg-pf-nc-all-s-nc-tie0-all-of
+  - nc-tie-c-of-closed
+  - real-bracket-holds
+  - nc-tie0-all-of
 - id: period-integrals
   title: Period integrals
   folder: Formalism.PeriodIntegrals
   entries:
-  - formalism-l2-sg-pf-nc-val-om-vst-om-vz-om-v-holds-x
-  - formalism-l2-sg-pf-nc-x-om-vst-om-vz-holds-x
+  - om-v-holds-x
+  - om-vz-holds-x
 - id: hermitian-curvature
   title: Hermitian curvature
   folder: Formalism.HermitianCurvature
   entries:
-  - formalism-fourier-decay-alt-p-cut-se-actual-compact-theorem
-  - formalism-fourier-decay-alt-p-cut-se-thm-pactual-cpt-of-r
-  - formalism-fourier-decay-alt-p-cut-mp-gauge-gc-gen-transfer-of-rot-k
+  - actual-compact-theorem
+  - thm-pactual-cpt-of-r
+  - gen-transfer-of-rot-k
 - id: growth-bounds
   title: Growth bounds
   folder: Formalism.SharpRestriction.GrowthBounds
   entries:
-  - formalism-main-notions-g-gram-window-alt-theorem-a-closed-form-holds
-  - formalism-main-notions-g-counting-statement-reduction-alternative-mean-value-theorem
-  - formalism-main-notions-flip-one-three-pf-theorem-i-closed-form-holds
-  - formalism-main-notions-flip-one-three-pf-theorem-i-of-pairing-gl
+  - theorem-a-closed-form-holds
+  - alternative-mean-value-theorem
+  - theorem-i-closed-form-holds
+  - theorem-i-of-pairing-gl
 - id: monomial-factorials
   title: Monomial factorials
   folder: Formalism.SharpRestriction.GrowthBounds.MonomialFactorials
   entries:
-  - formalism-main-notions-g-symmetric-form-blocks-closed-of-minimal-vector
-  - formalism-main-notions-g-symmetric-form-blocks-closed-of-splitting-matrix
-  - formalism-main-notions-g-symmetric-form-blocks-closed-of-orthogonal-splitting
-  - formalism-main-notions-g-symmetric-form-blocks-integrality-from-metric-of-orth-basis-lat
-  - formalism-main-notions-g-symmetric-form-blocks-closed-of-orthogonal-basis
-  - formalism-main-notions-g-symmetric-form-blocks-closed-of-orthogonal-lattice
-  - formalism-main-notions-g-symmetric-form-blocks-closed-of-symmetric-dims
-  - formalism-main-notions-g-symmetric-form-blocks-closed-of-symmetric-windows
-  - formalism-main-notions-g-symmetric-form-blocks-closed-of-coefficient-function
-  - formalism-main-notions-g-symmetric-form-blocks-closed-of-symmetric-finite
-  - formalism-main-notions-g-symmetric-form-blocks-integrality-from-metric-of-orthogonality-window
-  - formalism-main-notions-g-symmetric-form-blocks-theorem-a-closed-of-nine-open-bounds
-  - formalism-main-notions-g-symmetric-form-blocks-theorem-a-closed-of-eight-open-bounds
-  - formalism-main-notions-g-symmetric-form-blocks-closed-of-open-base-dims
-  - formalism-main-notions-g-symmetric-form-blocks-closed-of-open-dimensions
-  - formalism-main-notions-g-symmetric-form-blocks-closed-of-open-positive
-  - formalism-main-notions-g-symmetric-form-blocks-closed-of-open-directions
-  - formalism-main-notions-g-symmetric-form-blocks-open-e-of-open4
-  - formalism-main-notions-g-symmetric-form-blocks-rest-tm-closed
-  - formalism-main-notions-g-symmetric-form-blocks-rest-tm-exists
+  - closed-of-minimal-vector
+  - closed-of-splitting-matrix
+  - closed-of-orthogonal-splitting
+  - integrality-from-metric-of-orth-basis-lat
+  - closed-of-orthogonal-basis
+  - closed-of-orthogonal-lattice
+  - closed-of-symmetric-dims
+  - closed-of-symmetric-windows
+  - closed-of-coefficient-function
+  - closed-of-symmetric-finite
+  - integrality-from-metric-of-orthogonality-window
+  - theorem-a-closed-of-nine-open-bounds
+  - theorem-a-closed-of-eight-open-bounds
+  - closed-of-open-base-dims
+  - closed-of-open-dimensions
+  - closed-of-open-positive
+  - closed-of-open-directions
+  - open-e-of-open4
+  - rest-tm-closed
+  - rest-tm-exists
 - id: theta-log-coordinates
   title: Theta log coordinates
   folder: Formalism.ThetaLogCoordinates
   entries:
-  - formalism-invariant-factor-paths-mc-top-theorem-mv7
-  - formalism-invariant-factor-paths-mc-theorem-mv7
+  - top-theorem-mv7
+  - mc-theorem-mv7
 - id: admissible-designs
   title: Admissible designs
   folder: Formalism.AdmissibleDesigns
   entries:
-  - formalism-main-notions-n-k-closed-theorem-n5-from-inputs
+  - theorem-n5-from-inputs

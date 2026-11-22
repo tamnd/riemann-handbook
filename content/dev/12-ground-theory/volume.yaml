@@ -6,17 +6,17 @@ chapters:
   title: Bessel wave grids
   folder: CompanionTheory.AutomorphicTheory.BesselWaveGrids
   entries:
-  - companion-theory-wave-grid-weighted-bound-rotated-uniform
-  - companion-theory-wave-grid-weighted-bound-rotated-uniform-of-hyps-g
-  - companion-theory-wave-grid-uniform-bessel-rank-three-of-inputs
-  - companion-theory-wave-grid-weighted-bound-rotated-uniform-of-cubic-threshold
+  - weighted-bound-rotated-uniform
+  - weighted-bound-rotated-uniform-of-hyps-g
+  - uniform-bessel-rank-three-of-inputs
+  - weighted-bound-rotated-uniform-of-cubic-threshold
 - id: heights-and-theta
   title: Heights and theta
   folder: GroundTheory.HeightsAndTheta
   entries:
-  - ground-theory-heights-heights-hilbert-samuel-theorem-hsmblock-of-open
+  - theorem-hsmblock-of-open
 - id: real-groups
   title: Real groups
   folder: CompanionTheory.RealGroups
   entries:
-  - companion-theory-rg-exh-ds-exhaust
+  - ds-exhaust

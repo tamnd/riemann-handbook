@@ -6,47 +6,47 @@ chapters:
   title: Theta pair lifts
   folder: Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts
   entries:
-  - global-theory-row-claim-join-theta-lift-row-properties-conj
-  - global-theory-t-twisted-theta-integral-unfolds
-  - global-theory-row-unf-last-twisted-theta-integral-unfolding
-  - global-theory-flip-run-cusp-step-of-large-flip-run
-  - global-theory-t-cuspidal-lift-smooth-at-cusps
-  - global-theory-cusp-smooth-lift-cuspidal-lift-smooth-at-of-cuspidal-lift
-  - global-theory-t-twisted-jets-assemble
-  - global-theory-row-claim-jets-assembly-twisted-jet-succ-eq-assembly
-  - upper-theory-lit-functionals-separate-of-howe-unram-of-siegel-weil
-  - upper-theory-lit-real-functionals-separate-of-hypothesis
-  - global-theory-big-top-fun-close-fourier-coefficient-fit-of-join-alt
-  - global-theory-big-top-fun-close-fitted-function-at-zero-close-alt
-  - global-theory-t-square-leading-term-bound
-  - global-theory-sq-top-square-top-term-joined-estimates
-  - global-theory-t-sum-size-bound-all-places
-  - global-theory-sum-size-join-sum-size-finite-away-archimedean-combined
-  - global-theory-t-twisted-multiplicity-one
-  - global-theory-mult-eq-final-twisted-multiplicity-eq
-  - upper-theory-lit-i5-unitary-theory-of-harish-chandra-langlands-alt
-  - global-theory-sq-tower-tower-alt-bis
-  - upper-theory-literature-theorems-published-results-arithmetic
-  - upper-theory-literature-theorems-arith-hilbert-samuel-of-literature
-  - upper-theory-literature-theorems-good-chern-weil-of-literature
-  - upper-theory-literature-theorems-siegel-toroidal-integral-of-literature
-  - upper-theory-literature-theorems-published-results-eigen
-  - upper-theory-literature-theorems-literature-nonexistence
-  - upper-theory-literature-theorems-join-out-of-literature
-  - upper-theory-literature-theorems-published-results-first
-  - upper-theory-literature-theorems-kudla-splitting-split-unitary-of-literature
+  - theta-lift-row-properties-conj
+  - twisted-theta-integral-unfolds
+  - twisted-theta-integral-unfolding
+  - cusp-step-of-large-flip-run
+  - cuspidal-lift-smooth-at-cusps
+  - cuspidal-lift-smooth-at-of-cuspidal-lift
+  - twisted-jets-assemble
+  - twisted-jet-succ-eq-assembly
+  - functionals-separate-of-howe-unram-of-siegel-weil
+  - real-functionals-separate-of-hypothesis
+  - fourier-coefficient-fit-of-join-alt
+  - fitted-function-at-zero-close-alt
+  - square-leading-term-bound
+  - square-top-term-joined-estimates
+  - sum-size-bound-all-places
+  - sum-size-finite-away-archimedean-combined
+  - twisted-multiplicity-one
+  - twisted-multiplicity-eq
+  - unitary-theory-of-harish-chandra-langlands-alt
+  - tower-alt-bis
+  - published-results-arithmetic
+  - arith-hilbert-samuel-of-literature
+  - good-chern-weil-of-literature
+  - siegel-toroidal-integral-of-literature
+  - published-results-eigen
+  - literature-nonexistence
+  - join-out-of-literature
+  - published-results-first
+  - kudla-splitting-split-unitary-of-literature
 - id: automorphic-arithmetic
   title: Automorphic arithmetic
   folder: Development.AutomorphicArithmetic
   entries:
-  - upper-theory-lit-sw47-weil-unitary
-  - upper-theory-lit-prismatic-dieudonne-hodge
-  - upper-theory-v-z-gsp4-splitting-core-g
+  - weil-unitary
+  - prismatic-dieudonne-hodge
+  - core-g
 - id: foundations
   title: Foundations
   folder: Development.AutomorphicArithmetic.Foundations
   entries:
-  - upper-theory-hecke-level-frame-existence-frame-ex-of-fin
-  - upper-theory-convolution-theory-gm-gm-of-bcfl
-  - upper-theory-convolution-theory-gm-gm-of-unit
-  - upper-theory-base-change-identities-frame-word-identity-frame-bound
+  - frame-ex-of-fin
+  - gm-of-bcfl
+  - gm-of-unit
+  - frame-word-identity-frame-bound
