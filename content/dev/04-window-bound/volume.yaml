@@ -117,7 +117,7 @@ chapters:
   - local-units-roots-main
   - p-core
 - id: published-inputs
-  title: Published inputs
+  title: Weight one forms and weight raising
   folder: PositivityTheory.AutomorphicForms.PublishedInputs
   entries:
   - hol-wc
@@ -126,7 +126,7 @@ chapters:
   - hilbert-eisenstein-weight-one-holds
   - fourier-expansion-holds
 - id: automorphic-varieties
-  title: Automorphic varieties
+  title: Patching and forms congruent to 1
   folder: Development.AutomorphicArithmetic.AutomorphicVarieties
   entries:
   - one-use
@@ -143,7 +143,7 @@ chapters:
   - pres
   - part-h
 - id: literature-results
-  title: Literature results
+  title: Homological stability
   folder: Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults
   entries:
   - b-odd-zk
@@ -151,7 +151,7 @@ chapters:
   - k-stability
   - k-stability-main
 - id: inertia-eigenvalues
-  title: Inertia eigenvalues
+  title: Rankin-Selberg nonvanishing
   folder: Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues
   entries:
   - jacquet-shalika-rigidity-holds
@@ -163,7 +163,7 @@ chapters:
   - rankin-selberg-gln-glm-partial-l-eq-div-entire
   - rs-nm-partial-l-eq-div
 - id: divisor-proofs
-  title: Divisor proofs
+  title: Semi-local Kirillov theory
   folder: Development.AbelianVarietyTheory.Proofs.DivisorProofs
   entries:
   - kirillov-semilocal-smooth-bump
@@ -173,7 +173,7 @@ chapters:
   - kirillov-semi-local-mirabolic-abstract
   - kirillov-semi-local
 - id: convolution
-  title: Convolution
+  title: Descent from imaginary quadratic fields
   folder: Development.AutomorphicArithmetic.Foundations.Convolution
   entries:
   - desc-s

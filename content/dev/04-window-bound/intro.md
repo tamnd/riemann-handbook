@@ -12,8 +12,14 @@ The chapters:
   - Cases II and III: the automorphy of four-dimensional symplectic representations, with [automorphic induction](/entry/ind-cs/) from $\mathrm{GL}_2$ over a quadratic extension to $\mathrm{GL}_4$.
   - Case V: three-dimensional seeds, from [the automorphy of a twisted adjoint](/entry/adjoint-automorphy-w-of-printed-hida-window/) and [a transfer of eigenforms](/entry/spec-out-s/) from a definite $U(2)$ to $U(3)$.
   - The bound on $H^2$ ([Lemma K](/entry/lemma-k-lit-n-alt/)), [the slopes of Satake parameters](/entry/slope-all/), and the builder of [the package `HypothesesH'`](/entry/published-hypotheses-from-patching-alt/).
-- **Foundation proofs.** The Hecke projector onto the Galois image of a newform, and a congruence between the edge class of a Siegel unit and a Kummer logarithm.
+- **Foundation proofs.** The Hecke projector onto the Galois image of a newform, a tower of modular functions with algebraic coefficients, and a congruence between the edge class of a Siegel unit and a Kummer logarithm.
 - **Iwahori reduction.** The coefficient law of the zeta class built from Siegel units, its diamond translates, and the Euler system of zeta classes.
-- **Automorphic forms**, **automorphic arithmetic** and **abelian variety theory.** Smaller pieces from other Lean folders: rank bounds in the homology of $\mathrm{GL}_n$, a descent from rank two, and a rigidity theorem of Jacquet-Shalika type.
+- **Weight one forms and weight raising.** The Hilbert Eisenstein series of weight one as a theta integral, its q-expansion, and a trace formula with only elliptic terms that raises the weight of an ordinary eigenform.
+- **Patching and forms congruent to 1.** Hilbert modular forms of level one close to 1 p-adically, the Hecke ideal that cuts out the automorphic points, and the length bounds for the patched module.
+- **Homological stability.** The homology of $\mathrm{GL}_n$ over a ring of finite stable range is stable, and the rank bound in odd degree over a ring of integers.
+- **Rankin-Selberg nonvanishing.** The partial Rankin-Selberg L-function as a ratio of entire functions, its nonzero limit at 1, and the rigidity theorem of Jacquet and Shalika.
+- **Semi-local Kirillov theory.** A cuspidal vector with a prescribed Whittaker function on the semi-local mirabolic subgroup.
+- **Descent from imaginary quadratic fields.** A conjugation-invariant cusp form comes from the rationals, through two twisted periods and a theta lift.
+- **Good reduction.** The criterion of Néron, Ogg and Shafarevich and the theorems of Serre and Tate.
 
 An entry tells what the declaration says in standard mathematics, how the Lean proof goes, and what is odd in the Lean code. Many theorems in this branch only pass a hypothesis along or give a new name to another theorem. The entry says so and points to the theorem with the content.
