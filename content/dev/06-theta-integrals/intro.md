@@ -10,8 +10,12 @@ The chapters:
 - **Theta pair lifts.** The top of the second branch. [`shape_closed_link_n_of_green`](/entry/shape-closed-link-n-of-green/) turns the statement [Green](/step/green-def/) into an implication whose conclusion is the statement `TopG`. Then two of its inputs: the valuation bound `adm2`, and the service bound `ServF`.
 - **Group lattices.** The bound `LinkG`, another input of the same implication, and the local statement `Loc` that it needs.
 - **Growth bounds.** Statement E, the closed form of a numerical bound on a family of data, through a chain of reductions to the bound `RestMEM`.
-- **Sharp restriction.** The bound `ServF` from a sum over primes.
-- **Automorphic arithmetic.** The only place where the window bound [VWin](/step/vwin-def/) enters the second branch: hosts on windows of scale $\tfrac32$ for each primitive character.
-- **Weil bound.** The first branch. [`theoremK_head2`](/entry/theorem-k-head2/) gets the two theta statements from the continuation of Siegel Eisenstein series and the Siegel-Weil formula, and [`closeSph`](/entry/close-sph/) assembles them from fourteen local and global inputs. Then the Siegel-Weil formula from the constant term split.
+- **Sharp restriction.** The bound `ServF` from a sum over primes, and the orbit entry bounds.
+- **Hosts from the window bound.** The only place where the window bound [VWin](/step/vwin-def/) enters the second branch: hosts on windows of scale $\tfrac32$ for each primitive character.
+- **Host builders.** A good host from host axioms, given short norms and small primes.
+- **Good pairs of primes.** Good pairs of primes exist at each large height. The proof uses the prime number theorem for one primitive character, uniform in the conductor, and a bound on the primes that give bad quadratic twists.
+- **Primes in progressions.** Primes in progressions with an error relative to a main term that contains the exceptional zero.
+- **The two theta statements.** The first branch. [`theoremK_head2`](/entry/theorem-k-head2/) gets the two theta statements from the continuation of Siegel Eisenstein series and the Siegel-Weil formula, and [`closeSph`](/entry/close-sph/) assembles them from fourteen local and global inputs.
+- **Siegel-Weil from the constant term.** The Siegel-Weil formula from the constant term split of the Siegel Eisenstein series, and the unfolding of its second orbit term.
 
 An entry tells what the declaration says in standard mathematics, how the Lean proof goes, and what is odd in the Lean code. In this volume many theorems only pass hypotheses along, and several take hypotheses that they never use. The entry says so and points to the theorem with the content.
