@@ -8,7 +8,7 @@ covers: 7295
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem proves the statement `SymplecticFourImageDense` from the published hypotheses `HypothesesH'`. It only passes hypotheses along to [`sp4In_alt`](/entry/sp4-in-alt/). Its result goes to [`vwin_of_hypotheses_H_E_alt`](/entry/vwin-of-hypotheses-h-e-alt/), where it feeds the counts in cases II and III (see [the chapter on VWin](/proof/vwin/)). The content is in [`main4_alt`](/entry/main4-alt/) and in [the seed of case II](/entry/seed-iis-alt/), with [`indCs`](/entry/ind-cs/) below it.
+This theorem proves the statement `SymplecticFourImageDense` from the published hypotheses `HypothesesH'`. It only passes hypotheses along to [`sp4In_alt`](/entry/sp4-in-alt/). Its result goes to [`vwin_of_hypotheses_H_E_alt`](/proof/vwin/), where it feeds the counts in cases II and III (see [the chapter on VWin](/proof/vwin/)). The content is in [`main4_alt`](/entry/main4-alt/) and in [the seed of case II](/entry/seed-iis-alt/), with [`indCs`](/entry/ind-cs/) below it.
 
 ## Statement
 

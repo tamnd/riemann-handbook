@@ -8,7 +8,7 @@ covers: 1206
 status: drafted
 drafted_by: writer@claude-opus-5-5
 ---
-This theorem proves a Siegel lemma for hermitian lattices from four inputs of arithmetic intersection theory. Its only caller is [`deepStR_of_use`](/entry/deep-st-r-of-use/), which passes the lemma to `given_of_use` and to [`good_tower_volume_theorem_bis`](/entry/good-tower-volume-theorem-bis/). There it gives the slope bound `SlopeBoundSt` for Lie algebras (Step 3 of [the Weil bound chapter](/proof/weil-bound/)).
+This theorem proves a Siegel lemma for hermitian lattices from four inputs of arithmetic intersection theory. Its only caller is [`deepStR_of_use`](/proof/weil-bound/), which passes the lemma to `given_of_use` and to [`good_tower_volume_theorem_bis`](/entry/good-tower-volume-theorem-bis/). There it gives the slope bound `SlopeBoundSt` for Lie algebras (Step 3 of [the Weil bound chapter](/proof/weil-bound/)).
 
 ## Statement
 

@@ -8,7 +8,7 @@ covers: 3449
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem builds the package $\mathrm{HypothesesH'}$ from the literature hypothesis $\mathrm{LiteratureRankNHypothesis}$ and a weak descent statement $\mathrm{DescWeak}$. [The window bound from automorphy](/entry/v-window-of-automorphy-csd-ss-mono-odd/) passes the package to [VWin from the hypotheses H and E](/entry/vwin-of-hypotheses-h-e-alt/). The proof is a structure literal: it fills each field with a theorem proved elsewhere. The 3,449 declarations below it are the proofs of those theorems. The largest are the descent `RankTwoDescent.descS` and `clozelConjC`.
+This theorem builds the package $\mathrm{HypothesesH'}$ from the literature hypothesis $\mathrm{LiteratureRankNHypothesis}$ and a weak descent statement $\mathrm{DescWeak}$. [The window bound from automorphy](/entry/v-window-of-automorphy-csd-ss-mono-odd/) passes the package to [VWin from the hypotheses H and E](/proof/vwin/). The proof is a structure literal: it fills each field with a theorem proved elsewhere. The 3,449 declarations below it are the proofs of those theorems. The largest are the descent `RankTwoDescent.descS` and `clozelConjC`.
 
 ## Statement
 

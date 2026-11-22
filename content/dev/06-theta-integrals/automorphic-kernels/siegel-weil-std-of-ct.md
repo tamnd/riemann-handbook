@@ -8,7 +8,7 @@ covers: 1172
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem gives the Siegel-Weil formula `SiegelWeilStd` from one hypothesis, the constant term split `CTSplit`. It fills the other hypothesis of [`siegelWeilStd_pre`](/entry/siegel-weil-std-pre/), a Poisson summation formula, with a theorem. Its user is [the Siegel-Weil formula](/entry/siegel-weil-std/), which proves `CTSplit`. The real content is in `siegelWeilStd_pre`. Below this theorem are 1,172 declarations.
+This theorem gives the Siegel-Weil formula `SiegelWeilStd` from one hypothesis, the constant term split `CTSplit`. It fills the other hypothesis of [`siegelWeilStd_pre`](/entry/siegel-weil-std-pre/), a Poisson summation formula, with a theorem. Its user is [the Siegel-Weil formula](/proof/siegel-weil/), which proves `CTSplit`. The real content is in `siegelWeilStd_pre`. Below this theorem are 1,172 declarations.
 
 ## Statement
 

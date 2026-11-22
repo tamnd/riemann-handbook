@@ -8,7 +8,7 @@ covers: 12607
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem is branch 3 of the [unitary hypotheses chapter](/proof/unitary-hypotheses/). It proves the twelve row statements of `OpenParameterStatements` at the parameters of dependence, from the record of literature hypotheses. Its only user is [`open0_of_unitary_group_hypotheses`](/entry/open0-of-unitary-group-hypotheses/), a renaming in the same file. The [top node](/step/nonempty-hyps/) calls that renaming, and branch 1 calls it again. Below this theorem are 12,607 declarations. Most of them (10,941) are below [`main_theorem_published_inputs_third_alt_alt`](/entry/main-theorem-published-inputs-third-alt-alt/), which gives the multiplicity row.
+This theorem is branch 3 of the [unitary hypotheses chapter](/proof/unitary-hypotheses/). It proves the twelve row statements of `OpenParameterStatements` at the parameters of dependence, from the record of literature hypotheses. Its only user is [`open0_of_unitary_group_hypotheses`](/proof/unitary-hypotheses/), a renaming in the same file. The [top node](/step/nonempty-hyps/) calls that renaming, and branch 1 calls it again. Below this theorem are 12,607 declarations. Most of them (10,941) are below [`main_theorem_published_inputs_third_alt_alt`](/entry/main-theorem-published-inputs-third-alt-alt/), which gives the multiplicity row.
 
 ## Statement
 

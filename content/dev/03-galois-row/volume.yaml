@@ -239,7 +239,7 @@ chapters:
   - finite-adelic-double-cosets-of-rational-sl-subgroup
   - cf-of-is-qgroup
 - id: proofs
-  title: Proofs
+  title: Frames, charts and fixed points
   folder: Development.AbelianVarietyTheory.Proofs
   entries:
   - t-lefschetz-fixed-point-finite-etale-correspondence
@@ -247,7 +247,7 @@ chapters:
   - exists-breuil-kisin-frame-semistable-bounded-jumps
   - exists-frame-sst
 - id: etale-cohomology-2
-  title: Étale cohomology
+  title: Division in compact groups
   folder: Development.EtaleCohomology
   entries:
   - goal-holds

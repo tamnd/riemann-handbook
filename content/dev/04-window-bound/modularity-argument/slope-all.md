@@ -8,7 +8,7 @@ covers: 2414
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem bounds the slopes of the Satake parameters of a polarized cuspidal representation of $\mathrm{GL}_n$ over a CM field, at every finite place where they are defined. It is used by `intP` and `intK` in the same file, below [the window from hypotheses H](/entry/vwin-of-hypotheses-h-e-alt/). The proof chains three lemmas. Most of the work is in [the extension from good representations to all of them](/entry/slope-all-of/).
+This theorem bounds the slopes of the Satake parameters of a polarized cuspidal representation of $\mathrm{GL}_n$ over a CM field, at every finite place where they are defined. It is used by `intP` and `intK` in the same file, below [the window from hypotheses H](/proof/vwin/). The proof chains three lemmas. Most of the work is in [the extension from good representations to all of them](/entry/slope-all-of/).
 
 ## Statement
 

@@ -8,7 +8,7 @@ covers: 1356
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem is a renaming. It gives the theorem [`towerEx_of_depFixed`](/entry/tower-ex-of-dep-fixed/) a second name in the namespace `GlobalTheory.T`. Its one user is the ascent [`ascent_of_depFixed`](/entry/ascent-of-dep-fixed/), which uses it as the frame input of the tower of periods. The chapter [Bessel periods, seesaw and separation of functionals](/proof/bessel-seesaw/) calls this input "the frames" in its Step 6.
+This theorem is a renaming. It gives the theorem [`towerEx_of_depFixed`](/entry/tower-ex-of-dep-fixed/) a second name in the namespace `GlobalTheory.T`. Its one user is the ascent [`ascent_of_depFixed`](/proof/bessel-seesaw/), which uses it as the frame input of the tower of periods. The chapter [Bessel periods, seesaw and separation of functionals](/proof/bessel-seesaw/) calls this input "the frames" in its Step 6.
 
 ## Statement
 

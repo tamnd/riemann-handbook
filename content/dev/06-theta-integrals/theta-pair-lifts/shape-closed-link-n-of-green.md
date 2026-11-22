@@ -8,7 +8,7 @@ covers: 9550
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem turns the statement [Green](/step/green-def/) on cuspidal characters of $\mathrm{GL}_d(\mathbb{F}_g)$ into the long implication `TopShapeAlt`, whose conclusion is the connectedness statement `TopG`. The theorem [ZeroFreeAll from Green, VWin and HypsAlt](/entry/zero-free-all-of-green-v-win/) feeds the 46 fields of `HypsAlt` into the slots of this implication, gets `TopG`, and from it the nonvanishing of $L(s,\psi)$ for primitive $\psi$ and $\operatorname{Re}(s) > \tfrac12$. Below this theorem are 9,550 declarations of the proof.
+This theorem turns the statement [Green](/step/green-def/) on cuspidal characters of $\mathrm{GL}_d(\mathbb{F}_g)$ into the long implication `TopShapeAlt`, whose conclusion is the connectedness statement `TopG`. The theorem [ZeroFreeAll from Green, VWin and HypsAlt](/step/zero-free-all-of-green-v-win/) feeds the 46 fields of `HypsAlt` into the slots of this implication, gets `TopG`, and from it the nonvanishing of $L(s,\psi)$ for primitive $\psi$ and $\operatorname{Re}(s) > \tfrac12$. Below this theorem are 9,550 declarations of the proof.
 
 ## Statement
 

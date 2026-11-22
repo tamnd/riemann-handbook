@@ -8,7 +8,7 @@ covers: 1355
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem builds the frames that the ascent of Bessel periods needs. It is the proof behind the renaming [`existsGoodGridFrames_of_depthFixed`](/entry/exists-good-grid-frames-of-depth-fixed/), which [`ascent_of_depFixed`](/entry/ascent-of-dep-fixed/) uses as the frame input of the tower of periods (Step 6 of [Bessel periods, seesaw and separation of functionals](/proof/bessel-seesaw/)). The proof is an assembly of three lemmas. The real content is in [`std_good`](/entry/std-good/).
+This theorem builds the frames that the ascent of Bessel periods needs. It is the proof behind the renaming [`existsGoodGridFrames_of_depthFixed`](/entry/exists-good-grid-frames-of-depth-fixed/), which [`ascent_of_depFixed`](/proof/bessel-seesaw/) uses as the frame input of the tower of periods (Step 6 of [Bessel periods, seesaw and separation of functionals](/proof/bessel-seesaw/)). The proof is an assembly of three lemmas. The real content is in [`std_good`](/entry/std-good/).
 
 ## Statement
 

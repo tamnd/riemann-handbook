@@ -8,7 +8,7 @@ covers: 4221
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem is a copy of [`liftInj_nonVan_typeNZ_of_hypotheses_alt`](/entry/lift-inj-non-van-type-nz-of-hypotheses-alt/) under a second name. It says that the theta lifts of a real datum are injective on good eigenvectors and do not vanish on nonzero eigenvectors. It has two users, `DownLift.nonvanishing_of_down_lift` and `ontoC_of_hypotheses_alt`, both below [the proof that HypsAlt is nonempty](/entry/hypotheses-nonempty-of-unramified-exponents-alt/) in branch 1 of the [unitary hypotheses chapter](/proof/unitary-hypotheses/). Below this theorem are 4,221 declarations, one more than below the copy.
+This theorem is a copy of [`liftInj_nonVan_typeNZ_of_hypotheses_alt`](/entry/lift-inj-non-van-type-nz-of-hypotheses-alt/) under a second name. It says that the theta lifts of a real datum are injective on good eigenvectors and do not vanish on nonzero eigenvectors. It has two users, `DownLift.nonvanishing_of_down_lift` and `ontoC_of_hypotheses_alt`, both below [the proof that HypsAlt is nonempty](/proof/unitary-hypotheses/) in branch 1 of the [unitary hypotheses chapter](/proof/unitary-hypotheses/). Below this theorem are 4,221 declarations, one more than below the copy.
 
 ## Statement
 

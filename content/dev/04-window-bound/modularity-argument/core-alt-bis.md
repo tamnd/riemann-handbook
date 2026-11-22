@@ -8,7 +8,7 @@ covers: 1145
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem proves $\mathrm{DenseThresholdMainCase}$ from the hypotheses $\mathrm{HypothesesH'}$ and the cohomology package $\mathrm{CohP}$. Its uses meet at [VWin from the hypotheses H and E](/entry/vwin-of-hypotheses-h-e-alt/). This is a pass-through. The real content is in [the ordinary vanishing theorem](/entry/ordinary-vanishing-two-of-printed-hida/).
+This theorem proves $\mathrm{DenseThresholdMainCase}$ from the hypotheses $\mathrm{HypothesesH'}$ and the cohomology package $\mathrm{CohP}$. Its uses meet at [VWin from the hypotheses H and E](/proof/vwin/). This is a pass-through. The real content is in [the ordinary vanishing theorem](/entry/ordinary-vanishing-two-of-printed-hida/).
 
 ## Statement
 

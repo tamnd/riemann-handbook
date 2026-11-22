@@ -8,7 +8,7 @@ covers: 1168
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem proves the bound `MeanAll` on the mean volume slope, for abelian CM fields. It joins the intersection slope bound of the volume theorem to the comparison of intersection slopes with volume slopes. It is the content of [its second name](/entry/abelian-cm-comp-laws-bound/), which [the positivity statement from the volume theorem](/entry/deep-st-r-of-volume/) uses. Step 5 of [the chapter on the Weil bound](/proof/weil-bound/) describes this part of the proof.
+This theorem proves the bound `MeanAll` on the mean volume slope, for abelian CM fields. It joins the intersection slope bound of the volume theorem to the comparison of intersection slopes with volume slopes. It is the content of [its second name](/entry/abelian-cm-comp-laws-bound/), which [the positivity statement from the volume theorem](/proof/weil-bound/) uses. Step 5 of [the chapter on the Weil bound](/proof/weil-bound/) describes this part of the proof.
 
 ## Statement
 

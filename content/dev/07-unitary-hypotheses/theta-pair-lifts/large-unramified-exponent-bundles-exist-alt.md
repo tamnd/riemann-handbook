@@ -8,7 +8,7 @@ covers: 19960
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem is a second name for [the membership and bundle theorem](/entry/member-bundles-large-unramified-exponents-alt/). It has the same statement and its proof only calls that theorem. Its one caller is [`hypotheses_nonempty_of_unramified_exponents_alt`](/entry/hypotheses-nonempty-of-unramified-exponents-alt/), the first branch of the [unitary hypotheses node](/proof/unitary-hypotheses/). That caller uses it as step 1 of its proof. The real content is in the entry [member-bundles-large-unramified-exponents-alt](/entry/member-bundles-large-unramified-exponents-alt/).
+This theorem is a second name for [the membership and bundle theorem](/entry/member-bundles-large-unramified-exponents-alt/). It has the same statement and its proof only calls that theorem. Its one caller is [`hypotheses_nonempty_of_unramified_exponents_alt`](/proof/unitary-hypotheses/), the first branch of the [unitary hypotheses node](/proof/unitary-hypotheses/). That caller uses it as step 1 of its proof. The real content is in the entry [member-bundles-large-unramified-exponents-alt](/entry/member-bundles-large-unramified-exponents-alt/).
 
 ## Statement
 

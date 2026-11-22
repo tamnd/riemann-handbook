@@ -8,7 +8,7 @@ covers: 55093
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem proves the window bound $\mathrm{VWin}$ from the rank $n$ literature hypotheses. It is Step 4 of the chapter [The window bound VWin](/proof/vwin/). [The theorem above it](/entry/v-window-of-literal-automorphy-n/) only calls it. The proof composes two theorems. The real content is in [the four counts](/entry/vwin-of-hypotheses-h-e-alt/) and in [the builder of the extended hypotheses](/entry/published-hypotheses-from-patching-alt/).
+This theorem proves the window bound $\mathrm{VWin}$ from the rank $n$ literature hypotheses. It is Step 4 of the chapter [The window bound VWin](/proof/vwin/). [The theorem above it](/proof/vwin/) only calls it. The proof composes two theorems. The real content is in [the four counts](/proof/vwin/) and in [the builder of the extended hypotheses](/entry/published-hypotheses-from-patching-alt/).
 
 ## Statement
 

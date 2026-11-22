@@ -8,7 +8,7 @@ covers: 33892
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem fills the 26 rows of the record `AllRowsAlt`. It is the last large step of [the proof that HypsAlt is nonempty](/entry/hypotheses-nonempty-of-unramified-exponents-alt/), branch 1 of [the unitary hypotheses node](/proof/unitary-hypotheses/). There `nonempty_hyps_of_allRows_alt` reads the fields of [HypsAlt](/step/hyps-alt-def/) off these rows. Most rows come from the twelve open parameter statements. Two parts have large proofs: three rows from one Siegel-Weil hypothesis, and the service row from global Artin reciprocity.
+This theorem fills the 26 rows of the record `AllRowsAlt`. It is the last large step of [the proof that HypsAlt is nonempty](/proof/unitary-hypotheses/), branch 1 of [the unitary hypotheses node](/proof/unitary-hypotheses/). There `nonempty_hyps_of_allRows_alt` reads the fields of [HypsAlt](/step/hyps-alt-def/) off these rows. Most rows come from the twelve open parameter statements. Two parts have large proofs: three rows from one Siegel-Weil hypothesis, and the service row from global Artin reciprocity.
 
 ## Statement
 

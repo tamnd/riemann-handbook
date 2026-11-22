@@ -8,7 +8,7 @@ covers: 1680
 status: drafted
 drafted_by: writer@claude-opus-5-5
 ---
-This theorem proves a Siegel-Weil formula on doubled unitary groups: a theta integral over a definite unitary group is a special value of a Siegel Eisenstein series. Its user is [the tools of the theta lift](/entry/tools-holds-k/), which makes from it the field `swFull` of the tool kit of the Galois row. The theorem is a copy of [the Siegel-Weil formula](/entry/siegel-weil-std/) with one hypothesis changed. Below it are 1,680 declarations.
+This theorem proves a Siegel-Weil formula on doubled unitary groups: a theta integral over a definite unitary group is a special value of a Siegel Eisenstein series. Its user is [the tools of the theta lift](/proof/determinants/), which makes from it the field `swFull` of the tool kit of the Galois row. The theorem is a copy of [the Siegel-Weil formula](/proof/siegel-weil/) with one hypothesis changed. Below it are 1,680 declarations.
 
 ## Statement
 
