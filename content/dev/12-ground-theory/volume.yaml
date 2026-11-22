@@ -10,13 +10,89 @@ chapters:
   - weighted-bound-rotated-uniform-of-hyps-g
   - uniform-bessel-rank-three-of-inputs
   - weighted-bound-rotated-uniform-of-cubic-threshold
+  - wave-bessel-period-threshold
+- id: automorphic-theory
+  title: Automorphic theory
+  folder: CompanionTheory.AutomorphicTheory
+  entries:
+  - normal-form-top-domination
+  - real-obj-in-infinity-x-jsz
+  - bessel-map-uniq-gap
+- id: discrete-series
+  title: Discrete series
+  folder: ReciprocityTheory.ReductiveGroups.DiscreteSeries
+  entries:
+  - thm-m
+  - thm-m-of-xi
+  - xi-exists
+  - xi-exists-of-in
 - id: heights-and-theta
   title: Heights and theta
   folder: GroundTheory.HeightsAndTheta
   entries:
   - theorem-hsmblock-of-open
+- id: class-field-theory
+  title: Class field theory
+  folder: ReciprocityTheory.ClassFieldTheory
+  entries:
+  - artin-reciprocity-char-zero
+  - exists-is-artin-k
+  - is-artin-k-of-is-recip
+- id: discrete-series-classification
+  title: Discrete series classification
+  folder: CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification
+  entries:
+  - ds-exhaust
+  - decay-estimate
+  - backward-of-line-formula
+  - back-of-line-formula
 - id: real-groups
   title: Real groups
   folder: CompanionTheory.RealGroups
   entries:
-  - ds-exhaust
+  - loc-pi
+  - st-cartan-u
+- id: reductive-groups
+  title: Reductive groups
+  folder: ReciprocityTheory.ReductiveGroups
+  entries:
+  - chart-val-j
+- id: l2-dbar-estimates
+  title: L2 estimates for d-bar
+  folder: ReciprocityTheory.L2DbarEstimates
+  entries:
+  - hormander
+  - h-statement-of
+- id: poitou-tate
+  title: Poitou-Tate duality
+  folder: GroundTheory.ProfiniteCohomology.PoitouTate
+  entries:
+  - bijective-gs-real-res
+  - injective-gs-real-res-three
+  - gs-tate-poitou-tate-hypotheses
+  - gs-base-case
+- id: profinite-cohomology
+  title: Profinite cohomology
+  folder: GroundTheory.ProfiniteCohomology
+  entries:
+  - exists-compact-duality-hypotheses-gs
+  - gs-pairing-input
+- id: scheme-cohomology
+  title: Scheme cohomology
+  folder: GroundTheory.ArithmeticGeometry.SchemeCohomology
+  entries:
+  - ground-theory-arith-scheme-coh-finite-h-of-is-proper-2
+  - ground-theory-arith-scheme-coh-finite-h-of-is-proper
+  - finite-h-of-supported-in
+  - finite-h-step
+- id: spectral-geometry
+  title: Spectral geometry
+  folder: CompanionTheory.SpectralGeometry
+  entries:
+  - theta-measure-nonzero-vectors-bound
+  - mean-count-box
+- id: automorphic-forms
+  title: Automorphic forms
+  folder: GroundTheory.AutomorphicForms
+  entries:
+  - rank-whittaker-le-one

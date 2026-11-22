@@ -18,9 +18,12 @@ chapters:
   - zeta-ur
   - kato-global-unit-law-of-smoothed-classes
   - kato-global-admissibility-of-admissible
+  - tower-ex
   - smoothed-zeta-class-hodge-tate-law
   - k5-top
   - hco
+  - kato-tame-relation-projected
+  - sym-ex
   - sp4-in0-alt
   - seed-iis-alt
   - seed-ii-z-alt
@@ -28,8 +31,16 @@ chapters:
   - ind-cs
   - ind-cs-of-bcfl
   - ind-cs-of-gm
+  - core-ind
+  - arch-ex
+  - cix
+  - upper-theory-v-z-invariant-submodule-monic-polynomial-cix-of-2
   - sp4-in-alt
   - main4-alt
+  - modularity-rank-four-of-promodularity-case-three
+  - pm-ex-of-prints-h
+  - pm-exists-of-unramified-adjoint-lifting
+  - fourth-initial-of-prints-h
   - unitary-three-automorphy-dense-of-prints
   - unitary-three-automorphy-dense-of-prints-and-row
   - adjoint-automorphy-w-of-printed-hida-window
@@ -37,21 +48,59 @@ chapters:
   - core
   - spec-f
   - t-fid0
+  - side-g
+  - prop-eg-w-of-printed-hida
+  - prop-eg-complex-of-printed-hida
+  - eg-core
+  - half-of-printed-hida
   - lemma-k-lit-n-alt
   - b-odd
+  - lemma-k-of-lit-n-alt
+  - lemma-k
   - slope-all
   - slope-all-of
   - core-alt-bis
   - ordinary-vanishing-two-of-printed-hida
+  - core-o-of-literal-automorphy-n
+  - of-four-alt
+  - count-ii-and-count-iii-of-prints-h-of-sp4-in
+  - sp4-main-alt
+  - main-big
+  - count-v-of-printed-bound-k-reduced-unitary-lift
+  - count-v-of-finiteness-duality-euler-host
+  - modularity-n-of-printed-mult-comp
+  - num-j-prime-alt
+  - num-jedense-threshold-cases
+  - count-e-prime-alt
+  - count-i-of-printed-bound-k-kato-automorphy
+  - one-char-u-of-kato-two-w-rig-adm-i-automorphy
+  - one-char-unram-u
+  - linked-unl-e-alt
   - published-hypotheses-from-patching-alt
+  - clozel-conj-c
+  - cm-abelian-inputs-from-literature
 - id: foundation-proofs
   title: Foundation proofs
   folder: Development.AbelianVarietyTheory.Proofs.FoundationProofs
   entries:
   - hecke-projector-newform-galois-image
   - hecke-proj-newform
+  - semisimple-potentials-at-newform-eigensystem
+  - ss-pot-b-at-newform
+  - ordinary-eisenstein-eigenfunctional-exists
+  - chapter-m-holds
+  - chapter-m-of-level
+  - exists-modular-function-tower-algebraic-coefficients
+  - tower-exists
   - siegel-unit-edge-class-kummer-dlog-congruence
   - pair-edge-dlog
+  - edge-dlog
+  - vanish-ord-l-of-zeta-ur
+  - es-vanish
+  - ordinary-selmer-vanishes-of-dual-vanishes
+  - gr-zero-of-gr-zero-dual1
+  - strict-vanishing-dual-of-literature
+  - strict-kill-main
 - id: iwahori-reduction
   title: Iwahori reduction
   folder: Development.AutomorphicArithmetic.Foundations.IwahoriReduction
@@ -64,22 +113,78 @@ chapters:
   - one
   - kato-euler-system-integrality
   - k4-top
-- id: automorphic-forms
-  title: Automorphic forms
-  folder: PositivityTheory.AutomorphicForms
+  - p-locu
+  - local-units-roots-main
+  - p-core
+- id: published-inputs
+  title: Published inputs
+  folder: PositivityTheory.AutomorphicForms.PublishedInputs
   entries:
   - hol-wc
-- id: automorphic-arithmetic
-  title: Automorphic arithmetic
-  folder: Development.AutomorphicArithmetic
+  - hol-wc-of
+  - s-tf
+  - hilbert-eisenstein-weight-one-holds
+  - fourier-expansion-holds
+- id: automorphic-varieties
+  title: Automorphic varieties
+  folder: Development.AutomorphicArithmetic.AutomorphicVarieties
+  entries:
+  - one-use
+  - exists-hilbert-modular-form-congr-one
+  - hilbert-one
+  - th-core
+  - ord-van2
+  - hida-x
+  - p-from-aut
+  - abstract-count
+  - pa-core
+  - main-holds
+  - core-holds
+  - pres
+  - part-h
+- id: literature-results
+  title: Literature results
+  folder: Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults
   entries:
   - b-odd-zk
   - b-star-odd
-  - desc-s
-  - down-n
-- id: abelian-variety-theory
-  title: Abelian variety theory
-  folder: Development.AbelianVarietyTheory
+  - k-stability
+  - k-stability-main
+- id: inertia-eigenvalues
+  title: Inertia eigenvalues
+  folder: Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues
   entries:
   - jacquet-shalika-rigidity-holds
   - vanish
+  - abs-re-log-rs-bdd
+  - rankin-selberg-partial-l-tendsto-ne-zero-at-one
+  - tendsto-partial-l-ne-zero
+  - rsnonvan-off-diag
+  - rankin-selberg-gln-glm-partial-l-eq-div-entire
+  - rs-nm-partial-l-eq-div
+- id: divisor-proofs
+  title: Divisor proofs
+  folder: Development.AbelianVarietyTheory.Proofs.DivisorProofs
+  entries:
+  - kirillov-semilocal-smooth-bump
+  - kirillov-semilocal-bump
+  - kirillov-semilocal-mirabolic-whittaker
+  - kirillov-semilocal
+  - kirillov-semi-local-mirabolic-abstract
+  - kirillov-semi-local
+- id: convolution
+  title: Convolution
+  folder: Development.AutomorphicArithmetic.Foundations.Convolution
+  entries:
+  - desc-s
+  - down-n
+  - asai-nv
+  - rev-holds
+- id: good-reduction
+  title: Good reduction
+  folder: Development.AutomorphicArithmetic.ThetaCorrespondence.GoodReduction
+  entries:
+  - serre-tate-good-reduction
+  - lit-neron-ogg-shafarevich
+  - nos-neron-ogg-shafarevich
+  - has-good-reduction-of-infinite-torsion-unramified

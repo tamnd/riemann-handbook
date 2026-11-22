@@ -6,26 +6,92 @@ chapters:
   title: Twisted operators
   folder: Development.AbelianVarietyTheory.Proofs.TwistedOperators
   entries:
+  - flat-at-big
+  - flat-dictionary-base-vacua-large-depth
+  - exists-loc-at-big
+  - real-line
+  - row-test-real-places-definite-periods-on-one-line
+  - periods-on-line-big
+  - normalised-kernel-expansion-sum-level-invariant
+  - levels-invariant
+  - expansion-pairing-invariant-inner-vertex-level
+  - pair-pts-update-top
+  - expansion-product-invariant-inner-vertex-level
+  - product-invariant
   - bessel-period-nonvanishing-ascent-of-depth-data
   - ascent-of-dep-fixed
   - exists-good-grid-frames-of-depth-fixed
   - tower-ex-of-dep-fixed
   - standard-auxiliary-frames-good-row-grids
   - std-good
+  - range-th-f
+  - value-mem-span
+  - span-any
+  - span-std
+  - theta-lift-finite-vector-eq-translate-level-datum
+  - th-p-vec-eq-translate
+  - exists-grid-pre
+  - exists-grid-pre-of-sizes
+- id: height-proofs
+  title: Height proofs
+  folder: Development.AbelianVarietyTheory.Proofs.HeightProofs
+  entries:
+  - closure-model
+  - has-all-ktypes-of-closure-discrete-series-coefficients
+  - has-type-all-of-closure
+  - discrete-series-coeff-series-of-k-type-projections
+  - has-type-all-of-k-types
 - id: divisor-proofs
   title: Divisor proofs
   folder: Development.AbelianVarietyTheory.Proofs.DivisorProofs
   entries:
   - local-pseudo-coefficient-existence-unitary-group
   - local-pc-holds
+  - maximal-compact-pseudo-coefficient-data
+  - maximal-compact-pseudo-coefficient-data-prime
+  - st-kdata-of
+  - elliptic-side-direct
+  - mult-eq-of-sides
+  - conjugates-of-rational-theta-lift-from-characterisation
+  - conj-rat-lift5
+  - conjugate-rational-lift-at-non-base-embedding
+  - conj-lift5
+  - one-map-conj5
+  - one-map-of-ext-of-five
   - arith-hilbert-samuel-of-principalisation
+  - ar-calc-of-principalisation
+  - arch-log-norm-reciprocity-of-principalisation
+  - arch-recip-of-principalisation
+  - ample-arith-hilbert-samuel-of-principalisation
+  - ample-hs-of-principalisation
+  - arith-hilbert-samuel-nef-of-ample
+  - arith-hilbert-samuel-of-ample-hs
   - good-chern-weil
+  - chern-numbers-eq-integral-chern-forms-smooth-metric
+  - chern-weil-numbers-holds
+  - chern-weil-numbers-of-degree-eq-chern-integral
+  - chern-weil-numbers-of-chern-degree-complex
+  - l2-extension-log-canonical-prime
   - toroidal-for-fan-ks
   - rigid-boundary-charts-for-fan-unitary-datum
   - rigid-for-fan-holds
   - unitary-toroidal-separation-of-base
   - u-st-b
   - u-poin-st-x-sep
+  - separation-normalized-blowup-unitary-compactification
+  - sep-b-of-norm-bl
+  - exists-unitary-fourier-system-traits-family
+  - exists-system-with-traits-and-family
+  - exists-unitary-fourier-system-traits-chart
+  - exists-v-pre-traits-on-chart
+  - unitary-compactification-exists-boundary-ideal
+  - u-ideal-st-holds
+  - exists-unitary-theta-setup-ideal-over-component
+  - exists-u-setup-ideal-over-component
+  - unitary-integral-compactifications-exist
+  - u-min-st-holds
+  - unitary-integral-compactification-exists-via-theta
+  - umin-theta-compactification-exists
   - rigid-boundary-charts-for-fan-of-unitary-separation
   - rigid-for-fan-of-u-st-b
   - exists-triple-chart-unitary-boundary-point
@@ -34,10 +100,31 @@ chapters:
   - u-pre-of-boundary-point-rigid
   - exists-point-rigid-tautological-chart-unitary-boundary
   - exists-taut-b-chart-at
+  - exists-tautological-chart-versality
+  - exists-taut-through
+  - exists-canonical-family-through-degenerating-family
+  - exists-canon-through
+  - degenerating-family-data-from-base-alg-closed-residue
+  - exists-div-from
+  - exists-lower
   - toroidal-fan-kodaira-spencer-of-rigid-boundary-charts
   - toroidal-for-fan-ks-of-rigid-for-fan
   - log-kodaira-spencer-iso-smooth-snc-toroidal-model
   - has-log-ks
+  - exists-torus-invariant-heat-operator-commuting-periods
+  - heat-commuting-periods-exists
+  - exists-torus-invariant-heat-operator-polynomial-defect
+  - exists-basic-heat-poly-defect
+  - kodaira-spencer-of-commuting-heat-operators-raynaud
+  - is-ks-of-heat
+  - log-kodaira-spencer-injective-mod-maximal-ideal
+  - log-ks-inj-mod-maximal
+  - log-kodaira-spencer-injective-mod-maximal-boundary
+  - log-ks-inj-mod-boundary
+  - degeneration-constant-of-log-kodaira-spencer-mem
+  - is-const-along-of-ks-mem
+  - is-const-along-of-kodaira-spencer-zero-chart
+  - is-const-along-of-ks-zero
   - siegel-toroidal-integral-holds
   - siegel-toroidal-compactification-polarised-charts
   - siegel-toroidal-pol-charts
@@ -45,14 +132,112 @@ chapters:
   - chart-st5-holds
   - exists-tautological-chart-at-siegel-blowup-point
   - exists-chart-at
+  - exists-degeneration-data-tautological-chart-of-trait
+  - exists-deg-from-of-trait
+  - exists-lower-base-of-trait-abelian-part
+  - exists-low-base-of-trait
+  - idempotent-image-uniformised-by-factor-data
+  - image-unif
+  - idempotent-image-iso-uniformised-factor-with-adjoint-pair
+  - iso-of-factor-adj
+  - chart-separation-data-defined-over-centre-field
+  - sep-st
+  - exists-fourier-term-system-regular-traits-given-chart
+  - exists-chart-member-traits-r
+  - exists-fourier-term-system-traits-chart-theta-model
+  - exists-v-pre-traits-chart
+  - normalised-blowup-ample-divisor-compactification
+  - poin-st
+  - exists-fan-order-ideal-theta-compactification
+  - ideal-st-holds
+  - exists-theta-setup-ideal-over-clopen-component
+  - exists-setup-ideal-over-component
+  - minimal-siegel-compactification-exists
+  - min-st5
   - has-semi-abelian-uniformisation-complete-normal-base
   - has-of-base
   - has-semi-abelian-uniformisation-of-labelled-cover
   - has-fin-of-lab-cover
+  - exists-labelled-cover-embedding-closed-fibre
+  - exists-emb-of-lab-cover
+  - exists-sections-prescribed-reduction-finite-ext
+  - exists-secs-fin-ext
+  - secs-exists
+  - exists-secs-of-int-fam
+  - semi-abelian-descends-of-closed-fibre-embedding
+  - descend-of-emb
+  - exists-unitary-peltype-factor-deg-data
+  - exists-pel-ok-factor
+  - idempotent-factor-uniformised-of-deg-data-factor
+  - factor-unif
+  - semiabelian-uniformization-linear-action-transfer
+  - factor-unif-at-trait
+  - has-semi-abelian-uniformisation-of-finite-ext
+  - has-of-has-fin
+  - uniformised-semi-abelian-galois-descent
+  - has-of-galois-action
+  - exists-labelled-cover-unitary-peltype-finite-ext
+  - exists-lab-cover-of-pel-ok
   - join-out-of-five
+  - hecke-weight-two-continuation-of-functional-equation
+  - hecke-weight-two-of-fe
   - kudla-splitting-split-unitary
+  - exists-weil-representation-split-unitary-schwartz-bruhat
+  - exists-is-kw
+  - exists-weil-representation-big-cell-relation-fourier
+  - weyl-cell-relation
+  - has-gauss-integral-hermitian-quadratic-character
+  - has-gauss-herm
+  - mul-mem-range-norm-of-not-mem
+  - mul-mem-range-norm
+  - howe-duality-real-holds
   - window-matrices
+  - semi-abelian-descent-from-complete-regular-charts
+  - descent-semi-abelian
+  - exists-semi-abelian-extension-near-point
+  - exists-has-ext-near
+  - has-ext-opens-range
+  - extends-to-semi-abelian-away-of-charts
+  - has-ext-away-map-of-charts
+  - has-ext-of-setup
+  - has-ext
+  - exists-global-section-angehrn-siu-inductive-step
+  - exists-global-step
+  - angehrn-siu-not-klt-at-several-points
+  - not-klt-at-points
+  - strong-approx-su
+  - special-unitary-fixing-plane-complement-mem-closure
+  - plane-closure
+  - key-rule-complex-existence-jets-key-value
+  - arch-of-rule4
+  - semi-abelian-lie-seminegative
+  - lie-sheaf-semi-abelian-semi-neg-of-is-alg-closed
+  - semi-neg-lie-of-is-alg-closed
+  - mumford-formal-endomorphism-algebraic
+  - formal-end-algebraic
   - dual-abelian-scheme
+  - exists-dual-abelian-scheme-poincare
+  - exists-dual
+  - has-rep-affine-open
+  - abelian-scheme-dual-representable-affine-base
+  - has-rep-affine
+  - has-proper-smooth-dual-representative-finite-type
+  - has-rep-of-finite-type
+  - global-theory-t-has-proper-smooth-dual-representative-noetherian-induction-2
+  - step-step
+  - automorphic-forms-finite-gl
+  - harish-chandra-finiteness-totally-complex-gl-proof
+  - finite-dimensional-single
+  - crystalline-smooth-lift-of-relations
+  - crystalline-cech-de-rham-relations-total-detect-zero
+  - rel-total-zero
+  - lift-restriction-bijective-low-degrees
+  - res-map-lift-pullback-bijective-degrees-one-two
+  - match-principal-congruence-inert
+  - abelian-scheme-hom-lifting-nilpotent-divided-powers
+  - abelian-lifting-of-four
+  - abelian-scheme-hom-lifting-nil-dp-of-hodge-cube-duality-unobstructed
+  - abelian-lifting-of-known-theorems
 - id: flag-measures
   title: Flag measures
   folder: Development.AbelianVarietyTheory.Proofs.FlagMeasures
@@ -62,6 +247,50 @@ chapters:
   - type-bound-of-gap
   - term-pair-count-bound-of-siegel-mass-ratios
   - pair-count-bound-of-siegel-mass
+  - term-pairs-row-lattice-counted-via-embeddings
+  - per-row-c
+  - sum-classes-le
+  - sum-frame-class-weights-le-datum-bound
+  - sum-cls-om-le-dat-bd
+  - sum-weights-per-datum
+  - one-class
+  - sum-weights-inequivalent-herm-frame-terms-le
+  - fixed-form-main
+  - herm-frame-weight-sum-same-datum-le
+  - om-sum-same-dat-le
+  - herm-frame-pair-om-sum-same-datum-le
+  - om-count-main
+  - amplitude-bound-at-terms-of-local-data
+  - amplitude-bound-of-local-data-of-tail-bound
+  - family-group-sum-factors-row-weight-amplitude
+  - squared-group-sum-class-double-coset-eq-row-weight
+  - row-weights-local-orbits-sum-eq-genus-mass
+  - rows-mass-genus
+  - unfolding-genus-weights-sum-to-mass
+  - weights-add-up-to-mass
+  - weights-add-up-to-mass-of
+  - cov-nformula-pf-main
+  - transported-fund-domain-volume-classical
+  - cov-dom-main
+  - covolume-integral-unipotent-radical-real-points
+  - covolume-n
+  - lintegral-hilbert-schmidt-norm-sq-bessel-amplitude-le
+  - lintegral-hs-norm-sq-amp-j-le
+  - local-nongeneric-bound-record-family
+  - hermitian-double-coset-amplitude-bound-local
+  - ng-at
+  - amp-sq-nonzero-defect
+  - hermitian-double-coset-second-type-family-amp-sq-le
+  - family-bound
+  - amplitude-le-mass-second-type-family
+  - amp-le-mass
+  - exists-symm-invariant-kernel-hermitian-frames
+  - exists-symm-invariant-kernel
+  - self-dual-hermitian-lattice-mass-of-trace
+  - mass-trace
+  - self-dual-hermitian-lattice-mass-bounds
+  - mass-bounds
+  - gl-vol-step
 - id: jet-harmonics
   title: Jet harmonics
   folder: Development.AbelianVarietyTheory.Proofs.JetHarmonics
@@ -71,33 +300,159 @@ chapters:
   - pointwise-bound-discrete-series
   - pointwise-bound-capelli-eigenfunction
   - pointwise-bound-eigenfunction
+  - top-density-cutoff-dominated-of-hc-xi
+  - top-density-cut-dominated-all
+  - top-density-dominated
+  - word-bound-smooth-decaying-coefficients
+  - word-bound-decay
+  - word-bound-compact-support-coefficients
+  - word-bound-cpt-coef
+  - word-operator-radial-pointwise-bound
+  - word-bound
+  - capelli-eigenfunction-bound-three-places
+  - eigen-three-places-main
+  - least-value-le
+  - depth-below-one-of-hodge-tate-chart-form
+  - lemma-bt-of-hodge-tate-chart
+  - lemma-bt-of-characters
+- id: proofs
+  title: Proofs
+  folder: Development.AbelianVarietyTheory.Proofs
+  entries:
+  - inp-all
+  - cube-add-int-be-biadd
+  - series-rat-s-and-ser-int-of-global-artin
+  - cols-tied-sym-std
+  - exists-key-rule-char-half
+  - exists-integral-key-invariant-rule-char-zero
+  - ka-st
+  - arc-clause-closed
+  - holomorphic-degeneration-arc-of-uniformisation
+  - holomorphic-arc-main
+  - i-holds
+  - j-holds
+  - volume-ratio
+  - howe-unram-holds
+  - fixed-mem-span
+  - howe-duality-step
+  - exists-period-tower-datum-of-abelian-scheme-symmetric-bundle
+  - abelian-period-datum-main
+  - exists-degeneration-data-uniformisation-of-torsion-count
+  - exists-deg-data-unif
 - id: inertia-eigenvalues
   title: Inertia eigenvalues
   folder: Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues
   entries:
+  - series-bound
+  - exists-hw-fon-cmp-ties
+  - exists-hw-of-fon-of-cmp-of-prime
+  - exists-hw-of-fon-of-cmp-of
+  - exists-local-wach-functor
+  - exists-wach
   - global-lattice-index-theorem-of-length-bound-at-places
   - selmer-bound-at-point-main
+  - local-duality-class-field-facts-of-artin-tate-euler
+  - lang-rec-core-of-artin-reciprocity
+  - wach-lattice-later-clauses-hold
+  - wach-used-clauses
+  - theorem-tb-of-local-bloch-kato-duality-euler
+  - aux-of-bloch-kato-tate-duality-euler-char
+  - twisted-torsion-class-theorem-good-case
+  - tb-assembled
+  - crystalline-extension-class-bound
+  - class-bound
+  - mem-hf-d-of-lattice
+  - mem-hf-d-of-is-cob
+  - scalar-of-is-cob
+  - scalar-step
+  - local-constants-from-admitted-local-galois-statements
+  - local-constants-from-admitted-local-galois-statements-alt
+  - bhatt-scholze-integral
   - de-rham-potentially-semistable
   - p-adic-monodromy-theorem-matrix-form
   - mat-thm-holds
+  - monodromy-irreducible-elementary-weight-modification
+  - mod-step-holds
+  - fundamental-lemma-lattice-frob-fixed-forall-degree
+  - fl-at-all
+  - fundamental-lemma-lattice-degree-one
+  - fl-at-one
+  - potentially-semistable-reducible-unramified-split
+  - red-step
+  - de-rham-extension-potentially-semistable
+  - ext-step-holds
+  - hyodo-theorem-matrix-unramified-coefficients
+  - hyodo-mat
+  - hyodo-statement
   - jacquet-rallis-unit-match-all-ranks
   - unit-match-all
   - jacquet-rallis-unit-match-of-weil-rep-quadratic
   - unit-match-of-weil-field
+  - jacquet-rallis-fourier-matching-of-weil-field
+  - fourier-match-of-weil-field
+  - jacquet-rallis-unit-match-succ
+  - unit-match-succ
+  - unit-lemma-lie-algebra-unitary-group-of-jacquet-rallis
+  - unit-lemma-lie-and-group
 - id: moduli-proofs
   title: Moduli proofs
   folder: Development.AbelianVarietyTheory.Proofs.ModuliProofs
   entries:
   - part-i-of-semistable-reduction
+  - arc-fam-closed
+  - part-i-of-semistable-reduction-of-arc-fam
   - exists-full-level-ample-model-of-semistable-reduction
   - top-amp-exists-of-semistable-reduction
   - exists-full-level-model-ample-frames
   - top-amp-exists
+  - exists-theta-family-pel-smooth-generic-fibre
+  - exists-theta-fam-is-pel-smooth
+  - finrank-tangent-pel-family-le-symmetric-domain
+  - finrank-derivation-le
+  - tangent-injects-symmetric-antilinear-commuting
+  - tangent-injects-symm-antilinear
   - zarhin-geometric-of-semistable-reduction
   - zh-geo-of-semistable-reduction
-- id: abelian-variety-theory
-  title: Abelian variety theory
-  folder: Development.AbelianVarietyTheory
+- id: degeneration-proofs
+  title: Degeneration proofs
+  folder: Development.AbelianVarietyTheory.Proofs.DegenerationProofs
   entries:
+  - exists-arc-family-point-with-frames-of-laws
+  - arc-fam
+  - exists-point
   - semi-abelian-scheme-uniformisation-exists-geometric
   - zh-geo
+  - base-facts-has-geo-exists-clos
+  - has-geometric-test-of-has-uniformised-test
+  - has-geo-of-has-u
+  - exists-neutral-group-model
+- id: siegel-theta-transformation
+  title: Siegel theta transformation
+  folder: Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation
+  entries:
+  - level-theta-span
+  - hermitian-theta-series-span-bounded-forms
+  - theta-span
+  - kernel-identity
+  - siegel-weil-definite-hermitian-of-four-mul-lt
+  - siegel-weil-definite
+  - siegel-weil-formula-degree-succ
+  - sw-at-succ
+- id: cusp-form-evaluations
+  title: Cusp form evaluations
+  folder: Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations
+  entries:
+  - theta-rule-sum-lower
+  - harmonic-value-canonical-connection-eq-poly-deriv
+  - harm-nab-eq-poly-deriv
+  - exists-analytic-biextension-chart-complex-point
+  - exists-analytic-chart
+- id: rings-of-integers
+  title: Rings of integers
+  folder: Development.AbelianVarietyTheory.Proofs.RingsOfIntegers
+  entries:
+  - sum-hv-primary-kernel-alt
+  - sum-hv-primary-kernel
+  - sum-harmonic-values-formal-kernel-similitude
+  - sum-hv-formal-kernel
+  - ch-bound-host
