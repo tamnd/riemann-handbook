@@ -8,7 +8,7 @@ covers: 12516
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem proves the [covolume bound](/step/covolume-bound-of-x-def/) $\mathsf{CovolumeBoundOfX}$ from seven groups of hypotheses. One of them is the positivity statement $\mathsf{DeepStR}$, which [deep_slim_use](/entry/deep-slim-use/) proves. Its only caller is [the volume branch](/entry/top-covol-slim2-use-alt-alt/), which builds the other inputs. Below this theorem are 12,516 declarations.
+This theorem proves the [covolume bound](/step/covolume-bound-of-x-def/) $\mathsf{CovolumeBoundOfX}$ from seven groups of hypotheses. One of them is the positivity statement $\mathsf{DeepStR}$, which [deep_slim_use](/proof/weil-bound/) proves. Its only caller is [the volume branch](/proof/literature/), which builds the other inputs. Below this theorem are 12,516 declarations.
 
 ## Statement
 

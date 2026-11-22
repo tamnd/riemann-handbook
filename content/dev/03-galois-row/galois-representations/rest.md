@@ -8,7 +8,7 @@ covers: 1944
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem proves the Galois row $\mathrm{Row0}$ from the statement $\mathrm{CoreAll}$, which gives the representations and their behaviour at spherical places. It is step 4 of the [Galois row chapter](/proof/galois-row/). Its result goes to [the Galois row from geometry and the theta lift](/entry/galois-local-global-of-geometry-lift/), which is `rest (coreAll_of ...)`. The proof is an assembly of three lemmas. Below this theorem are 1,944 declarations.
+This theorem proves the Galois row $\mathrm{Row0}$ from the statement $\mathrm{CoreAll}$, which gives the representations and their behaviour at spherical places. It is step 4 of the [Galois row chapter](/proof/galois-row/). Its result goes to [the Galois row from geometry and the theta lift](/proof/galois-row/), which is `rest (coreAll_of ...)`. The proof is an assembly of three lemmas. Below this theorem are 1,944 declarations.
 
 ## Statement
 

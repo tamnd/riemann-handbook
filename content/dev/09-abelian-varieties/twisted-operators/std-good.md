@@ -8,7 +8,7 @@ covers: 1303
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem proves that standard frames meet the local conditions of each rung of the ascent of Bessel periods. It is the proof behind [`standardAuxiliaryFrames_good_row_grids`](/entry/standard-auxiliary-frames-good-row-grids/). Through [`towerEx_of_depFixed`](/entry/tower-ex-of-dep-fixed/) it gives the "good" half of `TowerEx`, the frame input of [`ascent_of_depFixed`](/entry/ascent-of-dep-fixed/). The ascent in turn serves [`real_functionals_separate_of_hypothesis`](/entry/real-functionals-separate-of-hypothesis/) (Step 6 of [Bessel periods, seesaw and separation of functionals](/proof/bessel-seesaw/)).
+This theorem proves that standard frames meet the local conditions of each rung of the ascent of Bessel periods. It is the proof behind [`standardAuxiliaryFrames_good_row_grids`](/entry/standard-auxiliary-frames-good-row-grids/). Through [`towerEx_of_depFixed`](/entry/tower-ex-of-dep-fixed/) it gives the "good" half of `TowerEx`, the frame input of [`ascent_of_depFixed`](/proof/bessel-seesaw/). The ascent in turn serves [`real_functionals_separate_of_hypothesis`](/proof/bessel-seesaw/) (Step 6 of [Bessel periods, seesaw and separation of functionals](/proof/bessel-seesaw/)).
 
 ## Statement
 

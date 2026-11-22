@@ -8,7 +8,7 @@ covers: 1128
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem gives the Siegel-Weil formula `SiegelWeilStd` from two hypotheses: a Poisson summation formula `Poisson` and the constant term split `CTSplit`. Its user is [`siegelWeilStd_of_ct`](/entry/siegel-weil-std-of-ct/), which proves `Poisson`. That result goes to [the Siegel-Weil formula](/entry/siegel-weil-std/). This theorem gets the action of the Weyl element in the Schrödinger model, and the inputs that the main proof needs. Below it are 1,128 declarations.
+This theorem gives the Siegel-Weil formula `SiegelWeilStd` from two hypotheses: a Poisson summation formula `Poisson` and the constant term split `CTSplit`. Its user is [`siegelWeilStd_of_ct`](/entry/siegel-weil-std-of-ct/), which proves `Poisson`. That result goes to [the Siegel-Weil formula](/proof/siegel-weil/). This theorem gets the action of the Weyl element in the Schrödinger model, and the inputs that the main proof needs. Below it are 1,128 declarations.
 
 ## Statement
 

@@ -8,7 +8,7 @@ covers: 19958
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem gives the first step of [`hypotheses_nonempty_of_unramified_exponents_alt`](/entry/hypotheses-nonempty-of-unramified-exponents-alt/), the first branch of the [unitary hypotheses node](/proof/unitary-hypotheses/). It turns the record of literature hypotheses into three facts at the stronger parameters: a Siegel mass ratio, the membership statement `MemberE`, and the existence of bundles `ExBL`. It reaches its caller through the second name [`large_unramified_exponent_bundles_exist_alt`](/entry/large-unramified-exponent-bundles-exist-alt/). Most of its work is in [`member_exists_baseLattice_alt`](/entry/member-exists-base-lattice-alt/).
+This theorem gives the first step of [`hypotheses_nonempty_of_unramified_exponents_alt`](/proof/unitary-hypotheses/), the first branch of the [unitary hypotheses node](/proof/unitary-hypotheses/). It turns the record of literature hypotheses into three facts at the stronger parameters: a Siegel mass ratio, the membership statement `MemberE`, and the existence of bundles `ExBL`. It reaches its caller through the second name [`large_unramified_exponent_bundles_exist_alt`](/entry/large-unramified-exponent-bundles-exist-alt/). Most of its work is in [`member_exists_baseLattice_alt`](/entry/member-exists-base-lattice-alt/).
 
 ## Statement
 

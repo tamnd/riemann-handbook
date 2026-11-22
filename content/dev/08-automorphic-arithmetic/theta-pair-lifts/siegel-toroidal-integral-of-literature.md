@@ -8,7 +8,7 @@ covers: 3656
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem gives the statement $\mathrm{SiegelToroidalIntegral}$: a toroidal compactification of the Siegel moduli space of level $n$ over $\mathbb{Z}[\zeta_n, 1/n]$. It takes a proof $O$ of [OpenLiteratureStatements](/step/open-literature-statements-def/) and does not use it. The proof is one term, [`siegelToroidalIntegral_holds`](/entry/siegel-toroidal-integral-holds/), and that entry has the real content. The one caller is [EveryCharacter from the literature and VWin](/step/every-character-of-literature/), which passes the result to [`topCovolSlim2_use_alt_alt`](/entry/top-covol-slim2-use-alt-alt/). Below this theorem are 3,656 declarations.
+This theorem gives the statement $\mathrm{SiegelToroidalIntegral}$: a toroidal compactification of the Siegel moduli space of level $n$ over $\mathbb{Z}[\zeta_n, 1/n]$. It takes a proof $O$ of [OpenLiteratureStatements](/step/open-literature-statements-def/) and does not use it. The proof is one term, [`siegelToroidalIntegral_holds`](/entry/siegel-toroidal-integral-holds/), and that entry has the real content. The one caller is [EveryCharacter from the literature and VWin](/step/every-character-of-literature/), which passes the result to [`topCovolSlim2_use_alt_alt`](/proof/literature/). Below this theorem are 3,656 declarations.
 
 ## Statement
 

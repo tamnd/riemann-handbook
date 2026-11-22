@@ -8,7 +8,7 @@ covers: 15614
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem is step 4 of branch 1 in [the unitary hypotheses chapter](/proof/unitary-hypotheses/). [Its caller](/entry/hypotheses-nonempty-of-unramified-exponents-alt/) uses it to turn the [closed bound](/step/closed-def/) for the bound at two and three into the closed bound for the link inequality `LinkN`. That result is the row `NL` of [the record HypsAlt](/step/hyps-alt-def/). The theorem is a wrapper: it supplies two hypotheses of [the main lemma](/entry/final-of-alt/), which has the content together with [the link bound for one family](/entry/link-n-of-tw-good-galois-preconditions/).
+This theorem is step 4 of branch 1 in [the unitary hypotheses chapter](/proof/unitary-hypotheses/). [Its caller](/proof/unitary-hypotheses/) uses it to turn the [closed bound](/step/closed-def/) for the bound at two and three into the closed bound for the link inequality `LinkN`. That result is the row `NL` of [the record HypsAlt](/step/hyps-alt-def/). The theorem is a wrapper: it supplies two hypotheses of [the main lemma](/entry/final-of-alt/), which has the content together with [the link bound for one family](/entry/link-n-of-tw-good-galois-preconditions/).
 
 ## Statement
 

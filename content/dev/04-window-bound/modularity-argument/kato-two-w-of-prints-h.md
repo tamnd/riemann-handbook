@@ -8,7 +8,7 @@ covers: 9555
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem proves the statement $\mathrm{KatoTwoW}$ from the extended hypotheses $\mathrm{HypothesesH'}$. The theorem [VWin from the extended hypotheses](/entry/vwin-of-hypotheses-h-e-alt/) uses it as the input to the first count, $\mathrm{CountI}$ (Step 5 of the chapter [The window bound VWin](/proof/vwin/)). The proof only fills in two hypotheses of [the next theorem](/entry/kato-two-w-of-prints-h-of-r-t-of-quad-bc2/), which has the real content.
+This theorem proves the statement $\mathrm{KatoTwoW}$ from the extended hypotheses $\mathrm{HypothesesH'}$. The theorem [VWin from the extended hypotheses](/proof/vwin/) uses it as the input to the first count, $\mathrm{CountI}$ (Step 5 of the chapter [The window bound VWin](/proof/vwin/)). The proof only fills in two hypotheses of [the next theorem](/entry/kato-two-w-of-prints-h-of-r-t-of-quad-bc2/), which has the real content.
 
 ## Statement
 

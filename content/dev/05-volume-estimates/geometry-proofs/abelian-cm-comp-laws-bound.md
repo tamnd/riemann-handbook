@@ -8,7 +8,7 @@ covers: 1169
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem is a second name for [the mean slope bound](/entry/top-mean-all/). It has the same statement, and its proof only calls that theorem. [The positivity statement from the volume theorem](/entry/deep-st-r-of-volume/) uses it once, to get the constant $C$ of `DeepStR`. The real content is in [the entry of `top_meanAll`](/entry/top-mean-all/).
+This theorem is a second name for [the mean slope bound](/entry/top-mean-all/). It has the same statement, and its proof only calls that theorem. [The positivity statement from the volume theorem](/proof/weil-bound/) uses it once, to get the constant $C$ of `DeepStR`. The real content is in [the entry of `top_meanAll`](/entry/top-mean-all/).
 
 ## Statement
 

@@ -8,7 +8,7 @@ covers: 1192
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem is a renaming. It repeats [`given_of_inputs`](/entry/given-of-inputs/), which assembles the conjunction `Top.Given` from twelve hypotheses. That entry has the content. This theorem has three users: [`goodTower_volume_of_reduced`](/entry/good-tower-volume-of-reduced/), `given_of_use` (which [`deepStR_of_use`](/entry/deep-st-r-of-use/) calls) and `given_of_moriwaki`.
+This theorem is a renaming. It repeats [`given_of_inputs`](/entry/given-of-inputs/), which assembles the conjunction `Top.Given` from twelve hypotheses. That entry has the content. This theorem has three users: [`goodTower_volume_of_reduced`](/entry/good-tower-volume-of-reduced/), `given_of_use` (which [`deepStR_of_use`](/proof/weil-bound/) calls) and `given_of_moriwaki`.
 
 ## Statement
 

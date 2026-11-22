@@ -8,7 +8,7 @@ covers: 2836
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem gives the constant $C_K$ of Lemma K, the bound on $H^2$ that [the window from hypotheses H](/entry/vwin-of-hypotheses-h-e-alt/) uses as `hK`. It only passes its hypothesis along. The largest part of its proof is [the rank bound for odd degrees](/entry/b-odd/), which in turn is a new name for [`bOdd_zk`](/entry/b-odd-zk/).
+This theorem gives the constant $C_K$ of Lemma K, the bound on $H^2$ that [the window from hypotheses H](/proof/vwin/) uses as `hK`. It only passes its hypothesis along. The largest part of its proof is [the rank bound for odd degrees](/entry/b-odd/), which in turn is a new name for [`bOdd_zk`](/entry/b-odd-zk/).
 
 ## Statement
 

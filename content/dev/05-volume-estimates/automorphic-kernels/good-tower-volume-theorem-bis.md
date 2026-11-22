@@ -8,7 +8,7 @@ covers: 21078
 status: drafted
 drafted_by: writer@claude-opus-5-5
 ---
-This theorem says that a good tower of integral models of unitary Shimura varieties exists, and that its arithmetic self-intersection numbers obey the volume theorem. Its only caller is [`deepStR_of_use`](/entry/deep-st-r-of-use/), which passes the pair to [`deepStR_of_volume`](/entry/deep-st-r-of-volume/). This is Step 4 of [the Weil bound chapter](/proof/weil-bound/). The theorem only collects inputs. The assembly is [`goodTower_volume_of_reduced`](/entry/good-tower-volume-of-reduced/).
+This theorem says that a good tower of integral models of unitary Shimura varieties exists, and that its arithmetic self-intersection numbers obey the volume theorem. Its only caller is [`deepStR_of_use`](/proof/weil-bound/), which passes the pair to [`deepStR_of_volume`](/proof/weil-bound/). This is Step 4 of [the Weil bound chapter](/proof/weil-bound/). The theorem only collects inputs. The assembly is [`goodTower_volume_of_reduced`](/entry/good-tower-volume-of-reduced/).
 
 ## Statement
 

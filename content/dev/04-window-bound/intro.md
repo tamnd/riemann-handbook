@@ -7,7 +7,7 @@ The branch has 55,805 declarations. The proof has two layers. The top layer is b
 
 The chapters:
 
-- **Modularity argument.** The main line. It starts with the passes from `vwin_of_row` down to [the four counts](/entry/vwin-of-hypotheses-h-e-alt/). Then come the inputs to the counts, in this order:
+- **Modularity argument.** The main line. It starts with the passes from `vwin_of_row` down to [the four counts](/proof/vwin/). Then come the inputs to the counts, in this order:
   - Case I: the vanishing of two Bloch-Kato Selmer groups, from [an Euler system of zeta classes](/entry/zeta-ur/) for an ordinary two-dimensional representation.
   - Cases II and III: the automorphy of four-dimensional symplectic representations, with [automorphic induction](/entry/ind-cs/) from $\mathrm{GL}_2$ over a quadratic extension to $\mathrm{GL}_4$.
   - Case V: three-dimensional seeds, from [the automorphy of a twisted adjoint](/entry/adjoint-automorphy-w-of-printed-hida-window/) and [a transfer of eigenforms](/entry/spec-out-s/) from a definite $U(2)$ to $U(3)$.

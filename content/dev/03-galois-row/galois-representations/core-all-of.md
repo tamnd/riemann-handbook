@@ -8,7 +8,7 @@ covers: 1760
 status: drafted
 drafted_by: writer@claude-opus-5-5
 ---
-This theorem proves `CoreAll`: regular algebraic polarized cuspidal representations of $\mathrm{GL}_a$ over a CM field have Galois representations, with the right behaviour at spherical places. It is step 5 of the [Galois row chapter](/proof/galois-row/). Its result goes to `rest` in [the conditional row theorem](/entry/galois-local-global-of-geometry-lift/). The proof is an assembly of four lemmas.
+This theorem proves `CoreAll`: regular algebraic polarized cuspidal representations of $\mathrm{GL}_a$ over a CM field have Galois representations, with the right behaviour at spherical places. It is step 5 of the [Galois row chapter](/proof/galois-row/). Its result goes to `rest` in [the conditional row theorem](/proof/galois-row/). The proof is an assembly of four lemmas.
 
 ## Statement
 

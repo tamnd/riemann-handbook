@@ -8,7 +8,7 @@ covers: 1865
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem proves `HeightCondition`, a lower bound for the heights of the components of a good cover. It is the step where the positivity statement $\mathsf{DeepStR}$ of [deep_slim_use](/entry/deep-slim-use/) enters the [covolume bound](/entry/top-covol-g-alt-alt/). Its only caller is that theorem, which feeds the result to a uniform lower bound for slopes. Below it are 1,865 declarations.
+This theorem proves `HeightCondition`, a lower bound for the heights of the components of a good cover. It is the step where the positivity statement $\mathsf{DeepStR}$ of [deep_slim_use](/proof/weil-bound/) enters the [covolume bound](/entry/top-covol-g-alt-alt/). Its only caller is that theorem, which feeds the result to a uniform lower bound for slopes. Below it are 1,865 declarations.
 
 ## Statement
 

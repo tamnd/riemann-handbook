@@ -8,7 +8,7 @@ covers: 19069
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem proves `SurjectiveOntoX`, the statement that at almost all points of a family a certain map is onto. It takes twelve published inputs and assembles six estimates: export, twist, share, bad places, exponent and rank. Its only user is [`ontoX_and_lamLow_of_unitaryGroupHypotheses'`](/entry/onto-x-and-lam-low-of-unitary-group-hypotheses-prime/), branch 2 of the [unitary hypotheses chapter](/proof/unitary-hypotheses/), which passes it twelve fields of its bundle. Below this theorem are 19,069 declarations. The largest parts are [`runHolds_of_parOK`](/entry/run-holds-of-par-ok/) (5,710), [`geoSt_of_pageSt_alt`](/entry/geo-st-of-page-st-alt/) (5,131) and [`expSt_of_base_change_and_crystalline_lattices`](/entry/exp-st-of-base-change-and-crystalline-lattices/) (3,719).
+This theorem proves `SurjectiveOntoX`, the statement that at almost all points of a family a certain map is onto. It takes twelve published inputs and assembles six estimates: export, twist, share, bad places, exponent and rank. Its only user is [`ontoX_and_lamLow_of_unitaryGroupHypotheses'`](/proof/unitary-hypotheses/), branch 2 of the [unitary hypotheses chapter](/proof/unitary-hypotheses/), which passes it twelve fields of its bundle. Below this theorem are 19,069 declarations. The largest parts are [`runHolds_of_parOK`](/entry/run-holds-of-par-ok/) (5,710), [`geoSt_of_pageSt_alt`](/entry/geo-st-of-page-st-alt/) (5,131) and [`expSt_of_base_change_and_crystalline_lattices`](/entry/exp-st-of-base-change-and-crystalline-lattices/) (3,719).
 
 ## Statement
 

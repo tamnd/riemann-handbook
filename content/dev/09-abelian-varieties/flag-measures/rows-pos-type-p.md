@@ -8,7 +8,7 @@ covers: 2511
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem proves the type bound `TypeP` with no hypothesis. The theorem [`hypotheses_nonempty_of_unramified_exponents_alt`](/entry/hypotheses-nonempty-of-unramified-exponents-alt/) passes it to `nonempty_hyps_of_allRows_alt` in its last line, and so it enters the step [HypsAlt is nonempty from the closed bound](/step/nonempty-hyps/). A second user is `degenerate_and_collisions_uncond`. The work is in [`typeBound_of_gap`](/entry/type-bound-of-gap/).
+This theorem proves the type bound `TypeP` with no hypothesis. The theorem [`hypotheses_nonempty_of_unramified_exponents_alt`](/proof/unitary-hypotheses/) passes it to `nonempty_hyps_of_allRows_alt` in its last line, and so it enters the step [HypsAlt is nonempty from the closed bound](/step/nonempty-hyps/). A second user is `degenerate_and_collisions_uncond`. The work is in [`typeBound_of_gap`](/entry/type-bound-of-gap/).
 
 ## Statement
 
