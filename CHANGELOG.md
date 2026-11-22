@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.1.5
+
+- The outline now plans tier 2: every declaration that owns 300 or more others gets an entry. 54 entries moved to their tier 2 chapters.
+- Volume 3, the Galois row: the 145 tier 2 entries, so all 209 planned entries are written. Two chapters have new titles, and the introduction lists the new chapters.
+- Volume 4, the window bound: the 84 tier 2 entries, so all 146 planned entries are written. Six chapters have new titles that say what is in them.
+- A link to an entry that a proof chapter covers now goes to that chapter or to the step.
+- The pull requests for Volumes 3 and 4 list what the writers found in the Lean code: unused hypotheses, duplicate theorems and names that do not match their statements.
+- Volumes 3 and 4 build with no overfull lines and no unresolved links.
+
 ## v0.1.4
 
 - Volume 8, automorphic arithmetic: all 36 tier 1 entries and an introduction.
