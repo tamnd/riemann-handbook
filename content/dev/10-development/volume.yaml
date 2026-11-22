@@ -27,7 +27,7 @@ chapters:
   - free-abelian-hodge-de-rham
   - abelian-hodge-de-rham-prime
 - id: siegel-weil
-  title: Siegel weil
+  title: Siegel-Weil
   folder: Development.WeilBound.RepresentationTheoryGL.SiegelWeil
   entries:
   - weil-siegel-formula
@@ -35,7 +35,7 @@ chapters:
   - siegel-weil-rank-coefficient
   - siegel-frame
 - id: representation-theory-gl
-  title: Representation theory GL
+  title: Representation theory of GL
   folder: Development.WeilBound.RepresentationTheoryGL
   entries:
   - field
