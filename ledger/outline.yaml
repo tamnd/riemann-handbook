@@ -1925,7 +1925,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.row_hServ_of_link_alt
         id: row-h-serv-of-link-alt
         kind: theorem
@@ -1934,7 +1934,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.hServ_of_linkR
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.reciprocity_kernel_of_artin
         id: reciprocity-kernel-of-artin
         kind: theorem
@@ -1943,7 +1943,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.row_hServ_of_link_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Svd.servH_row_linkR_alt
         id: serv-h-row-link-r-alt
         kind: theorem
@@ -1952,7 +1952,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.reciprocity_kernel_of_artin
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.period_entries_tie_and_level_valuations_at_built
         id: period-entries-tie-and-level-valuations-at-built
         kind: theorem
@@ -1961,7 +1961,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Fc.six_rows_at_member_alt
         id: six-rows-at-member-alt
         kind: theorem
@@ -1970,7 +1970,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.period_entries_tie_and_level_valuations_at_built
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.CountRowByName.row_counts_of_labels_alt
         id: row-counts-of-labels-alt
         kind: theorem
@@ -1979,7 +1979,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.CountRow.row_counts_of_ties_alt
         id: row-counts-of-ties-alt
         kind: theorem
@@ -1988,7 +1988,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.CountRowByName.row_counts_of_labels_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.large_unramified_exponent_bundles_exist_alt
         id: large-unramified-exponent-bundles-exist-alt
         kind: theorem
@@ -2033,7 +2033,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Mem.Top.Bl.exists_baseLattice_of_prime_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Mem.Top.Closing.memberE_closing_alt_alt
         id: member-e-closing-alt-alt
         kind: theorem
@@ -2042,7 +2042,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Mem.Top.Bl.exists_baseLattice_of_pair_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.has4_of_has3_of_lv3Mv
         id: has4-of-has3-of-lv3-mv
         kind: theorem
@@ -2123,7 +2123,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.ExportFirst.exportF_isBuiltE_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.ExportClose0.exportAt_bundles_alt
         id: export-at-bundles-alt
         kind: theorem
@@ -2132,7 +2132,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.series_realization_of_published_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.realization_of_published_alt
         id: realization-of-published-alt
         kind: theorem
@@ -2141,7 +2141,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.ExportClose0.exportAt_bundles_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.ExportClose.exportAt_of_bundles_alt
         id: export-at-of-bundles-alt
         kind: theorem
@@ -2150,7 +2150,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.realization_of_published_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.all_stages_at_member_of_specializations_alt
         id: all-stages-at-member-of-specializations-alt
         kind: theorem
@@ -2159,7 +2159,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Mem.Top.Bl.exists_baseLattice_of_prime_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.HeightCounting.Up.all_stages_of_specializations_alt
         id: all-stages-of-specializations-alt
         kind: theorem
@@ -2168,7 +2168,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.all_stages_at_member_of_specializations_alt
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.GalC.final_alt_alt
         id: final-alt-alt
         kind: theorem
@@ -2177,7 +2177,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.GalC.final_of_alt
         id: final-of-alt
         kind: theorem
@@ -2186,7 +2186,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.GalC.final_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.GalC.linkedAt_linkN_of_boundAtTwoThree
         id: linked-at-link-n-of-bound-at-two-three
         kind: theorem
@@ -2195,7 +2195,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.GalC.final_of_alt
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.GalC.linkN_of_boundAtTwoThree_slot
         id: link-n-of-bound-at-two-three-slot
         kind: theorem
@@ -2204,7 +2204,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.GalC.linkedAt_linkN_of_boundAtTwoThree
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.GalC.linkN_of_twGood_galoisPreconditions
         id: link-n-of-tw-good-galois-preconditions
         kind: theorem
@@ -2213,7 +2213,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.GalC.linkN_of_boundAtTwoThree_slot
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.conclF_of_family_facts_and_bound_at_two_three
         id: concl-f-of-family-facts-and-bound-at-two-three
         kind: theorem
@@ -2222,7 +2222,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.GalC.linkN_of_twGood_galoisPreconditions
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.NLinkClose.main_alt_alt
         id: nlink-close-main-alt-alt
         kind: theorem
@@ -2231,7 +2231,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.conclF_of_family_facts_and_bound_at_two_three
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.star_ad_and_bb_le_of_joint_cond
         id: star-ad-and-bb-le-of-joint-cond
         kind: theorem
@@ -2240,7 +2240,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.NLinkClose.main_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.NLink.rowsAD_in_setting_alt
         id: rows-ad-in-setting-alt
         kind: theorem
@@ -2249,7 +2249,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.star_ad_and_bb_le_of_joint_cond
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.adm_at_inert_of_range
         id: adm-at-inert-of-range
         kind: theorem
@@ -2258,7 +2258,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.NLink.rowsAD_in_setting_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.NLink.InertStep.main_alt_alt
         id: inert-step-main-alt-alt
         kind: theorem
@@ -2267,7 +2267,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.adm_at_inert_of_range
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.eventually_congBound_of_facts
         id: eventually-cong-bound-of-facts
         kind: theorem
@@ -2276,7 +2276,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.NLinkClose.main_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.NLinkE.main_alt_alt
         id: nlink-e-main-alt-alt
         kind: theorem
@@ -2285,7 +2285,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.eventually_congBound_of_facts
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.embedding_jumps_aux2_of_setup
         id: embedding-jumps-aux2-of-setup
         kind: theorem
@@ -2294,7 +2294,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.NLinkClose.main_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.TheoremBQD.main_alt_alt
         id: theorem-bqd-main-alt-alt
         kind: theorem
@@ -2303,7 +2303,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.embedding_jumps_aux2_of_setup
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.exists_const_tieChi_bound_of_facts
         id: exists-const-tie-chi-bound-of-facts
         kind: theorem
@@ -2312,7 +2312,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.GalC.linkN_of_twGood_galoisPreconditions
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.ExtraFromFacts.main_alt_alt
         id: extra-from-facts-main-alt-alt
         kind: theorem
@@ -2321,7 +2321,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.exists_const_tieChi_bound_of_facts
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.exists_bound_tieChi_of_prints
         id: exists-bound-tie-chi-of-prints
         kind: theorem
@@ -2330,7 +2330,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.ExtraFromFacts.main_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.NormFromFacts.main_alt_alt
         id: norm-from-facts-main-alt-alt
         kind: theorem
@@ -2339,7 +2339,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.exists_bound_tieChi_of_prints
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.conclusion41_of_pAdicHodge_alt
         id: conclusion41-of-p-adic-hodge-alt
         kind: theorem
@@ -2348,7 +2348,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.NormFromFacts.main_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.ClosingLocalInputs.main_alt_alt
         id: closing-local-inputs-main-alt-alt
         kind: theorem
@@ -2357,7 +2357,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.conclusion41_of_pAdicHodge_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.liftInj_and_nonVan_typeNZ_of_given
         id: lift-inj-and-non-van-type-nz-of-given
         kind: theorem
@@ -2366,7 +2366,7 @@ volumes:
         fanin: 2
         idom: GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Core.Rk.LiftOnto.liftInj_nonVan_typeNZ_of_hypotheses_alt
         id: lift-inj-non-van-type-nz-of-hypotheses-alt
         kind: theorem
@@ -2375,7 +2375,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.liftInj_and_nonVan_typeNZ_of_given
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.downNe_of_eulerRight_doubling
         id: down-ne-of-euler-right-doubling
         kind: theorem
@@ -2384,7 +2384,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Core.Rk.LiftOnto.liftInj_nonVan_typeNZ_of_hypotheses_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Core.Rk.Exh.Top.downNe_k_of_hypotheses'
         id: down-ne-k-of-hypotheses-prime
         kind: theorem
@@ -2393,7 +2393,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.downNe_of_eulerRight_doubling
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.hyps_e_third_layer_ser_n_of_geometric_galois
         id: hyps-e-third-layer-ser-n-of-geometric-galois
         kind: theorem
@@ -2402,7 +2402,7 @@ volumes:
         fanin: 2
         idom: GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.MemberClose.exists_hyp_n_of_geometric_galois_compat
         id: exists-hyp-n-of-geometric-galois-compat
         kind: theorem
@@ -2411,7 +2411,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.hyps_e_third_layer_ser_n_of_geometric_galois
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Fc.S0.ontoX_and_lamLow_of_unitaryGroupHypotheses'
         id: onto-x-and-lam-low-of-unitary-group-hypotheses-prime
         kind: theorem
@@ -2429,7 +2429,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Fc.S0.ontoX_and_lamLow_of_unitaryGroupHypotheses'
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.BigOn.geoSt_of_pageSt_alt
         id: geo-st-of-page-st-alt
         kind: theorem
@@ -2438,7 +2438,7 @@ volumes:
         fanin: 2
         idom: GlobalTheory.BigOn.ontoX_of_hypotheses_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.expSt_of_base_change_and_crystalline_lattices
         id: exp-st-of-base-change-and-crystalline-lattices
         kind: theorem
@@ -2447,7 +2447,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.BigOn.ontoX_of_hypotheses_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.BigOn.exponent_bound_of_unitaryThetaStandardTheorems_alt
         id: exponent-bound-of-unitary-theta-standard-theorems-alt
         kind: theorem
@@ -2456,7 +2456,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.expSt_of_base_change_and_crystalline_lattices
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.model_statement_of_crystalline_chebotarev_frame_gal
         id: model-statement-of-crystalline-chebotarev-frame-gal
         kind: theorem
@@ -2465,7 +2465,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.BigOn.exponent_bound_of_unitaryThetaStandardTheorems_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.ExpModel.modelSt_of_small_frame_gal
         id: model-st-of-small-frame-gal
         kind: theorem
@@ -2474,7 +2474,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.model_statement_of_crystalline_chebotarev_frame_gal
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.expSt_of_num_sumExp_model
         id: exp-st-of-num-sum-exp-model
         kind: theorem
@@ -2483,7 +2483,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.BigOn.exponent_bound_of_unitaryThetaStandardTheorems_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.ExpTie.Asm.expSt_of_alt
         id: exp-st-of-alt
         kind: theorem
@@ -2492,7 +2492,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.expSt_of_num_sumExp_model
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.open0_of_unitary_group_hypotheses
         id: open0-of-unitary-group-hypotheses
         kind: theorem
@@ -2510,7 +2510,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.open0_of_unitary_group_hypotheses
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.main_theorem_published_inputs_third_alt_alt
         id: main-theorem-published-inputs-third-alt-alt
         kind: theorem
@@ -2519,7 +2519,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.miStarRow_alt_alt
         id: global-theory-mi-star-row-alt-alt
         kind: theorem
@@ -2528,7 +2528,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.main_theorem_published_inputs_third_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.main_theorem_published_inputs_variant_alt_alt
         id: main-theorem-published-inputs-variant-alt-alt
         kind: theorem
@@ -2537,7 +2537,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.miStarRow_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.miStarRowClosing_alt_alt
         id: mi-star-row-closing-alt-alt
         kind: theorem
@@ -2546,7 +2546,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.main_theorem_published_inputs_variant_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.main_theorem_published_results_final_alt_alt
         id: main-theorem-published-results-final-alt-alt
         kind: theorem
@@ -2555,7 +2555,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.miStarRowClosing_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Fam.miStar_row_alt_alt
         id: fam-mi-star-row-alt-alt
         kind: theorem
@@ -2564,7 +2564,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.main_theorem_published_results_final_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.main_theorem_from_published_results_alt_alt_alt_alt_alt
         id: main-theorem-from-published-results-alt-alt-alt-alt-alt
         kind: theorem
@@ -2573,7 +2573,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Fam.miStar_row_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Fam.miAt_of_truePack_alt_alt
         id: mi-at-of-true-pack-alt-alt
         kind: theorem
@@ -2582,7 +2582,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.main_theorem_from_published_results_alt_alt_alt_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.main_theorem_from_published_results_alt_alt_alt_alt
         id: main-theorem-from-published-results-alt-alt-alt-alt
         kind: theorem
@@ -2591,7 +2591,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Fam.miAt_of_truePack_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Fam.miStar2_of_allTrue_alt_alt
         id: mi-star2-of-all-true-alt-alt
         kind: theorem
@@ -2600,7 +2600,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.main_theorem_from_published_results_alt_alt_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.true_geometry_family_row_data_alt
         id: true-geometry-family-row-data-alt
         kind: theorem
@@ -2609,7 +2609,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Fam.miStar2_of_allTrue_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.MiTop.famAllQ_of_allTrue_alt
         id: fam-all-q-of-all-true-alt
         kind: theorem
@@ -2618,7 +2618,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.true_geometry_family_row_data_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.true_geometry_family_invariance_alt
         id: true-geometry-family-invariance-alt
         kind: theorem
@@ -2627,7 +2627,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.MiTop.famAllQ_of_allTrue_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Fam.colSide_alt
         id: col-side-alt
         kind: theorem
@@ -2636,7 +2636,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.true_geometry_family_invariance_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.true_geometry_family_final_alt
         id: true-geometry-family-final-alt
         kind: theorem
@@ -2645,7 +2645,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Fam.colSide_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.QColLaws.laws_resc_alt
         id: laws-resc-alt
         kind: theorem
@@ -2654,7 +2654,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.true_geometry_family_final_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.true_geometry_family_column_data_alt
         id: true-geometry-family-column-data-alt
         kind: theorem
@@ -2663,7 +2663,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.MiTop.famAllQ_of_allTrue_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Fam.lawsLinks_of_geo_rows_cols_alt
         id: laws-links-of-geo-rows-cols-alt
         kind: theorem
@@ -2672,7 +2672,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.true_geometry_family_column_data_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.exists_botDat_of_placedP_framed
         id: exists-bot-dat-of-placed-p-framed
         kind: theorem
@@ -2681,7 +2681,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.MiTop.famAllQ_of_allTrue_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.MiTop.exists_botDat_pin_of_placed_of_framed
         id: exists-bot-dat-pin-of-placed-of-framed
         kind: theorem
@@ -2690,7 +2690,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.exists_botDat_of_placedP_framed
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.weil_unitary_entries'
         id: weil-unitary-entries-prime
         kind: theorem
@@ -2699,7 +2699,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Fc.RL.linkedAt_prmR_df_of_cuspRapidDecay
         id: linked-at-prm-r-df-of-cusp-rapid-decay
         kind: theorem
@@ -2708,7 +2708,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.weil_unitary_entries'
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Fc.RL.DefSide.linkedAt_df_of_parameters
         id: linked-at-df-of-parameters
         kind: theorem
@@ -2717,7 +2717,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Fc.RL.linkedAt_prmR_df_of_cuspRapidDecay
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Fc.RL.DefSide.definiteSideCondition_of_nprimeDef_of_nuFull
         id: definite-side-condition-of-nprime-def-of-nu-full
         kind: theorem
@@ -2726,7 +2726,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Fc.RL.DefSide.linkedAt_df_of_parameters
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.kernel_columns_from_ties_alt
         id: kernel-columns-from-ties-alt
         kind: theorem
@@ -2735,7 +2735,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Fc.RL.DefSide.definiteSideCondition_of_nprimeDef_of_nuFull
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.ColRows.rowsU_of_colPins_alt
         id: rows-u-of-col-pins-alt
         kind: theorem
@@ -2744,7 +2744,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.kernel_columns_from_ties_alt
         tier: 1
-        written: false
+        written: true
     - id: flag-measures
       folder: Development.AbelianVarietyTheory.Proofs.FlagMeasures
       title: Flag measures
@@ -2757,7 +2757,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.LocalRows.at_choice_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.CarrierGap.theoremS_leaves_of_carrierG
         id: theorem-s-leaves-of-carrier-g
         kind: theorem
@@ -2766,7 +2766,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.CarrierGap.offDiag
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.CarrierGap.carrierP
         id: carrier-p
         kind: theorem
@@ -2775,7 +2775,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.CarrierGap.offDiag
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.carrierNeedsFromD
         id: carrier-needs-from-d
         kind: theorem
@@ -2784,7 +2784,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.CarrierGap.carrierP
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.CountConstants.count_constants_of_siegelWeil
         id: count-constants-of-siegel-weil
         kind: theorem
@@ -2793,7 +2793,7 @@ volumes:
         fanin: 2
         idom: GlobalTheory.CountRow.row_counts_of_ties_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.CountBridge.count_typed_of_volumeStep
         id: count-typed-of-volume-step
         kind: theorem
@@ -2802,7 +2802,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.CountConstants.count_constants_of_siegelWeil
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.unitaryAutomorphicCounting_of_compactDualVolumeRatio
         id: unitary-automorphic-counting-of-compact-dual-volume-ratio
         kind: theorem
@@ -2811,7 +2811,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.CountBridge.count_typed_of_volumeStep
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.CountFinal.countingTheorem_of_volumeStep
         id: counting-theorem-of-volume-step
         kind: theorem
@@ -2820,7 +2820,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.unitaryAutomorphicCounting_of_compactDualVolumeRatio
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.St.SpectralData.exists_setting
         id: exists-setting
         kind: theorem
@@ -2829,7 +2829,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.Lit.exists_spectralData_gap_alt
         tier: 1
-        written: false
+        written: true
     - id: cokernel-glcounts
       folder: Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts
       title: Cokernel GL counts
@@ -2842,7 +2842,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.CarrierGap.theoremS_leaves_of_carrierG
         tier: 1
-        written: false
+        written: true
       - name: Formalism.L2.SG.Pf.Coef.cutAt_of_deep
         id: cut-at-of-deep
         kind: theorem
@@ -2851,7 +2851,7 @@ volumes:
         fanin: 1
         idom: Formalism.L2.SG.Pf.Coef.rowsDatumP_of_deep
         tier: 1
-        written: false
+        written: true
       - name: Formalism.L2.SG.Pf.PCount.partnerCount_holds_all
         id: partner-count-holds-all
         kind: theorem
@@ -2860,7 +2860,7 @@ volumes:
         fanin: 1
         idom: Formalism.L2.SG.Pf.Coef.cutAt_of_deep
         tier: 1
-        written: false
+        written: true
       - name: Formalism.L2.SG.LsDatumA.integralClosureRank_and_residueTrdegLe
         id: integral-closure-rank-and-residue-trdeg-le
         kind: theorem
@@ -2869,7 +2869,7 @@ volumes:
         fanin: 1
         idom: Formalism.L2.SG.Pf.PCount.partnerCount_holds_all
         tier: 1
-        written: false
+        written: true
     - id: local-to-global
       folder: Formalism.LocalToGlobal
       title: Local to global
@@ -2882,7 +2882,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.CarrierGap.theoremS_leaves_of_carrierG
         tier: 1
-        written: false
+        written: true
       - name: Formalism.L2.KerInert.AdmLoc2.admissible_entries_small_chain
         id: admissible-entries-small-chain
         kind: theorem
@@ -2891,7 +2891,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.TwV.Lt.inert_theta_admissibility_of_complex_multiplication
         tier: 1
-        written: false
+        written: true
     - id: hermitian-curvature-proofs
       folder: Formalism.HermitianCurvature.HermitianCurvatureProofs
       title: Hermitian curvature proofs
@@ -2904,7 +2904,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.carrierNeedsFromD
         tier: 1
-        written: false
+        written: true
       - name: Formalism.FourierDecayAlt.P.CutMP.modelPlaceBuilt2_of_chartEqs
         id: model-place-built2-of-chart-eqs
         kind: theorem
@@ -2913,7 +2913,7 @@ volumes:
         fanin: 1
         idom: Formalism.FourierDecayAlt.P.CutMP.SmoothTransferRegularity.model_place_built_holds
         tier: 1
-        written: false
+        written: true
       - name: Formalism.FourierDecayAlt.P.CutMP.modelPlaceBuilt2_of_jf
         id: model-place-built2-of-jf
         kind: theorem
@@ -2922,7 +2922,7 @@ volumes:
         fanin: 1
         idom: Formalism.FourierDecayAlt.P.CutMP.modelPlaceBuilt2_of_chartEqs
         tier: 1
-        written: false
+        written: true
       - name: Formalism.FourierDecayAlt.P.CutMP.modelPlaceBuilt2_of_polyS
         id: model-place-built2-of-poly-s
         kind: theorem
@@ -2931,7 +2931,7 @@ volumes:
         fanin: 1
         idom: Formalism.FourierDecayAlt.P.CutMP.modelPlaceBuilt2_of_jf
         tier: 1
-        written: false
+        written: true
       - name: Formalism.FourierDecayAlt.P.built_bounds_compact
         id: built-bounds-compact
         kind: theorem
@@ -2940,7 +2940,7 @@ volumes:
         fanin: 1
         idom: Formalism.FourierDecayAlt.Final.pb_builtBounds2Cpt
         tier: 1
-        written: false
+        written: true
       - name: Formalism.FourierDecayAlt.P.pb_builtBounds2Cpt_of_mkTop
         id: pb-built-bounds2-cpt-of-mk-top
         kind: theorem
@@ -2949,7 +2949,7 @@ volumes:
         fanin: 1
         idom: Formalism.FourierDecayAlt.P.built_bounds_compact
         tier: 1
-        written: false
+        written: true
       - name: Formalism.FourierDecayAlt.P.built_bounds_compact_of_head_top
         id: built-bounds-compact-of-head-top
         kind: theorem
@@ -2958,7 +2958,7 @@ volumes:
         fanin: 1
         idom: Formalism.FourierDecayAlt.P.pb_builtBounds2Cpt_of_mkTop
         tier: 1
-        written: false
+        written: true
       - name: Formalism.FourierDecayAlt.P.lemma_model
         id: lemma-model
         kind: theorem
@@ -2967,7 +2967,7 @@ volumes:
         fanin: 3
         idom: GlobalTheory.CarrierGap.carrierP
         tier: 1
-        written: false
+        written: true
     - id: hermitian-curvature
       folder: Formalism.HermitianCurvature
       title: Hermitian curvature
@@ -2980,7 +2980,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.carrierNeedsFromD
         tier: 1
-        written: false
+        written: true
     - id: satake-parameters
       folder: Development.AbelianVarietyTheory.Proofs.SatakeParameters
       title: Satake parameters
@@ -2993,7 +2993,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Svd.servH_row_linkR_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Svd.servH_row_of_artin
         id: serv-h-row-of-artin
         kind: theorem
@@ -3002,7 +3002,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.bundle_bothParts_of_standardKernel_of_globalArtinReciprocity
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.bundle_bothParts_of_standardKernel_and_six_hypotheses
         id: bundle-both-parts-of-standard-kernel-and-six-hypotheses
         kind: theorem
@@ -3011,7 +3011,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Svd.servH_row_of_artin
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Svd.servH_row
         id: serv-h-row
         kind: theorem
@@ -3020,7 +3020,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.bundle_bothParts_of_standardKernel_and_six_hypotheses
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.tuplesHaveLocalModels_at_constructedPoint_over_trueColumns
         id: tuples-have-local-models-at-constructed-point-over-true-columns
         kind: theorem
@@ -3029,7 +3029,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Svd.servH_row
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Svd.modelsAt_bpt
         id: models-at-bpt
         kind: theorem
@@ -3038,7 +3038,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.tuplesHaveLocalModels_at_constructedPoint_over_trueColumns
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.tuplesHaveLocalModels_of_standardColumnObjects
         id: tuples-have-local-models-of-standard-column-objects
         kind: theorem
@@ -3047,7 +3047,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Svd.modelsAt_bpt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Svd.modelsAt_of_part
         id: models-at-of-part
         kind: theorem
@@ -3056,7 +3056,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.tuplesHaveLocalModels_of_standardColumnObjects
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.thetaLocalModels_of_splitUnramified_joints
         id: theta-local-models-of-split-unramified-joints
         kind: theorem
@@ -3065,7 +3065,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Svd.modelsAt_of_part
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.TwV.modelsOK_of_joints
         id: models-ok-of-joints
         kind: theorem
@@ -3074,7 +3074,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.thetaLocalModels_of_splitUnramified_joints
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.jointSite_chain_compared_carries_admittedSystem
         id: joint-site-chain-compared-carries-admitted-system
         kind: theorem
@@ -3083,7 +3083,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.TwV.modelsOK_of_joints
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.TwV.site_cmpLite_siteAdm
         id: site-cmp-lite-site-adm
         kind: theorem
@@ -3092,7 +3092,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.jointSite_chain_compared_carries_admittedSystem
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.TwV.admissible_at_each_site
         id: admissible-at-each-site
         kind: theorem
@@ -3101,7 +3101,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.TwV.site_cmpLite_siteAdm
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Pdv.rowAt_of_stdTie
         id: row-at-of-std-tie
         kind: theorem
@@ -3110,7 +3110,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Svd.servH_row
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.kernelDatumConditions_at_standardKernelComparison
         id: kernel-datum-conditions-at-standard-kernel-comparison
         kind: theorem
@@ -3119,7 +3119,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Pdv.rowAt_of_stdTie
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.PdvTie.at_of_stdTie
         id: at-of-std-tie
         kind: theorem
@@ -3128,7 +3128,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.kernelDatumConditions_at_standardKernelComparison
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.PdvClose.at_of_true_columns
         id: at-of-true-columns
         kind: theorem
@@ -3137,7 +3137,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.PdvTie.at_of_stdTie
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.TwV.Lt.inert_theta_admissibility_of_complex_multiplication
         id: inert-theta-admissibility-of-complex-multiplication
         kind: theorem
@@ -3146,7 +3146,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Svd.servH_row_of_artin
         tier: 1
-        written: false
+        written: true
     - id: global-interpolation
       folder: Development.AbelianVarietyTheory.Proofs.GlobalInterpolation
       title: Global interpolation
@@ -3159,7 +3159,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Fc.six_rows_at_member_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Fc.Cv.row_level_valuations
         id: row-level-valuations
         kind: theorem
@@ -3168,7 +3168,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.levelPrimeColumnValuations_bundlePoints_overColumns
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.LvT.Built.TrueCols.closing_true_cols
         id: closing-true-cols
         kind: theorem
@@ -3177,7 +3177,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Fc.Cv.row_level_valuations
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.trueColumns_row_sharp_bounds
         id: true-columns-row-sharp-bounds
         kind: theorem
@@ -3186,7 +3186,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.LvT.Built.TrueCols.closing_true_cols
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.LvT.Built.TrueCols.row_true
         id: row-true
         kind: theorem
@@ -3195,7 +3195,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.trueColumns_row_sharp_bounds
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.LvT.Built.TrueCols.trueColumns_chain_last_step_sharp_bound
         id: true-columns-chain-last-step-sharp-bound
         kind: theorem
@@ -3204,7 +3204,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.LvT.Built.TrueCols.row_true
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.fivePointLaws_trueChains
         id: five-point-laws-true-chains
         kind: theorem
@@ -3213,7 +3213,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.LvT.Built.TrueCols.trueColumns_chain_last_step_sharp_bound
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.LvT.Built.TrueLaws.laws_true_fam
         id: laws-true-fam
         kind: theorem
@@ -3222,7 +3222,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.fivePointLaws_trueChains
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.kernelJets_levelPlace_integralMoments
         id: kernel-jets-level-place-integral-moments
         kind: theorem
@@ -3231,7 +3231,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.LvT.Built.TrueLaws.laws_true_fam
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.MomTop.jetMoments
         id: jet-moments
         kind: theorem
@@ -3240,7 +3240,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.kernelJets_levelPlace_integralMoments
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.unitPeriodTranslates_moments_finite
         id: unit-period-translates-moments-finite
         kind: theorem
@@ -3249,7 +3249,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.MomTop.jetMoments
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.MomFin.moments_fin
         id: moments-fin
         kind: theorem
@@ -3258,7 +3258,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.unitPeriodTranslates_moments_finite
         tier: 1
-        written: false
+        written: true
     - id: iwasawa-decomposition
       folder: Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition
       title: Iwasawa decomposition
@@ -3271,7 +3271,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Mem.Top.Closing.memberE_closing_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Mem.Top.Bl.memberE_of_steps2
         id: member-e-of-steps2
         kind: theorem
@@ -3280,7 +3280,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.exists_member_of_construction_steps_secondPass
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.exists_constructedCore_of_all_construction_stages
         id: exists-constructed-core-of-all-construction-stages
         kind: theorem
@@ -3289,7 +3289,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Mem.Top.Bl.memberE_of_steps2
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Mem.Top.Bl.CoreAsm.stepW_core
         id: step-w-core
         kind: theorem
@@ -3298,7 +3298,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.exists_constructedCore_of_all_construction_stages
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.HeckeMember.heckeInt_transform_readTie
         id: hecke-int-transform-read-tie
         kind: theorem
@@ -3307,7 +3307,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.MemberClose.exists_hyp_n_of_geometric_galois_compat
         tier: 1
-        written: false
+        written: true
     - id: inertia-eigenvalues
       folder: Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues
       title: Inertia eigenvalues
@@ -3320,7 +3320,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.ExportClose.exportAt_of_bundles_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.localLiftingTheoremB_of_blochKato_tateDuality_eulerChar
         id: local-lifting-theorem-b-of-bloch-kato-tate-duality-euler-char
         kind: theorem
@@ -3329,7 +3329,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.NLink.InertStep.main_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.theoremB_closing
         id: theorem-b-closing
         kind: theorem
@@ -3338,7 +3338,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.localLiftingTheoremB_of_blochKato_tateDuality_eulerChar
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.prv_twenty_five_of_blochKato_tateDuality_eulerChar
         id: prv-twenty-five-of-bloch-kato-tate-duality-euler-char
         kind: theorem
@@ -3347,7 +3347,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.NLink.InertStep.main_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.ramifiedCoefficientChains_prv_twenty_five
         id: ramified-coefficient-chains-prv-twenty-five
         kind: theorem
@@ -3356,7 +3356,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.prv_twenty_five_of_blochKato_tateDuality_eulerChar
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.ramified_coefficient_chains_of_hypotheses
         id: ramified-coefficient-chains-of-hypotheses
         kind: theorem
@@ -3365,7 +3365,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.ramifiedCoefficientChains_prv_twenty_five
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.theoremC_of_admitted_inputs
         id: theorem-c-of-admitted-inputs
         kind: theorem
@@ -3374,7 +3374,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.ramified_coefficient_chains_of_hypotheses
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.blochKatoTop_of_localTateDuality_eulerChar
         id: bloch-kato-top-of-local-tate-duality-euler-char
         kind: theorem
@@ -3383,7 +3383,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.NLinkE.main_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.TopClosing.blochKatoTop_of_localTateDuality_eulerChar_alt
         id: bloch-kato-top-of-local-tate-duality-euler-char-alt
         kind: theorem
@@ -3392,7 +3392,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.blochKatoTop_of_localTateDuality_eulerChar
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.TopBridge.twistedLatticeCohomology_theoremTOP
         id: twisted-lattice-cohomology-theorem-top
         kind: theorem
@@ -3401,7 +3401,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.TopClosing.blochKatoTop_of_localTateDuality_eulerChar_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.theoremE_corollaryA_closing_all_data
         id: theorem-e-corollary-a-closing-all-data
         kind: theorem
@@ -3410,7 +3410,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.NLinkClose.main_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.ThmECorA.closing
         id: thm-ecor-a-closing
         kind: theorem
@@ -3419,7 +3419,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.theoremE_corollaryA_closing_all_data
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.twistedPlace_selmerLengthBound_of_localDuality
         id: twisted-place-selmer-length-bound-of-local-duality
         kind: theorem
@@ -3428,7 +3428,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.TheoremBQD.main_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.TwistedPlaceBound.closing
         id: twisted-place-bound-closing
         kind: theorem
@@ -3437,7 +3437,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.twistedPlace_selmerLengthBound_of_localDuality
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.localLifting_of_blochKato_tateDuality_eulerChar
         id: local-lifting-of-bloch-kato-tate-duality-euler-char
         kind: theorem
@@ -3446,7 +3446,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.TwistedPlaceBound.closing
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.theoremA_closing
         id: theorem-a-closing
         kind: theorem
@@ -3455,7 +3455,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.localLifting_of_blochKato_tateDuality_eulerChar
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.integralityFromMetric_of_160_le
         id: integrality-from-metric-of-160-le
         kind: theorem
@@ -3464,7 +3464,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.theoremA_closing
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.TheoremAFinal.integralityFromMetric_of_le
         id: integrality-from-metric-of-le
         kind: theorem
@@ -3473,7 +3473,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.integralityFromMetric_of_160_le
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.crystallinePeriodBound_all_constant_ge_forty
         id: crystalline-period-bound-all-constant-ge-forty
         kind: theorem
@@ -3482,7 +3482,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.ClosingLocalInputs.main_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.InertiaEigenvalues.theoremT_all_records
         id: theorem-t-all-records
         kind: theorem
@@ -3491,7 +3491,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.crystallinePeriodBound_all_constant_ge_forty
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.liftingStep_theoremT_of_bhattScholze_fontaine
         id: lifting-step-theorem-t-of-bhatt-scholze-fontaine
         kind: theorem
@@ -3500,7 +3500,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.InertiaEigenvalues.theoremT_all_records
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.TheoremTClosing.main
         id: theorem-tclosing-main
         kind: theorem
@@ -3509,7 +3509,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.liftingStep_theoremT_of_bhattScholze_fontaine
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.lift_surjection_good_crystalline_lattices
         id: lift-surjection-good-crystalline-lattices
         kind: theorem
@@ -3518,7 +3518,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.TheoremTClosing.main
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.TheoremT.liftF_of_isGood
         id: lift-f-of-is-good
         kind: theorem
@@ -3527,7 +3527,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.lift_surjection_good_crystalline_lattices
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.exists_breuilKisinModule_tameDescent_goodLattice
         id: exists-breuil-kisin-module-tame-descent-good-lattice
         kind: theorem
@@ -3536,7 +3536,7 @@ volumes:
         fanin: 2
         idom: GlobalTheory.TheoremT.liftF_of_isGood
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.BKGal.exists_pack_isOfType
         id: exists-pack-is-of-type
         kind: theorem
@@ -3545,7 +3545,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.exists_breuilKisinModule_tameDescent_goodLattice
         tier: 1
-        written: false
+        written: true
     - id: decorated-lattice-proofs
       folder: Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs
       title: Decorated lattice proofs
@@ -3558,7 +3558,7 @@ volumes:
         fanin: 3
         idom: GlobalTheory.Fc.StageOneU.member_bundles_large_unramified_exponents_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Core.Rk.UpInjRow.upInj
         id: up-inj
         kind: theorem
@@ -3567,7 +3567,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.thetaLift_adjoint_scalarFormula_injective
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.thetaChainStep_positive_scalar_standingHypotheses
         id: theta-chain-step-positive-scalar-standing-hypotheses
         kind: theorem
@@ -3576,7 +3576,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Core.Rk.UpInjRow.upInj
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Core.Rk.ScalarsRow.scalars
         id: scalars
         kind: theorem
@@ -3585,7 +3585,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.thetaChainStep_positive_scalar_standingHypotheses
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.Core.Rk.ScalarsRow.scalars_of_heckeFormNS
         id: scalars-of-hecke-form-ns
         kind: theorem
@@ -3594,7 +3594,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Core.Rk.ScalarsRow.scalars
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.thetaChain_steps_positive_multiple_of_LValue
         id: theta-chain-steps-positive-multiple-of-lvalue
         kind: theorem
@@ -3603,7 +3603,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Core.Rk.ScalarsRow.scalars_of_heckeFormNS
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.ChainTw.scalars_of_given_all
         id: scalars-of-given-all
         kind: theorem
@@ -3612,7 +3612,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.thetaChain_steps_positive_multiple_of_LValue
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.seeSawTwistPlaceLaws_of_rootOfUnityRescaling
         id: see-saw-twist-place-laws-of-root-of-unity-rescaling
         kind: theorem
@@ -3621,7 +3621,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.QColLaws.laws_resc_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.QTw.laws_of_pin_resc
         id: laws-of-pin-resc
         kind: theorem
@@ -3630,7 +3630,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.seeSawTwistPlaceLaws_of_rootOfUnityRescaling
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.seeSaw_latticeFramePins_finiteIntegralLaws
         id: see-saw-lattice-frame-pins-finite-integral-laws
         kind: theorem
@@ -3639,7 +3639,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Fam.lawsLinks_of_geo_rows_cols_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.SeeSaw.pins_finiteIntegrals
         id: pins-finite-integrals
         kind: theorem
@@ -3648,7 +3648,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.seeSaw_latticeFramePins_finiteIntegralLaws
         tier: 1
-        written: false
+        written: true
     - id: level-letter-cocycles
       folder: Formalism.SharpRestriction.LevelLetterCocycles
       title: Level letter cocycles
@@ -3661,7 +3661,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.theoremC_of_admitted_inputs
         tier: 1
-        written: false
+        written: true
       - name: Formalism.MainNotions.N.Ln03.corollary_local_exists_constant
         id: corollary-local-exists-constant
         kind: theorem
@@ -3670,7 +3670,7 @@ volumes:
         fanin: 2
         idom: GlobalTheory.ThmECorA.closing
         tier: 1
-        written: false
+        written: true
       - name: Formalism.MainNotions.N.Ln03.local_theorem_of_inputs
         id: local-theorem-of-inputs
         kind: theorem
@@ -3679,7 +3679,7 @@ volumes:
         fanin: 1
         idom: Formalism.MainNotions.N.Ln03.corollary_local_exists_constant
         tier: 1
-        written: false
+        written: true
       - name: Formalism.MainNotions.N.Ln34.integrality_from_metric_of_large_constant
         id: integrality-from-metric-of-large-constant
         kind: theorem
@@ -3688,7 +3688,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.TheoremAFinal.integralityFromMetric_of_le
         tier: 1
-        written: false
+        written: true
     - id: weil-bound
       folder: Development.WeilBound
       title: Weil bound
@@ -3701,7 +3701,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.Core.Rk.Exh.Top.downNe_k_of_hypotheses'
         tier: 1
-        written: false
+        written: true
     - id: height-proofs
       folder: Development.AbelianVarietyTheory.Proofs.HeightProofs
       title: Height proofs
@@ -3714,7 +3714,7 @@ volumes:
         fanin: 2
         idom: GlobalTheory.BigOn.ontoX_of_hypotheses_alt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.exists_indexBoundHypothesesWithNet_allValuedPoints
         id: exists-index-bound-hypotheses-with-net-all-valued-points
         kind: theorem
@@ -3723,7 +3723,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.FinalJoin.runHolds_of_parOK
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.InputsAtRecord.inputsNet_recPlus
         id: inputs-net-rec-plus
         kind: theorem
@@ -3732,7 +3732,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.exists_indexBoundHypothesesWithNet_allValuedPoints
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.exists_primeData_curve_lifting_heightBounds
         id: exists-prime-data-curve-lifting-height-bounds
         kind: theorem
@@ -3741,7 +3741,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.InputsAtRecord.inputsNet_recPlus
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.RunPrimeData.exists_primeData_heights
         id: exists-prime-data-heights
         kind: theorem
@@ -3750,7 +3750,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.exists_primeData_curve_lifting_heightBounds
         tier: 1
-        written: false
+        written: true
     - id: divisor-proofs
       folder: Development.AbelianVarietyTheory.Proofs.DivisorProofs
       title: Divisor proofs
@@ -3763,7 +3763,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.BigOn.geoSt_of_pageSt_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.ExpTie.Asm.hasExpBound_at
         id: has-exp-bound-at
         kind: theorem
@@ -3772,7 +3772,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.ExpTie.Asm.expSt_of_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.ExpTie.Asm.jexpU_le_jrec7
         id: jexp-u-le-jrec7
         kind: theorem
@@ -3781,7 +3781,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.ExpTie.Asm.hasExpBound_at
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.primePowerLatticeInclusion_of_localModels
         id: prime-power-lattice-inclusion-of-local-models
         kind: theorem
@@ -3790,7 +3790,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.ExpTie.Asm.jexpU_le_jrec7
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.ExpTie.lIncl_of_models
         id: l-incl-of-models
         kind: theorem
@@ -3799,7 +3799,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.primePowerLatticeInclusion_of_localModels
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.memberRows_of_kernelDatum_sizes
         id: member-rows-of-kernel-datum-sizes
         kind: theorem
@@ -3808,7 +3808,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.ColRows.rowsU_of_colPins_alt
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.ColRows.rowsBody_of_kerTies
         id: rows-body-of-ker-ties
         kind: theorem
@@ -3817,7 +3817,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.memberRows_of_kernelDatum_sizes
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.columnsMemberRows_of_logLevel_le
         id: columns-member-rows-of-log-level-le
         kind: theorem
@@ -3826,7 +3826,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.ColRows.rowsBody_of_kerTies
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.ColRowsTopS.rowsBody_colFace
         id: rows-body-col-face
         kind: theorem
@@ -3835,7 +3835,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.columnsMemberRows_of_logLevel_le
         tier: 1
-        written: false
+        written: true
     - id: jet-harmonics
       folder: Development.AbelianVarietyTheory.Proofs.JetHarmonics
       title: Jet harmonics
@@ -3848,7 +3848,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.BigOn.leafDepth_all_record
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.depthTable_goodPrimes_of_chartForm
         id: depth-table-good-primes-of-chart-form
         kind: theorem
@@ -3857,7 +3857,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.RunDepth.leafDepth_all_run
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.leafDepthGood_of_chartForm
         id: leaf-depth-good-of-chart-form
         kind: theorem
@@ -3866,7 +3866,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.depthTable_goodPrimes_of_chartForm
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.allGoodPrimeDepthDataExist_proof
         id: all-good-prime-depth-data-exist-proof
         kind: theorem
@@ -3875,7 +3875,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.leafDepthGood_of_chartForm
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.goodPrime_packages
         id: good-prime-packages
         kind: theorem
@@ -3884,7 +3884,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.allGoodPrimeDepthDataExist_proof
         tier: 1
-        written: false
+        written: true
     - id: automorphic-arithmetic
       folder: Development.AutomorphicArithmetic
       title: Automorphic arithmetic
@@ -3897,7 +3897,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.goodPrime_packages
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.OrbitFamilyRestriction.exists_rowFamS
         id: exists-row-fam-s
         kind: theorem
@@ -3906,7 +3906,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.exists_pkgCs_of_degree_bound_at_inert_primes
         tier: 1
-        written: false
+        written: true
       - name: UpperTheory.labelSetGeo_of_even_of_rankOK_of_not_dvd_discr
         id: label-set-geo-of-even-of-rank-ok-of-not-dvd-discr
         kind: theorem
@@ -3915,7 +3915,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.OrbitFamilyRestriction.exists_rowFamS
         tier: 1
-        written: false
+        written: true
   8:
     number: 8
     id: automorphic-arithmetic
