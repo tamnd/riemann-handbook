@@ -1,14 +1,14 @@
 # Coverage of the spine (entries for subtrees of 1000 or more declarations)
 
-Planned entries 591 (with the 8 trunk declarations of Volume 2), written 40.
+Planned entries 591 (with the 8 trunk declarations of Volume 2), written 182.
 
-Of the 753,805 declarations of the spine, 60,669 (8.0%) are in the subtree of a written entry below the trunk. Another 362,753 (48.1%) are in small shared subtrees that hang right under the trunk: no entry of this tier explains them, and the lower tiers must.
+Of the 753,805 declarations of the spine, 176,773 (23.5%) are in the subtree of a written entry below the trunk. Another 362,753 (48.1%) are in small shared subtrees that hang right under the trunk: no entry of this tier explains them, and the lower tiers must.
 
 | Volume | Title | Chapters | Planned | Written |
 |---|---|---|---|---|
-| 3 | The Galois row | 7 | 62 | 8 |
-| 4 | The window bound | 6 | 57 | 5 |
-| 5 | Volume estimates and positivity | 7 | 47 | 4 |
+| 3 | The Galois row | 7 | 62 | 62 |
+| 4 | The window bound | 6 | 57 | 57 |
+| 5 | Volume estimates and positivity | 7 | 47 | 40 |
 | 6 | Theta integrals and the green window | 6 | 25 | 5 |
 | 7 | The unitary hypotheses | 17 | 220 | 3 |
 | 8 | Automorphic arithmetic | 3 | 36 | 5 |
