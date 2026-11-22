@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.1.4
+
+- Volume 8, automorphic arithmetic: all 36 tier 1 entries and an introduction.
+- Volume 9, abelian varieties: all 69 tier 1 entries and an introduction. The entries cover toroidal compactifications, the arithmetic Hilbert-Samuel formula, pseudo-coefficients, the Jacquet-Rallis fundamental lemma and p-adic monodromy.
+- Volume 10, resolution, Siegel-Weil and GL: all 24 tier 1 entries and an introduction. The code proves strong resolution of singularities in characteristic 0 with no hypothesis.
+- Volume 11, the formalism: all 35 tier 1 entries and an introduction, with the chain of 20 reductions below Theorem A.
+- Volume 12, the ground theory: all 6 tier 1 entries and an introduction.
+- Two chapter titles are fixed: "Siegel-Weil" and "Representation theory of GL".
+- All 13 volumes build with no overfull lines and no unresolved links.
+- The tier 1 plan is complete: 591 of 591 entries are written.
+
 ## v0.1.3
 
 - Volume 6, theta integrals and the green window: all 25 tier 1 entries and an introduction. The entries cover the two theta statements from the Siegel-Weil formula, and the short branch that ends in the nonvanishing of L(s, ψ) for Re(s) > 1/2.
