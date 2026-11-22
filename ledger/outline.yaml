@@ -1211,7 +1211,7 @@ volumes:
         fanin: 2
         idom: SelfIntersectionVolumeEstimates.topCovolG_alt_alt
         tier: 1
-        written: false
+        written: true
     - id: automorphic-kernels
       folder: Development.WeilBound.CoreStatements.AutomorphicKernels
       title: Automorphic kernels
@@ -1291,7 +1291,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.model_on_hodge_from_family
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.family_pos_of_hodge_tate_inputs
         id: family-pos-of-hodge-tate-inputs
         kind: theorem
@@ -1417,7 +1417,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.slope_bound_of_line_large_degree
         tier: 1
-        written: false
+        written: true
     - id: divisibility-proofs
       folder: Development.AutomorphicSpectrum.Proofs.DivisibilityProofs
       title: Divisibility proofs
@@ -1466,7 +1466,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.CompanionTheory.Ar.Cusp.volumeTheoremX_of_inputs
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.CompanionTheory.Ar.Top.full_intersection_tower_I8_relation
         id: full-intersection-tower-i8-relation
         kind: theorem
@@ -1475,7 +1475,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.full_intersection_tower_I8_identity
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.T.tower_weil_inputs_combined
         id: tower-weil-inputs-combined
         kind: theorem
@@ -1484,7 +1484,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.CompanionTheory.Ar.Cusp.volumeTheoremX_of_inputs
         tier: 1
-        written: false
+        written: true
       - name: GlobalTheory.CompanionTheory.Ar.Top.chain_tower
         id: chain-tower
         kind: theorem
@@ -1493,7 +1493,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.tower_weil_inputs_combined
         tier: 1
-        written: false
+        written: true
     - id: core-statements
       folder: Development.WeilBound.CoreStatements
       title: Core statements
