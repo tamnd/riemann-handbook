@@ -5062,7 +5062,7 @@ volumes:
         written: false
     - id: siegel-weil
       folder: Development.WeilBound.RepresentationTheoryGL.SiegelWeil
-      title: Siegel weil
+      title: Siegel-Weil
       entries:
       - name: PositivityTheory.Rg.Wsf.weilSiegelFormula
         id: weil-siegel-formula
@@ -5102,7 +5102,7 @@ volumes:
         written: false
     - id: representation-theory-gl
       folder: Development.WeilBound.RepresentationTheoryGL
-      title: Representation theory GL
+      title: Representation theory of GL
       entries:
       - name: PositivityTheory.SiegelWeilCoefficients.field
         id: field
