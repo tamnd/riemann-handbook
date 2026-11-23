@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## v0.1.20
+
+- Volume 6, Arakelov geometry: the chapter *Arithmetic Hilbert-Samuel* is complete. It has 10 sections, from the Poincaré-Lelong formula and reciprocity to mixed heights, the ample and nef cases, arithmetic volumes and Moriwaki bigness.
+- Volume 7, local representations: the chapter *Smooth representations* is complete. It has 23 sections, from Jacquet modules and Satake parameters to derivatives, the geometric lemma, K-types, Bernstein irreducibility, the Grothendieck ring of GL(n) and the Iwahori factorization.
+- Volume 9, Galois representations: the chapter *Hecke algebras* is complete. It has 24 sections, from Hecke operators to Kummer characters, Siegel units, the Eichler-Shimura congruence, the Tate dual, the Greenberg-Wiles count and ordinary vanishing.
+- Volume 13, CM theta values: the chapter *Harmonic values* is complete. It has 9 sections, from harmonic polynomials and analytic charts to integrality of chart values, Gauss jet bounds, Gram forms and exponential gauges.
+
 ## v0.1.19
 
 - Volume 7, local representations: the chapter *Unitary dual* is complete. It has 10 sections, from Frobenius reciprocity for distributions and invariant distributions in characteristic zero and p to Bernstein's theorems, segments, discrete series of unitary groups and the global inputs.
