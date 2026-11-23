@@ -28,7 +28,7 @@ Lean: `UpperTheory.LiteratureTheorems.arith_hilbert_samuel_of_literature`.
 
 For $\overline{L}$ ample with positive curvature and $\overline{N}$ trivial this is Gillet and Soulé (Invent. Math. 110, 1992), with the analytic input of Bismut and Vasserot. Abbes and Bouche gave a proof with the Bergman kernel (Ann. Inst. Fourier 45, 1995). The nef case follows by continuity of the arithmetic volume (Moriwaki, *Arakelov Geometry*, AMS, 2014).
 
-*Proof.* In the development it is derived from resolution of singularities in the form of principalisation; see [Theorem 6.1 of Volume 6](/entry/arith-hilbert-samuel-of-principalisation/). $\square$
+*Proof.* In the development it is derived from resolution of singularities in the form of principalisation; see [Theorem 6.7.5 of Volume 6](/entry/arith-hilbert-samuel-of-principalisation/). $\square$
 
 **Theorem 1.4.3 (Volume and self-intersection).** Let $X$ be an arithmetic variety of relative dimension $D$, and let $\overline{L}$ be a Hermitian line bundle on $X$ whose restriction to each fibre is nef and whose metric is semipositive. Let $a$ be the self-intersection of $\overline{L}$. Then
 
@@ -38,7 +38,7 @@ Lean: `UpperTheory.LiteratureTheorems.vol_ge_of_literature`.
 
 For nef $\overline{L}$ the two sides are equal, by the Hilbert-Samuel theorem. For relatively nef $\overline{L}$ the inequality is a consequence of Yuan's arithmetic Siu inequality (Invent. Math. 173, 2008).
 
-*Proof.* We derive it from the arithmetic Hilbert-Samuel theorem, together with the calculus of arithmetic intersection numbers and the numerical properties of nef line bundles, which are further inputs from the literature. See [Theorem](/entry/vol-ge-of-hilbert-samuel/). $\square$
+*Proof.* We derive it from the arithmetic Hilbert-Samuel theorem, together with the calculus of arithmetic intersection numbers and the numerical properties of nef line bundles, which are further inputs from the literature. See [Theorem 6.8.6 of Volume 6](/entry/vol-ge-of-hilbert-samuel/). $\square$
 
 ### Birational invariance and the Chern-Weil degree
 
