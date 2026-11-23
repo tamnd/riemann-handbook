@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## v0.1.21
+
+- Volume 5, abelian schemes: the chapter *Siegel toroidal compactifications* is complete. It has 19 sections, from the integral toroidal compactification and formal algebraization to roots of the Mumford bundle, normalized blowups, p-adic Fourier systems and the minimal compactification.
+- Volume 6, Arakelov geometry: the chapter *Hodge metrics and Mumford proportionality* is complete. It has 12 sections, from Chern forms and the compact dual to Hodge metrics, Hopf orders, the p-th power cocycle, Zarhin's trick and Kleiman intersection numbers.
+- Volume 13, CM theta values: the chapter *Depth valuations* is complete. It has 16 sections, from formal groups of height one and multiplicative charts to depth bounds at good places, lattice integrality of theta translates and the odd block supply.
+- Volume 13, CM theta values: the chapter *CM period valuations* is complete. It has 22 sections, from joint sites and Artin reciprocity to admissibility, period bounds at type primes, Hecke correspondences in families and Rallis inner products.
+
 ## v0.1.20
 
 - Volume 6, Arakelov geometry: the chapter *Arithmetic Hilbert-Samuel* is complete. It has 10 sections, from the Poincaré-Lelong formula and reciprocity to mixed heights, the ample and nef cases, arithmetic volumes and Moriwaki bigness.
