@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.1.7
+
+- Tier 2 is complete: every declaration that owns 300 or more others has an entry. Vols 3 to 12 have all their planned entries.
+- Volume 7, the unitary hypotheses: 565 entries in 28 chapters. The introduction names the small chapters.
+- Volume 8, automorphic arithmetic: 75 entries in 4 chapters.
+- Volume 9, abelian varieties: 406 entries in 12 chapters.
+- Volume 10, the Weil bound, the spectrum and resolution: 134 entries in 16 chapters. New chapters cover the twisted trace formula, the classical vanishing theorems, Bernstein's irreducibility theorem and the local converse theorem for GL(n).
+- Volume 11, the formalism: 101 entries in 15 chapters, with the Hermitian mass formula in a new chapter.
+- Volume 12, the ground theory: 38 entries in 14 chapters, with local reciprocity, Poitou-Tate duality with real places, Hörmander's estimate and the finiteness of coherent cohomology.
+- One Volume 9 entry now says correctly where the content of `frobenius_lifting` is.
+- Volumes 7 to 12 build with no overfull lines and no unresolved links.
+- The pull requests for each volume list what the writers found in the Lean code. Two reports say that one name may be declared twice in files that are imported together, and these need a check with a full build.
+
 ## v0.1.6
 
 - Volume 5, volume estimates and positivity: the 181 tier 2 entries. Twelve chapters have new titles, and the introduction lists all 13 chapters.
