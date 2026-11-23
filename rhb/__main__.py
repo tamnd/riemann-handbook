@@ -76,7 +76,17 @@ def check_entries(book: Book) -> list[str]:
             probs.append(f"{rel}: style: '{w}'")
         if re.search("[–—]", prose):
             probs.append(f"{rel}: style: an en or em dash")
-        if "/dev/" in f and not os.path.basename(f) == "intro.md":
+        if "/dev/" in f and re.match(r"[0-9][0-9]-", os.path.basename(f)):   # a section of a chapter
+            from .corpus import front
+            fm, body = front(t)
+            for k in ("title", "decls"):
+                if not fm.get(k):
+                    probs.append(f"{rel}: front matter has no {k}")
+            if not re.match(r"\s*## ", body):
+                probs.append(f"{rel}: a section must open with a ## heading")
+            if re.search(r"^\*\*(?:Theorem|Proposition|Lemma|Corollary)", body, flags=re.M) and "Lean:" not in body:
+                probs.append(f"{rel}: no 'Lean:' line under its statements")
+        elif "/dev/" in f and not os.path.basename(f) == "intro.md":
             from .corpus import front
             fm, body = front(t)
             for k in ("id", "title", "kind", "decl"):

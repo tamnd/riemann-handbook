@@ -135,6 +135,8 @@ class DevChapter:
     title: str
     intro: str
     entries: list[Entry]
+    text: str = ""          # a chapter written as mathematics: its section files, joined in order
+    decls: list = field(default_factory=list)
 
 
 @dataclass
@@ -169,10 +171,20 @@ def load_dev(content: str) -> list[DevVolume]:
                 entries.append(Entry(fm.get("id", eid), fm.get("title", eid), fm.get("kind", "theorem"),
                                      fm.get("decl", ""), fm.get("status", "drafted"), fm, body, p))
             ip = os.path.join(cdir, "intro.md")
-            if not entries:   # a chapter of the plan with nothing written yet
+            # a chapter written as mathematics: section files NN-<slug>.md, each opening with a ## heading
+            secs = sorted(glob.glob(os.path.join(cdir, "[0-9][0-9]-*.md")))
+            text, decls = [], []
+            for sp in secs:
+                fm, body = front(open(sp, encoding="utf-8").read())
+                text.append(body.strip("\n"))
+                decls += fm.get("decls") or []
+            if secs:
+                entries = []   # the section files replace the entries of the chapter
+            if not entries and not secs:   # a chapter of the plan with nothing written yet
                 continue
             chapters.append(DevChapter(c["id"], c.get("title", c["id"]),
-                                       open(ip, encoding="utf-8").read() if os.path.exists(ip) else "", entries))
+                                       open(ip, encoding="utf-8").read() if os.path.exists(ip) else "", entries,
+                                       "\n\n".join(text), decls))
         if not chapters:
             continue
         out.append(DevVolume(int(base[:2]), base[3:], v.get("title", base), v.get("summary", ""),

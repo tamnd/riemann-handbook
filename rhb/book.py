@@ -93,6 +93,8 @@ class Book:
         for d in self.dev:
             for ci, ch in enumerate(d.chapters, 1):
                 L.add(f"/entry/{d.id}/{ch.id}/", d.number, str(ci), f"dev-{d.id}-{ch.id}")
+                if ch.text:
+                    self._chapter_labels(L, d, ci, ch)
                 for ei, e in enumerate(ch.entries, 1):
                     L.add(f"/entry/{e.id}/", d.number, f"{ci}.{ei}", f"entry-{e.id}")
                     L.web[f"/entry/{e.id}/"] = ("https://github.com/tamnd/riemann-handbook/blob/main/"
@@ -175,6 +177,53 @@ class Book:
                     out.append(conv.page(st.body, shift=1, prefix=f"step-{st.id}"))
         return "\n\n".join(out)
 
+    def _outline_ids(self) -> dict:
+        if not hasattr(self, "_oids"):
+            self._oids = {}
+            p = os.path.join(os.path.dirname(self.content), "ledger", "outline.yaml")
+            if os.path.exists(p):
+                o = yaml.safe_load(open(p, encoding="utf-8")) or {}
+                for v in (o.get("volumes") or {}).values():
+                    for c in v.get("chapters") or []:
+                        for e in c.get("entries") or []:
+                            self._oids[e["name"]] = e["id"]
+        return self._oids
+
+    def _chapter_labels(self, L, d, ci: int, ch) -> None:
+        """The numbers of the statements of a chapter written as mathematics. A line `Lean: `Name`` under a
+        statement ties the declaration to that statement, so a link /entry/<id>/ goes to its number."""
+        from .md import _STMT
+        oids = self._outline_ids()
+        prefix = f"dev-{d.id}-{ch.id}"
+        sec = stmt = 0
+        cur = None
+        for ln in ch.text.split("\n"):
+            m = re.match(r"^## +(.*?)\s*$", ln)
+            if m:
+                sec += 1
+                stmt = 0
+                L.add(f"/entry/{d.id}/{ch.id}/#{anchor(m.group(1))}", d.number, f"{ci}.{sec}",
+                      label_id(prefix, anchor(m.group(1))))
+                continue
+            sm = _STMT.match(ln)
+            if sm:
+                stmt += 1
+                cur = (f"{ci}.{sec}.{stmt}", label_id(prefix, "st", str(sec), str(stmt)), sm.group(1))
+                continue
+            lm = re.match(r"^\*?Lean:\*? (.*)$", ln)
+            if lm and cur:
+                for name in re.findall(r"`([^`]+)`", lm.group(1)):
+                    L.by_decl.setdefault(name, []).append((d.number, cur[0], cur[1], f"{cur[2]} {cur[0]}"))
+                    eid = oids.get(name)
+                    if eid and f"/entry/{eid}/" not in L.by_path:
+                        L.add(f"/entry/{eid}/", d.number, cur[0], cur[1])
+        for name in ch.decls:   # declarations that the chapter covers without a statement of their own
+            if name not in L.by_decl:
+                L.by_decl.setdefault(name, []).append((d.number, str(ci), prefix, ch.title))
+                eid = oids.get(name)
+                if eid and f"/entry/{eid}/" not in L.by_path:
+                    L.add(f"/entry/{eid}/", d.number, str(ci), prefix)
+
     def _dev(self, v: Volume, conv: Converter) -> str:
         d = v.parts[0]
         out = []
@@ -185,6 +234,9 @@ class Book:
             out.append(f"# {conv.inline(ch.title)} {{#dev-{d.id}-{ch.id} num=\"{ci}\"}}\n")
             if ch.intro.strip():
                 out.append(conv.page(strip_title(ch.intro), shift=0, prefix=f"dev-{d.id}-{ch.id}"))
+            if ch.text:
+                out.append(conv.page(ch.text, shift=0, prefix=f"dev-{d.id}-{ch.id}", numbering=str(ci)))
+                continue
             for ei, e in enumerate(ch.entries, 1):
                 out.append(f"## {conv.inline(e.title)} {{#entry-{e.id} num=\"{ci}.{ei}\"}}\n")
                 meta = [e.kind.capitalize()]
