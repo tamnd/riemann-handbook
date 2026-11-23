@@ -47,7 +47,7 @@ Two fundamental domains for the same $\mu$ have the same measure, so the last co
 
 Lean: `GlobalTheory.CompanionTheory.SW.finVol_unitaryGroup`.
 
-*Proof.* This is the [Theorem](/entry/fin-vol/) of Volume 7 on the finite volume of unitary groups, applied to $(F, E, \sigma)$ and $J$. $\square$
+*Proof.* This is the [Theorem 6.9.5 of Volume 7](/entry/fin-vol/) of Volume 7 on the finite volume of unitary groups, applied to $(F, E, \sigma)$ and $J$. $\square$
 
 **Remark 1.8.7.** The classical theorem is due to Borel and Harish-Chandra: for a reductive group $G$ over a number field $F$ with no nontrivial character defined over $F$, the quotient $G(F) \backslash G(\mathbb{A}_F)$ has finite volume. A unitary group $U_J$ is reductive, and its characters over $F$ factor through the determinant, whose image is the anisotropic torus of norm one elements of $E$; so it has no nontrivial character over $F$. Here the result is proved directly for $U_J$.
 
