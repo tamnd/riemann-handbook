@@ -3,7 +3,7 @@
 Volume 0, Guide: the front pages of content/front, the named results and their sources, and the index of Lean names.
 Volume 1, Background: the 17 chapters of Part I of Learn, in the order to read them.
 Volume 2, The proof: the chapters of the written proof, each with its guide from Part II of Learn and its steps.
-Volume 3 and later: the Lean development, written for this book in content/dev.
+Volumes 3 to 15: the Lean development by subject, written for this book in content/dev (ledger/structure.yaml).
 """
 
 from __future__ import annotations
@@ -96,7 +96,7 @@ class Book:
                 L.add(f"/entry/{d.id}/{ch.id}/", d.number, str(ci), f"dev-{d.id}-{ch.id}")
                 if ch.text:
                     self._chapter_labels(L, d, ci, ch)
-                for ei, e in enumerate(ch.entries, 1):
+                for ei, e in enumerate(ch.entries, ch.sections + 1):
                     L.add(f"/entry/{e.id}/", d.number, f"{ci}.{ei}", f"entry-{e.id}")
                     L.web[f"/entry/{e.id}/"] = ("https://github.com/tamnd/riemann-handbook/blob/main/"
                                                + os.path.relpath(e.path, os.path.dirname(self.content)))
@@ -238,8 +238,7 @@ class Book:
                 out.append(conv.page(strip_title(ch.intro), shift=0, prefix=f"dev-{d.id}-{ch.id}"))
             if ch.text:
                 out.append(conv.page(ch.text, shift=0, prefix=f"dev-{d.id}-{ch.id}", numbering=str(ci)))
-                continue
-            for ei, e in enumerate(ch.entries, 1):
+            for ei, e in enumerate(ch.entries, ch.sections + 1):
                 out.append(f"## {conv.inline(e.title)} {{#entry-{e.id} num=\"{ci}.{ei}\"}}\n")
                 meta = [e.kind.capitalize()]
                 if e.decl:

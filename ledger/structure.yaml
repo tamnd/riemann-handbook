@@ -1,0 +1,1273 @@
+# The plan of the handbook. volume1 and volume2: the chapters of Volumes 1 and 2. volumes: Volumes 3 to 15, by
+# subject. Each chapter takes the old chapters in `from` (keys <old volume>/<chapter id> of the first plan). An old
+# chapter that several chapters take is split: `split` says how in words, and `roots` (the root declarations of the
+# piece: an entry goes to the piece of the nearest root above it in the dominator tree) or `folders` (the Lean
+# subfolders of the piece) say it for `rhb ledger`. The piece with neither takes the rest.
+volume1:
+- id: algebra
+  title: Algebra
+  status: existing
+  source: algebra
+  topics: [groups, rings and modules, Galois theory, hermitian forms, tensor products]
+  needed_by: [3/kummer-picard, 10/hermitian-genera, 11/path-polynomials]
+  sources: []
+- id: combinatorics
+  title: Symmetric functions, minors and heights of polynomials
+  status: new
+  source: none
+  topics: [partitions and Schur polynomials, Pieri and Littlewood-Richardson rules, Cauchy-Binet and minors, Vandermonde
+      and confluent determinants, binomial identities, Mahler measure]
+  needed_by: [11/path-polynomials, 11/pieri-minors, 11/growth-bounds, 7/bessel-models]
+  sources:
+  - Macdonald, Symmetric Functions and Hall Polynomials, chapter I
+  - Fulton, Young Tableaux, part I
+  - Bombieri and Gubler, Heights in Diophantine Geometry, chapter 1
+- id: commutative-algebra
+  title: Commutative algebra, schemes and formal geometry
+  status: new
+  source: none
+  topics:
+  - flatness and completion
+  - henselian and strictly henselian rings
+  - regular local rings and discrete valuation rings
+  - schemes and coherent cohomology
+  - Picard groups
+  - theorem on formal functions
+  - Grothendieck existence theorem
+  needed_by: [3/kummer-picard, 3/finite-etale, 3/purity, 3/formal-algebraization, 4/lattices, 5/abelian-schemes]
+  sources:
+  - Matsumura, Commutative Ring Theory, the chapters on flatness, completion and regular rings
+  - Hartshorne, Algebraic Geometry, chapters II and III (III.11 for formal functions)
+  - Illusie, Grothendieck's existence theorem in formal geometry, in Fantechi et al., FGA Explained
+- id: analysis
+  title: Analysis
+  status: existing
+  source: analysis
+  topics: [measures, L2 spaces, Fourier transform, Sobolev norms, Haar measure, Lie groups]
+  needed_by: [7/discrete-series, 8/siegel-sets-spectrum, 11/energy-bounds]
+  sources: []
+- id: complex-analysis
+  title: Complex analysis
+  status: existing
+  source: complex-analysis
+  topics: [holomorphic functions, Gamma function, Poisson summation, Mellin transform]
+  needed_by: [12/theta-series, 13/harmonic-values]
+  sources: []
+- id: number-fields
+  title: Number fields
+  status: existing
+  source: number-fields
+  topics: [integers and ideals, class groups, splitting of primes, adeles and ideles]
+  needed_by: [9/global-galois-cohomology, 10/class-numbers, 13/inert-primes]
+  sources: []
+- id: class-field-theory
+  title: Class field theory
+  status: existing
+  source: class-field-theory
+  topics: [local and global class field theory, Hecke characters, Tate's thesis]
+  needed_by: [9/local-galois-cohomology, 13/cm-period-valuations, 4/hodge-tate-periods]
+  sources: []
+- id: l-functions
+  title: Zeta and L-functions
+  status: existing
+  source: l-functions
+  topics: [Dirichlet L-functions, the Generalized Riemann Hypothesis, the explicit formula]
+  needed_by: [11/character-sums, 15/green-window]
+  sources: []
+- id: analytic-number-theory
+  title: Character sums and the analytic theory of primes
+  status: new
+  source: none
+  topics:
+  - Gauss and Jacobi sums
+  - Weil's bound for character sums
+  - mean values and the large sieve
+  - primes in progressions and short intervals
+  - the Guinand-Weil explicit formula
+  - primes represented by norm forms
+  needed_by: [11/character-sums, 11/primes-norms, 11/sharp-restriction, 15/window-bound, 15/green-window]
+  sources:
+  - Iwaniec and Kowalski, Analytic Number Theory, chapters 3, 5, 7 and 11
+  - Davenport, Multiplicative Number Theory, the chapters on primes in arithmetic progressions and the explicit
+    formula
+  - Weil, Sur les formules explicites de la théorie des nombres premiers (1952)
+- id: groups
+  title: Classical groups
+  status: existing
+  source: groups
+  topics: [unitary groups, parabolic subgroups, strong approximation, Heisenberg and metaplectic groups]
+  needed_by: [7/smooth-representations, 10/class-numbers, 12/weil-representation]
+  sources: []
+- id: hermitian-lattices
+  title: Quadratic and hermitian lattices over number fields
+  status: new
+  source: none
+  topics:
+  - lattices over Dedekind domains
+  - Jacobowitz's local classification
+  - genus and spinor genus
+  - class numbers
+  - Siegel's mass formula and Tamagawa measures
+  - the mass formula for unitary groups
+  - local densities
+  needed_by: [10/class-numbers, 10/hermitian-genera, 10/mass-formula, 10/local-volumes, 10/covolumes, 14/level-four]
+  sources:
+  - O'Meara, Introduction to Quadratic Forms, chapters VIII to X
+  - Jacobowitz, Hermitian forms over local fields, Amer. J. Math. 84 (1962)
+  - Gan, Hanke and Yu, On an exact mass formula of Shimura, Duke Math. J. 107 (2001)
+- id: representations
+  title: Representations of local groups
+  status: existing
+  source: representations
+  topics:
+  - smooth representations
+  - Jacquet modules
+  - segments and the Bernstein-Zelevinsky classification
+  - generic representations
+  - add Tadić's unitary dual
+  needed_by: [7/smooth-representations, 7/whittaker-kirillov, 7/unitary-dual, 7/bessel-models]
+  sources: []
+- id: real-groups
+  title: Representations of real reductive groups
+  status: new
+  source: none
+  topics:
+  - (g
+  - K)-modules and Harish-Chandra modules
+  - admissibility and the Casimir
+  - asymptotics of matrix coefficients
+  - discrete series and formal degrees
+  - tempered representations and the Langlands classification
+  - the unitary dual of GL(n) over R and C
+  needed_by: [7/real-groups, 7/discrete-series, 7/coefficient-bounds, 7/unitary-dual, 8/finiteness]
+  sources:
+  - 'Knapp, Representation Theory of Semisimple Groups: An Overview Based on Examples, chapters VIII, IX, XII and
+    XIV'
+  - Vogan, The unitary dual of GL(n) over an archimedean field, Invent. Math. 83 (1986)
+  - Tadić, Classification of unitary representations in irreducible representations of general linear group (non-archimedean
+    case), Ann. Sci. ENS 19 (1986)
+- id: automorphic-forms
+  title: Automorphic forms
+  status: existing
+  source: automorphic-forms
+  topics: [automorphic representations, cusp forms, Eisenstein series, base change, isobaric sums]
+  needed_by: [8/hecke-operators, 8/rankin-selberg, 9/eichler-shimura]
+  sources: []
+- id: trace-formula
+  title: Reduction theory, Eisenstein series and the trace formula
+  status: new
+  source: none
+  topics:
+  - arithmetic subgroups and Siegel sets
+  - finiteness of automorphic forms
+  - constant terms and the residual spectrum
+  - the Arthur-Selberg trace formula and pseudo-coefficients
+  - the twisted trace formula and base change
+  - the relative trace formula and the Jacquet-Rallis fundamental lemma
+  - Rankin-Selberg integrals
+  needed_by: [8/finiteness, 8/siegel-sets-spectrum, 8/unitary-trace-formula, 8/base-change, 8/jacquet-rallis, 8/rankin-selberg,
+    8/unfolding]
+  sources:
+  - Borel, Introduction aux groupes arithmétiques (1969)
+  - Arthur, An introduction to the trace formula, Clay Math. Proc. 4 (2005)
+  - Arthur and Clozel, Simple Algebras, Base Change, and the Advanced Theory of the Trace Formula, Annals of Math.
+    Studies 120
+- id: theta
+  title: The Weil representation and theta lifts
+  status: existing
+  source: theta
+  topics: [Weil representation, Howe duality, theta towers, Siegel-Weil, doubling, Rallis inner product]
+  needed_by: [12/weil-representation, 12/howe-duality, 12/siegel-weil, 12/regularised-siegel-weil, 14/doubling-scalar]
+  sources: []
+- id: periods
+  title: Periods
+  status: existing
+  source: periods
+  topics: [Bessel and Fourier-Jacobi periods, Gan-Gross-Prasad, interlacing, relative trace formula]
+  needed_by: [12/seesaw-periods, 12/bessel-ascent, 7/bessel-models]
+  sources: []
+- id: geometry
+  title: Algebraic and complex geometry
+  status: existing
+  source: geometry
+  topics:
+  - varieties
+  - line bundles
+  - complex manifolds
+  - de Rham cohomology
+  - Shimura varieties; its sections on étale cohomology and vanishing become short pointers to the two next chapters
+  needed_by: [3/resolution, 5/siegel-moduli, 5/toroidal]
+  sources: []
+- id: etale-cohomology
+  title: Étale cohomology
+  status: new
+  source: none
+  topics:
+  - étale morphisms and sheaves
+  - the Kummer sequence
+  - cohomology of curves
+  - proper and smooth base change
+  - Künneth
+  - cycle and Chern classes
+  - purity
+  - the Lefschetz trace formula
+  - comparison with singular cohomology
+  needed_by: [3/kummer-chern, 3/proper-base-change, 3/finite-etale, 3/kunneth, 3/purity, 4/comparison, 9/eichler-shimura]
+  sources:
+  - Milne, Étale Cohomology, chapters I to VI
+  - 'Deligne, SGA 4½, Cohomologie étale: les points de départ'
+  - Freitag and Kiehl, Étale Cohomology and the Weil Conjecture, chapter I
+- id: positivity-resolution
+  title: Positivity, vanishing theorems, resolution and L2 methods
+  status: new
+  source: none
+  topics:
+  - ample
+  - nef and big line bundles
+  - Kodaira and Kawamata-Viehweg vanishing
+  - multiplier ideals and Nadel vanishing
+  - the Angehrn-Siu theorem
+  - resolution of singularities and principalization
+  - Hörmander's L2 estimates and L2 extension
+  - Chern-Weil forms
+  needed_by: [3/resolution, 3/vanishing, 3/l2-methods, 6/chern-weil, 6/arithmetic-hilbert-samuel]
+  sources:
+  - Lazarsfeld, Positivity in Algebraic Geometry I and II, chapters 4, 9 and 10
+  - Kollár, Lectures on Resolution of Singularities, chapter 3
+  - Demailly, Complex Analytic and Differential Geometry, chapter VIII
+- id: galois-representations
+  title: Galois representations
+  status: existing
+  source: galois-representations
+  topics:
+  - Weil-Deligne representations
+  - local Langlands
+  - period rings in outline
+  - Galois representations of automorphic representations
+  needed_by: [4/period-rings, 9/eichler-shimura, 9/modularity]
+  sources: []
+- id: galois-cohomology
+  title: Galois cohomology
+  status: existing
+  source: galois-cohomology
+  topics: [cohomology of local and global fields, Selmer groups, Iwasawa theory, Euler systems]
+  needed_by: [9/local-galois-cohomology, 9/global-galois-cohomology, 9/euler-systems, 9/iwasawa, 4/local-bloch-kato]
+  sources: []
+- id: elliptic-curves
+  title: Elliptic curves and complex multiplication
+  status: existing
+  source: elliptic-curves
+  topics: [Weierstrass theory, reduction, CM, Chowla-Selberg, Eisenstein sums of lattices]
+  needed_by: [13/cm-zeta-values, 13/elliptic-torsion, 13/theta-at-two]
+  sources: []
+- id: formal-groups
+  title: Formal groups and p-divisible groups
+  status: existing
+  source: formal-groups
+  topics: [formal group laws, invariant derivation, p-divisible groups, Dieudonné theory]
+  needed_by: [4/prismatic-dieudonne, 5/good-reduction, 13/elliptic-torsion]
+  sources: []
+- id: padic-hodge
+  title: p-adic Hodge theory
+  status: new
+  source: none
+  topics:
+  - Hodge-Tate
+  - de Rham
+  - crystalline and semistable representations
+  - weakly admissible filtered phi-modules
+  - comparison theorems
+  - Breuil-Kisin and Wach modules
+  - A_inf and prismatic Dieudonné theory
+  - potential semistability
+  - Bloch-Kato Selmer groups and local Tate duality
+  needed_by: [4/period-rings, 4/comparison, 4/breuil-kisin, 4/potentially-semistable, 4/lattices, 4/local-bloch-kato,
+    9/eichler-shimura]
+  sources:
+  - Fontaine and Ouyang, Theory of p-adic Galois Representations, the chapters on B_dR, B_cris and admissible representations
+  - Brinon and Conrad, CMI Summer School notes on p-adic Hodge theory
+  - Bloch and Kato, L-functions and Tamagawa numbers of motives, The Grothendieck Festschrift I, section 3
+- id: abelian-varieties
+  title: Abelian varieties, their moduli and degenerations
+  status: new
+  source: none
+  topics:
+  - abelian schemes
+  - duality and the Poincaré bundle
+  - polarizations and Zarhin's trick
+  - Néron models and the criteria for good reduction
+  - Siegel moduli and level structures
+  - Mumford's construction
+  - semi-abelian degenerations
+  - toroidal compactifications
+  - the Kodaira-Spencer map
+  needed_by: [5/abelian-schemes, 5/good-reduction, 5/siegel-moduli, 5/mumford-construction, 5/toroidal, 6/mumford-proportionality,
+    6/boundary-forms]
+  sources:
+  - Mumford, Abelian Varieties, chapters II and III
+  - Faltings and Chai, Degeneration of Abelian Varieties, chapters II to IV
+  - Bosch, Lütkebohmert and Raynaud, Néron Models, chapter 7
+- id: theta-functions-cm
+  title: Theta functions and complex multiplication
+  status: new
+  source: none
+  topics:
+  - theta functions and theta constants
+  - the transformation formula
+  - algebraic theory of theta functions
+  - CM abelian varieties
+  - the main theorem of complex multiplication
+  - integrality of CM values
+  needed_by: [12/theta-series, 13/cm-zeta-values, 13/rationality, 13/harmonic-values, 14/doubling-scalar]
+  sources:
+  - Mumford, Tata Lectures on Theta I, chapters I and II
+  - Shimura, Abelian Varieties with Complex Multiplication and Modular Functions (1998)
+  - Silverman, Advanced Topics in the Arithmetic of Elliptic Curves, chapter II
+- id: arakelov
+  title: Arakelov geometry and heights
+  status: existing
+  source: arakelov
+  topics:
+  - hermitian line bundles
+  - heights
+  - arithmetic volume
+  - slopes
+  - add the arithmetic Hilbert-Samuel formula and Mumford proportionality
+  needed_by: [6/chern-weil, 6/arithmetic-hilbert-samuel, 6/heights, 6/slopes, 6/volumes]
+  sources: []
+- id: deformations-patching
+  title: Galois deformations, patching and automorphy lifting
+  status: new
+  source: none
+  topics:
+  - deformation rings
+  - Hecke algebras and R = T
+  - Taylor-Wiles-Kisin patching
+  - automorphy lifting for unitary groups
+  - potential automorphy
+  - Galois representations from Shimura varieties and local-global compatibility
+  needed_by: [9/eichler-shimura, 9/hecke-algebras, 9/patching, 9/modularity]
+  sources:
+  - Darmon, Diamond and Taylor, Fermat's Last Theorem, Current Developments in Mathematics 1995, chapters 2 to 4
+  - Clozel, Harris and Taylor, Automorphy for some l-adic lifts of automorphic mod l Galois representations, Publ.
+    Math. IHÉS 108 (2008)
+  - Harris and Taylor, The Geometry and Cohomology of Some Simple Shimura Varieties, Annals of Math. Studies 151
+volume2:
+- id: overview
+  title: From the Riemann Hypothesis to the zeros of Dirichlet L-functions
+  proves: The Riemann Hypothesis follows from the statement that no Dirichlet L-function vanishes in Re(s) > 1/2
+    (apart from the pole of zeta at 1); statement of the main theorem and a map of the whole proof.
+  draws_on: [proof/00-overview, steps/riemann-hypothesis, steps/rh-of-all, steps/rh-of-every, steps/rh-of-right,
+    steps/all-chi, steps/every-character-def, remark step 20]
+  details_in: [15]
+- id: weil-positivity
+  title: The explicit formula, Weil positivity and determinants
+  proves: 'Weil''s criterion: GRH is equivalent to the positivity of the Weil functional; the Guinand-Weil sign
+    for the test function with Lambda(n)(X/n - 1)_+; positivity for a test function with a factor X^eta gives a
+    bound past 1 - eta; positivity read as a Stepanov determinant with multiplicity one. This is the guiding idea;
+    the Lean code has only parts of it.'
+  draws_on: [remark steps 1, 4, 5, 6, proof/07-weil-bound, proof/11-determinants, paths/l-functions]
+  details_in: [11, 15]
+- id: architecture
+  title: 'The architecture: the Galois row, the window bound and the literature statements'
+  proves: 'EveryCharacter follows from three statements: the row Row0b with local parameters satisfying IsRecT,
+    the existence RecTExists of a local Langlands map with its properties, and the window bound VWin; the seven
+    inputs of the theta matching theorem and how the trunk reaches them.'
+  draws_on:
+  - proof/01-trunk
+  - paths/trunk
+  - steps/every-character
+  - steps/every-character-of-row
+  - steps/row-def
+  - steps/row0b-def
+  - steps/is-rect-def
+  - steps/rect-exists-def
+  - steps/rect-exists
+  - steps/local-langlands-gl-rect-exists-of-literature
+  - steps/open-literature-statements-def
+  details_in: [15]
+- id: siegel-weil
+  title: Theta series, the Weil representation and the Siegel-Weil formula
+  proves: The Weil representation of the metaplectic group and its Schrödinger model; the Siegel-Weil formula for
+    doubled unitary groups in the cases n < m, n = m, m < n and holomorphy at s0; finite volume and Siegel densities;
+    rapid decay of cusp forms with a Sobolev bound; the automorphy of mu as a period integral of thetas and the
+    relative trace formula on the sixfold cover of GL(5).
+  draws_on: [proof/09-siegel-weil, paths/siegel-weil, remark steps 3, 16]
+  details_in: [12, 8, 10, 5]
+- id: determinants
+  title: 'Nonvanishing of theta lifts: block determinants and theta Parseval'
+  proves: 'TLiftK: an automorphic representation of a definite unitary group U(X) over a CM field lifts, for every
+    large skew-hermitian W, to a nonzero automorphic representation of U(W) with matched weights and matched split
+    components; the proof by test vectors made of leading minors, theta Parseval (the Rallis inner product formula)
+    and a main term larger than the tail.'
+  draws_on: [proof/11-determinants, paths/determinants, steps/t-lift-k, steps/tlift-k-def, remark steps 1, 4]
+  details_in: [12, 11, 7]
+- id: galois-row
+  title: Galois representations for regular algebraic cuspidal representations over CM fields
+  proves: 'Row0b: every regular algebraic cuspidal representation of GL(a) over a CM field has an l-adic Galois
+    representation with strong local-global compatibility at every place; the geometric branch (Hecke towers, Eichler-Shimura,
+    the crystalline step, Hodge-Tate decomposition) and the theta lift branch built on the previous chapter.'
+  draws_on:
+  - proof/02-galois-row
+  - paths/galois-row
+  - steps/galois-row-holds
+  - steps/galois-local-global-strong-of-geometry-lift
+  - steps/galois-representations-of-theta-lift
+  - steps/geo-one-def
+  - steps/geo-one-holds
+  - remark step 8
+  details_in: [3, 4, 5, 9, 12]
+- id: window-bound
+  title: Iwasawa towers and the window bound
+  proves: 'VWin from Row0b: bounds on the lengths of Tate-Shafarevich groups in H^1(O_E[1/l], Q_l/Z_l(-e)) along
+    an Iwasawa tower chosen with Behrend''s construction, a weak form of Vandiver''s conjecture, through CM and
+    abelian variety inputs, Lemma K and four counts.'
+  draws_on:
+  - proof/03-vwin
+  - paths/vwin
+  - steps/vwin-def
+  - steps/vwin-of-row
+  - steps/automorphic-window-of-inputs
+  - steps/base-change-n
+  - steps/base-change-isobaric-n-def
+  - steps/v-window-of-depth-zero-residual-bc-cm
+  - steps/cm-abelian-inputs-from-literature
+  - remark steps 11
+  - 17
+  - 19
+  details_in: [9, 4, 13, 11, 15]
+- id: weil-bound
+  title: 'Arithmetic positivity: slopes, volumes and good towers'
+  proves: 'DeepStR: from resolution and principalization, Moriwaki bigness, the arithmetic Hilbert-Samuel formula,
+    Zarhin''s trick and a Siegel lemma, a slope bound and the volume theorem for good towers of models of Shimura
+    varieties (the Bost slope inequality of the note).'
+  draws_on: [proof/07-weil-bound, paths/weil-bound, remark step 13]
+  details_in: [3, 5, 6]
+- id: cm-divisibility
+  title: CM curves, the invariant derivation and divisibility of theta values
+  proves: A CM curve with good reduction outside p for p = 3 mod 4; D^p = 0 modulo p on the formal group for p inert
+    (a Hasse-Witt type formula); lower bounds on valuations of derivatives of theta functions over periods; the
+    Chowla-Selberg formula; the norm bound for lifts and a gcd of depths across Hecke characters.
+  draws_on: [proof/10-cm-divisibility, paths/cm-divisibility, remark steps 2, 9, 10, 15]
+  details_in: [13, 14, 5]
+- id: bessel-seesaw
+  title: Iterated theta lifts, seesaw identities and Bessel periods
+  proves: 'FunctionalsSeparate: along the tower of iterated theta lifts U(X0) to U(Xm), the Bessel period of the
+    lift is a seesaw period independent of the Hecke characters, it is nonzero for every Hecke eigen-direction,
+    and local multiplicity one at the real place gives one test datum for all directions; interlacing of weights.'
+  draws_on: [proof/08-bessel-seesaw, paths/bessel-seesaw, remark steps 7, 8, 12]
+  details_in: [12, 7, 14]
+- id: unitary-hypotheses
+  title: 'The unitary group hypotheses: unramified exponents, the open orbit and surjectivity'
+  proves: 'The record HypsAlt of unitary group hypotheses is nonempty under the definite side condition, given the
+    closed bound: large unramified exponents, the open orbit, surjectivity onto X and the lower bound for lambda,
+    rows and frames; covolumes, the index of theta series and congruences between lifts and forms; the cost of each
+    lift.'
+  draws_on:
+  - proof/06-unitary-hypotheses
+  - paths/unitary-hypotheses
+  - steps/hyps-alt-def
+  - steps/unitary-group-third-place-hypotheses-def
+  - steps/nonempty-hyps
+  - steps/closed-def
+  - steps/definite-side-condition-def
+  - steps/covolume-bound-of-x-def
+  - steps/theta-local-inputs-def
+  - remark steps 14
+  - 18
+  details_in: [10, 14, 15, 8]
+- id: literature
+  title: The statements taken from the literature
+  proves: 'The structure of open literature statements and its nine bundles: which published theorems the proof
+    assumes (Hecke and Tate, base change, Siegel-Weil, Howe duality, toroidal compactifications and others), how
+    they enter, and which of them the development proves.'
+  draws_on: [proof/04-literature, paths/literature, steps/every-character-of-literature, steps/published-results-first,
+    steps/published-results-arithmetic, steps/published-results-eigen, steps/open-image-condition-def]
+  details_in: [15, 8, 9]
+- id: conclusion
+  title: 'Theta integrals, local matching and the green window: no zeros to the right of the line'
+  proves: Theta integrals agree and match locally; regular characters are green; green characters and the window
+    bound give a zero-free region Re(s) > 1/2; imprimitive characters reduce to primitive ones; so every Dirichlet
+    L-function has no zero with Re(s) > 1/2.
+  draws_on:
+  - proof/05-theta-matching
+  - paths/theta-matching
+  - steps/theta-integrals-agree-def
+  - steps/local-matching-def
+  - steps/theta-local-matching
+  - steps/theta-integrals-agree-and-local-matching-of-literature
+  - steps/green-def
+  - steps/green-of-regular
+  - steps/green-vwin
+  - steps/zero-free-all-of-green-v-win
+  - steps/imprimitive
+  - remark steps 5
+  - 18
+  details_in: [12, 15, 11, 8]
+volumes:
+- number: 3
+  id: schemes-etale-cohomology
+  title: Schemes, étale cohomology and complex algebraic geometry
+  summary: 'The étale cohomology of schemes (Kummer theory, proper base change, Künneth, purity) together with the
+    complex algebraic geometry the proof needs: formal algebraization, resolution of singularities, vanishing theorems
+    and L2 methods.'
+  chapters:
+  - id: kunneth
+    title: Künneth formulas and the cohomology of affine opens
+    from: [3/block-decomposition]
+  - id: purity
+    title: The projective bundle formula, Abhyankar's lemma and purity of the branch locus
+    from: [3/divisor-proofs]
+    split: '3/divisor-proofs: flat folder, split by dominator: the entries dominated by steps_holds and exists_clopRepOfRank_of_locallyNoetherian
+      (cohomology of fields and henselian rings, projective bundle formula, purity); 76 of 207 entries'
+    roots:
+      3/divisor-proofs:
+      - GlobalTheory.EtC.HomotopyInv.homotopy_invariance_etale
+      - GlobalTheory.EtC.RedCoef.a11
+      - GlobalTheory.EtC.etC_c2
+      - GlobalTheory.EtC.isTwRes_tensor
+      - GlobalTheory.EtC.laurentPolynomial_cohomology_strictlyHenselian_vanishing
+      - GlobalTheory.EtC.projectiveBundleFormula_vectorBundle_any_space
+      - GlobalTheory.T.etaleCohomology_field_eq_galoisCohomology
+      - GlobalTheory.T.etale_cohomology_vanishing_algebraic_over_ratFunc
+      - GlobalTheory.T.exists_kummer_boundary_etale_cohomology
+      - GlobalTheory.T.hilbertScheme_finite_locallyFree_representable_proper
+      - GlobalTheory.T.subsingleton_ht_one_genericFibre_of_sh_etale_cover
+  - id: proper-base-change
+    title: Proper base change and finiteness of étale cohomology
+    from: [3/etale-cohomology]
+  - id: kummer-chern
+    title: The Kummer sequence, cup products and Chern classes
+    from: [3/etale-sheaves, 3/etale-cohomology-2]
+  - id: finite-etale
+    title: Finite étale covers, clopen descent and the Lefschetz fixed point formula
+    from: [3/etale-clopen-descent, 3/satake-parameters]
+  - id: kummer-picard
+    title: Künneth for the multiplicative group, Kummer classes and Picard torsion of affine curves
+    from: [3/commutative-algebra, 4/commutative-algebra, 12/scheme-cohomology]
+  - id: formal-algebraization
+    title: Grothendieck's existence theorem, formal algebraization and branches of hypersurface sections
+    from: [10/block-decomposition]
+    split: '10/block-decomposition: flat folder, split by dominator: subtrees rooted at grothendieck_existence_closed,
+      localOrder, formal_algebraisation_schemes, chern_integral_eq_intersection and 6 more; 36 of 145 entries'
+    roots:
+      10/block-decomposition:
+      - GlobalTheory.CompanionTheory.Ar.Branch.branchProperAtPoint
+      - GlobalTheory.CompanionTheory.Heights.BranchOrder.localOrder
+      - GlobalTheory.CompanionTheory.Hodge.Nerve.cmpSt_of_cxSt
+      - GlobalTheory.CompanionTheory.HopfC.hopfFieldSt
+      - GlobalTheory.CompanionTheory.HopfLe.hopfLeSt
+      - GlobalTheory.CompanionTheory.VarLelong.regMassNearSmall
+      - GlobalTheory.T.chern_integral_eq_intersection
+      - GlobalTheory.T.formal_algebraisation_schemes
+      - GlobalTheory.T.grothendieck_existence_closed
+      - GlobalTheory.T.grothendieck_existence_closed_proj
+  - id: resolution
+    title: Resolution of singularities and principalization of ideals
+    from: [10/ideal-principalization, 10/strong-resolution, 10/embedded-resolution, 10/resolution-of-singularities,
+      10/resolution-descent]
+  - id: vanishing
+    title: Vanishing theorems of Kawamata-Viehweg and Nadel, and the global Euler characteristic
+    from: [10/published-theorems]
+  - id: l2-methods
+    title: L2 extension of sections and the Angehrn-Siu theorem
+    from: [12/l2-dbar-estimates, 9/divisor-proofs]
+    split: '9/divisor-proofs: flat folder, split by dominator: subtrees rooted at l2ExtensionLogCanonical'' and
+      exists_global_section_angehrnSiu_inductive_step; 21 of 683 entries'
+    roots:
+      9/divisor-proofs:
+      - GlobalTheory.T.exists_global_section_angehrnSiu_inductive_step
+      - GlobalTheory.l2ExtensionLogCanonical'
+- number: 4
+  id: padic-hodge-theory
+  title: p-adic Hodge theory and local Galois representations
+  summary: Period rings, the étale-crystalline comparison, Breuil-Kisin, Wach and prismatic Dieudonné modules, potentially
+    semistable representations and local Bloch-Kato theory.
+  chapters:
+  - id: period-rings
+    title: Period rings and the crystalline period map
+    from: [3/theta-correspondence, 12/padic-hodge, 4/padic-hodge-theory]
+  - id: comparison
+    title: The étale-crystalline comparison for smooth proper models
+    from: [3/padic-hodge-comparison]
+  - id: breuil-kisin
+    title: Breuil-Kisin modules and the weights of inertia
+    from: [3/inertia-eigenvalues]
+  - id: hodge-tate-periods
+    title: Abelian schemes over A_inf, Hodge-Tate periods and de Rham Hecke characters
+    from: [9/unramified-depth, 10/hecke-character-de-rham]
+  - id: prismatic-dieudonne
+    title: Crystalline cohomology from smooth lifts and prismatic Dieudonné theory
+    from: [9/divisor-proofs]
+    split: '9/divisor-proofs: flat folder, split by dominator: subtrees rooted at crystallineSmoothLift_of_relations,
+      window_matrices, window_lift_to_fontaineAinf_matrices, pDivisibleGroup_datum_of_connected_dual_connected,
+      prismaticDieudonneHodge_of_hodgeTateDatum; 32 of 683 entries'
+    roots:
+      9/divisor-proofs:
+      - GlobalTheory.QLog.WindowMat.window_matrices
+      - GlobalTheory.SmoothLift.crystallineSmoothLift_of_relations
+      - GlobalTheory.T.pDivisibleGroup_datum_of_connected_dual_connected
+      - GlobalTheory.T.prismaticDieudonneHodge_of_hodgeTateDatum
+      - GlobalTheory.T.window_lift_to_fontaineAinf_matrices
+  - id: potentially-semistable
+    title: de Rham representations are potentially semistable; Wach lattices and Bhatt-Scholze integrality
+    from: [9/inertia-eigenvalues]
+    split: '9/inertia-eigenvalues: flat folder, split by dominator: subtrees rooted at deRham_potentiallySemistable,
+      theorem_tb_of_local_blochKato_duality_euler, wachLattice_laterClauses_hold, bhattScholzeIntegral and 6 more;
+      96 of 140 entries'
+    roots:
+      9/inertia-eigenvalues:
+      - GlobalTheory.BSP.bhattScholzeIntegral
+      - GlobalTheory.BlochKatoLocalOfHyp.blochKatoLocal_allPrimes_of_blochKato
+      - GlobalTheory.Cyc.Decomp.exists_decompletion
+      - GlobalTheory.Cyc.FrameTorsion.torsion_killed
+      - GlobalTheory.GLq.ResCuspProd.main
+      - GlobalTheory.JointSix.main
+      - GlobalTheory.T.globalLatticeIndexTheorem_of_lengthBoundAtPlaces
+      - GlobalTheory.T.localConstants_from_admitted_local_Galois_statements
+      - GlobalTheory.T.theorem_tb_of_local_blochKato_duality_euler
+      - GlobalTheory.T.wachLattice_laterClauses_hold
+      - GlobalTheory.deRham_potentiallySemistable
+  - id: local-bloch-kato
+    title: Local Bloch-Kato theory, local Tate duality and crystalline lifting
+    from: [7/inertia-eigenvalues]
+    split: '7/inertia-eigenvalues: flat folder, split by dominator: subtrees rooted at crystallinePeriodBound_all_constant_ge_forty,
+      blochKatoTop_of_localTateDuality_eulerChar, localLiftingTheoremB_of_blochKato_tateDuality_eulerChar, twistedPlace_selmerLengthBound_of_localDuality
+      and 6 more; 80 of 135 entries'
+    roots:
+      7/inertia-eigenvalues:
+      - GlobalTheory.T.arcTheorem_tools_of_wachModuleConclusions
+      - GlobalTheory.T.blochKatoTop_of_localTateDuality_eulerChar
+      - GlobalTheory.T.congruenceLength_twistedPlaces_of_heckeIntegrality
+      - GlobalTheory.T.crystallinePeriodBound_all_constant_ge_forty
+      - GlobalTheory.T.linkN_along_family_of_localBounds
+      - GlobalTheory.T.localCountDualLifting_proof
+      - GlobalTheory.T.localLiftingTheoremB_of_blochKato_tateDuality_eulerChar
+      - GlobalTheory.T.prv_twenty_five_of_blochKato_tateDuality_eulerChar
+      - GlobalTheory.T.theoremE_corollaryA_closing_all_data
+      - GlobalTheory.T.twistedPlace_selmerLengthBound_of_localDuality
+  - id: lattices
+    title: Wach lattices, lattices over discrete valuation rings and congruences of representations
+    from: [7/level-letter-cocycles, 11/level-letter-cocycles, 11/wach-lattice-twists, 7/representation-congruences,
+      7/dvr-lattice-rank, 7/distinguished-order-proofs]
+- number: 5
+  id: abelian-schemes
+  title: Abelian schemes, their moduli and compactifications
+  summary: Abelian schemes and their duals, good reduction, Siegel moduli and Harris-Taylor integral models, Mumford's
+    degenerations and toroidal compactifications.
+  chapters:
+  - id: abelian-schemes
+    title: 'Abelian schemes: duality, cohomology and deformations'
+    from: [9/divisor-proofs, 10/automorphic-kernels]
+    split: '9/divisor-proofs: flat folder, split by dominator: subtrees rooted at dualAbelianScheme, abelianScheme_hom_lifting_nilpotent_dividedPowers,
+      identityComponentOpen, abelianUnobstructed and 12 smaller roots on abelian schemes; 65 of 683 entries; 10/automorphic-kernels:
+      Lean subfolders AbelianDeRham and DualAbelianScheme; 3 of 27 entries'
+    roots:
+      9/divisor-proofs:
+      - GlobalTheory.AbCoh.abelianHodgeDeRham
+      - GlobalTheory.AnPer.gaussManinPeriods_of_span_taylor
+      - GlobalTheory.CechPer.span_periods_eq_top_and_finrank
+      - GlobalTheory.FormalAlgMorphisms.formalAlgebraisation_morphisms
+      - GlobalTheory.PolBundleLoc.exists_ample_root
+      - GlobalTheory.ProjNormal.exists_relAmple_of_affine
+      - GlobalTheory.SecLift.exists_section_lift
+      - GlobalTheory.T.abelianScheme_structureSheafCohomology_noetherian
+      - GlobalTheory.T.cohomologous_neg_torsor_cocycle_of_orthogonal
+      - GlobalTheory.T.exists_lineBundle_lift_squareZero_of_mumfordBundle
+      - GlobalTheory.T.exists_tangentRepresentation_smooth_groupScheme
+      - GlobalTheory.T.orderedCech_finiteAffineCover_models_structureSheafCohomology
+      - GlobalTheory.UnobTop.abelianUnobstructed
+      - GlobalTheory.abelianScheme_hom_lifting_nilpotent_dividedPowers
+      - GlobalTheory.dualAbelianScheme
+      - GlobalTheory.identityComponentOpen
+    folders:
+      10/automorphic-kernels: [AbelianDeRham, DualAbelianScheme]
+  - id: polarizations-theta
+    title: Polarizations, Zarhin's trick and the key invariant of theta characteristics
+    from: [10/core-statements, 9/theta-law-proofs]
+  - id: good-reduction
+    title: 'Good reduction: the criteria of Néron-Ogg-Shafarevich and Serre-Tate'
+    from: [4/good-reduction, 12/semistable-reduction, 9/formal-group-charts]
+  - id: mumford-construction
+    title: Mumford's construction and semi-abelian degenerations
+    from: [9/divisor-proofs, 9/uniformization-proofs]
+    split: '9/divisor-proofs: flat folder, split by dominator: subtrees rooted at hasSemiAbelianUniformisation_complete_normal_base,
+      semiAbelian_descent_from_complete_regular_charts, mumford_formalEndomorphism_algebraic; 99 of 683 entries'
+    roots:
+      9/divisor-proofs:
+      - GlobalTheory.T.hasSemiAbelianUniformisation_complete_normal_base
+      - GlobalTheory.T.mumford_formalEndomorphism_algebraic
+      - GlobalTheory.T.semiAbelian_descent_from_complete_regular_charts
+  - id: siegel-moduli
+    title: Siegel moduli spaces, level structures and projective models
+    from: [9/moduli-proofs]
+  - id: theta-level-arcs
+    title: Theta level structures along arcs and smooth group models
+    from: [9/degeneration-proofs]
+  - id: toroidal
+    title: Toroidal compactifications and the logarithmic Kodaira-Spencer isomorphism
+    from: [9/divisor-proofs, 12/spectral-geometry]
+    split: '9/divisor-proofs: flat folder, split by dominator: subtrees rooted at toroidalForFanKS and exists_invariant_smoothProjFan_noSelfIntersections;
+      122 of 683 entries'
+    roots:
+      9/divisor-proofs:
+      - GlobalTheory.T.exists_invariant_smoothProjFan_noSelfIntersections
+      - GlobalTheory.TorKSField.toroidalForFanKS
+  - id: integral-models
+    title: Integral models of Harris-Taylor type and the Kodaira-Spencer map
+    from: [3/divisor-proofs]
+    split: '3/divisor-proofs: flat folder, split by dominator: the entries dominated by kodaira_spencer_of_weight_one,
+      complex_count_regular_marked_points and gUnif_of (Harris-Taylor models, de Rham homology); 117 of 207 entries'
+    roots:
+      3/divisor-proofs:
+      - GlobalTheory.LKCx.CxReg.finite_pts_reg
+      - GlobalTheory.T.charpoly_deRhamHomology_endomorphism_eq_map_ladic
+      - GlobalTheory.T.complexPoints_classify_markedPeriods
+      - GlobalTheory.T.harrisTaylor_typeTj_isogenies_representable
+      - GlobalTheory.UPel.HT.Model.isProjOver_of_compactB
+      - GlobalTheory.UPel.HT.model_nonempty
+      - GlobalTheory.deRhamVectorExtension
+  - id: siegel-toroidal
+    title: The integral toroidal compactification of Siegel moduli
+    from: [9/divisor-proofs]
+    split: '9/divisor-proofs: flat folder, split by dominator: the subtree rooted at siegelToroidalIntegral_holds;
+      96 of 683 entries'
+    roots:
+      9/divisor-proofs:
+      - GlobalTheory.siegelToroidalIntegral_holds
+- number: 6
+  id: arakelov-geometry
+  title: Arakelov geometry, heights and arithmetic volumes
+  summary: Hermitian vector bundles, Chern-Weil theory, Mumford proportionality, the arithmetic Hilbert-Samuel formula,
+    heights and slopes, applied to towers of models of Shimura varieties.
+  chapters:
+  - id: slopes
+    title: Slope inequalities for hermitian lattices
+    from: [6/local-to-global, 6/gl4, 11/gl6]
+  - id: boundary-forms
+    title: Canonical forms near the boundary and degrees of Lie frames
+    from: [5/theta-pair-lifts]
+  - id: integral-depth
+    title: Kodaira-Spencer coordinates and depth bounds on integral models
+    from: [5/divisor-proofs]
+  - id: heights
+    title: Heights of points and cycles
+    from: [5/heights, 5/height-kernels, 12/heights-and-theta, 10/tempered-representation-theory]
+  - id: chern-weil
+    title: Chern-Weil forms, good metrics and Chern numbers
+    from: [9/divisor-proofs, 5/algebra-proofs, 5/vertical-divisors]
+    split: '9/divisor-proofs: flat folder, split by dominator: subtrees rooted at goodChernWeil and semiAbelianLieSeminegative;
+      29 of 683 entries'
+    roots:
+      9/divisor-proofs:
+      - GlobalTheory.GoodMetric.goodChernWeil
+      - GlobalTheory.Nef.semiAbelianLieSeminegative
+  - id: arithmetic-hilbert-samuel
+    title: The arithmetic Hilbert-Samuel formula and Moriwaki bigness
+    from: [9/divisor-proofs, 12/hilbert-samuel, 10/automorphic-kernels]
+    split: '9/divisor-proofs: flat folder, split by dominator: subtrees rooted at arithHilbertSamuel_of_principalisation
+      and volGe_of_hilbertSamuel; 40 of 683 entries; 10/automorphic-kernels: Lean subfolder MoriwakiBigness; 2 of
+      27 entries'
+    roots:
+      9/divisor-proofs:
+      - GlobalTheory.VolBr.volGe_of_hilbertSamuel
+      - GlobalTheory.arithHilbertSamuel_of_principalisation
+    folders:
+      10/automorphic-kernels: [MoriwakiBigness]
+  - id: mumford-proportionality
+    title: Hodge metrics and Mumford proportionality
+    from: [5/iwasawa-decomposition, 5/torus-uniformisation, 5/hodge-tate-points, 10/hodge-tate-points]
+  - id: good-towers
+    title: 'Good towers: small sections, slope bounds and lower bounds for heights'
+    from: [5/geometry-proofs]
+  - id: volumes
+    title: Arithmetic volumes of good towers and the divisibility theorem
+    from: [5/divisibility-proofs, 5/volume-equality, 5/flag-immersions, 5/tube-measures, 12/finite-covolume, 5/automorphic-kernels]
+  - id: theta-sup-norms
+    title: Sup norms of theta sections and square systems on flag covers
+    from: [5/metric-proofs, 10/metric-proofs, 5/core-statements, 5/multihomogeneous-squares, 9/proofs]
+- number: 7
+  id: local-representations
+  title: Representations of real and p-adic groups
+  summary: 'Smooth and unitary representations of local reductive groups: Jacquet modules, Whittaker and Bessel
+    models, the unitary dual of GL(n), Harish-Chandra modules and discrete series.'
+  chapters:
+  - id: smooth-representations
+    title: Smooth representations, Jacquet modules and the Bernstein-Zelevinsky classification
+    from: [10/block-decomposition, 6/block-decomposition, 12/product-formula-theory, 12/stable-lattices]
+    split: '10/block-decomposition: flat folder, split by dominator: subtrees rooted at parthasarathy_rao_varadarajan,
+      phiPG, phi_pg_rank_zero_holds, action_unipotent_radical_real, unitary_jacquet_nonzero, pair_deriv and 12 more;
+      54 of 145 entries'
+    roots:
+      10/block-decomposition:
+      - GlobalTheory.CompanionTheory.BZCuspPair.pair_deriv
+      - GlobalTheory.CompanionTheory.BZPhiPG.phiPG
+      - GlobalTheory.CompanionTheory.BZPsiPG.FibKer.mem_twKer_of_fibInt_eq_zero
+      - GlobalTheory.CompanionTheory.GeoAssembly.jacquetOfInducedFiltration
+      - GlobalTheory.CompanionTheory.SmoothRep.smoothRep
+      - GlobalTheory.CompanionTheory.TorusCh.torusChar
+      - GlobalTheory.T.action_unipotent_radical_real
+      - GlobalTheory.T.cuspidal_K_type_finite
+      - GlobalTheory.T.exponent_to_saturation
+      - GlobalTheory.T.injective_unipotent_of_restriction
+      - GlobalTheory.T.leibniz_order_of_exact_sequences
+      - GlobalTheory.T.parthasarathy_rao_varadarajan
+      - GlobalTheory.T.phi_gp_commutation_holds
+      - GlobalTheory.T.phi_pg_rank_zero_holds
+      - GlobalTheory.T.real_model_exists
+      - GlobalTheory.T.unitary_inverse_reduction
+      - GlobalTheory.T.unitary_jacquet_nonzero
+      - GlobalTheory.T.unitary_swap_reduction
+  - id: real-groups
+    title: Real reductive groups, Harish-Chandra modules and branching
+    from: [12/real-groups, 12/harish-chandra-modules, 11/local-to-global, 11/period-integrals, 6/twisted-substitution]
+  - id: discrete-series
+    title: 'Discrete series and tempered representations: classification, formal degrees and square integrability'
+    from: [12/discrete-series, 12/discrete-series-classification, 12/formal-degree, 12/square-integrability, 12/tail-integrals,
+      6/tempered-representation-theory]
+  - id: whittaker-kirillov
+    title: Whittaker models, the Kirillov model and multiplicity one
+    from: [4/divisor-proofs, 12/multiplicity-one, 12/automorphic-forms, 7/foundation-proofs]
+  - id: coefficient-bounds
+    title: Pointwise bounds for matrix coefficients of discrete series
+    from: [9/jet-harmonics, 9/height-proofs]
+  - id: bessel-models
+    title: 'Bessel models: existence, uniqueness and Pieri rules'
+    from: [12/bessel-models, 12/automorphic-theory, 12/bessel-wave-grids, 12/theta-bessel-isometries]
+  - id: unitary-dual
+    title: 'The unitary dual of GL(n): Bernstein''s irreducibility theorem and generic unitary representations'
+    from: [10/unitary-dual-proof, 10/generic-unitary-gl, 10/representation-theory-gl]
+- number: 8
+  id: automorphic-forms
+  title: Automorphic forms, the spectrum and the trace formula
+  summary: Finiteness and reduction theory, Hecke operators, Rankin-Selberg L-functions, the trace formula for unitary
+    groups, archimedean base change and the Jacquet-Rallis fundamental lemma.
+  chapters:
+  - id: finiteness
+    title: Finiteness of automorphic forms, constant terms and discrete subgroups
+    from: [9/divisor-proofs, 10/constant-term-finiteness, 10/discrete-groups, 10/global-proofs, 11/unipotent-adelic-quotients,
+      5/automorphic-arithmetic]
+    split: '9/divisor-proofs: flat folder, split by dominator: subtrees rooted at automorphicFormsFiniteGL, completedLBoundedInStrips,
+      highest_weight_iso_of_equal_casimir, cuspidalMirabolic_holds, gkGlobalisation_holds; 27 of 683 entries'
+    roots:
+      9/divisor-proofs:
+      - GlobalTheory.HeckeStrip.completedLBoundedInStrips
+      - GlobalTheory.T.highest_weight_iso_of_equal_casimir
+      - GlobalTheory.automorphicFormsFiniteGL
+      - GlobalTheory.cuspidalMirabolic_holds
+      - GlobalTheory.gkGlobalisation_holds
+  - id: unitary-trace-formula
+    title: 'The trace formula for unitary groups: pseudo-coefficients and elliptic terms'
+    from: [9/divisor-proofs, 10/automorphic-kernels]
+    split: '9/divisor-proofs: flat folder, split by dominator: subtrees rooted at localPseudoCoefficientExistence_unitaryGroup,
+      match_principal_congruence_inert, match_ctMu_of_isSplitAt, ellipticSideDirect, heckeTrace_weightForms_eq_dim_mul_rationalClasses,
+      multEq_of_sides and 4 more; 37 of 683 entries; 10/automorphic-kernels: Lean subfolders IsobaricBaseChange
+      and GrothendieckRingPolynomial; 13 of 27 entries'
+    roots:
+      9/divisor-proofs:
+      - GlobalTheory.BCT.SplitCtMatch.match_ctMu_of_isSplitAt
+      - GlobalTheory.CongMatch.match_principal_congruence_inert
+      - GlobalTheory.PsCo.Pc.multEq_of_sides
+      - GlobalTheory.PsCo.Plug.ellipticSideDirect
+      - GlobalTheory.PsCo.Plug.ellipticT
+      - GlobalTheory.T.heckeTrace_weightForms_eq_dim_mul_rationalClasses
+      - GlobalTheory.T.inertPlace_kappaOrbital_unit_eq_signedLatticeSum
+      - GlobalTheory.T.inertPlace_stableTwistedOrbital_unit_eq_latticeSum
+      - GlobalTheory.T.localPseudoCoefficientExistence_unitaryGroup
+      - GlobalTheory.T.trace_separation_of_iwahori_trace
+    folders:
+      10/automorphic-kernels: [GrothendieckRingPolynomial, IsobaricBaseChange]
+  - id: siegel-sets-spectrum
+    title: Siegel sets, equidistribution and the residual spectrum
+    from: [10/block-decomposition, 10/residual-spectrum]
+    split: '10/block-decomposition: flat folder, split by dominator: subtrees rooted at unitary_siegel_domain_exists,
+      countG, siegel_implies_regular_class_finite and 10 more; 31 of 145 entries'
+    roots:
+      10/block-decomposition:
+      - GlobalTheory.CompanionTheory.Ar.Pub.CxAbs.ptsAbsIntegrable
+      - GlobalTheory.CompanionTheory.Conc.conc
+      - GlobalTheory.CompanionTheory.RealCountG.countG
+      - GlobalTheory.CompanionTheory.SiegelND.Integ.Arch.integrable_starLoc_inf
+      - GlobalTheory.CompanionTheory.WaveMult.asmMult_main
+      - GlobalTheory.T.e45_final_gluing
+      - GlobalTheory.T.equidistribution
+      - GlobalTheory.T.gallery_of_tubes_and_crossing
+      - GlobalTheory.T.kernel_regularity
+      - GlobalTheory.T.l_function_side_equidistribution
+      - GlobalTheory.T.siegel_implies_regular_class_finite
+      - GlobalTheory.T.unitary_adelic_iwasawa_compact
+      - GlobalTheory.T.unitary_siegel_domain_exists
+  - id: jacquet-rallis
+    title: The Jacquet-Rallis fundamental lemma and unit matching
+    from: [9/inertia-eigenvalues]
+    split: '9/inertia-eigenvalues: flat folder, split by dominator: subtrees rooted at jacquetRallisUnitMatch_all_ranks,
+      unitLemma_lieAlgebra_unitaryGroup_of_jacquetRallis, grothendieckRingPolynomial_outright; 28 of 140 entries'
+    roots:
+      9/inertia-eigenvalues:
+      - GlobalTheory.T.jacquetRallisUnitMatch_all_ranks
+      - GlobalTheory.T.unitLemma_lieAlgebra_unitaryGroup_of_jacquetRallis
+      - GlobalTheory.grothendieckRingPolynomial_outright
+  - id: unfolding
+    title: Unfolding of periods and twisted Eisenstein series
+    from: [7/columns, 7/period-integrals]
+  - id: hecke-operators
+    title: Hecke operators, cusp forms and the Jacquet-Langlands correspondence
+    from: [4/automorphic-forms, 4/automorphic-forms-2, 4/jacquet-langlands, 4/conjugate-representations, 7/twisted-operators,
+      8/automorphic-arithmetic]
+  - id: base-change
+    title: Archimedean base change and the twisted trace formula
+    from: [10/archimedean-base-change, 8/convolution, 8/modularity-argument, 8/base-change-identities]
+  - id: rankin-selberg
+    title: Rankin-Selberg L-functions and strong multiplicity one
+    from: [4/inertia-eigenvalues, 8/galois-representations]
+- number: 9
+  id: galois-representations
+  title: Galois cohomology, Galois representations and modularity
+  summary: Local and global Galois cohomology, Galois representations attached to automorphic forms through Shimura
+    varieties, Hecke algebras, Euler systems, deformations and patching, and the modularity argument.
+  chapters:
+  - id: local-galois-cohomology
+    title: Local fields, local class field theory and the local Euler characteristic
+    from: [12/local-fields, 12/local-class-field, 12/local-euler-characteristic]
+  - id: global-galois-cohomology
+    title: Global fields, restricted ramification and Poitou-Tate duality
+    from: [12/global-fields, 12/restricted-ramification, 12/poitou-tate, 12/real-places, 12/dual-lattices, 7/inertia-eigenvalues]
+    split: '7/inertia-eigenvalues: flat folder, split by dominator: the subtree rooted at twistAllPowers_of_galoisCohomology_classField;
+      7 of 135 entries'
+    roots:
+      7/inertia-eigenvalues:
+      - GlobalTheory.TwExportTop.twistAllPowers_of_galoisCohomology_classField
+  - id: eichler-shimura
+    title: 'Galois representations in the cohomology of Shimura varieties: Eichler-Shimura and the crystalline step'
+    from: [3/galois-representations]
+    split: '3/galois-representations: Lean subfolders of Foundations/GaloisRepresentations except ThetaParseval
+      (IntegralStructures, CrystallineTowers, SphericalCoordinates, AnnihilatorModels, RegularSemisimpleFibres and
+      16 small ones); 108 of 132 entries'
+  - id: iwasawa
+    title: 'Iwasawa theory: Ferrero-Washington and primitive Frobenius elements'
+    from: [4/automorphic-varieties, 4/primitive-frobenius-fixed]
+  - id: euler-systems
+    title: Zeta classes, Euler systems and congruences of Hilbert modular forms
+    from: [4/iwahori-reduction, 4/theorems-mu-linked, 4/gauss-sum-filtrations]
+  - id: hecke-algebras
+    title: Hecke algebras, newforms and their Galois images
+    from: [4/foundation-proofs]
+  - id: patching
+    title: Deformation rings and patching
+    from: [4/patching-modules, 4/unitary-three-deformations, 4/literature-results]
+  - id: modularity
+    title: Potential automorphy, symmetric power transfer and the modularity argument
+    from: [4/modularity-argument, 4/convolution]
+- number: 10
+  id: hermitian-lattices
+  title: Hermitian lattices, unitary groups and mass formulas
+  summary: Class numbers and strong approximation, genera of hermitian lattices, the mass formula for unitary groups,
+    local orbit volumes, orbital bounds, lattice counts and flag measures.
+  chapters:
+  - id: class-numbers
+    title: Class numbers and strong approximation
+    from: [3/adelic-lattice-proofs, 9/adelic-lattice-proofs, 12/adelic-analysis, 9/divisor-proofs, 7/reductive-groups]
+    split: '9/divisor-proofs: flat folder, split by dominator: subtrees rooted at strongApproxSU and inertPlace_unimodular_hermitianFrame_coordinates;
+      11 of 683 entries'
+    roots:
+      9/divisor-proofs:
+      - GlobalTheory.StrongApproxSUProof.strongApproxSU
+      - GlobalTheory.T.inertPlace_unimodular_hermitianFrame_coordinates
+  - id: covolumes
+    title: Covolumes, genus masses and the weights of frame classes
+    from: [9/flag-measures]
+  - id: flag-measures
+    title: Flag measures, stabilizers of tensors and the flag integration formula
+    from: [7/flag-measures, 7/flag-stabilizer-tensors]
+  - id: orbital-bounds
+    title: Bounds for orbital integrals and relative index sums
+    from: [11/orbital-bounds-conclusion, 7/orbital-bounds-conclusion, 11/cusp-span-norm-bounds, 7/relative-index-class-sets]
+  - id: local-volumes
+    title: Local orbit volumes at archimedean and p-adic places
+    from: [11/archimedean-orbit-measures, 11/closed-local-orbits, 11/valuation-local-volumes, 11/counting-formula,
+      11/closed-volume-statements, 7/closed-volume-statements]
+  - id: hermitian-genera
+    title: 'Hermitian lattices: genera, unimodular classes and definite forms'
+    from: [11/siegel-lattice-theory, 11/unimodular-class-representatives, 11/level-splitting, 3/divisor-proofs]
+    split: '3/divisor-proofs: flat folder, split by dominator: the subtrees of trace_definite_forms_identity and
+      cls_equiv_dcls_irr; 12 of 207 entries'
+    roots:
+      3/divisor-proofs:
+      - GlobalTheory.LKDef.cls_equiv_dcls_irr
+      - GlobalTheory.LKDef.trace_definite_forms_identity
+  - id: mass-formula
+    title: The mass formula for unitary groups
+    from: [11/unitary-group-mass-formula, 11/global-theory, 11/coordinate-lengths, 11/stabilizer-volume, 11/haar-transversals]
+  - id: cokernel-counts
+    title: Counting lattices by their cokernels over GL(n)
+    from: [11/cokernel-glcounts, 7/cokernel-glcounts]
+- number: 11
+  id: analytic-estimates
+  title: Polynomial identities, lattice combinatorics and analytic estimates
+  summary: 'The elementary but long estimates of the proof: character sums and mean squares, primes represented
+    by norms, identities among path polynomials, Pieri minors, growth bounds for lattice projections and normal
+    forms of curvature operators.'
+  chapters:
+  - id: curvature-normal-forms
+    title: Normal forms for hermitian curvature operators
+    from: [11/hermitian-curvature-proofs]
+  - id: primes-norms
+    title: Primes in short intervals represented by norms
+    from: [9/global-interpolation]
+  - id: energy-bounds
+    title: Energy bounds for curvature operators at the infinite places
+    from: [7/hermitian-curvature-proofs, 7/hermitian-curvature]
+  - id: pieri-minors
+    title: Pieri rules, column minors and corank bounds
+    from: [7/pieri-column-minors, 7/cayley-degree-nondegeneracy]
+  - id: growth-bounds
+    title: Growth bounds for projections of lattices
+    from: [6/growth-bounds, 6/diagonal-support, 6/segment-degree, 11/growth-bounds, 11/hermitian-tensor, 11/column-span-density]
+  - id: character-sums
+    title: Character sums, mean squares and the explicit formula
+    from: [6/jacobi-character-sums, 6/mean-square-bounds, 6/period-integrals, 11/partner-mean-proofs, 11/real-place-analysis,
+      11/padic-subset-sums]
+  - id: path-polynomials
+    title: Path polynomials, monomial factorials and admissible words
+    from: [11/monomial-factorials, 11/binomial-polynomial-identities, 11/standard-polynomials, 11/polynomial-dimension,
+      11/mahler-measure-proofs]
+  - id: sharp-restriction
+    title: Sharp restriction bounds and bad counts on progressions
+    from: [6/sharp-restriction, 7/sharp-restriction, 11/sharp-restriction, 6/theta-log-coordinates, 7/theta-log-coordinates,
+      11/theta-log-coordinates]
+- number: 12
+  id: theta-correspondence
+  title: The theta correspondence and the Siegel-Weil formula
+  summary: The Weil representation and its models, Howe duality, theta series, the Siegel-Weil and Rallis inner
+    product formulas, seesaws, and the ascent of Bessel periods along theta towers.
+  chapters:
+  - id: weil-representation
+    title: 'The Weil representation: splittings, Fock models and vacuum vectors'
+    from: [9/divisor-proofs, 8/real-bands]
+    split: '9/divisor-proofs: flat folder, split by dominator: subtrees rooted at kudlaSplittingSplitUnitary, howeDualityReal_holds,
+      vac_fixed_left, exists_weilDatum_powers_unramifiedEtaTilde, conjugatesOfRationalThetaLift_from_characterisation,
+      weilRep_rationalDarboux_fixes_thetaDistribution and 7 more; 63 of 683 entries'
+    roots:
+      9/divisor-proofs:
+      - GlobalTheory.InertSphLeft.vac_fixed_left
+      - GlobalTheory.NormRatio.finite_data
+      - GlobalTheory.T.conjugatesOfRationalThetaLift_from_characterisation
+      - GlobalTheory.T.definiteBottom_stage_transport_same_constants
+      - GlobalTheory.T.exists_weilDatum_powers_unramifiedEtaTilde
+      - GlobalTheory.T.inertPlace_latticeStabilizer_fixes_vacuum
+      - GlobalTheory.T.inert_place_lattice_stabiliser_fixes_vacuum
+      - GlobalTheory.T.polynomialFock_dense_archimedeanSchwartz
+      - GlobalTheory.T.weilRep_rationalDarboux_fixes_thetaDistribution
+      - GlobalTheory.T.weilRepresentation_pointwise_archimedeanDecay_bound
+      - GlobalTheory.T.weil_datum_finite_part_moves_vacuum_as_theta_model
+      - GlobalTheory.howeDualityReal_holds
+      - GlobalTheory.kudlaSplittingSplitUnitary
+  - id: howe-duality
+    title: Howe duality, unramified theta lifts and first occurrence
+    from: [9/satake-parameters, 6/theta-lifts, 7/inertia-eigenvalues, 8/theta-correspondence, 10/reductions]
+    split: '7/inertia-eigenvalues: flat folder, split by dominator: the subtree rooted at liftInj_and_properties_of_rallis_of_nonVan;
+      7 of 135 entries'
+    roots:
+      7/inertia-eigenvalues:
+      - GlobalTheory.T.liftInj_and_properties_of_rallis_of_nonVan
+  - id: theta-series
+    title: Theta series and their transformation law
+    from: [7/siegel-theta-transformation, 9/siegel-theta-transformation, 6/spherical-lattices]
+  - id: siegel-weil
+    title: Siegel Eisenstein series and the Siegel-Weil formula
+    from: [10/siegel-weil, 10/siegel-weil-proof, 10/eisenstein-series, 6/automorphic-kernels, 10/automorphic-kernels,
+      10/block-decomposition]
+    split: '10/automorphic-kernels: Lean subfolders SiegelWeilFormula, WeilSiegelFormula, UnitarySchrodingerModel;
+      9 of 27 entries; 10/block-decomposition: flat folder, split by dominator: subtrees rooted at siegel_weil_convergent_range,
+      hyperbolic_plane_unfolding_integral, siegelWeilFree_zero_rank_one_of_three_le, local_siegel_weil_unramified_measure,
+      frame_integral_eq_coefficient_nonrepresented, archimedean_siegel_weil_measure; 24 of 145 entries'
+    roots:
+      10/block-decomposition:
+      - GlobalTheory.T.archimedean_siegel_weil_measure
+      - GlobalTheory.T.frame_integral_eq_coefficient_nonrepresented
+      - GlobalTheory.T.hyperbolic_plane_unfolding_integral
+      - GlobalTheory.T.local_siegel_weil_unramified_measure
+      - GlobalTheory.T.siegelWeilFree_zero_rank_one_of_three_le
+      - GlobalTheory.T.siegel_weil_convergent_range
+    folders:
+      10/automorphic-kernels: [SiegelWeilFormula, UnitarySchrodingerModel, WeilSiegelFormula]
+  - id: regularised-siegel-weil
+    title: The regularised Siegel-Weil formula, doubling and Fourier-Jacobi coefficients
+    from: [7/regularised-siegel-weil, 6/automorphic-spectrum, 7/block-decomposition]
+  - id: theta-parseval
+    title: Theta Parseval and the Rallis inner product formula
+    from: [3/galois-representations, 3/divisor-proofs]
+    split: '3/galois-representations: Lean subfolder ThetaParseval (BlockDeterminants, ThetaKernels); 24 of 132
+      entries; 3/divisor-proofs: flat folder, split by dominator: the subtree under killsAll_holds (shintani_lift_kills_product_of_cusp_forms);
+      2 of 207 entries'
+    roots:
+      3/divisor-proofs:
+      - GlobalTheory.T.shintani_lift_kills_product_of_cusp_forms
+    folders:
+      3/galois-representations: [ThetaParseval]
+  - id: seesaw-periods
+    title: Unitary periods, seesaw identities and the Bessel period
+    from: [9/decorated-lattice-proofs]
+  - id: bessel-ascent
+    title: The ascent of Bessel periods along theta towers
+    from: [9/twisted-operators]
+- number: 13
+  id: cm-theta-values
+  title: Complex multiplication and the integrality of theta values
+  summary: CM values of theta functions and zeta values, torsion values of elliptic functions, integrality at 2
+    and at inert primes, and valuations of CM periods through Artin reciprocity.
+  chapters:
+  - id: cm-zeta-values
+    title: CM values, Chowla-Selberg periods and zeta values
+    from: [9/divisor-proofs, 9/foundation-proofs]
+    split: '9/divisor-proofs: flat folder, split by dominator: subtrees rooted at joinOut_of_five, keyRule_complex_existence_jets_key_value,
+      cmCurveGoodOutsidePrime; 21 of 683 entries'
+    roots:
+      9/divisor-proofs:
+      - GlobalTheory.JoinFun.joinOut_of_five
+      - GlobalTheory.Published.cmCurveGoodOutsidePrime
+      - GlobalTheory.T.keyRule_complex_existence_jets_key_value
+  - id: harmonic-values
+    title: Harmonic values, derivatives of theta functions and jets
+    from: [9/cusp-form-evaluations, 9/rings-of-integers, 12/arithmetic-geometry, 11/gauss-jet-bounds, 11/generator-powers]
+  - id: rationality
+    title: Rationality and integrality of theta series
+    from: [9/iwasawa-decomposition, 9/inertia-eigenvalues, 7/inertia-eigenvalues]
+    split: '9/inertia-eigenvalues: flat folder, split by dominator: subtrees rooted at series_bound, exists_hw_fon_cmp_ties,
+      conjugate_thetaSeries_flatDatum_rootOfUnity; 16 of 140 entries; 7/inertia-eigenvalues: flat folder, split
+      by dominator: subtrees rooted at thetaSeries_rationality_and_coefficientBound, fullRank_thetaSeries_forms_of_rational_scalars,
+      inert_satake_parameters_agree_under_dictionary; 11 of 135 entries'
+    roots:
+      9/inertia-eigenvalues:
+      - GlobalTheory.HWL.exists_hw_fon_cmp_ties
+      - GlobalTheory.LevelSeries.series_bound
+      - GlobalTheory.T.conjugate_thetaSeries_flatDatum_rootOfUnity
+      7/inertia-eigenvalues:
+      - GlobalTheory.T.fullRank_thetaSeries_forms_of_rational_scalars
+      - GlobalTheory.T.inert_satake_parameters_agree_under_dictionary
+      - GlobalTheory.T.thetaSeries_rationality_and_coefficientBound
+  - id: depth-valuations
+    title: Depth bounds at good places and valuations of columns
+    from: [7/jet-harmonics, 7/global-interpolation, 7/unramified-depth]
+  - id: cm-period-valuations
+    title: Valuations of CM periods through Artin reciprocity
+    from: [7/satake-parameters, 7/proofs]
+  - id: inert-primes
+    title: 'Inert primes: kernel laws and admissible entries'
+    from: [7/inert-coprime-lemmas, 7/inert-kernel-theory, 7/orbit-labellings, 7/character-germs, 7/kernel-local-factors]
+  - id: elliptic-torsion
+    title: Torsion values of elliptic functions and formal groups
+    from: [7/unramified-integrals, 7/elliptic-torsion, 7/local-to-global]
+  - id: theta-at-two
+    title: Integrality of theta values at the prime 2
+    from: [7/frobenius-fibre-curves, 7/torsion-integrality, 7/definitions]
+- number: 14
+  id: iterated-theta-lifts
+  title: Iterated theta lifts on the definite side
+  summary: 'The tower of theta lifts U(X0) to U(Xm): doubling integrals and the scalar formula, Fourier coefficient
+    fits and square constants along the tower, index bounds and the level-four construction.'
+  chapters:
+  - id: level-four
+    title: 'The level-four construction: divisor data, lattices and gauges'
+    from: [7/iwasawa-decomposition, 11/column-data, 11/split-pair-equations]
+  - id: doubling-scalar
+    title: Doubling zeta integrals and the scalar formula for theta lifts
+    from: [7/decorated-lattice-proofs]
+  - id: theta-towers
+    title: 'Theta towers along the row: Fourier coefficient fits and ratios of square constants'
+    from: [8/theta-pair-lifts]
+    split: '8/theta-pair-lifts: split by dominator, not by subfolder: the 17 subtrees hanging from the trunk node
+      nonempty_hyps_definite_side_of_closed_bound (fourier_coefficient_fit_of_join_alt, thetaLift_row_properties_conj,
+      tower_alt_bis, twisted_dictionary_eventually_large and 13 more); 147 of 177 entries'
+    roots:
+      8/theta-pair-lifts:
+      - GlobalTheory.BigTop.Fun.Close.fourier_coefficient_fit_of_join_alt
+      - GlobalTheory.DictFree.twisted_dictionary_eventually_large
+      - GlobalTheory.FramesAtReal.framesEx_of_realisation_alt
+      - GlobalTheory.PairLift.thetaPairLift_cuspidal_of_hypotheses
+      - GlobalTheory.RowClaim.Join.thetaLift_row_properties_conj
+      - GlobalTheory.RowEx.bottomField_isNumberField
+      - GlobalTheory.SqTower.tower_alt_bis
+      - GlobalTheory.SquareLM.twisted_square_local_matching
+      - GlobalTheory.T.class_sum_divisor_all_alt
+      - GlobalTheory.T.first_occurrence_theta_lift_ne_zero
+      - GlobalTheory.T.real_lift_lie_second_order
+      - GlobalTheory.T.thetaSubspace_eq_ker_projDerivation_of_square
+      - GlobalTheory.T.theta_subspace_kernel_maximal
+      - GlobalTheory.T.triple_assembly_inverse_finite
+      - GlobalTheory.T.twist_regulariser_isGood
+      - GlobalTheory.T.twisted_multiplicity_one
+      - UpperTheory.Lit.functionalsSeparate_of_howeUnram_of_siegelWeil
+  - id: index-bounds
+    title: Quotient index bounds from CM functionals
+    from: [7/theta-shift-proofs]
+- number: 15
+  id: assembly
+  title: The assembly of the proof
+  summary: 'The glue of each branch: the literature statements, the window bound and the green window, and the unitary
+    hypotheses (large unramified exponents, the open orbit, surjectivity, rows and frames).'
+  chapters:
+  - id: literature
+    title: The literature statements and their consequences
+    from: [8/theta-pair-lifts]
+    split: '8/theta-pair-lifts: split by dominator: the 12 subtrees hanging from every_character_of_literature_of_vWin
+      and everyCharacter (published_results_first, published_results_arithmetic, published_results_eigen, theta_lift_general_linear
+      and 8 more); 30 of 177 entries'
+    roots:
+      8/theta-pair-lifts:
+      - GlobalTheory.T.theta_lift_general_linear
+      - UpperTheory.LiteratureTheorems.ar_degree_of_literature
+      - UpperTheory.LiteratureTheorems.casselman_wallach_of_literature
+      - UpperTheory.LiteratureTheorems.flath_factorisation_of_literature
+      - UpperTheory.LiteratureTheorems.formal_degree_compact_dual_of_literature
+      - UpperTheory.LiteratureTheorems.published_results_arithmetic
+      - UpperTheory.LiteratureTheorems.published_results_eigen
+      - UpperTheory.LiteratureTheorems.published_results_first
+      - UpperTheory.LiteratureTheorems.semi_abelian_lie_seminegative_of_literature
+      - UpperTheory.LiteratureTheorems.siegel_toroidal_integral_of_literature
+      - UpperTheory.LiteratureTheorems.strong_approx_su_of_literature
+      - UpperTheory.LiteratureTheorems.zarhin_statement
+  - id: window-bound
+    title: The window bound from counts
+    from: [4/height-and-vanishing, 11/admissible-designs, 10/weil-bound, 6/weil-bound]
+  - id: green-window
+    title: Division bounds and the green window
+    from: [6/theta-pair-lifts, 6/group-lattices, 6/character-boxes, 6/automorphic-arithmetic]
+  - id: open-orbit
+    title: The open orbit
+    from: [7/theta-pair-lifts]
+    split: '7/theta-pair-lifts: split by dominator: the subtree rooted at open0_of_unitary_group_hypotheses; 97
+      of 343 entries'
+    roots:
+      7/theta-pair-lifts:
+      - GlobalTheory.T.open0_of_unitary_group_hypotheses
+  - id: surjectivity
+    title: Surjectivity and the lower bound for lambda
+    from: [7/theta-pair-lifts]
+    split: '7/theta-pair-lifts: split by dominator: the subtree rooted at ontoX_and_lamLow_of_unitaryGroupHypotheses'';
+      38 of 343 entries'
+    roots:
+      7/theta-pair-lifts:
+      - GlobalTheory.Fc.S0.ontoX_and_lamLow_of_unitaryGroupHypotheses'
+  - id: unramified-exponents
+    title: Bundles of large unramified exponents
+    from: [7/theta-pair-lifts]
+    split: '7/theta-pair-lifts: split by dominator chain (the subfolders ThirdPlaceSeries 315 and LocalTypeDictionary
+      28 do not divide it): the subtree of large_unramified_exponent_bundles inside hypotheses_nonempty_of_unramified_exponents_alt;
+      109 of 343 entries'
+    roots:
+      7/theta-pair-lifts:
+      - GlobalTheory.T.large_unramified_exponent_bundles_exist_alt
+  - id: rows-frames
+    title: Rows, frames and the index bound
+    from: [7/divisor-proofs, 7/height-proofs, 7/cusp-form-evaluations, 7/automorphic-arithmetic, 7/local-ring-cardinality,
+      7/inertia-eigenvalues, 9/divisor-proofs]
+    split: '7/inertia-eigenvalues: flat folder, split by dominator: the 7 remaining subtrees (genInf, genFin, main
+      and 4 more); 30 of 135 entries; 9/divisor-proofs: flat folder, split by dominator: the 12 remaining subtrees
+      (transfer_of_rule4'', main, realisation_extends_by_newTuples_keeping_laws, exists_routeDatum_finite_pureTensors_vacuum
+      and 8 more); 20 of 683 entries'
+  - id: unitary-hypotheses
+    title: The unitary hypotheses assembled
+    from: [7/theta-pair-lifts]
+    split: '7/theta-pair-lifts: split by dominator: the rest of the subtree of hypotheses_nonempty_of_unramified_exponents_alt
+      (its top, without the exponent bundles); 99 of 343 entries'
