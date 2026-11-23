@@ -17,6 +17,13 @@ chapters:
   - sum-pt-of-sizes-alt
   - reference-core-of-size-and-sum-point
   - ref-core-of-size-sum-pt
+  - exists-section-bounded-by-bergman-kernel-alt
+  - cover-height-section-bound-alt
+  - theta-function-le-bergman-kernel-alt
+  - exp-neg-b-le-berg-on-of-la1sq-bound
+  - exp-neg-b-le-berg-on-of-mem-frames-on
+  - height-of-mean-all-bound
+  - height-at-eq-of-cover
   - to-classical-theorems
   - low-def-of-gram-of-anchor
   - covering-low-defect-alt
@@ -35,6 +42,10 @@ chapters:
   - orbits-separated-by-regular-cusp
   - exists-cusp-regular-level-determinant
   - separate-orbits-by-cusp
+  - hodge-line-bundle-rational-linear-equiv-class
+  - hodge-line-bundle-rationally-linear
+  - equivariant-linearization-pullback-compat
+  - equivariant-linearization-pullback
   - log-canonical-criterion-boundary
   - log-canonical-pair-iff
   - log-canonical-divisor-refl
@@ -42,6 +53,35 @@ chapters:
   - exists-simple-log-pole-along-boundary
   - log-pole-along-boundary-is-simple
   - exists-log-pole-along-boundary
+  - kodaira-spencer-comparison-along-boundary
+  - exists-kodaira-spencer-comparison-log-pole
+  - valuation-multiplicity-run-estimate-alt
+  - valuation-multiplicity-of-consecutive-run-alt
+  - exists-section-order-bound-hilbert-samuel-alt
+  - exists-subspace-vanishing-order-le-phi-alt
+  - flat-deg-of-scholze-weinstein-of-prints
+  - flat-deg-alt-alt
+  - flat-tensor-swap-is-iso
+  - covering-regular-at-domain
+  - weight-lattice-span-on-domain
+  - weight-match-pow-mul-cuspidal
+  - exists-pow-mul-mem-cusp-forms-of-weight-match
+  - det-line-flat-unit-exists
+  - exists-flat-unit-section
+  - inverse-of-flat-unit-is-integral
+  - flat-unit-inverse-integral
+  - unit-pow-clears-denominator-flat-model
+  - lift-bad-set-of-deep-size-flat-deg-share
+  - covering-bad-locus-of-descent-steps-alt
+  - bir-on-wt-of-of-consecutive-gap-bound
+  - bir-on-of-weight-gaps-large
+  - covering-meas-of-prints
+  - covering-measure-reduction-alt
+  - compactification-top-chern-eq-volume
+  - equal-volume-of-compactification
+  - small-sections-injective
+  - weil-height-archimedean-contribution
+  - chow-form-height-comparison
 - id: automorphic-kernels
   title: The volume theorem from its inputs
   folder: Development.WeilBound.CoreStatements.AutomorphicKernels
@@ -51,6 +91,9 @@ chapters:
   - good-tower-volume-theorem-bis
   - line-of-large-degree-of-use
   - given-of-use
+  - nine-free-of-use
+  - grassmannian-height-bound-of-systems
+  - prov-hs-of-use
 - id: geometry-proofs
   title: The assembly of the volume branch
   folder: Development.AutomorphicSpectrum.Proofs.GeometryProofs
@@ -61,23 +104,85 @@ chapters:
   - tower-good-of-sandwich-split
   - root-model-flag-height
   - fibre-input
+  - hodge-cpt-lie-metric-bound
+  - slope-unif
+  - semiabelian-lie-metric-height
+  - torus-unif
+  - stratum-good
+  - flag-line-degree-formula
+  - root-height
+  - one-label
+  - tower-intersection-of-ample-flat
+  - tower-i5-of-fibre-input
+  - i5-of-has-ref-of-fibre-input
   - t-cusp-weight-regularisations-tied
   - relay-cusp-weight-regularisations-tied
+  - t-cusp-intersection-positive
+  - relay-cusp-intersection-positive
+  - near-all
+  - cusp-chart-log-growth-bounds
+  - corr-bdd
+  - near-bdd
+  - chart-formula
+  - component-data-hodge-bound
+  - exists-act-periods-chart
   - base-setting-of-good-tower
   - base-setting-of-good-origin
+  - t-intersection-final-estimate
+  - relay-intersection-final-estimate
+  - good-origin-intersection-tower
+  - test-poly-eq-sl-x
+  - t-good-origin-intersection-relay
+  - relay-good-origin-intersection-relay
+  - full-intersection-generic-bound
+  - exists-component-data-origin
   - model-on-hodge-from-family
   - model-on-hodge-of-family-pos
   - exists-geometric-height-constants
   - nine-geo-u-of-given
   - cusp-height-upper
   - ht-u-of-given
+  - cusp-intersection-height
+  - g-height
+  - t-phi-deg-fib-lat-le-of-is-ofamily-of-is-adapted
+  - relay-phi-deg-fib-lat-le-of-is-ofamily-of-is-adapted
+  - t-intersection-degree-lower
+  - relay-intersection-degree-lower
   - exists-good-root-tower
   - exists-good-tower
   - comp-data
+  - exists-reference-geometry-same-generic
+  - exists-ref-geo
+  - exists-holomorphic-section-of-analytic
+  - level-data
+  - hodge-cpt-global-nef-bound
+  - hodge-cpt-global-nefness
+  - root-line-de-rham-model-holds
+  - m2-model-holds
+  - curve-semi-abelian-conjecture
+  - m2-curve-holds
+  - root-line-de-rham-model-of-curve-semi-abelian
+  - m2-model-of-m2-curve
+  - lie-metric-height-bound
+  - quot-unif-main
+  - quot-unif-local-bound
+  - principal-near-boundary
+  - ab-part-principal-and-bound
+  - exists-field
+  - level-cover-st-holds
+  - level-cover
   - family-pos-of-hodge-tate-inputs
   - family-exists-pos-holds
   - ordinary-curve-hodge-prime
   - test-pt-test-facts
+  - t-arith-variety-model-hodge-relay
+  - relay-arith-variety-model-hodge-relay
+  - t-ordinary-curve-model-relay
+  - relay-ordinary-curve-model-relay
+  - arith-variety-model-prime-degree
+  - seq-holds
+  - t-twisted-hodge-tie-compare
+  - relay-twisted-hodge-tie-compare
   - deep-st-r-of-volume
   - abelian-cm-comp-laws-bound
   - top-mean-all
@@ -89,6 +194,15 @@ chapters:
   - descent-small
   - uniform-all-tower-bound
   - vs-fin
+  - t-uniform-all-root-origin-bound
+  - relay-uniform-all-root-origin-bound
+  - root-origin-frame-degree-bound
+  - reads-roots
+  - diag-bound
+  - uniform-norm-degree-bound
+  - top-growth
+  - growth-on-le-vol-mul-flag-deg
+  - growth-le-vol-deg
   - final-theorem-of-inputs-left
   - given-of-inputs
   - slope-bound-of-line-large-degree
@@ -97,16 +211,39 @@ chapters:
   - top-slope-slope-bound
   - line-of-key-degree
   - line-of-key
+  - exists-theta-sections-bounded
+  - basis-main
+  - core-applied
+  - key-degree-of-bad-reduction
+  - key-deg-of-key-bad
   - flat-degree-holds
   - flat-degree
+  - exists-cm-period-embedding
+  - exists-cm-point-loc-basis-frames
+  - frame-function-cm-height
+  - flat-gen-fin-norm
+  - cm-pack-pure-norm
+  - int-frames-fin
   - germ-system-height-free
   - hfree-at-component-stalks
   - height-char-free-geometric
   - hfree-geom
+  - abelian-quotient-bilinear
+  - frame-gauge
+  - proper-multiplication-kernel
+  - lem-f-ker-order-dvd
   - finite-constant-all-holds
   - fin-const-all
   - eigen-line-p-adic-frame
   - value-at-point
+  - eigen-frames-analytic
+  - exists-gen-of-unit-an
+  - gaga-line-generator-embedding
+  - gaga-rat
+  - eigen-frame-function-compare
+  - extends-unit-at-resolution
+  - exists-family-exponential-locally
+  - exists-fam-exp-near
 - id: divisibility-proofs
   title: Good towers and the volume theorem
   folder: Development.AutomorphicSpectrum.Proofs.DivisibilityProofs
@@ -130,6 +267,20 @@ chapters:
   - relay-good-tower-intersection-extra
   - t-good-tower-real-extra
   - relay-good-tower-real-extra
+  - linked-tower-power-sum
+  - power-sum-term-linked-tower
+  - power-sum-height-change-model
+  - power-sum-height-model-change
+  - good-tower-global-conditions
+  - good-origin-linked
+  - link-step
+  - t-good-tower-real-i6
+  - relay-good-tower-real-i6
+  - t-flag-degree-polynomial-eval
+  - relay-flag-degree-polynomial-eval
+  - flat-degree-st-of-res-k-gaga
+  - exists-const-section-kronecker-char
+  - exists-const-sec
 - id: multihomogeneous-squares
   title: The swap relation on a good tower
   folder: Development.WeilBound.CoreStatements.MultihomogeneousSquares
@@ -144,37 +295,121 @@ chapters:
   entries:
   - flag-model-exists-of-given
   - flag-model-exists
+  - flag-model-arith-dimension-boundary
+  - flag-an-exists-conj
+  - flag-model-analytic-data-exists
+  - flag-an-exists
+  - flag-an-of-res
+  - step-member
+  - partial-flag-bundle-metric-line
+  - step-weight-exists
+  - t-base-metric-exists-of-given
+  - bmx-base-metric-exists-of-given
   - antisymmetry-prime
   - antisymmetry
   - adjacent-swap-height-polynomial-relation
   - thm-a-swap
   - height-polynomial-reflection-sum
   - thm-a-limit
+  - square-polar-integral-identity
+  - sum-polar-g-h-eq
+  - log-sine-monge-ampere-integral
+  - fibre-integral-any-frame
+  - log-sine-monge-ampere-normalized
+  - fibre-integral-normal
   - t-flag-cover-realisation-pullback
   - relay-flag-cover-realisation-pullback
   - flag-adjacent-swap-square-system
   - ansq-exists
+  - flag-adjacent-rows-base-metric
+  - sec-main
+  - flag-adjacent-twisted-measure
+  - loc-gen-main
+  - flag-adjacent-two-frames-orbit
+  - flag-adjacent-rows-dimension
+  - fibre-charts
+  - flag-adjacent-rows-resolution
+  - fibre-square-atlas
+  - t-log-det-eigen-frame-plurisubharmonic
+  - relay-log-det-eigen-frame-plurisubharmonic
+  - log-det-cusp-frame-plurisubharmonic
+  - phi-is-psh-continuous
+  - mixed-integral-tendsto-off-divisor
+  - mixed-integral-tendsto-of-c2-off-divisor
+  - position-tail
+  - mixed-energy-uniform-bound
+  - tail-log-products
+  - cusp-weight-integrable-on-fundamental-set
+  - fund-set-mean-cusp-w
   - exists-theta-sup-bound-log-mean
   - mean-log-sup
   - theta-function-even-bound
   - nform
-- id: heights-and-theta
-  title: Rest terms over primes
-  folder: GroundTheory.HeightsAndTheta
+  - exists-reduced
+  - real-part-gram-in-symplectic-group
+  - symplectic-reduction-basis
+  - grassmann-height-z2-of-inputs-and-z2
+  - grassmann-height-z2-of-push
+  - uniform-integrability-statement-holds
+  - unif-int-holds
+  - global-regularization-statement-holds
+  - reg-global-statement-holds
+  - poincare-lelong-of-inv
+- id: heights
+  title: Heights
+  folder: GroundTheory.HeightsAndTheta.Heights
   entries:
   - rest-bound-full
   - rest-prime-bound-full
+  - lemma-a-full
+  - uniform-integrability-full
+  - numerical-segre-full
+  - mahler-section-of-const
+  - heights-chow-form-section-vertical-full
 - id: core-statements
   title: Hodge modules and flat sections
   folder: Development.WeilBound.CoreStatements
   entries:
   - t-c-sqsys
+  - maps-to-two-flag-frames-orthogonal-of-isometry
+  - lower-centre
+  - limit-strong
+  - abelian-cm-stokes-identity
+  - stokes-of-model
+  - stokes-of-statements
+  - good-origin-tower-height
+  - reference-geometry-holomorphic-inverse
+  - unitary-self-generation-pair-iso
+  - pair-iso-k-pair-iso
+  - deg-fl-poly-eval-prime
+  - tower
+  - flat-degree-st-of-res-k
+  - st-vert
+- id: flag-immersions
+  title: Flag immersions
+  folder: Development.WeilBound.CoreStatements.FlagImmersions
+  entries:
   - global-model-tower-fifth-condition
-  - vol-eq-of-is-full-intersection-system
   - global-model-tower-final-condition
   - root-flat-on-hodge
-  - hodge-free-every-stalk
-  - at-point
+  - root-flat-on-hodge-of
+  - rf-core
+  - global-model-real-tower-smooth
+  - level
+- id: volume-equality
+  title: Volume equality
+  folder: Development.WeilBound.CoreStatements.VolumeEquality
+  entries:
+  - vol-eq-of-is-full-intersection-system
+  - deg-push
+  - vol-eq-of-deg-push
+  - ball-vol-eq
+  - fam-vol
+  - arith-idx
+  - base-unif-ex2
+  - base-unif-ex2-of
+  - k-unif-good
+  - univ-exists
 - id: algebra-proofs
   title: Chern number relations
   folder: Development.AutomorphicSpectrum.Proofs.AlgebraProofs
@@ -189,9 +424,67 @@ chapters:
   - stage3
   - stage4
   - stage5
+  - model-over-mod-p-lattice-eigen-split
+  - good-model-relations
   - cut-effective-divisor
   - cut-closed-main
+  - vertical-push
+  - blow-up-fibre-semilocal
+  - blow-up-fibre-main
+  - flag-model-value-independent
+  - flag-model-value-main
+  - flag-further-term-independent-statement
+  - flag-further-term-independent
+  - flag-independence
+  - flag-independence-main
+  - exists-hecke-correspondence-on-integral-shimura-model
+  - segre-flag-closure-cut
+  - abelian-factor-tight-field-action
+  - flag-concl-direct-factor-of-subquotient
+  - flag-comparison-theorem
+  - flag-statement-holds
+  - polarised-divisible-group-exists
+  - exists-htpoint
+  - pure-period-local-basis-exists
+  - exists-split-period
+  - cm-type-valuation-embedding
+  - det-adapted-eq-unit-mul-const
+  - target-o
+  - valuation-lattice-matrix-reduction
+  - det-adapted-core
   - mahler-section
+  - defect-const-dim
+  - mahler-minus-cone-integral-indep
+  - defect-eq-of-lin-form-not-mem
+- id: torus-uniformisation
+  title: Torus uniformisation
+  folder: Development.WeilBound.CoreStatements.TorusUniformisation
+  entries:
+  - t-s-blowupfibre
+  - tight-hopf-order-test
+  - tight-hopf-order-core
+  - exists-struct
+  - test-group-point-exists
+  - hodge-free-every-stalk
+  - at-point
+- id: hodge-tate-points
+  title: Hodge tate points
+  folder: Development.WeilBound.CoreStatements.HodgeTatePoints
+  entries:
+  - finite-part-extension
+  - finite-part-extension-core
+  - ais
+  - quot
+  - tanpf-inj
+  - cocycle-p
+- id: height-kernels
+  title: Height kernels
+  folder: GroundTheory.HeightsAndTheta.Heights.HeightKernels
+  entries:
+  - line-of-large-degree-from-z-of-open
+  - symplectic-reduction-full
+  - sympl-step-full
+  - theta-bound-full
 - id: divisor-proofs
   title: Lie eigenlattices and the Hilbert-Samuel bound
   folder: Development.AbelianVarietyTheory.Proofs.DivisorProofs
@@ -199,19 +492,86 @@ chapters:
   - sum-at-of-sizes
   - depth-oscillation-le-bound-every-prime
   - osc-le-e-of
+  - formal-group-roots-of-unity-typed-lie-ranks
+  - formal-group-types
+  - typed-part-at
+  - depth-oscillation-le-at-small-odd-inert-prime
+  - osc-le-e-small-of-inert
+  - factor-depth-bounded-odd-inert-prime-cm-type
+  - fac-between-fine
+  - det-depth-lower-bound-saturated-even-type
+  - det-depth-lower
   - base-locus-exponent-le-oscillation-non-type-prime
   - ref-exp-le-of-osc-le
   - exists-harmonic-polynomial-local-depth-between
   - exists-poly-between
   - column-polynomial-local-depth-eq-place-depth
   - nu-loc-of-eq-nu-p
+  - exists-integral-germ-on-copies-same-value
+  - exists-germ-on-copies
+  - exists-integral-germ-on-columns-same-value
+  - exists-cusp-form-peak-at-injective-chart-frame
+  - peak
+  - exists-hormander-peak-orthonormal-frame-l2-bound
+  - hormander-peak
   - cm-object-definite-lie-eigen-lattice-degree-difference
   - cm-diff-definite
+  - cm-definite-lie-index-ideal-eq-norm-ideal
+  - ideal-st-zero
+  - exists-self-dual-lattice-cm-homomorphisms-definite
+  - exists-self-dual-lie-span
+  - frame-deg-def
+  - flat-line-degree-eq-eigen-lattice-degree-sub
+  - line-deg-eq-deg-eig-lat-sub
+  - eigenlattice-slope-lower-bound-definite-case
+  - eig-lat-slope-definite
+  - definite-case-cusp-form-fibre-slope-ge-bound
+  - fibre-at-def-case
   - hilbert-samuel-component-short-basis-bound
   - hs-claim-s-component-geo
   - arithmetic-hilbert-samuel-bound
   - geo-bound-of-quoted-prime
+  - explicit-arithmetic-hilbert-samuel-bound
+  - geo-bound-of-abstract
+  - hilbert-samuel-filtration-at-good-sections
+  - flat-at-of-simple-at
+  - slope-lower-bound-top-lattice-off-hypersurface
+  - slope-top-slope-bound
+  - t-bertini-number-field-of-hilbert-samuel
+  - hsshort-bertini-number-field-of-hilbert-samuel
+  - bertini-simple-zeros-generic-sections
+  - bertini
+  - sections-separate-quotient-generic-fibre-descends
+  - sections-separate-quotient-fibre
+  - exists-toroidal-canonical-bundle-weight-line
+  - exists-kap-theta
+  - exists-log-kodaira-spencer-divisor-toroidal-component
+  - exists-log-ks-div
+  - covolume-real-special-unitary-eq-flag-domain-mass
+  - covolume-real-su
+  - riemannian-haar-special-unitary-eq-smul-haar
+  - riem-haar-eq-smul
+  - archimedean-mass-product-lower-bound-unitary-pq
+  - mass-low
   - det-line-trivial-of-toroidal
+  - exists-of-snc
+  - can-id-nonempty
+  - exists-regular-kodaira-spencer-coordinate-affine-off-boundary
+  - exists-regular-ks-rel
+  - exists-local
+  - adelic-prob-mul-vol-fund
+  - keeps-cusp-lattice-norm
+  - pet-e-transl
+  - complex-uniformisation-components-covolume-eq
+  - covol-eq-of-is-unf
+  - det-append-eq-mul-det
+  - lattice-det-relation-herbrand-eigenspace
+  - ex-form
+  - theta-key-scalar-is-unit-on-integral-models
+  - key-unit-on-models
+  - unit-at-valuation
+  - unit-at-local
+  - exists-chart-unit
 - id: iwasawa-decomposition
   title: The Hodge metric and its Chern integrals
   folder: Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition
@@ -222,16 +582,48 @@ chapters:
   - hodge-metric-chern-integral-eq-covolume-mul-flag-degree
   - has-chern-integral-covol-flag-deg
   - has-chern-integral-point-poly-covol
+  - hodge-metric-point-class-form-mass-eq-covolume
+  - mass-open-part-eq-covol
+  - chern-top-part-hodge-metric-uniformisation-image
+  - chern-top-part-image
+  - point-class-density-hodge-metric-bounded-domain
+  - chern-top-domain
   - pointwise-hodge
+  - hodge-metric-chern-density-lie-gram-relation
+  - chern-top-lie-gram-rel-mul
+  - compact-dual-linear-form-flag-degree-point-class
+  - grass-top
   - hodge-metric-lie-gram-is-good-mumford
   - lie-gram-is-good
+  - exists-hodge-metric-period-chart-at-boundary-point
+  - exists-hodge-period-chart
+  - exists-period-chart-hodge-metric-generic-fibre
+  - exists-period-chart-hodge
+  - exists-riemann-form-period-chart-generic-fibre
+  - exists-riemann-period-chart
+  - exists-period-chart-holomorphic-lattice-family
+  - exists-period-chart-of-lat-fam
+  - inv-hodge-metric-gram-mumford-good-growth-boundary-chart
+  - inv-hodge-gram-good-bound
 - id: automorphic-arithmetic
   title: The sup norm of a cusp form
   folder: Development.AutomorphicArithmetic
   entries:
   - tamagawa-local-volume-factor
-- id: weil-bound
-  title: Volumes of fundamental sets
-  folder: Development.WeilBound
+- id: tube-measures
+  title: Tube measures
+  folder: Development.WeilBound.RepresentationTheoryGL.TubeMeasures
   entries:
   - plug-comp
+  - tam-comp
+  - sum-mu-f-le
+  - tube0
+  - tube
+- id: vertical-divisors
+  title: Vertical divisors
+  folder: GroundTheory.HeightsAndTheta.Heights.VerticalDivisors
+  entries:
+  - vertical-chow-form-section-vertical-full
+  - of-free-par-alg-indep
+  - of-chart-point-sec-point-spec-chart
+  - chow-form-section-vertical-of-remaining

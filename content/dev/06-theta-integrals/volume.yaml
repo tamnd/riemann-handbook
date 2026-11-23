@@ -13,6 +13,9 @@ chapters:
   - closed-serv-f-of-serv-t-of-d-gam-size
   - link-brest-alt
   - b-rest-all-alt
+  - design-exists-of-tu-size-aux4n-lit-thin
+  - link-alt-alt-bis
+  - closed-link-eta-of-duty
   - theta-integrals-agree-and-local-matching-of-literature
   - siegel-weil-std-of-literature
 - id: group-lattices
@@ -26,6 +29,7 @@ chapters:
   - local-model-results
   - link-g-fam-no-ker
   - link-g-without-kernels
+  - admissible-family-no-kernel
 - id: growth-bounds
   title: Growth bounds
   folder: Formalism.SharpRestriction.GrowthBounds
@@ -39,15 +43,65 @@ chapters:
   - stmt-e-of-ten-mp
   - stmt-e-of-ten-ns
   - stmt-e-of-op-ns
-  - tensor-operators-holds
+  - theorem-ii-closed-of-test-bound
+  - theorem-ii-of-split-cloud-bounds
+  - theorem-ii-of-cloud-bound-y
+  - theorem-ii-of-cloud-bound-x
   - proposition5-holds
   - rest-mem-of-last
+  - op-steps-of
   - second-part-closed
+  - stmt-f
+  - stmt-ef
+  - stability-of-trivial-stabilisers
+  - theta-kernel-expansion
+  - second-theorem-absolute-constant
+  - second-theorem-closed-everywhere
   - stmt
   - plane-gram-theorem-of-five-lemmas
   - packet-statements-hold
   - rests
   - prv-and-kernel-commutation-up-to-units-of-rests
+- id: twisted-substitution
+  title: Twisted substitution
+  folder: Formalism.SharpRestriction.GrowthBounds.TwistedSubstitution
+  entries:
+  - tensor-operators-holds
+  - ten-op-of-ob
+  - one-pos-of-ob
+  - operator-weight-bound-holds
+- id: period-integrals
+  title: Period integrals
+  folder: Formalism.PeriodIntegrals
+  entries:
+  - operator-words-bound
+  - jet-bound-ramified-prime
+  - explicit-formula-closed
+  - explicit-formula-of
+  - explicit-formula-main
+  - explicit-formula-of-local
+- id: diagonal-support
+  title: Diagonal support
+  folder: Formalism.SharpRestriction.GrowthBounds.DiagonalSupport
+  entries:
+  - rest-memb
+  - membership-of-three-parts
+  - rest-pick
+  - pick-step-all
+- id: segment-degree
+  title: Segment degree
+  folder: Formalism.SharpRestriction.GrowthBounds.SegmentDegree
+  entries:
+  - good-path-weight
+  - good-path-weight-of-top-count
+  - lem-t-of-adm
+  - atypical-path-small-weight
+  - generator-modulo-uniformiser-of-adm
+- id: theta-log-coordinates
+  title: Theta log coordinates
+  folder: Formalism.ThetaLogCoordinates
+  entries:
+  - lemma-t-one
 - id: sharp-restriction
   title: Sharp restriction
   folder: Formalism.SharpRestriction
@@ -55,6 +109,28 @@ chapters:
   - sum-over-primes-service
   - orbit-entry-bounds-hold
   - orbit-entry-bounds-of-family
+  - entry-divisor-bound-holds
+  - t-cv-of-ties
+- id: local-to-global
+  title: Local to global
+  folder: Formalism.LocalToGlobal
+  entries:
+  - hh-of-lvl
+  - slope-lemma-division-side
+  - col-val-of-tied-s-holds
+  - theorem-s-transport-link-zero
+  - link-eta-closed
+  - link-eta-tw-closed
+  - arith-clause-rec
+- id: gl4
+  title: GL4
+  folder: Formalism.LocalToGlobal.GlobalTheory.GL4
+  entries:
+  - slope-inequality-family-four
+  - slope-inequality-constant-four
+  - slope-max-given-free
+  - class-map-archimedean
+  - class-map-t-of
 - id: character-boxes
   title: Hosts from the window bound
   folder: Development.AutomorphicArithmetic.CharacterBoxes
@@ -69,6 +145,10 @@ chapters:
   entries:
   - supply-of-adm-of
   - host-of-field-of
+  - level-gm-le-on-family-scales
+  - window-inequality-of-artin-inputs
+  - core-gm
+  - ch-core
 - id: mean-square-bounds
   title: Good pairs of primes
   folder: Development.AutomorphicArithmetic.MeanSquareBounds
@@ -77,22 +157,65 @@ chapters:
   - pair-exists
   - pair-share
   - stage
+  - mean-sq-k
   - thin-h
   - thin
   - psi-thin
-- id: gl3-mean-squares
-  title: Primes in progressions
-  folder: Formalism.GL3MeanSquares
+- id: jacobi-character-sums
+  title: Jacobi character sums
+  folder: Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums
   entries:
   - pnt-progressions-relative-weak-holds
+  - deuring-heilbronn-mb-proof-prime
+  - deuring-heilbronn-lossy
+  - log-density-m-proof-prime
+  - log-density-bound
 - id: theta-lifts
   title: The two theta statements
   folder: Development.WeilBound.ThetaLifts
   entries:
   - theorem-k-head2
   - theorem-k-head2-of-mod
+  - sig-rapid
+  - inert-main
+  - triv
+  - polynomial-vanishing-of-compactness
+  - loc-unr-split
+- id: spherical-lattices
+  title: Spherical lattices
+  folder: Development.WeilBound.ThetaLifts.SphericalLattices
+  entries:
   - close-sph
   - end-ab-sph
+  - sph-fun-of-mod-st
+  - mod-st2
+  - loc-mod
+- id: automorphic-spectrum
+  title: Automorphic spectrum
+  folder: Development.AutomorphicSpectrum
+  entries:
+  - inert-zeta-top-unram-doubling-inert
+- id: weil-bound
+  title: Weil bound
+  folder: Development.WeilBound
+  entries:
+  - side-of
+- id: tempered-representation-theory
+  title: Tempered representation theory
+  folder: Development.WeilBound.CoreStatements.TemperedRepresentationTheory
+  entries:
+  - fin-split
+  - fin-split-of-geo
+  - ramified-multiplicity-one
+  - ramified-multiplicity-one-of-geometric-filtration
+- id: block-decomposition
+  title: Block decomposition
+  folder: Development.AutomorphicSpectrum.Proofs.BlockDecomposition
+  entries:
+  - fin-split-of-narrow
+  - unr-maps-of-lt
+  - first-cohomology-ramified-narrow
+  - ramified-multiplicity-one-of-bernstein
 - id: automorphic-kernels
   title: Siegel-Weil from the constant term
   folder: Development.WeilBound.CoreStatements.AutomorphicKernels
@@ -102,6 +225,8 @@ chapters:
   - siegel-weil-std-pre
   - siegel-weil-std-mid
   - siegel-weil-std-of
+  - gen-dict-x-of
+  - k-fin-poly-of
   - ct-split-of
   - sec-unf-of
   - sec-unf-of-c-law

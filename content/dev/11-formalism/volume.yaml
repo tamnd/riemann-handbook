@@ -2,14 +2,34 @@
 title: The formalism
 summary: Local to global arguments, Hermitian curvature, sharp restriction, period integrals and the other folders of Formalism.
 chapters:
+- id: local-to-global
+  title: Local to global
+  folder: Formalism.LocalToGlobal
+  entries:
+  - functional-lower-bound-of-conditions-numeric
+  - functional-lower-bound-of-conditions
+  - branching-interlacing-pairs
+  - residue-field-unfolding-claims-hold
 - id: cokernel-glcounts
   title: Cokernel GL counts
   folder: Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts
   entries:
   - nc-tie-c-of-closed
+  - real-bracket-of-jac
   - nc-tie0-all-of
   - nc-tie-all-s-of
   - nc-tie-c-of-leaves
+  - split-om-of-int-witt
+  - omega-splitting-of-witt
+  - gluing-mass-holds
+  - gluing-product-holds
+  - nofib-holds
+  - nofib-of-fib-q
+  - nofib-of-fib
+  - block-covol-holds
+  - row-block-covol-holds
+  - alpha-discriminant-holds
+  - id-one-c-holds
 - id: closed-volume-statements
   title: Closed volume statements
   folder: Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedVolumeStatements
@@ -19,33 +39,79 @@ chapters:
   - jac-gauge-holds
   - fold-okc-holds
   - mult-poly-holds
+  - lat-count-holds
+  - terms-ggbound-holds
+  - ggmatrix-bound-holds
+  - ggmatrix-bound-of-lit-holds
+  - kpp-off-c-holds
+  - kexpansion-c-holds
 - id: orbital-bounds-conclusion
   title: Orbital bounds conclusion
   folder: Formalism.PeriodIntegrals.OrbitalBoundsConclusion
   entries:
   - aprime-infinite-real
   - aprime-inf-of-hinf-compact
+  - jets-phase-weights
   - g-tlower-of
+  - gelfand-tsetlin-branching
   - level-s-all-split
   - loc-mass-typ
+  - qn-herm-haar
+  - split-pair-generation
+  - square-pair-local
+  - local-density-corank
+  - operator-word-cost
+  - terms-at-point-finite
+  - qn-tinv
+  - support-one-coset
+  - lattice-count-all
   - kappa-off-diagonal-dim-form-c
-- id: unitary-group-mass-formula
-  title: Unitary group mass formula
-  folder: Formalism.PeriodIntegrals.UnitaryGroupMassFormula
+  - unitary-class-mass-hermitian
+  - gg-matrix-bound
+  - adelic-index-eq
+  - weyl-for-k-of
+  - adelic-class-set-finite
+- id: archimedean-orbit-measures
+  title: Archimedean orbit measures
+  folder: Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ArchimedeanOrbitMeasures
   entries:
   - aprime-inf-of-grp
-  - om-v-holds-x
-  - om-vz-holds-x
-  - wgl-g-tlower-of
-  - level-splitting-of-heisenberg-levi
-- id: siegel-lattice-theory
-  title: Siegel lattice theory
-  folder: Formalism.LocalToGlobal.SiegelLatticeTheory
+  - aprime-inf-of-std
+  - aprime-inf-of-good
+  - exp-prod-u-holds
+  - cay-dens-ex-holds
+  - grp-std-full
+- id: closed-local-orbits
+  title: Closed local orbits
+  folder: Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits
   entries:
   - jac-gauge
   - jac-gauge-of-rhs-w
-  - fold-okc-holds-of
-  - mult-poly-holds-of-prime-prime
+  - jac-gauge-of-sandwich-rhs-wlim
+  - jac-gauge-of-hearts3
+  - sandwich-prime
+  - real-obj-in-infinity-x-of-g
+  - in-infinity-xat
+  - levi-onto-reduction
+  - nilradical-strong-approximation
+- id: valuation-local-volumes
+  title: Valuation local volumes
+  folder: Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ValuationLocalVolumes
+  entries:
+  - om-v-holds-x
+  - om-vz-holds-x
+  - om-vbad-t-holds-x
+  - om-vbad-t-of-ff-x
+  - vol-typ-v-holds
+- id: counting-formula
+  title: Counting formula
+  folder: Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula
+  entries:
+  - row-lattice-mass
+  - row-class-holds
+  - row-class-of-zunit
+  - row-surjective
+  - norm-mass-of-jordan
 - id: hermitian-curvature-proofs
   title: Hermitian curvature proofs
   folder: Formalism.HermitianCurvature.HermitianCurvatureProofs
@@ -54,6 +120,14 @@ chapters:
   - thm-pactual-cpt-of-r
   - thm-pactual-cpt-of-spec
   - thm-pactual-cpt-of-leaves
+  - thm-pactual-cpt-of-step-exp0
+  - theorem-p-compact-of-step-density
+  - thm-pactual-cpt-of-outer
+  - thm-pactual-cpt-of-step-form
+  - thm-pactual-cpt-of-jf
+  - thm-pactual-cpt-of-parts
+  - step-exp0-of-leaves
+  - r-dident-spec-of-r
   - gen-transfer-of-rot-k
   - second-shift-gauge-holds
   - g-tss-of-adj
@@ -62,21 +136,187 @@ chapters:
   - shift-extra
   - curv
   - model-scalar
+  - transfer-rtt-entries
+  - mx6-entries-of
+  - mx6-generic
   - g-tconn-of-rot-k
+  - g-tcref-of-rot-k
+  - gauge-locality-holds
   - germ-rate
+  - stationary-estimate
+  - stationary-phase-holomorphic
+  - f-zero
+  - f-zero-small
+  - nonstationary-estimate
   - pb-head-top-of-mk-top
+  - pb-exh-pic-of-mk-top
+  - top-unipotent-integral
+  - highest-unipotent-integral
+  - top-unipotent-integral-positive
+  - vec-v-append-singleton-eq-vec-v-slice-at
+  - orb-j-m-map
   - start-admissible
   - start-ok
   - start-is-start
+  - q-qrtt
+  - q-qrttentries
+  - model-algebra-relations-entries-of
+  - model-algebra-relations-generic
+  - q-qdet
+  - q-qdet-of
+  - det8
   - phi-zero-hermitian-curvature
+  - fibre-integral-cells
+  - fibre-integral-smooth
+  - fib-int-smooth
+  - local-smooth
+  - pbi-section-exists-proof
   - normal-form-from-module-statement
   - theorem-s-ring
-- id: local-to-global
-  title: Local to global
-  folder: Formalism.LocalToGlobal
+  - sc-main
+  - hermitian-haar-invariance
+  - actual-start
+  - det-core
+  - determinant-hat
+  - corollary-u2-germ-hypothesis
+  - theorem-u
+  - phi-pointwise-bound
+  - derivative-cost-bound
+  - chart-equations-holds
+  - chart-eqs-of-cap-joints
+  - head-germ-smooth-extension
+  - head-bridge-of-rest
+  - head-jacquet-of-letter-and-head
+  - z-only
+  - z-only-of-levi-curve
+  - minus-letter-maps-frames
+  - chain-descent-relation
+  - qx-chain-step-both
+  - chain-descent-from-rules
+  - stp-chain-step-from-rules
+  - stabilizer-integration-formula
+  - plus-letter-maps-frames
+  - top-lift-exists
+  - head-letter-identity
+  - head-letter-of-minus-positive
+  - head-letter-of-minus-pos
+  - lemma-b-of-components
+  - slice-induction-level
+  - point-step
+  - dk-radial
+  - dk-partial
+  - orbit
+  - norm-ball-volume-sharp
+  - vol-sharp
+  - vol-exact
+  - vol-core
+  - split-all
+  - compactly-supported-banach-model
+- id: sharp-restriction
+  title: Sharp restriction
+  folder: Formalism.SharpRestriction
   entries:
-  - branching-interlacing-pairs
+  - theorem-of-cube-of-addition-formulas
+  - cube-second-of-determinant-formula
+  - split-bound-eleven-one
+  - thm-a-of
+  - slope-line-t-holds
+- id: unitary-group-mass-formula
+  title: Unitary group mass formula
+  folder: Formalism.PeriodIntegrals.UnitaryGroupMassFormula
+  entries:
+  - wgl-g-tlower-of
+  - lift-mod-of
+  - local-mass-type-of-parts
+  - qn-herm-haar-of-alg
+  - glue-holds-var
+  - sq-pair-local-of
+  - field-count-holds
+  - fld-count-core
+  - terms-at-finite-of-frame-op-short-fin
+  - qn-tinv-of
+  - in-level-sat-holds
+  - lat-count-all-of-idx
+  - lat-count-all-of-index
+  - index-ge
+  - unitary-class-mass
+  - u-jclass-mass-of-herm
+  - index-eq-of-trace-int
+  - index-eq-of-open
+  - gram-map-fibre-existence
+  - adel-class-fin-of-sv-real
+- id: siegel-lattice-theory
+  title: Siegel lattice theory
+  folder: Formalism.LocalToGlobal.SiegelLatticeTheory
+  entries:
+  - step-sub-g-holds
+  - meas-n-holds
+  - energy-abs-holds
+  - lat-surj
+  - loops-ties-ties-at
+- id: level-splitting
+  title: Level splitting
+  folder: Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelSplitting
+  entries:
+  - level-splitting-of-heisenberg-levi
+  - semidirect-topological-all
+  - semi-gen
+  - homeo-nh
+  - heisenberg-parabolic-all
+  - heisenberg-parabolic
+- id: column-data
+  title: Column data
+  folder: Formalism.LocalToGlobal.KernelLattices.ColumnData
+  entries:
   - eq-p-car
+  - cd-pairing-index-bounds-eq-sq-g-eq-p-all
+  - cd-pairing-index-bounds-eq-sq-g-eq-p-gen
+  - cd-pairing-index-bounds-eq-square-split-pairs-eq-p-of-pair
+  - cd-pairing-index-bounds-eq-sq-eq-p-of-split
+  - cd-pairing-index-bounds-eq-j-eq-p-of-paths
+  - cd-pairing-index-bounds-eq-j-eq-p-of-neg
+- id: haar-transversals
+  title: Haar transversals
+  folder: Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals
+  entries:
+  - sc-wloc-exists
+  - sc-wloc-exists-of-chart
+  - wloc-exists-of-charts
+  - fold-okc-holds-of
+  - mult-poly-holds-of-prime-prime
+  - mult-poly-holds-of-prime
+  - mult-poly-holds-of
+- id: split-pair-equations
+  title: Split pair equations
+  folder: Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations
+  entries:
+  - euler-product-eq-of-curve-ideal
+  - eq-p-outright
+  - l2-pairing-index-bounds-eq-sq-g-eq-p-all
+  - l2-pairing-index-bounds-eq-sq-g-eq-p-gen
+  - l2-pairing-index-bounds-eq-square-split-pairs-eq-p-of-pair
+  - eq-p-top
+  - l2-pairing-index-bounds-eq-sq-eq-p-of-split
+  - l2-pairing-index-bounds-eq-j-eq-p-of-paths
+  - l2-pairing-index-bounds-eq-j-eq-p-of-neg
+- id: cusp-span-norm-bounds
+  title: Cusp span norm bounds
+  folder: Formalism.SharpRestriction.CuspSpanNormBounds
+  entries:
+  - word-theorem-a-admissible
+  - theorem-a-section
+  - lattice-theorem-a-from-degenerate
+  - gluing-mass-of-lift-number-genus
+- id: stabilizer-volume
+  title: Stabilizer volume
+  folder: Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume
+  entries:
+  - vol-stab-xs-of
+  - vol-stab-from-sw-holds
+  - vol-stab-from-sw-of-cnt-aa
+  - vol-stab-from-sw-of-open-ic
+  - vol-stab-from-sw-of-open-vic
+  - vol-stab-from-sw-of-open-aa
 - id: growth-bounds
   title: Growth bounds
   folder: Formalism.SharpRestriction.GrowthBounds
@@ -84,15 +324,23 @@ chapters:
   - theorem-a-closed-form-holds
   - alternative-mean-value-theorem
   - theorem-i-closed-form-holds
-  - theorem-i-of-pairing-gl
-  - theorem-i-of-contraction
-  - theorem-i-of-two-letter-clauses-contraction
   - tool-statements-hold
-  - splitting-package-holds
+  - problem-holds
+  - part-one-of-extremal-projector
+  - counting-statement-of-block-form
   - first-theorem-threshold-functions
   - first-theorem-uniform-thresholds
   - first-theorem-with-constants
   - first-theorem-admitted-closed
+  - first-theorem-tools-admitted
+  - b10
+  - rest-form-of-oplus
+  - symbol-form-of-block-parts
+  - rest-block-form-of
+  - extremal-projector-statement
+  - raising-operators-kill-image
+  - isotypic-projector-theorem-field
+  - isotypic-projector-theorem-field-of-linfty-bound
 - id: monomial-factorials
   title: Monomial factorials
   folder: Formalism.SharpRestriction.GrowthBounds.MonomialFactorials
@@ -119,11 +367,23 @@ chapters:
   - rest-tm-exists
   - block-valuation-over-zp-holds
   - block-valuation-zp-of-numeric-bound
+  - block-valuation-zp-of-valuation-bound
+  - rest-ll-proved
+  - rest-ll-of
+  - block-valuation-zp-of-lattice-inclusion
+  - blk-z-gen
 - id: theta-log-coordinates
   title: Theta log coordinates
   folder: Formalism.ThetaLogCoordinates
   entries:
   - top-theorem-mv7
+  - restricted-saturation-holds
+  - sat-main
+  - level-lattice
+  - highest-weight-corollary-two
+  - entry-star
+  - beta-is-g
+  - sandwich-local
 - id: partner-mean-proofs
   title: Partner mean proofs
   folder: Formalism.ThetaLogCoordinates.PartnerMeanCoordinates.PartnerMeanProofs
@@ -132,7 +392,21 @@ chapters:
   - theorem-mv7-of
   - theorem-mxb
   - mean-gam-x
+  - tie-ops-x-main
   - gram-hypothesis-of-log-bound
+- id: mahler-measure-proofs
+  title: Mahler measure proofs
+  folder: Formalism.MahlerMeasure.MahlerMeasureProofs
+  entries:
+  - gamma-leading-term
+  - real-mono
+  - fock-block-decomposition
+  - fock-blocks-of-weights
+- id: polynomial-dimension
+  title: Polynomial dimension
+  folder: Formalism.PolynomialDimension
+  entries:
+  - tie-core
 - id: admissible-designs
   title: Admissible designs
   folder: Formalism.AdmissibleDesigns
@@ -141,7 +415,27 @@ chapters:
   - theorem-n5-of-open-b
   - theorem-n5-of-ring-inputs
   - normalized-ring-data
+  - plug-open3-b
   - open-inputs-at-normalized
+  - tb-target-row
+  - h-rho-r-n
+  - h-rho-full
+- id: wach-lattice-twists
+  title: Wach lattice twists
+  folder: Formalism.WachLatticeTwists
+  entries:
+  - display-free
+  - free-of-bound
+  - top-length-bound-via-splitting
+- id: hermitian-tensor
+  title: Hermitian tensor
+  folder: Formalism.SharpRestriction.GrowthBounds.HermitianTensor
+  entries:
+  - theorem-i-of-pairing-gl
+  - theorem-i-of-contraction
+  - theorem-i-of-two-letter-clauses-contraction
+  - cloud-maps-of-contraction
+  - contraction-of-pairing-gl
 - id: column-span-density
   title: Column span density
   folder: Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity
@@ -150,16 +444,111 @@ chapters:
   - theorem-i-of-model-identification
   - theorem-i-of-lattice-functor-comparison
   - theorem-i-of-finer-open-statements
-- id: sharp-restriction
-  title: Sharp restriction
-  folder: Formalism.SharpRestriction
+  - second-estimate-of-restrictions
+  - single-weight-of-model-identification
+  - one-top-abs
+- id: binomial-polynomial-identities
+  title: Binomial polynomial identities
+  folder: Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities
+  entries:
+  - splitting-package-holds
+  - splitting-third-part-holds
+  - bracket-polynomial-span
+  - admissible-word-basis
+- id: level-letter-cocycles
+  title: Level letter cocycles
+  folder: Formalism.SharpRestriction.LevelLetterCocycles
   entries:
   - frobenius-lifting
   - local-theory-of-admitted
-- id: gl3-mean-squares
-  title: GL3 mean squares
-  folder: Formalism.GL3MeanSquares
+  - lifting-all-parts-of-admitted
+  - local-parts-of-admitted
+- id: unimodular-class-representatives
+  title: Unimodular class representatives
+  folder: Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives
   entries:
   - li-stat
   - li-ratio
+  - main-term
+  - kap-eq
+  - nu-mul-rel-index
+  - local-density-ratio-holds
+  - li-pin
+  - pin-d-core
   - mass-const-succ
+  - tendsto-right
+  - tendsto-sing-s-sum
+- id: gauss-jet-bounds
+  title: Gauss jet bounds
+  folder: Formalism.GaussJetBounds
+  entries:
+  - thm-agauss
+  - thm-agauss-of
+  - theorem-a-generic
+  - theorem-a-frame
+  - lemma-s
+- id: global-theory
+  title: Global theory
+  folder: Formalism.LocalToGlobal.GlobalTheory
+  entries:
+  - volume-mass-of-genus-rank
+  - class-mass-of-d7
+  - genus-class-mass
+  - hecke-ramified-zero-all
+- id: coordinate-lengths
+  title: Coordinate lengths
+  folder: Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths
+  entries:
+  - second-branch-all-members
+  - second-branch-of-rationality
+  - second-branch-of-surjectivity
+  - second-branch-of-coordinates-and-count
+- id: standard-polynomials
+  title: Standard polynomials
+  folder: Formalism.SharpRestriction.GrowthBounds.StandardPolynomials
+  entries:
+  - rest-pre
+  - pre-at-of
+  - lemma-rdata
+  - rest-cols
+  - cols-at-of
+- id: gl6
+  title: GL6
+  folder: Formalism.LocalToGlobal.GlobalTheory.GL6
+  entries:
+  - slope-line-0
+  - slope-line-tied
+  - slope-line-of-tied
+  - slope-formula-of-character-finite
+  - slope-formula-of-isometry
+  - slope-formula-of-split
+  - slope-formula-of-diamonds
+- id: padic-subset-sums
+  title: Padic subset sums
+  folder: Formalism.PadicSubsetSums
+  entries:
+  - property-w-of-estimates
+- id: real-place-analysis
+  title: Real place analysis
+  folder: Formalism.RealPlaceAnalysis
+  entries:
+  - square-integrable-of-lipschitz
+- id: generator-powers
+  title: Generator powers
+  folder: Formalism.SharpRestriction.Divisibility.GeneratorPowers
+  entries:
+  - fr-trunc-fix-of
+  - gram-form-phi-holds
+  - phi-cminima-holds
+  - exp-gauge-of-of
+  - exp-uniq-tan
+- id: period-integrals
+  title: Period integrals
+  folder: Formalism.PeriodIntegrals
+  entries:
+  - weyl-for-k-closed
+- id: unipotent-adelic-quotients
+  title: Unipotent adelic quotients
+  folder: Formalism.UnipotentAdelicQuotients
+  entries:
+  - elliptic-regularity-of-parts
