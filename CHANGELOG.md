@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## v0.1.15
+
+- Volume 5, abelian schemes: the chapter *Mumford construction* is complete. It has 23 sections, from degeneration data and the quotient construction to the gluing of charts, algebraic formal endomorphisms, the degeneration data of a uniformised group and the archimedean arc condition.
+- Volume 7, local representations: the chapter *Bessel models* is complete. It has 9 sections.
+- Volume 13, CM theta values: the chapter *Theta at two* is complete. It has 9 sections, from the Frobenius-Stickelberger formula and theta values at a two-torsion point to complex multiplication at 2, integral jets, Hermitian frames and the comparison data.
+- Volume 14, iterated theta lifts: the chapter *Index bounds* is complete. It has 6 sections, from low Fourier-Jacobi coefficients and CM functionals to integrality at finite places, the archimedean bound and the quotient index bound.
+
 ## v0.1.14
 
 - Volume 4, p-adic Hodge theory: the volume now has its introduction, with the main theorems of each chapter and an order of reading.
