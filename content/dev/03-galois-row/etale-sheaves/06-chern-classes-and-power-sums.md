@@ -15,9 +15,9 @@ The construction is Grothendieck's. The projective bundle formula defines Chern 
 
 We use the vector bundles, line bundles and first Chern classes of [the previous section](/entry/s0/). For a class $x$ of degree $2$, $x^k$ is the $k$-th cup power: $x^0 = 1_E$ and $x^{k+1} = x^k \cup x$.
 
-**Definition (Direct sum).** Let $V : E \to B\mathrm{GL}_a$ and $W : E \to B\mathrm{GL}_b$ be vector bundles. Their *direct sum* $V \oplus W : E \to B\mathrm{GL}_{a+b}$ sends a simplex $x$ to the block diagonal matrices with blocks $V(x)$ and $W(x)$.
+**Definition 6.6.1 (Direct sum).** Let $V : E \to B\mathrm{GL}_a$ and $W : E \to B\mathrm{GL}_b$ be vector bundles. Their *direct sum* $V \oplus W : E \to B\mathrm{GL}_{a+b}$ sends a simplex $x$ to the block diagonal matrices with blocks $V(x)$ and $W(x)$.
 
-**Definition (Projective bundle).** Let $N \geq 1$. The space $P_N$ has as objects over $U$ the vectors $v \in \Gamma(U, \mathcal{O}_U)^N$ whose coordinates generate the unit ideal. A morphism $v \to w$ is a pair $(g, \lambda)$ with $g \in \mathrm{GL}_N$, $\lambda$ a unit and $g v = \lambda w$. The $N'$-simplices of $P_N$ are the strings of $N'$ composable morphisms. The map $\mathrm{pr} : P_N \to B\mathrm{GL}_N$ keeps $g$, and the map $\mathrm{line} : P_N \to B\mathrm{GL}_1$ keeps $\lambda$. For a vector bundle $V$ of rank $N$ on $E$, the *projective bundle* $P(V)$ is the pullback of $\mathrm{pr}$ along $V$, with projection $\pi : P(V) \to E$. Its *tautological class* is $\xi = c_1(\mathrm{line}) \in H^2(P(V), \mathbb{Z}/q(1))$.
+**Definition 6.6.2 (Projective bundle).** Let $N \geq 1$. The space $P_N$ has as objects over $U$ the vectors $v \in \Gamma(U, \mathcal{O}_U)^N$ whose coordinates generate the unit ideal. A morphism $v \to w$ is a pair $(g, \lambda)$ with $g \in \mathrm{GL}_N$, $\lambda$ a unit and $g v = \lambda w$. The $N'$-simplices of $P_N$ are the strings of $N'$ composable morphisms. The map $\mathrm{pr} : P_N \to B\mathrm{GL}_N$ keeps $g$, and the map $\mathrm{line} : P_N \to B\mathrm{GL}_1$ keeps $\lambda$. For a vector bundle $V$ of rank $N$ on $E$, the *projective bundle* $P(V)$ is the pullback of $\mathrm{pr}$ along $V$, with projection $\pi : P(V) \to E$. Its *tautological class* is $\xi = c_1(\mathrm{line}) \in H^2(P(V), \mathbb{Z}/q(1))$.
 
 For a scheme, $P_N$ is a model of projective space $\mathbb{P}^{N-1}$ with its group of symmetries: a point is a line spanned by a unimodular vector, up to scaling.
 
@@ -30,7 +30,7 @@ $$
 $$
 is bijective. In this chapter D1 is a hypothesis. It is proved in [the projective bundle formula for any space](/entry/projective-bundle-formula-vector-bundle-any-space/).
 
-**Theorem (The even cohomology ring).** Let $q \geq 1$. For each space $E$ on which $q$ is invertible there is a commutative ring $R(E)$ with additive maps $\iota_k : H^{2k}(E, \mathbb{Z}/q(k)) \to R(E)$ and $\pi_k : R(E) \to H^{2k}(E, \mathbb{Z}/q(k))$, such that:
+**Theorem 6.6.3 (The even cohomology ring).** Let $q \geq 1$. For each space $E$ on which $q$ is invertible there is a commutative ring $R(E)$ with additive maps $\iota_k : H^{2k}(E, \mathbb{Z}/q(k)) \to R(E)$ and $\pi_k : R(E) \to H^{2k}(E, \mathbb{Z}/q(k))$, such that:
 
 1. $\pi_k \circ \iota_k$ is the identity, and $\iota_0(1_E) = 1$;
 2. $\iota_{k+l}(a \cup b) = \iota_k(a)\, \iota_l(b)$, and so $\iota_k(x^k) = \iota_1(x)^k$ for $x$ of degree $2$;
@@ -40,12 +40,12 @@ Lean: `LateralTheory.Fix.EtaleChapterDTwo.s42`.
 
 *Proof.* Let $R(E) = \bigoplus_{k \geq 0} H^{2k}(E, \mathbb{Z}/q(k))$, with $\iota_k$ the inclusion and $\pi_k$ the projection. The product of $a$ of degree $2k$ and $b$ of degree $2l$ is $a \cup b$. This makes $R(E)$ a graded ring in the sense of [[GradedRing|8KB4SQGC0C]]. [The ring laws](/entry/s41/) give the axioms. Associativity is the second law. The left unit law is the first law, which needs $q$ invertible on $E$. Graded commutativity gives $a \cup b = (-1)^{2k \cdot 2l} b \cup a = b \cup a$, so $R(E)$ is commutative, and the right unit law follows from the left one. The ring maps $f^*$ act in each degree. They are ring maps by [the naturality theorem](/entry/s0/): pullback commutes with the cup product and with $1_E$. $\square$
 
-**Definition (Chern family).** Let $q$ be invertible on $E$ and let $V$ be a vector bundle of rank $N$ on $E$. A *Chern family* of $V$ is a sequence $c_j \in H^{2j}(E, \mathbb{Z}/q(j))$, $j \geq 0$, such that $c_0 = 1_E$, $c_j = 0$ for $j > N$, and
+**Definition 6.6.4 (Chern family).** Let $q$ be invertible on $E$ and let $V$ be a vector bundle of rank $N$ on $E$. A *Chern family* of $V$ is a sequence $c_j \in H^{2j}(E, \mathbb{Z}/q(j))$, $j \geq 0$, such that $c_0 = 1_E$, $c_j = 0$ for $j > N$, and
 $$
 \sum_{j=0}^{N} \pi^*(c_j)\, \xi^{N-j} = 0 \quad \text{in } R(P(V)).
 $$
 
-**Lemma (Chern families exist and are unique).** Assume D1. If $q$ is invertible on $E$, each vector bundle $V$ on $E$ has exactly one Chern family.
+**Lemma 6.6.5 (Chern families exist and are unique).** Assume D1. If $q$ is invertible on $E$, each vector bundle $V$ on $E$ has exactly one Chern family.
 
 Lean: `LateralTheory.E.D2.LeafChern_of` (also `LateralTheory.Fix.EtaleChapterDTwo.s43`, a second name).
 
@@ -57,7 +57,7 @@ Put $a_m = c_{N-m}$. By D1 with $n = 2N$ and $i = N$, there is exactly one famil
 
 The code also proves that Chern families commute with pullback. If $c$ is the Chern family of $V$ on $E'$ and $f : E \to E'$, then $(f^* c_j)_j$ is the Chern family of $V \circ f$. This follows from the naturality theorem, since $P(V \circ f)$ maps to $P(V)$ over $f$.
 
-**Theorem (Whitney sum formula).** Let $q$ be invertible on $E$, and let $V$ and $W$ be vector bundles of ranks $a$ and $b$ on $E$ with Chern families $c$ and $d$. Then $V \oplus W$ has a Chern family $e$ with
+**Theorem 6.6.6 (Whitney sum formula).** Let $q$ be invertible on $E$, and let $V$ and $W$ be vector bundles of ranks $a$ and $b$ on $E$ with Chern families $c$ and $d$. Then $V \oplus W$ has a Chern family $e$ with
 $$
 \iota_k(e_k) = \sum_{p + r = k} \iota_p(c_p)\, \iota_r(d_r) \quad \text{for all } k \geq 0.
 $$
@@ -79,17 +79,17 @@ The $a + b$ coordinates of a vector generate the unit ideal. So, locally, the fi
 
 This is the topological argument for the Whitney formula in Grothendieck's setting. $P(V \oplus W)$ is covered by the complements of $P(W)$ and of $P(V)$, and these retract onto $P(V)$ and $P(W)$.
 
-**Lemma (Chern family of a line bundle).** Let $q$ be invertible on $E$, and let $c$ be the Chern family of a line bundle $L$. Then $c_1 = -c_1(L)$.
+**Lemma 6.6.7 (Chern family of a line bundle).** Let $q$ be invertible on $E$, and let $c$ be the Chern family of a line bundle $L$. Then $c_1 = -c_1(L)$.
 
 Lean: `LateralTheory.E.D2.LeafLine_of` (also `LateralTheory.Fix.EtaleChapterDTwo.s55`, a second name).
 
 *Proof.* For $N = 1$ the vector $(1)$ gives a section $\sigma : E \to P(L)$ with $\pi \circ \sigma = \mathrm{id}$ and $\mathrm{line} \circ \sigma = L$. The relation of the Chern family is $\xi + \pi^*(c_1) = 0$. Pull it back along $\sigma$, with the naturality of $c_1$: $c_1(L) + c_1 = 0$. $\square$
 
-**Definition (Newton power sums).** Let $A$ be a commutative ring and let $c = (c_j)_{j \geq 0}$ be a sequence in $A$ with $c_0 = 1$. Put $c(T) = \sum_j c_j T^j$, a unit in the [formal power series](/learn/algebra/#polynomials-and-power-series) ring $A[[T]]$. The $k$-th *Newton power sum* $\mathrm{nw}_k(c)$ is the coefficient of $T^k$ in $-T\, c'(T)\, c(T)^{-1}$.
+**Definition 6.6.8 (Newton power sums).** Let $A$ be a commutative ring and let $c = (c_j)_{j \geq 0}$ be a sequence in $A$ with $c_0 = 1$. Put $c(T) = \sum_j c_j T^j$, a unit in the [formal power series](/learn/algebra/#polynomials-and-power-series) ring $A[[T]]$. The $k$-th *Newton power sum* $\mathrm{nw}_k(c)$ is the coefficient of $T^k$ in $-T\, c'(T)\, c(T)^{-1}$.
 
 If $c(T) = \prod_i (1 - x_i T)$, then $-T c'(T)/c(T) = \sum_i x_i T / (1 - x_i T)$, so $\mathrm{nw}_k(c) = \sum_i x_i^k$ for $k \geq 1$. These are Newton's formulas (I. G. Macdonald, *Symmetric Functions and Hall Polynomials*, Chapter I, §2). The code proves three facts. A ring map $\varphi$ gives $\varphi(\mathrm{nw}_k(c)) = \mathrm{nw}_k(\varphi(c))$. If $e(T) = c(T)\, d(T)$, then $\mathrm{nw}_k(e) = \mathrm{nw}_k(c) + \mathrm{nw}_k(d)$, since $-T e'/e$ is the sum of the two logarithmic derivatives. If $c(T) = 1 - xT$, then $\mathrm{nw}_k(c) = x^k$ for $k \geq 1$.
 
-**Theorem (Power sum classes).** Assume the axioms A1 to A5, A7 to A11, B1 to B5, B7, C1 to C5 and D1. Let $q \geq 1$ and $k \geq 1$. For each space $E$ and each vector bundle $V$ on $E$ there is a class $s_k(V) \in H^{2k}(E, \mathbb{Z}/q(k))$ such that:
+**Theorem 6.6.9 (Power sum classes).** Assume the axioms A1 to A5, A7 to A11, B1 to B5, B7, C1 to C5 and D1. Let $q \geq 1$ and $k \geq 1$. For each space $E$ and each vector bundle $V$ on $E$ there is a class $s_k(V) \in H^{2k}(E, \mathbb{Z}/q(k))$ such that:
 
 1. $f^* s_k(V) = s_k(V \circ f)$ for each map $f : E \to E'$ and bundle $V$ on $E'$, when $q$ is invertible on $E'$;
 2. $s_k(V \oplus W) = s_k(V) + s_k(W)$, when $q$ is invertible on $E$;
@@ -111,11 +111,11 @@ Part 2. Let $c$ and $d$ be the Chern families of $V$ and $W$. [The Whitney sum f
 
 Part 3. By the lemma on line bundles, $c(T) = 1 - \iota_1(c_1(L))\, T$ in $R(E)[[T]]$. So the Newton power sum is $\iota_1(c_1(L))^k = \iota_k(c_1(L)^k)$, and $\pi_k$ of it is $c_1(L)^k$. $\square$
 
-**Remark.** The theorem `s57` is the term `D2.goal_of s42 s43 s44 s54 s55 s56`. Its type `EtaleChapterDTwo` has $22$ hypotheses, the axioms A1 to C5 and D1, and the conclusion D2. The proof of `D2.goal_of` ([InstCommRingR.lean](lean:Development/EtaleCohomology/EtaleSheaves/InstCommRingR.lean#L85)) binds $21$ of them without a name and uses only D1. So the theorem is really "D1 implies D2". The list of other axioms only makes the type fit the place where it is used.
+**Remark 6.6.10.** The theorem `s57` is the term `D2.goal_of s42 s43 s44 s54 s55 s56`. Its type `EtaleChapterDTwo` has $22$ hypotheses, the axioms A1 to C5 and D1, and the conclusion D2. The proof of `D2.goal_of` ([InstCommRingR.lean](lean:Development/EtaleCohomology/EtaleSheaves/InstCommRingR.lean#L85)) binds $21$ of them without a name and uses only D1. So the theorem is really "D1 implies D2". The list of other axioms only makes the type fit the place where it is used.
 
-**Remark.** The classes $s_k(V)$ are $0$ when $q$ is not invertible on $E$. The three properties make no claim in that case, so this value is a convention. The Chern family of the code has $c_1 = -c_1(L)$ for a line bundle. So it differs from the usual Chern classes by signs. The theorem does not depend on this convention: the lemma on line bundles gives $c(T) = 1 - x T$ with $x = c_1(L)$, and the Newton power sums of $1 - xT$ are the powers $x^k$.
+**Remark 6.6.11.** The classes $s_k(V)$ are $0$ when $q$ is not invertible on $E$. The three properties make no claim in that case, so this value is a convention. The Chern family of the code has $c_1 = -c_1(L)$ for a line bundle. So it differs from the usual Chern classes by signs. The theorem does not depend on this convention: the lemma on line bundles gives $c(T) = 1 - x T$ with $x = c_1(L)$, and the Newton power sums of $1 - xT$ are the powers $x^k$.
 
-**Remark.** Some Lean names here mislead. The space $P_N$ is `PGL N` ([BlockGLMap.lean](lean:Development/AbelianVarietyTheory/Definitions/Divisors/BlockGLMap.lean#L42)), but it is not the group $\mathrm{PGL}_N$. It is the space of unimodular vectors. The support condition is `LeafA6supp`, a second name of `DivisorSupportCondition`. The theorem `s57` has a second name `intersectionNumber_baseChange` ([AwSpec.lean](lean:Development/EtaleCohomology/EtaleSheaves/AwSpec.lean#L127)), and it says nothing about intersection numbers or base change.
+**Remark 6.6.12.** Some Lean names here mislead. The space $P_N$ is `PGL N` ([BlockGLMap.lean](lean:Development/AbelianVarietyTheory/Definitions/Divisors/BlockGLMap.lean#L42)), but it is not the group $\mathrm{PGL}_N$. It is the space of unimodular vectors. The support condition is `LeafA6supp`, a second name of `DivisorSupportCondition`. The theorem `s57` has a second name `intersectionNumber_baseChange` ([AwSpec.lean](lean:Development/EtaleCohomology/EtaleSheaves/AwSpec.lean#L127)), and it says nothing about intersection numbers or base change.
 
 ## Notes and references
 

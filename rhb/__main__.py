@@ -151,6 +151,11 @@ def cmd_ledger(args):
     return ledger.run(book, args)
 
 
+def cmd_number(args):
+    from . import number
+    return number.run(load(args), args.write)
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="rhb")
     ap.add_argument("--riemann", default=os.path.join(ROOT, "..", "riemann"))
@@ -169,8 +174,11 @@ def main(argv=None):
     lg.add_argument("--records", default="/tmp/rr/records")
     lg.add_argument("--min", type=int, default=1000)
     lg.add_argument("--write", action="store_true")
+    nb = sub.add_parser("number")
+    nb.add_argument("--write", action="store_true")
     args = ap.parse_args(argv)
-    return {"survey": cmd_survey, "check": cmd_check, "build": cmd_build, "ledger": cmd_ledger}[args.cmd](args)
+    return {"survey": cmd_survey, "check": cmd_check, "build": cmd_build, "ledger": cmd_ledger,
+            "number": cmd_number}[args.cmd](args)
 
 
 if __name__ == "__main__":

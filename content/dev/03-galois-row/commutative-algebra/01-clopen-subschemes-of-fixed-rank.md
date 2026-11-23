@@ -7,35 +7,35 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Clopen subschemes of fixed rank
 
-Let $G \to S$ be a finite étale morphism. For an $S$-scheme $T$, an open and closed subscheme of $G_T = T \times_S G$ is again finite étale over $T$. This section proves that the clopen subschemes of a fixed rank $r$ have a moduli space: an $S$-scheme $Y_r$ with a universal clopen subscheme $U_r$ of $G_{Y_r}$. The construction takes the Hilbert scheme of finite flat subschemes of rank $r$ of $G$ and shows that its universal family is already open. The finite étale scheme that represents all clopen subschemes of $G$ is built from these pieces in [Theorem](/entry/exists-finite-etale-representing-clopen-subschemes/), which uses this result for each rank $r$.
+Let $G \to S$ be a finite étale morphism. For an $S$-scheme $T$, an open and closed subscheme of $G_T = T \times_S G$ is again finite étale over $T$. This section proves that the clopen subschemes of a fixed rank $r$ have a moduli space: an $S$-scheme $Y_r$ with a universal clopen subscheme $U_r$ of $G_{Y_r}$. The construction takes the Hilbert scheme of finite flat subschemes of rank $r$ of $G$ and shows that its universal family is already open. The finite étale scheme that represents all clopen subschemes of $G$ is built from these pieces in [Theorem 3.1.4](/entry/exists-finite-etale-representing-clopen-subschemes/), which uses this result for each rank $r$.
 
 Recall that a morphism is [finite étale](/learn/geometry/#schemes-and-varieties) if it is finite and étale, and that a subset of a topological space is *clopen* if it is open and closed ([[clopen set|DQ4E55T3BW]]). For a morphism $y : T \to Y$ of $S$-schemes we write $y \times 1 : G_T \to G_Y$ for its base change.
 
-**Definition (Rank).** Let $f : V \to T$ be finite and locally free. For $t \in T$ the stalk $(f_*\mathcal{O}_V)_t$ is a free $\mathcal{O}_{T,t}$-module of finite rank. This rank is the *rank of $f$ at $t$*. The morphism $f$ has *constant rank $r$* if its rank at each point of $T$ is $r$.
+**Definition 5.1.1 (Rank).** Let $f : V \to T$ be finite and locally free. For $t \in T$ the stalk $(f_*\mathcal{O}_V)_t$ is a free $\mathcal{O}_{T,t}$-module of finite rank. This rank is the *rank of $f$ at $t$*. The morphism $f$ has *constant rank $r$* if its rank at each point of $T$ is $r$.
 
-**Lemma.** Let $G \to S$ be finite étale, let $T$ be an $S$-scheme and let $V \subseteq G_T$ be an open subscheme whose underlying set is closed. Then the projection $V \to T$ is finite étale.
+**Lemma 5.1.2.** Let $G \to S$ be finite étale, let $T$ be an $S$-scheme and let $V \subseteq G_T$ be an open subscheme whose underlying set is closed. Then the projection $V \to T$ is finite étale.
 
 Lean: `UpperTheory.clopProj_finite_etale_of_isClosed`.
 
 *Proof.* The projection $G_T \to T$ is the base change of $G \to S$, so it is finite étale. The inclusion $V \to G_T$ is an open immersion, so it is étale. Its image is closed, so it is also a closed immersion, and a closed immersion is finite. A composite of finite étale morphisms is finite étale. $\square$
 
-**Definition (Clopen subscheme of rank $r$).** Let $G \to S$ be finite étale and $T$ an $S$-scheme. A *clopen subscheme of $G_T$* is an open subscheme $V \subseteq G_T$ whose underlying set is closed. By the Lemma, $V \to T$ is finite étale. The subscheme $V$ has *rank $r$* if $V \to T$ has constant rank $r$.
+**Definition 5.1.3 (Clopen subscheme of rank $r$).** Let $G \to S$ be finite étale and $T$ an $S$-scheme. A *clopen subscheme of $G_T$* is an open subscheme $V \subseteq G_T$ whose underlying set is closed. By the Lemma, $V \to T$ is finite étale. The subscheme $V$ has *rank $r$* if $V \to T$ has constant rank $r$.
 
-**Definition (Classifying pair).** Fix $r \ge 0$. A pair $(Y, U)$, with $Y$ an $S$-scheme and $U$ a clopen subscheme of $G_Y$ of rank $r$, *classifies the clopen subschemes of rank $r$* if the following holds. For each $S$-scheme $T$ and each clopen subscheme $V$ of $G_T$ of rank $r$, there is exactly one $S$-morphism $y : T \to Y$ with $(y \times 1)^{-1}(U) = V$.
+**Definition 5.1.4 (Classifying pair).** Fix $r \ge 0$. A pair $(Y, U)$, with $Y$ an $S$-scheme and $U$ a clopen subscheme of $G_Y$ of rank $r$, *classifies the clopen subschemes of rank $r$* if the following holds. For each $S$-scheme $T$ and each clopen subscheme $V$ of $G_T$ of rank $r$, there is exactly one $S$-morphism $y : T \to Y$ with $(y \times 1)^{-1}(U) = V$.
 
 So $Y$ represents the functor that sends $T$ to the set of clopen subschemes of $G_T$ of rank $r$, and $U$ is the universal object.
 
-**Example.** Let $S = \operatorname{Spec} k$ with $k$ a field, and let $G$ be the disjoint union of $n$ copies of $S$. For a connected $S$-scheme $T$, the scheme $G_T$ is the disjoint union of $n$ copies of $T$, and a clopen subscheme of rank $r$ is the union of $r$ of these copies. So we can take for $Y_r$ the disjoint union of $\binom{n}{r}$ copies of $S$, one for each subset of size $r$ of the $n$ points, and for $U_r$ the obvious subscheme. For a general $T$, a clopen subscheme of rank $r$ picks a subset of size $r$ of the $n$ points at each point of $T$, and this choice is locally constant on $T$. Such a choice is the same as a morphism $T \to Y_r$.
+**Example 5.1.5.** Let $S = \operatorname{Spec} k$ with $k$ a field, and let $G$ be the disjoint union of $n$ copies of $S$. For a connected $S$-scheme $T$, the scheme $G_T$ is the disjoint union of $n$ copies of $T$, and a clopen subscheme of rank $r$ is the union of $r$ of these copies. So we can take for $Y_r$ the disjoint union of $\binom{n}{r}$ copies of $S$, one for each subset of size $r$ of the $n$ points, and for $U_r$ the obvious subscheme. For a general $T$, a clopen subscheme of rank $r$ picks a subset of size $r$ of the $n$ points at each point of $T$, and this choice is locally constant on $T$. Such a choice is the same as a morphism $T \to Y_r$.
 
 The proof uses one fact about immersions.
 
-**Lemma (Flat closed immersions are open).** Let $p : X \to T$ be étale and let $v : V \to X$ be a closed immersion. If $p \circ v$ is flat and locally of finite presentation, then $v$ is an open immersion.
+**Lemma 5.1.6 (Flat closed immersions are open).** Let $p : X \to T$ be étale and let $v : V \to X$ be a closed immersion. If $p \circ v$ is flat and locally of finite presentation, then $v$ is an open immersion.
 
 Lean: `UpperTheory.isOpenImmersion_of_closedImmersion_flat_etale`.
 
 *Proof.* We give the classical argument. Consider the graph $\Gamma_v : V \to V \times_T X$. It is a section of the projection $V \times_T X \to V$, which is étale as a base change of $p$. A section of an étale morphism is an open immersion, so $\Gamma_v$ is an open immersion. The second projection $V \times_T X \to X$ is the base change of $p \circ v$, so it is flat and locally of finite presentation. Hence $v$, the composite of the two, is flat and locally of finite presentation. Let $\mathcal{J}$ be the ideal of $v$. Flatness of $\mathcal{O}_X/\mathcal{J}$ gives $\mathcal{J}/\mathcal{J}^2 = \operatorname{Tor}_1^{\mathcal{O}_X}(\mathcal{O}_X/\mathcal{J}, \mathcal{O}_X/\mathcal{J}) = 0$, and $\mathcal{J}$ is of finite type. By Nakayama's lemma, $\mathcal{J}$ is locally generated by an idempotent $e$. Where $\mathcal{J} = (e)$, the subscheme $V$ is the open set where $1 - e$ is invertible. So $v$ is an open immersion. $\square$
 
-**Theorem.** Let $S$ be a locally noetherian scheme, let $G \to S$ be finite étale and let $r \ge 0$. Then there is a pair $(Y, U)$ that classifies the clopen subschemes of $G$ of rank $r$.
+**Theorem 5.1.7.** Let $S$ be a locally noetherian scheme, let $G \to S$ be finite étale and let $r \ge 0$. Then there is a pair $(Y, U)$ that classifies the clopen subschemes of $G$ of rank $r$.
 
 Lean: `UpperTheory.exists_clopRepOfRank_of_locallyNoetherian`.
 
@@ -47,4 +47,4 @@ Lean: `UpperTheory.exists_clopRepOfRank_of_locallyNoetherian`.
 
 3. *Universality.* Let $V$ be a clopen subscheme of $G_T$ of rank $r$. By the first Lemma, $V \to T$ is finite étale, so it is finite and flat of constant rank $r$. The inclusion $V \to G_T$ is a closed immersion, since its image is closed. So step 1 gives exactly one $f : T \to H$ such that $V$ is the fibre product of $U_0$ along $f \times 1$. For an open subscheme of $G_H$, the fibre product along $f \times 1$ is the open subscheme $(f \times 1)^{-1}(U_0)$. So the condition on $f$ is $(f \times 1)^{-1}(U) = V$, and $f$ is the unique such morphism. $\square$
 
-**Remark.** The Lean statement asks that $S$ be locally noetherian. The Hilbert scheme theorem that the proof calls does not ask for it. In the Lean proof the hypothesis appears once: it makes $H$ locally noetherian, before the Lemma on flat closed immersions is applied. The rank in the Lean definition is a function `finrank` of the projection, which we did not unfold. The Lean pair is written with the cartesian product of the category of $S$-schemes, in the order $Y \times_S G$; the Hilbert scheme uses the order $G \times_S H$, and the proof composes with the symmetry isomorphism. Three private lemmas translate the fibre product condition of step 3 into an equality of open subschemes.
+**Remark 5.1.8.** The Lean statement asks that $S$ be locally noetherian. The Hilbert scheme theorem that the proof calls does not ask for it. In the Lean proof the hypothesis appears once: it makes $H$ locally noetherian, before the Lemma on flat closed immersions is applied. The rank in the Lean definition is a function `finrank` of the projection, which we did not unfold. The Lean pair is written with the cartesian product of the category of $S$-schemes, in the order $Y \times_S G$; the Hilbert scheme uses the order $G \times_S H$, and the proof composes with the symmetry isomorphism. Three private lemmas translate the fibre product condition of step 3 into an equality of open subschemes.

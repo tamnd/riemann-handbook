@@ -40,6 +40,17 @@ function Header(el)
     return el
   end
   local title = latex_inlines(el.content)
+  local function pdf_text(inl)
+    local sym = { ell = "ℓ", infty = "∞", mathbb = "", mathrm = "", alpha = "α", beta = "β", gamma = "γ",
+                  lambda = "λ", mu = "μ", pi = "π", sigma = "σ", chi = "χ", zeta = "ζ", Gamma = "Γ" }
+    local t = pandoc.utils.stringify(inl)
+    t = t:gsub("\\(%a+)", function(w) return sym[w] or w end):gsub("[{}_^\\]", "")
+    return t
+  end
+  if title:find("\\%(") then
+    -- math in a heading: give the bookmarks plain text
+    title = "\\texorpdfstring{" .. title .. "}{" .. pdf_text(el.content) .. "}"
+  end
   local id = el.identifier
   if el.level == 1 then
     if num then

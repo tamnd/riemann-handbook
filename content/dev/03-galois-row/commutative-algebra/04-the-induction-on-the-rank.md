@@ -7,7 +7,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The induction on the rank
 
-This section proves the induction step of the projective bundle formula: if $\mathrm{PBF}_N$ holds for all spaces on which $q$ is invertible, then $\mathrm{PBF}_{N+1}$ holds for them too. Together with [Theorem](/entry/projective-bundle-formula-rank-two/) for the projective line, it gives the formula in all ranks in [Theorem](/entry/pbf-all/). The step blows up $\mathbb{P}^N$ at a point. The blowup is a $\mathbb{P}^1$-bundle over $\mathbb{P}^{N-1}$, so its cohomology is known from the rank two case and from $\mathrm{PBF}_N$. A Mayer-Vietoris argument then brings the result down to $\mathbb{P}^N$. We use the notation of the previous section: spaces $E$ on which $q$ is invertible, the projection $\pi : \mathbb{P}^{M-1}_E \to E$, and the class $\xi_M = c_1(\mathcal{L}) \in H^2(\mathbb{P}^{M-1}_E, \mathbb{Z}/q(1))$.
+This section proves the induction step of the projective bundle formula: if $\mathrm{PBF}_N$ holds for all spaces on which $q$ is invertible, then $\mathrm{PBF}_{N+1}$ holds for them too. Together with [Theorem 5.3.5](/entry/projective-bundle-formula-rank-two/) for the projective line, it gives the formula in all ranks in [Theorem 3.5.3](/entry/pbf-all/). The step blows up $\mathbb{P}^N$ at a point. The blowup is a $\mathbb{P}^1$-bundle over $\mathbb{P}^{N-1}$, so its cohomology is known from the rank two case and from $\mathrm{PBF}_N$. A Mayer-Vietoris argument then brings the result down to $\mathbb{P}^N$. We use the notation of the previous section: spaces $E$ on which $q$ is invertible, the projection $\pi : \mathbb{P}^{M-1}_E \to E$, and the class $\xi_M = c_1(\mathcal{L}) \in H^2(\mathbb{P}^{M-1}_E, \mathbb{Z}/q(1))$.
 
 ### Group actions and the blowup
 
@@ -15,7 +15,7 @@ For the proof it is convenient to describe spaces as quotients by group actions.
 
 With $D = \mathrm{Um}_M$, the unimodular vectors of length $M$, and $G = \mathbb{G}_m$ acting by scaling, the space $[\mathrm{Um}_M / \mathbb{G}_m]$ is the space $\mathbb{P}^{M-1}$ of the last section, and the identity character gives $\mathcal{L}$. The Lean code proves that $\mathrm{PBF}_M(E)$ is equivalent to the same statement for $E \times [\mathrm{Um}_M / \mathbb{G}_m] \to E$. From now on we use this form.
 
-**Definition (The blowup).** Let $N \ge 1$. Let $\mathbb{G}_m^2$ act on $\mathrm{Um}_N \times \mathrm{Um}_2$ by
+**Definition 5.4.1 (The blowup).** Let $N \ge 1$. Let $\mathbb{G}_m^2$ act on $\mathrm{Um}_N \times \mathrm{Um}_2$ by
 $$(g_1, g_2) \cdot \bigl(x, (a, b)\bigr) = \bigl(g_1 x, (g_2 g_1^{-1} a, \, g_2 b)\bigr).$$
 Put $B = [\mathrm{Um}_N \times \mathrm{Um}_2 / \mathbb{G}_m^2]$. It has two maps:
 $$\begin{aligned} p &: B \to \mathbb{P}^{N-1}, & (x, (a, b)) &\mapsto x, & (g_1, g_2) &\mapsto g_1, \\ \beta &: B \to \mathbb{P}^{N}, & (x, (a, b)) &\mapsto (a x_1, \dots, a x_N, b), & (g_1, g_2) &\mapsto g_2. \end{aligned}$$
@@ -35,7 +35,7 @@ They cover $\mathbb{P}^N$, and their inverse images under $\beta$ cover $B$.
 
 The proof uses five facts. Each is a separate result of the Lean code. We list them with a short reason.
 
-1. *The blowup is a projective line bundle.* The pair $(p; 1, \beta^* \xi)$ over $E$ has the Leray-Hirsch property. Over the locus of $\mathbb{P}^{N-1}$ where the coordinate $x_i$ is a unit, the bundle $p$ is trivial: it is isomorphic to the projection of $\mathbb{P}^1$ times that locus, and $\beta^* \mathcal{L}$ becomes the tautological bundle. So [Theorem](/entry/projective-bundle-formula-rank-two/) applies on each such locus. A separate result glues the Leray-Hirsch property from these loci to all of $\mathbb{P}^{N-1}_E$.
+1. *The blowup is a projective line bundle.* The pair $(p; 1, \beta^* \xi)$ over $E$ has the Leray-Hirsch property. Over the locus of $\mathbb{P}^{N-1}$ where the coordinate $x_i$ is a unit, the bundle $p$ is trivial: it is isomorphic to the projection of $\mathbb{P}^1$ times that locus, and $\beta^* \mathcal{L}$ becomes the tautological bundle. So [Theorem 5.3.5](/entry/projective-bundle-formula-rank-two/) applies on each such locus. A separate result glues the Leray-Hirsch property from these loci to all of $\mathbb{P}^{N-1}_E$.
 2. *The Chern class on the two pieces.* On $\beta^{-1}(Q_1)$ the class $\beta^* \xi$ vanishes, since $b$ is a unit there and trivializes $\beta^* \mathcal{L}$. On $\beta^{-1}(Q_2)$ the classes $\beta^* \xi$ and $p^* \eta$ agree, since $a$ is a unit there and the two line bundles become isomorphic.
 3. *The affine piece.* The projection $Q_1 \times E \to E$ is a cohomological equivalence for each $\mathbb{Z}/q(i)$, and so is the map $\beta^{-1}(Q_1) \to \mathbb{P}^{N-1}_E$ induced by $p$. Both are affine space bundles, and the Lean proofs use the rank one case of the projective bundle formula and homotopy invariance.
 4. *Away from the centre.* The map $\beta^{-1}(Q_2) \to Q_2$ is a cohomological equivalence.
@@ -43,7 +43,7 @@ The proof uses five facts. Each is a separate result of the Lean code. We list t
 
 Facts 4 and 5 hold because the blowup changes nothing away from $P$. Their Lean proofs also use homotopy invariance and the rank one case.
 
-**Lemma (Powers of the Chern class).** Let $g_1 : U \to Y$ and $g_2 : V \to Y$ be a cover of a space $Y$, let $q$ be invertible on $Y$, and let $\xi, h \in H^2(Y, \mathbb{Z}/q(1))$. Assume $g_1^* \xi = 0$ and $g_2^* \xi = g_2^* h$. Then for all $j \ge 0$
+**Lemma 5.4.2 (Powers of the Chern class).** Let $g_1 : U \to Y$ and $g_2 : V \to Y$ be a cover of a space $Y$, let $q$ be invertible on $Y$, and let $\xi, h \in H^2(Y, \mathbb{Z}/q(1))$. Assume $g_1^* \xi = 0$ and $g_2^* \xi = g_2^* h$. Then for all $j \ge 0$
 $$\xi^{j+1} = h^j \cup \xi.$$
 
 Lean: `UpperTheory.cpow_succ_eq_cup_of_two_cover`.
@@ -55,7 +55,7 @@ $$(\beta^* \xi)^{j+1} = p^* \eta^j \cup \beta^* \xi \qquad \text{for all } j \ge
 
 ### The induction step
 
-**Theorem (Induction step).** Let $N \ge 2$. Assume that $\mathrm{PBF}_N(E)$ holds for each space $E$ on which $q$ is invertible. Then $\mathrm{PBF}_{N+1}(E)$ holds for each such $E$.
+**Theorem 5.4.3 (Induction step).** Let $N \ge 2$. Assume that $\mathrm{PBF}_N(E)$ holds for each space $E$ on which $q$ is invertible. Then $\mathrm{PBF}_{N+1}(E)$ holds for each such $E$.
 
 Lean: `UpperTheory.projectiveBundleFormula_succ_of_forall`.
 
@@ -75,4 +75,4 @@ By (R), $\beta^*$ of the subtracted terms is $p^* y_0 + p^* y_1 \cup \beta^* \xi
 
 For $E$ a point over $\mathbb{C}$, the argument is the familiar computation of $H^*(\mathbb{P}^N)$ from the blowup at a point: the blowup is a $\mathbb{P}^1$-bundle over $\mathbb{P}^{N-1}$, and it differs from $\mathbb{P}^N$ only over a neighbourhood of $P$, which is contractible.
 
-**Remark.** The Lean statement asks for $N \ge 2$, but the proof uses only $N \ge 1$, which is all the called lemmas ask for. The case $N = 1$ of the step is not available because fact 1 applies the rank two formula on each chart. So the rank two case must be proved first and separately, as in the previous section. The quotient spaces, the blowup and the loci $Q_1$, $Q_2$ are defined in [SpanScale.lean](lean:Development/AutomorphicArithmetic/BlowupCategories/SpanScale.lean#L273). The vanishing criterion is [LerayHirschOfTwoElementCover.lean](lean:Development/AutomorphicArithmetic/CommutativeAlgebra/LerayHirschOfTwoElementCover.lean#L48).
+**Remark 5.4.4.** The Lean statement asks for $N \ge 2$, but the proof uses only $N \ge 1$, which is all the called lemmas ask for. The case $N = 1$ of the step is not available because fact 1 applies the rank two formula on each chart. So the rank two case must be proved first and separately, as in the previous section. The quotient spaces, the blowup and the loci $Q_1$, $Q_2$ are defined in [SpanScale.lean](lean:Development/AutomorphicArithmetic/BlowupCategories/SpanScale.lean#L273). The vanishing criterion is [LerayHirschOfTwoElementCover.lean](lean:Development/AutomorphicArithmetic/CommutativeAlgebra/LerayHirschOfTwoElementCover.lean#L48).

@@ -12,7 +12,7 @@ This section proves the projective bundle formula for the projective line over a
 
 ### The projective bundle formula
 
-**Definition (Leray-Hirsch property).** Let $\pi : X \to E$ be a map of spaces and let $c_0, \dots, c_{m-1}$ be classes with $c_j \in H^{d_j}(X, \mathbb{Z}/q(e_j))$. The pair $(\pi, c)$ has the *Leray-Hirsch property* if for all $n, i \in \mathbb{Z}$ the map
+**Definition 5.3.1 (Leray-Hirsch property).** Let $\pi : X \to E$ be a map of spaces and let $c_0, \dots, c_{m-1}$ be classes with $c_j \in H^{d_j}(X, \mathbb{Z}/q(e_j))$. The pair $(\pi, c)$ has the *Leray-Hirsch property* if for all $n, i \in \mathbb{Z}$ the map
 $$\bigoplus_{j=0}^{m-1} H^{n - d_j}(E, \mathbb{Z}/q(i - e_j)) \to H^n(X, \mathbb{Z}/q(i)), \qquad (a_j) \mapsto \sum_j \pi^* a_j \cup c_j,$$
 is bijective.
 
@@ -22,7 +22,7 @@ In topology, the Leray-Hirsch theorem says that a fibre bundle whose fibre cohom
 
 Let $N \ge 1$. For a ring $A$, a vector $v \in A^N$ is *unimodular* if its entries generate the unit ideal. The space $\mathbb{P}^{N-1}$ is the nerve of the groupoid whose objects over $A$ are the unimodular vectors in $A^N$ and whose arrows $v \to w$ are the units $\lambda \in A^\times$ with $v = \lambda w$. The arrow $\lambda$ gives a line bundle $\mathcal{L}$ on $\mathbb{P}^{N-1}$: its transition function on a $1$-simplex is $\lambda$. The space $\mathbb{P}^{N-1}_E$ is the trivial $\mathbb{P}^{N-1}$-bundle over $E$, with projection $\pi : \mathbb{P}^{N-1}_E \to E$, and $\mathcal{L}$ pulls back to it. Let $\xi = c_1(\mathcal{L}) \in H^2(\mathbb{P}^{N-1}_E, \mathbb{Z}/q(1))$ be its first Chern class ([line bundles](/learn/geometry/#line-bundles-and-divisors)).
 
-**Definition (Projective bundle formula).** The *projective bundle formula in rank $N$ for $E$*, written $\mathrm{PBF}_N(E)$, is the Leray-Hirsch property of $\pi : \mathbb{P}^{N-1}_E \to E$ with the classes $1, \xi, \dots, \xi^{N-1}$, where $\xi^j$ lies in degree $2j$ and twist $j$. So for all $n$ and $i$
+**Definition 5.3.2 (Projective bundle formula).** The *projective bundle formula in rank $N$ for $E$*, written $\mathrm{PBF}_N(E)$, is the Leray-Hirsch property of $\pi : \mathbb{P}^{N-1}_E \to E$ with the classes $1, \xi, \dots, \xi^{N-1}$, where $\xi^j$ lies in degree $2j$ and twist $j$. So for all $n$ and $i$
 $$\bigoplus_{j=0}^{N-1} H^{n-2j}(E, \mathbb{Z}/q(i-j)) \xrightarrow{\ \sim\ } H^n(\mathbb{P}^{N-1}_E, \mathbb{Z}/q(i)), \qquad (a_j) \mapsto \sum_j \pi^* a_j \cup \xi^j.$$
 
 Lean: `UpperTheory.Pbf.PBF`.
@@ -35,7 +35,7 @@ The proof of the rank $2$ case rests on a general lemma about a space covered by
 $$\cdots \to H^n(X) \to H^n(W_1) \oplus H^n(W_2) \to H^n(W_{12}) \xrightarrow{\ \delta\ } H^{n+1}(X) \to \cdots,$$
 where $W_{12} = W_1 \times_X W_2$. The boundary $\delta$ is compatible with cup products by classes pulled back from $X$.
 
-**Lemma (Two charts).** Let $\pi : X \to E$ be a map of spaces and $f_1, f_2$ a cover of $X$ with intersection $W_{12}$. Let $\xi \in H^2(X, \mathbb{Z}/q(1))$ and $k \in H^1(W_{12}, \mathbb{Z}/q(1))$. Write $\pi_{12} : W_{12} \to E$ for the composite map. Assume:
+**Lemma 5.3.3 (Two charts).** Let $\pi : X \to E$ be a map of spaces and $f_1, f_2$ a cover of $X$ with intersection $W_{12}$. Let $\xi \in H^2(X, \mathbb{Z}/q(1))$ and $k \in H^1(W_{12}, \mathbb{Z}/q(1))$. Write $\pi_{12} : W_{12} \to E$ for the composite map. Assume:
 
 1. $\pi \circ f_1$ and $\pi \circ f_2$ are cohomological equivalences for each $\mathbb{Z}/q(i)$;
 2. for all $m, j$ the map $(a, b) \mapsto \pi_{12}^* a + \pi_{12}^* b \cup k$ from $H^{m+1}(E, \mathbb{Z}/q(j+1)) \oplus H^m(E, \mathbb{Z}/q(j))$ to $H^{m+1}(W_{12}, \mathbb{Z}/q(j+1))$ is bijective;
@@ -49,17 +49,17 @@ Lean: `UpperTheory.P2.core` (also `UpperTheory.P2.lh2`, which repackages the con
 $$0 \to H^{n-1}(E) \xrightarrow{\ b \mapsto \pm \pi^* b \cup \xi\ } H^n(X) \to H^n(E) \to 0,$$
 and $\pi^*$ splits the second map. A diagram chase gives the bijectivity of $(a, b) \mapsto \pi^* a + \pi^* b \cup \xi$. The sign in hypothesis 3 does no harm: it changes $b$ into $-b$. $\square$
 
-**Lemma.** Let $E$ be a space on which $q$ is invertible. For all $m, j \in \mathbb{Z}$ the map
+**Lemma 5.3.4.** Let $E$ be a space on which $q$ is invertible. For all $m, j \in \mathbb{Z}$ the map
 $$\begin{aligned} H^{m+1}(E, \mathbb{Z}/q(j+1)) \oplus H^m(E, \mathbb{Z}/q(j)) &\to H^{m+1}(\mathbb{G}_m \times E, \mathbb{Z}/q(j+1)), \\ (a, b) &\mapsto \mathrm{pr}_2^* a + \mathrm{pr}_2^* b \cup \mathrm{pr}_1^* \kappa \end{aligned}$$
 is bijective.
 
 Lean: `UpperTheory.P2.kun`.
 
-*Proof.* This is [Theorem](/entry/bijective-cohomology-gm-product-kummer-cup/) (Künneth formula for $\mathbb{G}_m$) with $n = m + 1$ and $i = j + 1$. $\square$
+*Proof.* This is [Theorem 5.2.7](/entry/bijective-cohomology-gm-product-kummer-cup/) (Künneth formula for $\mathbb{G}_m$) with $n = m + 1$ and $i = j + 1$. $\square$
 
 ### The rank two case
 
-**Theorem (Projective line).** Let $E$ be a space on which $q$ is invertible. Then $\mathrm{PBF}_2(E)$ holds: for all $n, i$ the map
+**Theorem 5.3.5 (Projective line).** Let $E$ be a space on which $q$ is invertible. Then $\mathrm{PBF}_2(E)$ holds: for all $n, i$ the map
 $$H^n(E, \mathbb{Z}/q(i)) \oplus H^{n-2}(E, \mathbb{Z}/q(i-1)) \to H^n(\mathbb{P}^1_E, \mathbb{Z}/q(i)), \qquad (a, b) \mapsto \pi^* a + \pi^* b \cup \xi,$$
 is bijective.
 
@@ -79,4 +79,4 @@ The Lemma on two charts now gives the Leray-Hirsch property for $1, \xi$, which 
 
 For $E$ a point over $\mathbb{C}$ this is the computation $H^*(\mathbb{P}^1) = \mathbb{Z} \oplus \mathbb{Z} \xi$, obtained from the cover of the sphere by two discs that meet in an annulus.
 
-**Remark.** The Lemma on the boundary of Kummer classes states a disjunction: the boundary is $\xi$ or $-\xi$. The sign is not fixed in the Lean code, and the Lemma on two charts is written so that either sign works. The Lemma `UpperTheory.P2.kun` is private. It reindexes the public Künneth theorem from $(n, i)$ to $(m + 1, j + 1)$; the public theorem was itself obtained from the private `UpperTheory.Kun.main` by the opposite change of indices. The charts are built in [TwoChart.lean](lean:Development/AutomorphicArithmetic/CupPullbacks/TwoChart.lean#L136), and the Lemma on two charts is at [TwoCore.lean](lean:Development/AutomorphicArithmetic/CupPullbacks/TwoCore.lean#L193).
+**Remark 5.3.6.** The Lemma on the boundary of Kummer classes states a disjunction: the boundary is $\xi$ or $-\xi$. The sign is not fixed in the Lean code, and the Lemma on two charts is written so that either sign works. The Lemma `UpperTheory.P2.kun` is private. It reindexes the public Künneth theorem from $(n, i)$ to $(m + 1, j + 1)$; the public theorem was itself obtained from the private `UpperTheory.Kun.main` by the opposite change of indices. The charts are built in [TwoChart.lean](lean:Development/AutomorphicArithmetic/CupPullbacks/TwoChart.lean#L136), and the Lemma on two charts is at [TwoCore.lean](lean:Development/AutomorphicArithmetic/CupPullbacks/TwoCore.lean#L193).

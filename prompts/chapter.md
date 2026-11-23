@@ -45,13 +45,23 @@ If the brief asks for it, also write `intro.md` in the chapter folder: one or tw
 
 ## The statements
 
-- Head each result with `**Definition.**`, `**Theorem.**`, `**Proposition.**`, `**Lemma.**`, `**Corollary.**`, `**Example.**` or `**Remark.**`, with an optional name in parentheses: `**Theorem (Lefschetz fixed point formula).**`. Do not write numbers. The build numbers each statement (Theorem 3.2.4) from its section.
+- Head each result with `**Definition.**`, `**Theorem.**`, `**Proposition.**`, `**Lemma.**`, `**Corollary.**`, `**Example.**` or `**Remark.**`, with an optional name in parentheses: `**Theorem (Lefschetz fixed point formula).**`. You need not write numbers: `python3 -m rhb number --write` writes the number of each statement into the head (Theorem 3.2.4: chapter, section, statement) and into each link whose text is a kind of statement, such as `[Theorem](/entry/<id>/)`. Run it before the check.
 - Under each Definition, Theorem, Proposition, Lemma and Corollary that comes from the Lean code, write one line `Lean: ` with the full Lean names in code. Put a second name or a wrapper of the same statement on the same line: "Lean: `A` (also `B`, a second name)." This line ties the declaration to the number.
 - Then the proof: a paragraph that starts with `*Proof.*` and ends with `$\square$`. Give the argument as a mathematician gives it: the main steps, which earlier result each step uses (with a link), and why it holds. Leave out steps that only rewrite terms. If the Lean proof only passes its hypotheses to another result, the proof is one sentence: "This is Theorem … applied to …". If the Lean proof cites a published result as a hypothesis, say so and cite it.
 - Define each object before its first use, or link to its definition in Volume 1 or in an earlier chapter. State all hypotheses.
 - A known theorem: state it in its standard form first, with a source (author, title, the theorem or section number). Then say in a Remark how the Lean form differs: extra hypotheses, a special case, a weaker conclusion.
 - Not every declaration gets its own statement. A second name, a wrapper, a field projection or a small step of a proof goes into the `Lean:` line of the result that it serves, or into the proof as a sentence. A large result gets a statement. A lemma that a student needs to follow a proof gets a statement.
-- Use a Remark for the facts about the Lean code that a reader should know: a hypothesis that is never used, a name that says something different from the statement, a statement that is vacuous, a field that is not unfolded. Keep these short. The mathematics comes first.
+- Facts about the Lean code that a reader should know (a hypothesis that is never used, a name that says something different from the statement, a statement that is vacuous, a definition that is not unfolded) go into one `**Remark (Formalization).**` at the end of the section. Keep it short.
+
+## The text is mathematics
+
+The reader is a student who reads a textbook by an expert. So:
+
+- Outside the `Lean:` lines and the Remarks (Formalization), the text does not mention the code. Do not write "the code", "the Lean proof", "the Lean statement", "the file", "the declaration", "the field", "the structure", "the hypothesis named". Write the mathematics: "We assume …", "We take the following as given, from [source]", "Let …". A result that the Lean proof takes as an input statement is stated as a Theorem with its source, and the proof says where it comes from in one sentence.
+- Each statement says exactly what the Lean statement says, in standard notation: the same objects, the same hypotheses, the same quantifiers, the same conclusion. Do not add hypotheses, do not make the conclusion stronger, do not fill a gap with what "should" hold. If the Lean form is a special case or an odd form of a classical result, state the Lean form, and give the classical form in the Notes and references.
+- Each definition defines one object in words and symbols, as a textbook does, and the text says why it is the right object. Give a short example when it helps the reader.
+- Each proof is a proof: the reader can follow it with the results it cites. Do not write "the proof unfolds the definitions" or "the proof is a computation in the code". Say what is computed.
+- Each section opens with a paragraph that says what it proves and where the result is used, and the chapter ends with `## Notes and references`: the classical sources of each main result (author, title, theorem or section) and how the treatment here differs.
 
 ## The order
 

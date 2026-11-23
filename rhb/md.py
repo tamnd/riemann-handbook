@@ -47,8 +47,9 @@ _MATH = re.compile(r"\$\$.*?\$\$|(?<![\\$])\$[^$\n]+\$", re.S)
 _LINK = re.compile(r"(?<!!)\[((?:[^\[\]]|\[[^\]]*\])*)\]\(([^)\s]+)\)")
 _WIKI = re.compile(r"\[\[([^\[\]|]+)\|([0-9A-Z]{6,12})\]\]")
 _BARE_WIKI = re.compile(r"\[\[([0-9A-Z]{6,12})\]\]")
+_NUMBERED = re.compile(r"\b[0-9]+\.[0-9]+(?:\.[0-9]+)*(?: of Volume [0-9]+)?$")
 _STMT = re.compile(r"^\*\*(Definition|Theorem|Proposition|Lemma|Corollary|Example|Remark|Conjecture)"
-                   r"((?: [a-z]+)?)((?: \((?:[^()]|\([^()]*\))*\))?)\.\*\*")
+                   r"((?: [a-z]+)?)(?: [0-9]+(?:\.[0-9]+)*)?((?: \((?:[^()]|\([^()]*\))*\))?)\.\*\*")
 
 
 class Converter:
@@ -83,6 +84,10 @@ class Converter:
                     self.unresolved.append(dest)
                 return f"[{text}]({SITE}{dest})"
             num = t.number
+            if num and _NUMBERED.search(text):   # the text already has the number: "Theorem 3.1.4"
+                if t.volume == self.volume:
+                    return f"[{text}](#{t.label})"
+                return f"[{text}]({self.labels.web.get(path, SITE + dest)})"
             if t.volume == self.volume:
                 ref = f" [{num}]{{.ref}}" if num else ""
                 return f"[{text}](#{t.label}){ref}"

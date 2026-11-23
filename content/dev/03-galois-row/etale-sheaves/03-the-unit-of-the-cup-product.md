@@ -15,13 +15,13 @@ This section proves that the class $1_E \in H^0(E, \mathbb{Z}/q(0))$ is a left u
 
 We keep the notation of the previous sections: $\mathcal{I}_i$ is the injective resolution of $\mathbb{Z}/q(i)$ and $\iota$ is its augmentation. For a sheaf $F$, let $F[0]$ be the complex with $F$ in degree $0$ and $0$ elsewhere. Then $\iota$ is a map of complexes $\varepsilon : \mathbb{Z}/q(0)[0] \to \mathcal{I}_0$, and it is a quasi-isomorphism.
 
-**Definition (Invertible on a space).** Let $q \geq 1$ and let $E$ be a space. Then $q$ is *invertible on* $E$ if $q$ is a unit in $\Gamma(U, \mathcal{O}_U)$ for each scheme $U$ over which $E$ has a $0$-simplex.
+**Definition 6.3.1 (Invertible on a space).** Let $q \geq 1$ and let $E$ be a space. Then $q$ is *invertible on* $E$ if $q$ is a unit in $\Gamma(U, \mathcal{O}_U)$ for each scheme $U$ over which $E$ has a $0$-simplex.
 
-**Definition (Unit class).** A $0$-cocycle $\alpha$ of $E$ with values in $\mathcal{I}_0$ is a *unit cocycle* if $\alpha_0(x) = \iota \langle \zeta \rangle_0$ for each $0$-simplex $x$ of $E$ over $U$ and each $\zeta \in \mathrm{Prim}_q(\Gamma(U, \mathcal{O}_U))$. The *unit class* $1_E$ is $\mathrm{pick}$ of the property "is the class of a unit cocycle".
+**Definition 6.3.2 (Unit class).** A $0$-cocycle $\alpha$ of $E$ with values in $\mathcal{I}_0$ is a *unit cocycle* if $\alpha_0(x) = \iota \langle \zeta \rangle_0$ for each $0$-simplex $x$ of $E$ over $U$ and each $\zeta \in \mathrm{Prim}_q(\Gamma(U, \mathcal{O}_U))$. The *unit class* $1_E$ is $\mathrm{pick}$ of the property "is the class of a unit cocycle".
 
 The value $\iota \langle \zeta \rangle_0$ does not depend on $\zeta$ up to powers: for weight $0$ the relation of the Tate twist reads $\langle \zeta^a \rangle_0 = \langle \zeta \rangle_0$. Two facts from the code describe the unit class when $q$ is invertible on $E$. First, a unit cocycle exists, and $1_E = [\alpha]$ for each unit cocycle $\alpha$. Second, the values $\alpha_0(x)$ of a unit cocycle are étale locally of the form $\iota \langle \zeta \rangle_0$, because primitive $q$-th roots of unity exist étale locally (see the proof of [the lemma on roots of unity](/entry/mu-units/)).
 
-**Lemma (Extension along the augmentation).** Let $q \geq 1$ and $i \in \mathbb{Z}$. For each pairing $\lambda : \mathbb{Z}/q(0)[0] \times \mathcal{I}_i \to \mathcal{I}_i$ there is a pairing $\nu : \mathcal{I}_0 \times \mathcal{I}_i \to \mathcal{I}_i$ with $\nu(\varepsilon x, b) = \lambda(x, b)$ for all sections $x$ of $\mathbb{Z}/q(0)$ and $b$ of $\mathcal{I}_i^t$.
+**Lemma 6.3.3 (Extension along the augmentation).** Let $q \geq 1$ and $i \in \mathbb{Z}$. For each pairing $\lambda : \mathbb{Z}/q(0)[0] \times \mathcal{I}_i \to \mathcal{I}_i$ there is a pairing $\nu : \mathcal{I}_0 \times \mathcal{I}_i \to \mathcal{I}_i$ with $\nu(\varepsilon x, b) = \lambda(x, b)$ for all sections $x$ of $\mathbb{Z}/q(0)$ and $b$ of $\mathcal{I}_i^t$.
 
 Lean: `LateralTheory.Fix.EtaleChapterDTwo.s31`.
 
@@ -33,27 +33,27 @@ The map $j$ is injective in each degree. The code proves this from a local split
 
 The map $j$ is a quasi-isomorphism. The map $\varepsilon$ is one, and tensor products with a complex of flat sheaves in degrees $\geq 0$ keep quasi-isomorphisms. The terms of $\mathcal{I}_i$ are flat, for two reasons. The sections of an injective sheaf form an injective $\mathbb{Z}/q$-module. An injective $\mathbb{Z}/q$-module $M$ is flat. Indeed, by the ideal criterion for flatness it is enough to show: if $e \mid q$ and $em = 0$, then $m \in (q/e)M$. The map $(q/e)\mathbb{Z}/q \to M$ that sends $q/e$ to $m$ is well defined, since the annihilator of $q/e$ is $e\mathbb{Z}/q$. By injectivity it extends to $\varphi : \mathbb{Z}/q \to M$, so $m = (q/e)\varphi(1)$. $\square$
 
-**Definition (Action).** An *action* of $\mathbb{Z}/q(0)$ on $\mathcal{I}_i$ is a family of bilinear maps $L : \mathbb{Z}/q(0)(U) \times \mathcal{I}_i^t(U) \to \mathcal{I}_i^t(U)$ that commutes with restriction and satisfies $d L(a, b) = L(a, db)$.
+**Definition 6.3.4 (Action).** An *action* of $\mathbb{Z}/q(0)$ on $\mathcal{I}_i$ is a family of bilinear maps $L : \mathbb{Z}/q(0)(U) \times \mathcal{I}_i^t(U) \to \mathcal{I}_i^t(U)$ that commutes with restriction and satisfies $d L(a, b) = L(a, db)$.
 
-**Lemma (Actions give pairings).** Let $L$ be an action of $\mathbb{Z}/q(0)$ on $\mathcal{I}_i$. There is a pairing $\nu : \mathcal{I}_0 \times \mathcal{I}_i \to \mathcal{I}_i$ with $\nu(\iota a, b) = L(a, b)$ for all sections $a$ of $\mathbb{Z}/q(0)$ and $b$ of $\mathcal{I}_i^t$.
+**Lemma 6.3.5 (Actions give pairings).** Let $L$ be an action of $\mathbb{Z}/q(0)$ on $\mathcal{I}_i$. There is a pairing $\nu : \mathcal{I}_0 \times \mathcal{I}_i \to \mathcal{I}_i$ with $\nu(\iota a, b) = L(a, b)$ for all sections $a$ of $\mathbb{Z}/q(0)$ and $b$ of $\mathcal{I}_i^t$.
 
 Lean: `LateralTheory.Fix.EtaleChapterDTwo.s32`.
 
 *Proof.* Let $\lambda(x, b) = L(x, b)$ for $x$ in degree $0$ of $\mathbb{Z}/q(0)[0]$, and $\lambda = 0$ in the other degrees. This is a pairing. The Leibniz rule holds because the differential of $\mathbb{Z}/q(0)[0]$ is $0$ and $L$ commutes with $d$. Then [the extension lemma](/entry/s31/) gives $\nu$. $\square$
 
-**Lemma (A unit pairing).** For each $i$ there is a pairing $\nu : \mathcal{I}_0 \times \mathcal{I}_i \to \mathcal{I}_i$ with $\nu(\iota \langle \zeta \rangle_0, b) = b$ for each scheme $U$, each $\zeta \in \mathrm{Prim}_q(\Gamma(U, \mathcal{O}_U))$ and each $b \in \mathcal{I}_i^t(U)$.
+**Lemma 6.3.6 (A unit pairing).** For each $i$ there is a pairing $\nu : \mathcal{I}_0 \times \mathcal{I}_i \to \mathcal{I}_i$ with $\nu(\iota \langle \zeta \rangle_0, b) = b$ for each scheme $U$, each $\zeta \in \mathrm{Prim}_q(\Gamma(U, \mathcal{O}_U))$ and each $b \in \mathcal{I}_i^t(U)$.
 
 Lean: `LateralTheory.Fix.EtaleChapterDTwo.s33`.
 
 *Proof.* Let $\epsilon_0 : \mathbb{Z}/q(0) \to \mathbb{Z}/q$ be the augmentation that sends each $\langle \zeta \rangle_0$ to $1$, on the presheaf by the sum of the coefficients. It is well defined, because the relations $[\zeta^a] - [\zeta]$ of weight $0$ have coefficient sum $0$. The code builds from it an action $L$ of $\mathbb{Z}/q(0)$ on $\mathcal{I}_i$ with $L(\langle \zeta \rangle_0, b) = b$. [The previous lemma](/entry/s32/) turns $L$ into $\nu$. $\square$
 
-**Lemma (A twisted unit pairing).** For each $i$ there is a twisted pairing $\mu : \mathcal{I}_0 \times \mathcal{I}_i \to \mathcal{I}_{0+i}$ with the *unit property*: $\mu(a, b) = b$ for each $a \in \mathcal{I}_0^0(U)$ that is étale locally of the form $\iota \langle \zeta \rangle_0$, and each $b \in \mathcal{I}_i^t(U)$.
+**Lemma 6.3.7 (A twisted unit pairing).** For each $i$ there is a twisted pairing $\mu : \mathcal{I}_0 \times \mathcal{I}_i \to \mathcal{I}_{0+i}$ with the *unit property*: $\mu(a, b) = b$ for each $a \in \mathcal{I}_0^0(U)$ that is étale locally of the form $\iota \langle \zeta \rangle_0$, and each $b \in \mathcal{I}_i^t(U)$.
 
 Lean: `LateralTheory.Fix.EtaleChapterDTwo.s34`.
 
 *Proof.* Take $\nu$ from [the unit pairing lemma](/entry/s33/). Let $a$ be étale locally $\iota \langle \zeta \rangle_0$. Then $\nu(a, b)$ and $b$ have the same restrictions to the members of an étale covering, since $\nu$ commutes with restriction. Sections of a sheaf are separated, so $\nu(a, b) = b$. For $a = \iota \langle \zeta \rangle_0$ and $b = \iota \langle \zeta \rangle_i$ this gives $\nu(a, b) = \iota \langle \zeta \rangle_i$, so $\nu$ is twisted. Then $\mu$ is $\nu$ with the target $\mathcal{I}_i$ read as $\mathcal{I}_{0+i}$. $\square$
 
-**Theorem (Unit law).** Let $q \geq 1$ and let $E$ be a space on which $q$ is invertible. For every $a \in H^n(E, \mathbb{Z}/q(i))$,
+**Theorem 6.3.8 (Unit law).** Let $q \geq 1$ and let $E$ be a space on which $q$ is invertible. For every $a \in H^n(E, \mathbb{Z}/q(i))$,
 $$
 1_E \cup a = a \quad \text{in } H^{0+n}(E, \mathbb{Z}/q(0+i)) = H^n(E, \mathbb{Z}/q(i)).
 $$
@@ -66,6 +66,6 @@ $$
 $$
 by the unit property. So $\beta$ itself is an Alexander-Whitney product of $\alpha$ and $\beta$ for $\mu$. By the defining property of $\cup_\mu$, $[\alpha] \cup_\mu [\beta] = [\beta]$. $\square$
 
-**Remark.** The hypothesis that $q$ is invertible on $E$ is used only for the unit cocycle: its existence, $1_E = [\alpha]$, and the local form of its values. If $q$ is not invertible on $E$, no unit cocycle needs to exist, and then $1_E = 0$ by the choice convention. The theorem says nothing in that case.
+**Remark 6.3.9.** The hypothesis that $q$ is invertible on $E$ is used only for the unit cocycle: its existence, $1_E = [\alpha]$, and the local form of its values. If $q$ is not invertible on $E$, no unit cocycle needs to exist, and then $1_E = 0$ by the choice convention. The theorem says nothing in that case.
 
-**Remark.** The Lean statements of the twisted unit pairing and the unit law hold up to the identification of $0 + i$ with $i$. The unit property is stated with a heterogeneous equality, because $\mathcal{I}_{0+i}$ and $\mathcal{I}_i$ are different terms in Lean. The five results of this section are the terms `s31`, `s32`, `s33`, `s34` and `s38` of [AwSpec.lean](lean:Development/EtaleCohomology/EtaleSheaves/AwSpec.lean#L99). Each one applies a lemma to earlier terms of the same file. The inputs on the local splitting, on tensor products and on injective modules are the terms `s19` to `s30`, and the facts on the unit cocycle are `s16`, `s36` and `s37`.
+**Remark 6.3.10.** The Lean statements of the twisted unit pairing and the unit law hold up to the identification of $0 + i$ with $i$. The unit property is stated with a heterogeneous equality, because $\mathcal{I}_{0+i}$ and $\mathcal{I}_i$ are different terms in Lean. The five results of this section are the terms `s31`, `s32`, `s33`, `s34` and `s38` of [AwSpec.lean](lean:Development/EtaleCohomology/EtaleSheaves/AwSpec.lean#L99). Each one applies a lemma to earlier terms of the same file. The inputs on the local splitting, on tensor products and on injective modules are the terms `s19` to `s30`, and the facts on the unit cocycle are `s16`, `s36` and `s37`.
