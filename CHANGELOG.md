@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+## v0.1.10
+
+- Volume 3, schemes and étale cohomology, is complete. It has an introduction that gives the place of the volume in the proof, a summary of each chapter with its main results, and a reading order. Stale cross-references in Chapters 1, 6 and 9 are fixed. The volume has 355 pages.
+- Volume 5, abelian schemes: two new chapters. *Polarizations and the key invariant* covers the metaplectic representation, Zarhin's trick, the Koszul complex of theta sections, and the key invariant and key rule. *Good reduction* covers the criterion of Néron-Ogg-Shafarevich, descent of integral models and unramified torsion.
+- Volume 9, Galois representations: the chapter *Eichler-Shimura* is complete. It has 32 sections and runs from the Hodge-Tate decomposition through Shintani lifts and trace limits to the congruence statement for odd rank.
+- Volume 10, Hermitian lattices: the chapter on class numbers is complete. It adds the Hasse norm principle for cyclic extensions, the theta transformation, counts of isotropic vectors, strong approximation, inert frames and the division of bounded sections.
+- After a chapter merges, the main checkout now takes its numbered text from main.
+
 ## v0.1.9
 
 - Volume 3, schemes and étale cohomology: all ten chapters are written. The last is *Vanishing*: Tate's Euler characteristic formula, Poitou-Tate duality with normalised invariants, the Jacquet-Shalika bound, the pole of the Rankin-Selberg L-function, and the de Rham property of Hecke characters. The volume has 351 pages.
