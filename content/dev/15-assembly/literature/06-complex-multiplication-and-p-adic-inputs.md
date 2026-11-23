@@ -27,7 +27,7 @@ From these the proof derives five statements, which we do not unfold: lower boun
 
 Lean: `UpperTheory.LiteratureTheorems.join_out_of_literature`.
 
-*Proof.* This is [Theorem 1.1 of Volume 13](/entry/join-out-of-five/) applied to the five classical results. That theorem first proves that the divided-power jets of CM lattice functions are integral, that their values are algebraic, and how $\mathrm{Aut}(\mathbb{C} / K)$ acts on these values. Then it reads off the five statements. $\square$
+*Proof.* This is [Theorem 1.5.8 of Volume 13](/entry/join-out-of-five/) applied to the five classical results. That theorem first proves that the divided-power jets of CM lattice functions are integral, that their values are algebraic, and how $\mathrm{Aut}(\mathbb{C} / K)$ acts on these values. Then it reads off the five statements. $\square$
 
 ### Gross's curves
 
@@ -41,7 +41,7 @@ Lean: `UpperTheory.LiteratureTheorems.cm_curve_good_outside_prime_st_of_literatu
 
 This is the curve $A(p)$ of Gross, *Arithmetic on Elliptic Curves with Complex Multiplication* (LNM 776, 1980).
 
-*Proof.* We take the result from Gross. In the development it is [Theorem](/entry/cm-curve-good-outside-prime/). $\square$
+*Proof.* We take the result from Gross. In the development it is [Theorem 1.6.5 of Volume 13](/entry/cm-curve-good-outside-prime/). $\square$
 
 ### Prismatic F-crystals
 
