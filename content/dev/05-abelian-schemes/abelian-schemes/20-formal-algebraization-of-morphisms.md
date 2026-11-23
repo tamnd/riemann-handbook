@@ -1,0 +1,47 @@
+---
+title: Formal algebraization of morphisms
+decls:
+  - GlobalTheory.FormalAlgMorphisms.formalAlgebraisation_morphisms
+status: drafted
+drafted_by: writer@claude-opus-5-5
+---
+## Formal algebraization of morphisms
+
+Let $R$ be a noetherian ring, complete for the $I$-adic topology, and $X$ a [[proper|9537RKBZPP]] scheme over $R$. A compatible system of morphisms from the thickenings $X_e = X \times_R R/I^{e+1}$ to a separated scheme $Z$ of finite type over $R$ comes from exactly one morphism $X \to Z$ (Theorem (Algebraization of morphisms)). This is Grothendieck's existence theorem for morphisms. The proof reduces it to the existence theorem for closed subschemes, through the graph of the morphism. The theorem is used on the way to [EveryCharacter](/step/every-character/): for global functions and connectedness over complete local rings, for the algebraization of line bundles, and for the pullback of families of polarized abelian schemes along towers of thickenings.
+
+Throughout, $R$ is a ring and $I$ an ideal of $R$. For $e \geq 0$, write $R_e = R/I^{e+1}$ and $t_e : \mathrm{Spec}\, R_e \to \mathrm{Spec}\, R$ for the closed immersion. The ring $R$ is *$I$-adically complete* if $R \to \varprojlim_e R_e$ is bijective.
+
+**Definition 1.20.1 (Thickening system).** Let $X$ be a scheme over $R$. A *thickening system of $X$* is a family of schemes $Y_e$ over $R_e$, for $e \geq 0$, with morphisms $b_e : Y_e \to X$ and $\beta_e : Y_e \to Y_{e+1}$ such that each square
+$$\begin{array}{ccc} Y_e & \xrightarrow{\ b_e\ } & X \\ \downarrow & & \downarrow \\ \mathrm{Spec}\, R_e & \xrightarrow{\ t_e\ } & \mathrm{Spec}\, R \end{array}$$
+is cartesian and $b_{e+1} \circ \beta_e = b_e$.
+
+So $Y_e$ is a copy of $X_e = X \times_R R_e$, and $\beta_e$ is the inclusion $X_e \to X_{e+1}$. The squares formed by $\beta_e$ and $\mathrm{Spec}\, R_e \to \mathrm{Spec}\, R_{e+1}$ are then cartesian too. The definition allows any choice of the fibre products.
+
+**Theorem 1.20.2 (Algebraization of morphisms).** Let $R$ be a noetherian ring, $I$ an ideal and $R$ $I$-adically complete. Let $X$ be a proper scheme over $R$ and $Z$ a scheme over $R$ whose structure map is separated, locally of finite type and quasicompact. Let $(Y_e, b_e, \beta_e)$ be a thickening system of $X$. Let $f_e : Y_e \to Z$, for $e \geq 0$, be morphisms over $t_e$ (that is, the structure map of $Z$ composed with $f_e$ is $Y_e \to \mathrm{Spec}\, R_e \xrightarrow{t_e} \mathrm{Spec}\, R$) with $f_{e+1} \circ \beta_e = f_e$. Then there is exactly one morphism $g : X \to Z$ over $R$ with $g \circ b_e = f_e$ for all $e$.
+
+Lean: `GlobalTheory.FormalAlgMorphisms.formalAlgebraisation_morphisms`.
+
+This is EGA III, Théorème 5.4.1, for a separated $Z$ of finite type over $R$, stated with the thickenings in place of the formal completions: a morphism of formal schemes $\hat{X} \to \hat{Z}$ over $\mathrm{Spf}\, R$ is the same as a compatible system $f_e$.
+
+We use four facts. In each, $R$ is noetherian and $I$-adically complete, or only noetherian with $I$ in the Jacobson radical where this is said. For a morphism $w : W \to \mathrm{Spec}\, R$ and an ideal sheaf $\mathcal{J}$ of $W$, let $W_{\mathcal{J}}$ be the closed subscheme it defines.
+
+1. (Closed subschemes.) Let $w : W \to \mathrm{Spec}\, R$ be separated, locally of finite type and quasicompact. Let $\mathcal{J}_e$, for $e \geq 0$, be ideal sheaves of $W$ such that $\mathcal{J}_e = \mathcal{J}_{e+1} + I^{e+1} \mathcal{O}_W$ and each $W_{\mathcal{J}_e}$ is proper over $R$. Then there is an ideal sheaf $\mathcal{J}$ with $W_{\mathcal{J}}$ proper over $R$ and $\mathcal{J} + I^{e+1} \mathcal{O}_W = \mathcal{J}_e$ for all $e$.
+2. (Towers.) Let $w : W \to \mathrm{Spec}\, R$ satisfy the conclusion of fact 1, for all such systems. Let $Y_e$ be proper schemes over $R_e$ with morphisms $\beta_e : Y_e \to Y_{e+1}$ whose squares over $\mathrm{Spec}\, R_e \to \mathrm{Spec}\, R_{e+1}$ are cartesian, and let $j_e : Y_e \to W$ be closed immersions over $t_e$ with $j_{e+1} \circ \beta_e = j_e$. Then there are a closed immersion $i : T \to W$ with $T$ proper over $R$ and morphisms $c_e : Y_e \to T$ with $i \circ c_e = j_e$, such that each square formed by $c_e$, $T \to \mathrm{Spec}\, R$ and $t_e$ is cartesian.
+3. (Isomorphisms.) Let $I$ lie in the Jacobson radical of $R$. Let $\varphi : T \to X$ be a proper morphism and $X$ proper over $R$. If there are morphisms $c_e : Y_e \to T$ such that both $c_e$ and $\varphi \circ c_e$ exhibit $Y_e$ as the fibre product over $t_e$ (of $T$ and of $X$), then $\varphi$ is an isomorphism.
+4. (Uniqueness.) Let $I$ lie in the Jacobson radical of $R$, $X$ proper over $R$ and $Z$ separated over $R$. Let $(Y_e, b_e)$ be as in the definition, without the maps $\beta_e$. If two morphisms $g, g' : X \to Z$ over $R$ satisfy $g \circ b_e = g' \circ b_e$ for all $e$, then $g = g'$.
+
+Fact 1 is a form of the existence theorem for coherent sheaves (EGA III, Théorème 5.1.4), applied to quotients of $\mathcal{O}_W$. Fact 2 applies it to the system of ideal sheaves of the images of $j_e$. Fact 3 is a form of the statement that a proper morphism that is an isomorphism on all thickenings is an isomorphism, for $I$ in the Jacobson radical. Fact 4 holds for the following reason. Since $Z$ is separated, the locus where $g$ and $g'$ agree is a closed subscheme of $X$, with a coherent ideal sheaf $\mathcal{K}$, and it contains each $X_e$, so $\mathcal{K} \subset I^{e+1} \mathcal{O}_X$ for all $e$. At a point $x$ over $V(I)$, the Krull intersection theorem gives $\mathcal{K}_x \subset \bigcap_e I^{e+1} \mathcal{O}_{X,x} = 0$. So the support of $\mathcal{K}$ is a closed set that misses the fibres over $V(I)$. Its image in $\mathrm{Spec}\, R$ is closed, as $X$ is proper, and misses $V(I)$. Since $I$ is in the Jacobson radical, every nonempty closed set of $\mathrm{Spec}\, R$ contains a maximal ideal and so meets $V(I)$. Hence $\mathcal{K} = 0$ and $g = g'$.
+
+*Proof.* Since $R$ is $I$-adically complete, $I$ lies in the Jacobson radical of $R$: for $a \in I$, the series $\sum_n a^n$ converges and is an inverse of $1 - a$.
+
+Let $W = X \times_R Z$ with projections $p_X$, $p_Z$, and $w = s_X \circ p_X : W \to \mathrm{Spec}\, R$, where $s_X$ is the structure map of $X$. The map $p_X$ is a base change of $Z \to \mathrm{Spec}\, R$, so it is separated, locally of finite type and quasicompact, and so is $w$, as $X$ is proper over $R$. By fact 1, $w$ satisfies the existence theorem for closed subschemes.
+
+For each $e$, the maps $b_e$ and $f_e$ agree over $\mathrm{Spec}\, R$, so they define $j_e = (b_e, f_e) : Y_e \to W$. This is the graph of $f_e$ on $Y_e$. Since $p_X \circ j_e = b_e$ is a closed immersion (a base change of $t_e$) and $p_X$ is separated, $j_e$ is a closed immersion. It lies over $t_e$, and $j_{e+1} \circ \beta_e = j_e$, since $b_{e+1} \circ \beta_e = b_e$ and $f_{e+1} \circ \beta_e = f_e$. Each $Y_e$ is proper over $R_e$, as a base change of $X$, and the squares of the $\beta_e$ are cartesian. So fact 2 gives a closed subscheme $i : T \to W$, proper over $R$, and maps $c_e : Y_e \to T$ with $i \circ c_e = j_e$ and with cartesian squares over $t_e$. The scheme $T$ is the algebraization of the graphs of the $f_e$.
+
+Let $\varphi = p_X \circ i : T \to X$. Then $s_X \circ \varphi = w \circ i$ is proper, so $\varphi$ is proper. Also $\varphi \circ c_e = p_X \circ j_e = b_e$, which exhibits $Y_e$ as the fibre product of $X$ over $t_e$. By fact 3, $\varphi$ is an isomorphism. Put
+$$g = p_Z \circ i \circ \varphi^{-1} : X \to Z.$$
+It is a morphism over $R$, because $p_Z$ and $p_X$ agree over $\mathrm{Spec}\, R$. Since $c_e = \varphi^{-1} \circ b_e$, we get $g \circ b_e = p_Z \circ i \circ c_e = p_Z \circ j_e = f_e$. So $g$ exists. If $g'$ is another such morphism, then $g \circ b_e = f_e = g' \circ b_e$ for all $e$, and fact 4 gives $g = g'$. $\square$
+
+The proof shows that $g$ has the graph $T$: the morphism is constructed from its graph, which is algebraized as a closed subscheme of $X \times_R Z$.
+
+**Remark 1.20.3 (Formalization).** The theorem proves the statement `GlobalTheory.Published.FormalAlgebraisation.Morphisms` ([FormalAlgebraisation.lean](lean:Development/AbelianVarietyTheory/PublishedTheorems/Divisors₂/FormalAlgebraisation.lean#L17)), one half of the statement `GlobalTheory.Published.FormalAlgebraisation`. The other half, `Schemes` at line 28 of the same file, the algebraization of a proper formal scheme with a relatively ample line bundle, is not proved or used in this section. Facts 1 to 4 are `GlobalTheory.T.grothendieck_existence_closedSubschemes_separated`, `GlobalTheory.T.formal_algebraisation_tower`, `GlobalTheory.T.isIso_of_proper_isIso_on_reductions` and `GlobalTheory.T.morphism_eq_of_eq_on_thickenings`. They are cited by their statements; the paragraph after the facts gives the classical reasons, not a reading of their proofs. The conclusion of fact 1 is `GlobalTheory.FormalAlg.Alg` ([BaseIdealIdeal.lean](lean:Development/AbelianVarietyTheory/Definitions/Divisors/BaseIdealIdeal.lean#L33)), with the compatibility of the system `IsSystem` and the reduction `Reduces`; $I^{e+1} \mathcal{O}_W$ is `baseIdeal`. The Jacobson radical step is `IsAdicComplete.le_jacobson_bot` of Mathlib. The statement asks for the maps $\beta_e$ only through $b_{e+1} \circ \beta_e = b_e$; the cartesian squares of the $\beta_e$ are derived (`GlobalTheory.FormalAlgMorphisms.isPullback_trans`).
