@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## v0.1.9
+
+- Volume 3, schemes and étale cohomology: all ten chapters are written. The last is *Vanishing*: Tate's Euler characteristic formula, Poitou-Tate duality with normalised invariants, the Jacquet-Shalika bound, the pole of the Rankin-Selberg L-function, and the de Rham property of Hecke characters. The volume has 351 pages.
+- Volume 4, p-adic Hodge theory: two new chapters, *Hodge-Tate periods* and *Prismatic Dieudonné theory*, with crystalline cohomology from smooth lifts. The volume has 223 pages.
+- Volume 10, Hermitian lattices: the chapter on Hermitian genera is complete, in 10 sections. The volume has 186 pages.
+- The pull requests list what the writers found in the Lean code.
+
 ## v0.1.8
 
 - The development volumes are now Volumes 3 to 15, grouped by subject: 104 chapters with all 5,756 planned entries. The old volumes followed the branches and folders of the Lean code. The design is in ledger/structure.yaml, and `rhb ledger` builds the outline from it. The entry ids are the same, so links to entries keep working.
