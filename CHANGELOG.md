@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## v0.1.12
+
+- Volume 4, p-adic Hodge theory: the chapter *Potentially semistable representations* is complete. It has 28 sections and runs from Theorem TB through Hyodo's theorem, extensions, ramification of detected towers and Sen's theorem to the Harish-Chandra restriction of cuspidal products.
+- Volume 5, abelian schemes: the chapter *Siegel moduli spaces* is complete. It has 18 sections on the Kodaira-Spencer map, theta families, projective models with ample frames, models of full level, quotients by tame groups, moduli schemes at every level, the key formula and the sharp E8 class.
+- Volume 6, Arakelov geometry: two new chapters. *Heights* has 15 sections, from flag integrals and the rest terms through the Poincaré-Lelong formula to the arithmetic intersection calculus. *Slopes* has 8 sections on hermitian lattices, the ramified slope formula, column valuations and the bound on the maximal slope.
+- The chapter script now cleans up after a failed build.
+
 ## v0.1.11
 
 - Volume 4, p-adic Hodge theory: the chapter *Lattices* is complete. It has 20 sections. It covers the export bound, lattices over power series, levels and lifts of arcs, the forms of Theorem E, alternating arcs, the colength bound from frames, the congruence length and the local theory from its admitted inputs.
