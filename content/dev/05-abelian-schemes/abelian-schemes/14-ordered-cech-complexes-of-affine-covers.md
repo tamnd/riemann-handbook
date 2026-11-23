@@ -1,0 +1,53 @@
+---
+title: Ordered Čech complexes of affine covers
+decls:
+  - GlobalTheory.T.orderedCech_finiteAffineCover_models_structureSheafCohomology
+  - GlobalTheory.CechPoset.model_cechLB
+status: drafted
+drafted_by: writer@claude-opus-5-5
+---
+## Ordered Čech complexes of affine covers
+
+The groups $H^i(X, \mathcal{O})$ of the section on the cohomology of the structure sheaf are defined from all affine opens of $X$ at once. This makes them natural, but it gives no small complex to compute with. This section proves that for a separated $X$ over a ring $R$ and a finite affine open cover whose index set is totally ordered, the ordered Čech complex of the cover computes $H^0$, $H^1$ and $H^2$ (Theorem (Ordered Čech complexes)). It does so after every base change $R \to R'$, and naturally in $R'$. The complex is a complex of $R$-modules, so the theorem turns questions on the base change of $H^1$ and $H^2$ into questions on a complex of modules. The result is used on the way to [EveryCharacter](/step/every-character/), in the parts of the proof that compute $H^1(A, \mathcal{O})$ and $H^2(A, \mathcal{O})$ of an abelian scheme.
+
+Throughout, $R$ is a ring and $s : X \to \mathrm{Spec}\, R$ a morphism of [[schemes|5A35TYZD02]]. For an $R$-algebra $R'$, a *base change square* is a cartesian square
+$$\begin{array}{ccc} X' & \xrightarrow{\ \varphi\ } & X \\ \downarrow{\scriptstyle s'} & & \downarrow{\scriptstyle s} \\ \mathrm{Spec}\, R' & \longrightarrow & \mathrm{Spec}\, R. \end{array}$$
+As in the section on the cohomology of the structure sheaf, $H^i(X', \mathcal{O})$ for $i = 0, 1, 2$ is the cohomology of the functor $U \mapsto \mathcal{O}(U)$ on the category of affine opens of $X'$. In degree 0 it is the kernel of the first differential $d_0$: the families $(f_U)$ of functions on affine opens with $f_U|_V = f_V$ for $V \subset U$. A map $\alpha : R' \to R''$ of $R$-algebras and a morphism $\psi : X'' \to X'$ over $\mathrm{Spec}\, \alpha$, compatible with the maps to $X$, give pullback maps $H^i(X', \mathcal{O}) \to H^i(X'', \mathcal{O})$.
+
+For a complex $K$ of $R$-modules and an $R$-algebra $R'$, write $R' \otimes K$ for the complex $R' \otimes_R K^0 \to R' \otimes_R K^1 \to \cdots$ with the differentials $1 \otimes d$. Write $Z^n(R' \otimes K)$ and $B^n(R' \otimes K)$ for its cocycles and coboundaries in degree $n$. A map $\alpha : R' \to R''$ of $R$-algebras gives $\alpha \otimes 1 : R' \otimes K \to R'' \otimes K$.
+
+**Definition 1.14.1 (Model of the structure cohomology).** Let $K = (K^0 \to K^1 \to K^2 \to \cdots)$ be a cochain complex of $R$-modules. A *model of the structure cohomology of $X$* on $K$ consists of the following data, given for every $R$-algebra $R'$ and every base change square as above.
+
+1. An isomorphism of $R'$-modules $\theta_0 : Z^0(R' \otimes K) \to H^0(X', \mathcal{O})$, and an element $1_K \in K^0$, independent of $R'$, such that $1 \otimes 1_K$ is a cocycle and $\theta_0(1 \otimes 1_K)$ is the function $1$ on every affine open.
+2. $R'$-linear maps $\theta_1 : Z^1(R' \otimes K) \to H^1(X', \mathcal{O})$ and $\theta_2 : Z^2(R' \otimes K) \to H^2(X', \mathcal{O})$ that are surjective, with kernels $B^1(R' \otimes K)$ and $B^2(R' \otimes K)$.
+3. Naturality: for two base change squares, over $R'$ and $R''$, a map $\alpha : R' \to R''$ of $R$-algebras and a morphism $\psi : X'' \to X'$ over $\mathrm{Spec}\, \alpha$ with $\varphi \circ \psi = \varphi'$, the maps $\theta_1$ and $\theta_2$ carry $\alpha \otimes 1$ to the pullback along $\psi$: if $z' = (\alpha \otimes 1)(z)$, then $\theta_1(z') = \psi^* \theta_1(z)$, and the same for $\theta_2$.
+
+So a model gives isomorphisms $H^n(R' \otimes K) \cong H^n(X', \mathcal{O})$ for $n = 1, 2$, natural in $R'$, and an isomorphism $Z^0(R' \otimes K) \cong H^0(X', \mathcal{O})$ that matches the unit. This is the right notion for base change questions. If $K$ is a complex of flat modules, then $H^n(R' \otimes K)$ is the homology of a complex of $R'$-modules obtained by tensoring, so the comparison of $R' \otimes_R H^n(X, \mathcal{O})$ with $H^n(X', \mathcal{O})$ becomes a question of homological algebra on $K$.
+
+**Definition 1.14.2 (Ordered Čech complex).** Let $\kappa$ be a finite totally ordered set and $D = (D_i)_{i \in \kappa}$ a family of open sets of $X$. For a nonempty finite set $\sigma \subset \kappa$, put $D_\sigma = \bigcap_{i \in \sigma} D_i$. The *ordered Čech complex* $\check{C}(D)$ has
+$$\check{C}^p(D) = \prod_{\sigma \subset \kappa,\ |\sigma| = p + 1} \mathcal{O}(D_\sigma),$$
+an $R$-module through $s$. Write $\sigma = \{i_0 < i_1 < \dots < i_p\}$ in the order of $\kappa$. The differential is
+$$(d c)_{i_0 < \dots < i_{p+1}} = \sum_{k=0}^{p+1} (-1)^k\, c_{i_0 \dots \widehat{i_k} \dots i_{p+1}}|_{D_{i_0 \dots i_{p+1}}}.$$
+The element $1_D \in \check{C}^0(D)$ is the family of the functions $1$ on the $D_i$.
+
+Only subsets appear, each once, with its elements in increasing order. So $\check{C}^p(D) = 0$ for $p \geq |\kappa|$, and the complex is finite. This is the complex that one writes down by hand for a cover by two or three affine opens. For example, if $X$ is the projective line over $R$ with its two standard charts $D_0 = \mathrm{Spec}\, R[t]$ and $D_1 = \mathrm{Spec}\, R[t^{-1}]$, the complex is $R[t] \times R[t^{-1}] \to R[t, t^{-1}]$, $(f_0, f_1) \mapsto f_1 - f_0$. Its kernel is $R$ and its cokernel is $0$.
+
+**Theorem 1.14.3 (Ordered Čech complexes).** Let $R$ be a ring, $s : X \to \mathrm{Spec}\, R$ a separated morphism, $\kappa$ a finite totally ordered set and $(D_i)_{i \in \kappa}$ a family of affine open sets of $X$ with $\bigcup_i D_i = X$. Then there is a model of the structure cohomology of $X$ on the ordered Čech complex $\check{C}(D)$.
+
+Lean: `GlobalTheory.CechPoset.model_cechLB` (also `GlobalTheory.T.orderedCech_finiteAffineCover_models_structureSheafCohomology`, a second name).
+
+*Proof.* Since $s$ is separated, the intersection of two affine opens of $X$ is affine. By induction each $D_\sigma$ is affine. Let $R'$ be an $R$-algebra and $X' = X \times_R R'$ a base change. The preimages $D'_i = \varphi^{-1}(D_i)$ form an affine open cover of $X'$, and $D'_\sigma = \varphi^{-1}(D_\sigma) = D_\sigma \times_R R'$ is affine with ring $R' \otimes_R \mathcal{O}(D_\sigma)$.
+
+The proof has three steps.
+
+First, base change of the complex. The maps $R' \otimes_R \mathcal{O}(D_\sigma) \to \mathcal{O}(D'_\sigma)$ are isomorphisms, since $D_\sigma$ is affine. Since $\kappa$ is finite, the product in each degree is finite and commutes with $R' \otimes_R -$. So we get isomorphisms $\Phi_p : R' \otimes_R \check{C}^p(D) \to \check{C}^p(D')$. They commute with the differentials, they send $1 \otimes 1_D$ to $1_{D'}$, and they are compatible with a further map $R' \to R''$, since all of these are restriction maps of functions.
+
+Second, the ordered complex and the complex of the cover. The intersections $D'_\sigma$ form a functor on the poset of nonempty subsets of $\kappa$, ordered by inclusion. The cohomology of the cover is the cohomology of this functor, computed with cochains indexed by chains of nonempty subsets. There are maps of complexes in both directions between the ordered complex and the cochains of this poset. In degree 0 they identify the cocycles. In degrees 1 and 2 every cocycle of the poset is cohomologous to the image of an ordered cocycle, and an ordered cocycle whose image is a coboundary is itself a coboundary. So the ordered complex and the poset complex have the same $Z^0$, $H^1$ and $H^2$. This is a statement on functors from the poset of nonempty subsets of a finite totally ordered set to algebras, and it holds for any such functor.
+
+Third, the cover and all affine opens. Each finite intersection of the $D'_i$ is affine and the $D'_i$ cover $X'$. Then restriction from the cohomology of all affine opens of $X'$ to the cohomology of the functor on the cover is bijective in degrees 1 and 2. In degree 0, a compatible family on all affine opens is determined by its values on the $D'_\sigma$, and every compatible family on the $D'_\sigma$ extends. On each affine open $V$ of $X'$ the cover $V \cap D'_i$ is a cover by affine opens of an affine scheme, and the structure sheaf has no higher Čech cohomology on it. So the cover sees all of $H^1$ and $H^2$.
+
+Let $\theta_0$, $\theta_1$, $\theta_2$ be the composites of $\Phi_p$, the comparison of the second step and the inverse of the restriction of the third step. Then $\theta_0$ is an isomorphism and sends $1 \otimes 1_D$ to $1$, and $\theta_1$, $\theta_2$ are surjective with kernel the coboundaries. For naturality, each step commutes with the maps induced by $\alpha : R' \to R''$ and $\psi : X'' \to X'$: $\Phi$ does by the first step, the comparison of the second step is natural in the functor, and restriction from all affine opens to a cover commutes with pullback and with refinement of covers. $\square$
+
+The theorem holds for every finite affine cover, and the model depends on the cover. In applications one takes a finite affine cover of an abelian scheme over an affine base, which exists since the structure map is quasicompact. Then the theorem reduces the base change of $H^1$ and $H^2$ to a finite complex of $R$-modules.
+
+**Remark 1.14.4 (Formalization).** A model is `GlobalTheory.AbCoh.Model` in [AxesVanishingStructureSheafDegOne.lean](lean:Development/AbelianVarietyTheory/Definitions/Divisors/AxesVanishingStructureSheafDegOne.lean#L125). Its degree 0 part maps onto the kernel of the first differential on affine opens, which is $H^0$ in the model of all affine opens. The ordered Čech complex is `GlobalTheory.AbLaw.cechLB` of the trivial line bundle, in [IsScalarTowerOfAlgebraMapEq.lean](lean:Development/AbelianVarietyTheory/Definitions/AbelianSchemeLaws/IsScalarTowerOfAlgebraMapEq.lean#L577); it is defined for sections of any line bundle, and only the trivial bundle appears here. The steps of the proof are stated at the head of [OrderedCechFiniteAffineCoverModelsStructureSheaf.lean](lean:Development/AbelianVarietyTheory/Proofs/DivisorProofs/OrderedCechFiniteAffineCoverModelsStructureSheaf.lean#L33) as second names of theorems proved elsewhere, and the sentence above on the vanishing over an affine open describes what the restriction theorems give; their proofs were not read. The second name is proved by a `first` list of three tactics that all apply the main theorem, under `set_option maxHeartbeats 1000000`, and its file imports Mathlib twice ([OrderedCechFiniteAffineCoverModelsStructureSheafStatement.lean](lean:Development/AbelianVarietyTheory/Proofs/DivisorProofs/OrderedCechFiniteAffineCoverModelsStructureSheafStatement.lean#L1), lines 1 and 3).
