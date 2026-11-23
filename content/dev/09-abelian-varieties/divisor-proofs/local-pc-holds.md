@@ -46,6 +46,6 @@ Put $f = c^{-1} \varphi_1$.
 
 The theorem is in [LocalPseudoCoefficientExistenceUnitaryGroup.lean](lean:Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalPseudoCoefficientExistenceUnitaryGroup.lean#L21). `LocalPC` is in [RangeShape.lean](lean:Development/AbelianVarietyTheory/Definitions/Divisors/RangeShape.lean#L22), `localPC4_of` in [EqOfConstOfTendsto.lean](lean:Development/AbelianVarietyTheory/Proofs/DivisorProofs/EqOfConstOfTendsto.lean#L47), `IsDS` in [RelevantZeroGramTerms.lean](lean:Formalism/SharpRestriction/CuspSpanNormBounds/RelevantZeroGramTerms.lean#L72). We have not unfolded `HasQuotInt`, which defines the orbital integral `HasOrbInt`.
 
-The representation theory is all in `StKData`, proved by `maximalCompact_pseudoCoefficientData'` from 23 lemmas that we have not opened. By their names, they recognize $D$ by its lowest $K$-type and Casimir eigenvalue.
+The representation theory is all in `StKData`, proved by `maximalCompact_pseudoCoefficientData'` from 24 lemmas (see [the pass-through](/entry/maximal-compact-pseudo-coefficient-data-prime/)). By their names, they recognize $D$ by its lowest $K$-type and Casimir eigenvalue.
 
 Odd point: `GapG` and `Gap4` are the same definition, and `LocalPC4` is `LocalPC` with `Gap4`.
