@@ -4,6 +4,7 @@ decls:
   - UpperTheory.Cb.holomorphic_lefschetz_finiteEtale_correspondence
   - UpperTheory.Core.block_fixed
   - UpperTheory.Cb.lefschetz_fixedPoint_finite_etale_correspondence
+  - GlobalTheory.T.lefschetz_fixedPoint_finite_etale_correspondence
 status: drafted
 drafted_by: writer@claude-opus-5-5
 ---
@@ -44,7 +45,7 @@ $$
 \sum_{b=0}^{d} (-1)^b \operatorname{tr}\bigl(c_{1*} c_2^* \mid H^b(Z, \Omega^a)\bigr) = \sum_{y \in \Phi} \frac{[t^a] \det(1 + t A_y)}{\det(1 - A_y)}.
 $$
 
-Lean: `UpperTheory.Cb.lefschetz_fixedPoint_finite_etale_correspondence`.
+Lean: `UpperTheory.Cb.lefschetz_fixedPoint_finite_etale_correspondence` (also `GlobalTheory.T.lefschetz_fixedPoint_finite_etale_correspondence`, a second name).
 
 *Proof.* We give the proof in four steps.
 
@@ -62,4 +63,4 @@ $$
 $$
 (M. F. Atiyah and R. Bott, *A Lefschetz fixed point formula for elliptic complexes. II. Applications*, Ann. of Math. 88 (1968), §4). Theorem 5.7.3 is the algebraic form for the correspondence $c_{1*} c_2^*$ instead of a map, and with the cotangent matrix $A_y$ in place of $(df_P)^{\top}$. For $a = 0$ it is the [[Lefschetz fixed-point theorem|G44NQXCWT9]] for the structure sheaf. The set $\Phi$ and the matrices $A_y$ are inputs. The theorem does not prove that the fixed points are finite or that a cotangent matrix exists. It asks that every fixed point be nondegenerate.
 
-**Remark 5.7.5 (Formalization).** The name of Theorem 5.7.1 does not say that $Z$ is integral, and the names do not show which of the theorems is more general. Lemma 5.7.2 does not ask that $W = c_1^{-1}(V) \cap c_2^{-1}(V)$, but it is used only with that $W$. The general theorem is used through [its parent statement](/entry/t-lefschetz-fixed-point-finite-etale-correspondence/).
+**Remark 5.7.5 (Formalization).** The name of Theorem 5.7.1 does not say that $Z$ is integral, and the names do not show which of the theorems is more general. Lemma 5.7.2 does not ask that $W = c_1^{-1}(V) \cap c_2^{-1}(V)$, but it is used only with that $W$. The general theorem is used through its second name, which states the same theorem and is proved by the first name.

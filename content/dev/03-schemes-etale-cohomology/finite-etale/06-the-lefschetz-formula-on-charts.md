@@ -3,6 +3,7 @@ title: The Lefschetz formula on charts
 decls:
   - field0
   - UpperTheory.Cb.exists_chart_lift_of_finite_cover
+  - GlobalTheory.T.exists_chart_lift_of_finite_cover
   - UpperTheory.Cb.holomorphic_lefschetz_finiteEtale_integral
 status: drafted
 drafted_by: writer@claude-opus-5-5
@@ -38,7 +39,7 @@ $$
 \sum_{p=0}^{d} (-1)^p \operatorname{tr} u_p = \sum_{e \in \Phi} \frac{[t^a] \det(1 + t A_e)}{\det(1 - A_e)}.
 $$
 
-Lean: `UpperTheory.Cb.exists_chart_lift_of_finite_cover` (also `field0`, the private proof).
+Lean: `UpperTheory.Cb.exists_chart_lift_of_finite_cover` (also `field0`, the private proof, and `GlobalTheory.T.exists_chart_lift_of_finite_cover`, a second name).
 
 Condition 5 says that $x_1/x_0, \dots, x_d/x_0$ generate the maximal ideal of the image of $e$ in $R_{\{0\}}(K)$, after a localization. Condition 6 says that the matrix $A_e$ is the cotangent matrix of Definition 5.6.1 in the coordinates $x_l/x_0$. Condition 7 is the Čech form of the correspondence.
 
@@ -61,7 +62,7 @@ First, $Y$ is smooth of relative dimension $d$, since $c_1$ is étale, and $H^b(
 
 Second, let $K$ and $K'$ be the function fields of $Z$ and $Y$. The maps $c_1$ and $c_2$ give maps $K \to K'$ of $\mathbb{C}$-algebras. The first makes $K'$ an extension of $K$, and the second is $j_2$.
 
-Third, choose a finite map $Z \to \mathbb{P}^d$ with these properties: the images in $Z$ of the fixed points lie in chart $0$ over the origin, and the fibre over the origin is reduced. This gives $F$, the elements $x_0, \dots, x_d$, and the affine charts of $Z$, so $K$ is a finite cover on charts. The same data, pulled back along $c_1$, make $K'$ a finite cover on charts. Conditions 1, 2, 3 and 5 of Theorem 5.6.3 follow from this choice.
+Third, choose a finite map $Z \to \mathbb{P}^d$ with these properties: the images in $Z$ of the fixed points lie in chart $0$ over the origin, and the fibre over the origin is reduced. [Theorem 5.9.7](/entry/exists-fin-cover-fibre-reduced/), applied to the image $S$ of $\Phi$ in $Z$, gives such a map. This gives $F$, the elements $x_0, \dots, x_d$, and the affine charts of $Z$, so $K$ is a finite cover on charts. The same data, pulled back along $c_1$, make $K'$ a finite cover on charts. Conditions 1, 2, 3 and 5 of Theorem 5.6.3 follow from this choice.
 
 Fourth, the complex points of the chart $c_1^{-1}(U_0)$ are the $\mathbb{C}$-algebra maps from its ring to $\mathbb{C}$. A point is a fixed point of $(c_1, c_2)$ if and only if the algebra map is a fixed point in the sense of Theorem 5.6.3. This gives a bijection from $\Phi$ to the fixed points in the fibre over the origin, which is condition 4.
 
