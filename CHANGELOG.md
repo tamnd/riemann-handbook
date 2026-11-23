@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+## v0.1.13
+
+- Volume 4, p-adic Hodge theory: the chapter *Local Bloch-Kato* is complete, which completes the volume. It covers phi-modules and Breuil-Kisin lattices, the connection and the Taylor formula, monodromy and jumps, lifting along surjections of good lattices, packs, Galois data and the Fil^0 condition.
+- Volume 5, abelian schemes: the chapter *Theta level arcs* is complete. It has 20 sections.
+- Volume 7, local representations: the chapter *Real groups* is complete. It has 10 sections, from the Weyl dimension formula for U(p) x U(q) and Gelfand-Tsetlin branching to the finiteness of automorphic forms and a slope bound for indefinite forms.
+- Volume 11: the chapter *Primes and norms* is complete. It has 9 sections.
+- Volume 15: the chapter *Window bound* is complete. It has 8 sections.
+
 ## v0.1.12
 
 - Volume 4, p-adic Hodge theory: the chapter *Potentially semistable representations* is complete. It has 28 sections and runs from Theorem TB through Hyodo's theorem, extensions, ramification of detected towers and Sen's theorem to the Harish-Chandra restriction of cuspidal products.
