@@ -15888,7 +15888,7 @@ volumes:
         fanin: 3
         idom: UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.HtPt.Ktw.a18
         id: a18
         kind: theorem
@@ -16018,7 +16018,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.charp_vanishing_liftable
         tier: 2
-        written: false
+        written: true
       - name: GlobalTheory.CharPVanish.charp_of_lift
         id: charp-of-lift
         kind: theorem
@@ -16027,7 +16027,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.kodaira_vanishing_mod_p_squared
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.CWB.casselmanWallach
         id: casselman-wallach
         kind: theorem
@@ -16036,7 +16036,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.LiteratureTheorems.casselman_wallach_of_literature
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.Lit1.GEN.globalEulerChar_full
         id: global-euler-char-full
         kind: theorem
@@ -16054,7 +16054,7 @@ volumes:
         fanin: 1
         idom: PositivityTheory.Lit1.GEN.globalEulerChar_full
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.Lit1.GEN.ratioOne_of_lemmaX
         id: ratio-one-of-lemma-x
         kind: theorem
@@ -16063,7 +16063,7 @@ volumes:
         fanin: 1
         idom: PositivityTheory.Lit1.GEN.globalEulerChar_of_lemmaX
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.Lit1.PTN.poitouTateNormalised_holds
         id: poitou-tate-normalised-holds
         kind: theorem
@@ -16072,7 +16072,7 @@ volumes:
         fanin: 2
         idom: UpperTheory.FinalTheorems.everyCharacter_of_row
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.AdelicQuotientData.rsPole
         id: rs-pole
         kind: theorem
@@ -16081,7 +16081,7 @@ volumes:
         fanin: 3
         idom: UpperTheory.FinalTheorems.everyCharacter
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.AdelicQuotientData.rsPole_of_inputs
         id: rs-pole-of-inputs
         kind: theorem
@@ -16090,7 +16090,7 @@ volumes:
         fanin: 1
         idom: PositivityTheory.AdelicQuotientData.rsPole
         tier: 2
-        written: false
+        written: true
       - name: HodgeLocalDeRhamField.HLdR.field_outright
         id: field-outright
         kind: theorem
@@ -16148,7 +16148,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.CompanionTheory.Ar.Pub.arithIntersectionSystem_of_poincareLelong_resK
         tier: 2
-        written: false
+        written: true
       - name: GlobalTheory.CompanionTheory.Ar.Pub.thmIExists
         id: thm-iexists
         kind: theorem
@@ -16157,7 +16157,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.intersection_exists_of_poincare_lelong
         tier: 2
-        written: false
+        written: true
     - id: constant-term-finiteness
       folder: Development.WeilBound.RepresentationTheoryGL.ConstantTermFiniteness
       title: Constant term finiteness
@@ -16188,7 +16188,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.CompanionTheory.Hypotheses₂.ConstFin.Rg.finite_constTerm
         tier: 2
-        written: false
+        written: true
       - name: GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.Rg.finite_cuspOn
         id: finite-cusp-on
         kind: theorem
@@ -16197,7 +16197,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.CompanionTheory.Hypotheses₂.ConstFin.Rg.finite_formsOn
         tier: 2
-        written: false
+        written: true
       - name: GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.CoreGL.Rg.finite_slices_glPart
         id: finite-slices-gl-part
         kind: theorem
@@ -16206,7 +16206,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.Rg.finite_cuspOn
         tier: 2
-        written: false
+        written: true
       - name: GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.UCore.Rg.finite_slices_uPart
         id: finite-slices-u-part
         kind: theorem
@@ -16215,7 +16215,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.CompanionTheory.Hypotheses₂.LeviPart.Rg.finite_cuspOn
         tier: 2
-        written: false
+        written: true
     - id: discrete-groups
       folder: Development.DiscreteGroups
       title: Discrete groups
@@ -16228,7 +16228,7 @@ volumes:
         fanin: 2
         idom: UpperTheory.FinalTheorems.everyCharacter_of_row
         tier: 2
-        written: false
+        written: true
     - id: archimedean-base-change
       folder: Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange
       title: Archimedean base change
@@ -16241,7 +16241,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.V.Z.GSp4Splitting.coreG
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.RgBcC.RealD.injective_decomposition_action_holds
         id: injective-decomposition-action-holds
         kind: theorem
@@ -16250,7 +16250,7 @@ volumes:
         fanin: 2
         idom: PositivityTheory.RgBcC.RealD.multiplicity_formula_holds
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.RgBcC.RealD.multG_of_multFor
         id: mult-g-of-mult-for
         kind: theorem
@@ -16259,7 +16259,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.V.Z.GSp4Splitting.coreG
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.RgBcC.RealD.countG_holds
         id: count-g-holds
         kind: theorem
@@ -16268,7 +16268,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.V.Z.GSp4Splitting.coreG
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.Rg.BcB.F.Eig.eigInert
         id: eig-inert
         kind: theorem
@@ -16286,7 +16286,7 @@ volumes:
         fanin: 1
         idom: PositivityTheory.Rg.BcB.F.Eig.eigInert
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.SphericalProduct.extremeU
         id: extreme-u
         kind: theorem
@@ -16295,7 +16295,7 @@ volumes:
         fanin: 1
         idom: PositivityTheory.Rg.BcB.F.Eig.absEig
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.Rg.BcB.F.MatchAll.matchLMB2₀
         id: positivity-theory-rg-bc-b-f-match-all-match-lmb2-2
         kind: theorem
@@ -16304,7 +16304,7 @@ volumes:
         fanin: 1
         idom: UpperTheory.BaseChangeIdentities.FrameWordIdentity.frameBound
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.Rg.BcB.F.MatchAll.hM4
         id: h-m4
         kind: theorem
@@ -16313,7 +16313,7 @@ volumes:
         fanin: 1
         idom: PositivityTheory.Rg.BcB.F.MatchAll.matchLMB2₀
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.Rg.Bc.ArchbcB.B.archimedean_base_change_fourth
         id: archimedean-base-change-fourth
         kind: theorem
@@ -16322,7 +16322,7 @@ volumes:
         fanin: 1
         idom: PositivityTheory.Rg.BcB.F.MatchAll.hM4
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.Rg.Bc.ArchbcB.B.M4.m4
         id: m4
         kind: theorem
@@ -16331,7 +16331,7 @@ volumes:
         fanin: 1
         idom: PositivityTheory.Rg.Bc.ArchbcB.B.archimedean_base_change_fourth
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.RgBcC.wave_existence_speed_multiplicity
         id: wave-existence-speed-multiplicity
         kind: theorem
@@ -16349,7 +16349,7 @@ volumes:
         fanin: 4
         idom: UpperTheory.FinalTheorems.everyCharacter
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.Rg.BcB.CV.classVanish2
         id: class-vanish2
         kind: theorem
@@ -16358,7 +16358,7 @@ volumes:
         fanin: 1
         idom: PositivityTheory.Rg.BcB.CV.ellFormula2J
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.Rg.BcB.CV.classVanish
         id: class-vanish
         kind: theorem
@@ -16367,7 +16367,7 @@ volumes:
         fanin: 1
         idom: PositivityTheory.Rg.BcB.CV.classVanish2
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.Rg.BcB.G8.global_character_holds
         id: global-character-holds
         kind: theorem
@@ -16376,7 +16376,7 @@ volumes:
         fanin: 2
         idom: UpperTheory.FinalTheorems.everyCharacter
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.Rg.BcB.G8.Fin.finHalf_holds
         id: fin-half-holds
         kind: theorem
@@ -16385,7 +16385,7 @@ volumes:
         fanin: 1
         idom: PositivityTheory.Rg.BcB.G8.global_character_holds
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.Rg.BcB.G8.Fin.eulerFin_holds
         id: euler-fin-holds
         kind: theorem
@@ -16394,7 +16394,7 @@ volumes:
         fanin: 1
         idom: PositivityTheory.Rg.BcB.G8.Fin.finHalf_holds
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.Rg.BcB.SpectralAccumulation.Cz.separation_holds
         id: separation-holds
         kind: theorem
@@ -16403,7 +16403,7 @@ volumes:
         fanin: 2
         idom: UpperTheory.FinalTheorems.everyCharacter
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.Rg.BcB.SpectralAccumulation.eFinal_of
         id: e-final-of
         kind: theorem
@@ -16412,7 +16412,7 @@ volumes:
         fanin: 2
         idom: UpperTheory.FinalTheorems.everyCharacter
         tier: 2
-        written: false
+        written: true
     - id: unitary-dual-proof
       folder: Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof
       title: Unitary dual proof
@@ -16425,7 +16425,7 @@ volumes:
         fanin: 3
         idom: UpperTheory.FinalTheorems.everyCharacter
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.RgUd.All.bernAt
         id: bern-at
         kind: theorem
@@ -16434,7 +16434,7 @@ volumes:
         fanin: 1
         idom: PositivityTheory.RgUd.All.bernsteinUnitaryProductIrreducible
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.RgUd.All.thmB
         id: thm-b
         kind: theorem
@@ -16443,7 +16443,7 @@ volumes:
         fanin: 1
         idom: PositivityTheory.RgUd.All.bernAt
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.RgUd.All.thmT
         id: all-thm-t
         kind: theorem
@@ -16452,7 +16452,7 @@ volumes:
         fanin: 1
         idom: PositivityTheory.RgUd.All.thmB
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.RgUd.TP.Final.thmT
         id: tp-final-thm-t
         kind: theorem
@@ -16461,7 +16461,7 @@ volumes:
         fanin: 1
         idom: PositivityTheory.RgUd.All.thmT
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.RgUd.TP.Final.desc
         id: tp-final-desc
         kind: theorem
@@ -16470,7 +16470,7 @@ volumes:
         fanin: 1
         idom: PositivityTheory.RgUd.TP.Final.thmT
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.RgUd.TP.Desc.Final.desc
         id: desc-final-desc
         kind: theorem
@@ -16479,7 +16479,7 @@ volumes:
         fanin: 1
         idom: PositivityTheory.RgUd.TP.Final.desc
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.RgUd.T.Final.thmT
         id: t-final-thm-t
         kind: theorem
@@ -16488,7 +16488,7 @@ volumes:
         fanin: 2
         idom: UpperTheory.FinalTheorems.everyCharacter
         tier: 2
-        written: false
+        written: true
       - name: PositivityTheory.RgUd.T.Final.van_all
         id: van-all
         kind: theorem
@@ -16497,7 +16497,7 @@ volumes:
         fanin: 1
         idom: PositivityTheory.RgUd.T.Final.thmT
         tier: 2
-        written: false
+        written: true
   11:
     number: 11
     id: formalism
@@ -16535,7 +16535,7 @@ volumes:
         fanin: 1
         idom: Formalism.L2.SG.Pf.NcAllS.ncTie0All_of
         tier: 2
-        written: false
+        written: true
       - name: Formalism.L2.SG.Pf.NcLeaves.ncTieC_of_leaves
         id: nc-tie-c-of-leaves
         kind: theorem
@@ -16544,7 +16544,7 @@ volumes:
         fanin: 1
         idom: Formalism.L2.SG.Pf.NcAllS.ncTieAllS_of
         tier: 2
-        written: false
+        written: true
     - id: closed-volume-statements
       folder: Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedVolumeStatements
       title: Closed volume statements
@@ -16566,7 +16566,7 @@ volumes:
         fanin: 1
         idom: Formalism.L2.SG.Closed.RealBracket_holds
         tier: 2
-        written: false
+        written: true
       - name: Formalism.L2.SG.Closed.JacGauge_holds
         id: jac-gauge-holds
         kind: theorem
@@ -16575,7 +16575,7 @@ volumes:
         fanin: 1
         idom: Formalism.L2.SG.Closed.RealBracket_holds
         tier: 2
-        written: false
+        written: true
       - name: Formalism.L2.SG.Closed.FoldOKC_holds
         id: fold-okc-holds
         kind: theorem
@@ -16584,7 +16584,7 @@ volumes:
         fanin: 4
         idom: UpperTheory.Lit.every_character_of_theta_integrals_local_matching
         tier: 2
-        written: false
+        written: true
       - name: Formalism.L2.SG.Closed.MultPoly_holds
         id: mult-poly-holds
         kind: theorem
@@ -16593,7 +16593,7 @@ volumes:
         fanin: 1
         idom: Formalism.L2.SG.Pf.foldOKC_holds_of
         tier: 2
-        written: false
+        written: true
     - id: orbital-bounds-conclusion
       folder: Formalism.PeriodIntegrals.OrbitalBoundsConclusion
       title: Orbital bounds conclusion
@@ -16606,7 +16606,7 @@ volumes:
         fanin: 1
         idom: Formalism.L2.SG.Closed.AprimeInf_holds
         tier: 2
-        written: false
+        written: true
       - name: PI.AprimeInfAsm.aprimeInf_of_hinfCompact
         id: aprime-inf-of-hinf-compact
         kind: theorem
@@ -16615,7 +16615,7 @@ volumes:
         fanin: 1
         idom: PI.AprimeInfAsm.aprime_infinite_real
         tier: 2
-        written: false
+        written: true
       - name: gTLower_of
         id: g-tlower-of
         kind: theorem
@@ -16624,7 +16624,7 @@ volumes:
         fanin: 1
         idom: Formalism.L2.DIV.BrJ.branching_interlacing_pairs
         tier: 2
-        written: false
+        written: true
       - name: level_s_all_split
         id: level-s-all-split
         kind: theorem
@@ -16633,7 +16633,7 @@ volumes:
         fanin: 2
         idom: UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound
         tier: 2
-        written: false
+        written: true
       - name: locMassTyp
         id: loc-mass-typ
         kind: theorem
@@ -16642,7 +16642,7 @@ volumes:
         fanin: 2
         idom: UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound
         tier: 2
-        written: false
+        written: true
       - name: kappa_off_diagonal_dim_form_C
         id: kappa-off-diagonal-dim-form-c
         kind: theorem
@@ -16651,7 +16651,7 @@ volumes:
         fanin: 2
         idom: UpperTheory.Lit.every_character_of_theta_integrals_local_matching
         tier: 2
-        written: false
+        written: true
     - id: unitary-group-mass-formula
       folder: Formalism.PeriodIntegrals.UnitaryGroupMassFormula
       title: Unitary group mass formula
@@ -16664,7 +16664,7 @@ volumes:
         fanin: 1
         idom: PI.AprimeInfAsm.aprimeInf_of_hinfCompact
         tier: 2
-        written: false
+        written: true
       - name: Formalism.L2.SG.Pf.NcVal.OmVSt.OmVZ.omV_holdsX
         id: om-v-holds-x
         kind: theorem
@@ -16691,7 +16691,7 @@ volumes:
         fanin: 1
         idom: gTLower_of
         tier: 2
-        written: false
+        written: true
       - name: PI.LevelKSplit.W.Top6.levelSplitting_of_heisenberg_levi
         id: level-splitting-of-heisenberg-levi
         kind: theorem
@@ -16700,7 +16700,7 @@ volumes:
         fanin: 1
         idom: level_s_all_split
         tier: 2
-        written: false
+        written: true
     - id: siegel-lattice-theory
       folder: Formalism.LocalToGlobal.SiegelLatticeTheory
       title: Siegel lattice theory
@@ -16713,7 +16713,7 @@ volumes:
         fanin: 1
         idom: Formalism.L2.SG.Closed.JacGauge_holds
         tier: 2
-        written: false
+        written: true
       - name: Formalism.L2.SG.Pf.jacGauge_of_rhsW
         id: jac-gauge-of-rhs-w
         kind: theorem
@@ -16722,7 +16722,7 @@ volumes:
         fanin: 1
         idom: Formalism.L2.SG.Pf.jacGauge
         tier: 2
-        written: false
+        written: true
       - name: Formalism.L2.SG.Pf.foldOKC_holds_of
         id: fold-okc-holds-of
         kind: theorem
@@ -16731,7 +16731,7 @@ volumes:
         fanin: 1
         idom: Formalism.L2.SG.Closed.FoldOKC_holds
         tier: 2
-        written: false
+        written: true
       - name: Formalism.L2.SG.Pf.multPoly_holds_of''
         id: mult-poly-holds-of-prime-prime
         kind: theorem
@@ -16740,7 +16740,7 @@ volumes:
         fanin: 1
         idom: Formalism.L2.SG.Closed.MultPoly_holds
         tier: 2
-        written: false
+        written: true
     - id: hermitian-curvature-proofs
       folder: Formalism.HermitianCurvature.HermitianCurvatureProofs
       title: Hermitian curvature proofs
@@ -16798,7 +16798,7 @@ volumes:
         fanin: 1
         idom: Formalism.FourierDecayAlt.P.CutMP.Gauge.GC.genTransfer_of_rotK
         tier: 2
-        written: false
+        written: true
       - name: Formalism.FourierDecayAlt.P.CutMP.Gauge.GC.gTSS_of_adj
         id: g-tss-of-adj
         kind: theorem
@@ -16807,7 +16807,7 @@ volumes:
         fanin: 1
         idom: Formalism.FourierDecayAlt.P.CutMP.Gauge.GC.second_shift_gauge_holds
         tier: 2
-        written: false
+        written: true
       - name: Formalism.FourierDecayAlt.P.CutMP.Gauge.GC.gTSS_of_adj_radT
         id: g-tss-of-adj-rad-t
         kind: theorem
@@ -16816,7 +16816,7 @@ volumes:
         fanin: 1
         idom: Formalism.FourierDecayAlt.P.CutMP.Gauge.GC.gTSS_of_adj
         tier: 2
-        written: false
+        written: true
       - name: Formalism.FourierDecayAlt.P.CutMP.Gauge.GC.SSPh.second_shift_phase_holds
         id: second-shift-phase-holds
         kind: theorem
@@ -16825,7 +16825,7 @@ volumes:
         fanin: 1
         idom: Formalism.FourierDecayAlt.P.CutMP.Gauge.GC.gTSS_of_adj_radT
         tier: 2
-        written: false
+        written: true
       - name: Formalism.FourierDecayAlt.P.shift_extra
         id: shift-extra
         kind: theorem
@@ -16834,7 +16834,7 @@ volumes:
         fanin: 1
         idom: Formalism.FourierDecayAlt.P.CutMP.Gauge.GC.SSPh.second_shift_phase_holds
         tier: 2
-        written: false
+        written: true
       - name: Formalism.FourierDecayAlt.P.NFx4.SX.curv
         id: curv
         kind: theorem
@@ -16843,7 +16843,7 @@ volumes:
         fanin: 1
         idom: Formalism.FourierDecayAlt.P.shift_extra
         tier: 2
-        written: false
+        written: true
       - name: Formalism.FourierDecayAlt.P.NFx4.SX.model_scalar
         id: model-scalar
         kind: theorem
@@ -16852,7 +16852,7 @@ volumes:
         fanin: 1
         idom: Formalism.FourierDecayAlt.P.NFx4.SX.curv
         tier: 2
-        written: false
+        written: true
       - name: Formalism.FourierDecayAlt.P.CutMP.Gauge.GC.gTConn_of_rotK
         id: g-tconn-of-rot-k
         kind: theorem
