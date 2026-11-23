@@ -27,24 +27,27 @@ This handbook is not one more check. It is a guide to the mathematics: what each
 | 0 | Guide: how to read, the status of the claim, notation, the named results, an index of Lean names | |
 | 1 | Background: the mathematics that the proof uses | 17 |
 | 2 | The proof: its top, its chapters and its steps | |
-| 3 | The Galois row | 13 |
-| 4 | The window bound | 21 |
-| 5 | Volume estimates and positivity | 19 |
-| 6 | Theta integrals and the green window | 22 |
-| 7 | The unitary hypotheses | 50 |
-| 8 | Automorphic arithmetic | 8 |
-| 9 | Abelian varieties | 22 |
-| 10 | The Weil bound, the spectrum and resolution | 26 |
-| 11 | The formalism | 41 |
-| 12 | Ground theory | 33 |
+| 3 | Schemes, étale cohomology and complex algebraic geometry | 10 |
+| 4 | p-adic Hodge theory and local Galois representations | 8 |
+| 5 | Abelian schemes, their moduli and compactifications | 9 |
+| 6 | Arakelov geometry, heights and arithmetic volumes | 10 |
+| 7 | Representations of real and p-adic groups | 7 |
+| 8 | Automorphic forms, the spectrum and the trace formula | 8 |
+| 9 | Galois cohomology, Galois representations and modularity | 8 |
+| 10 | Hermitian lattices, unitary groups and mass formulas | 8 |
+| 11 | Polynomial identities, lattice combinatorics and analytic estimates | 8 |
+| 12 | The theta correspondence and the Siegel-Weil formula | 8 |
+| 13 | Complex multiplication and the integrality of theta values | 8 |
+| 14 | Iterated theta lifts on the definite side | 4 |
+| 15 | The assembly of the proof | 8 |
 
-Volumes 0 to 2 come from [tamnd/riemann](https://github.com/tamnd/riemann). Volumes 3 to 12 are written for this book, in `content/dev/`. The books are in the [releases](https://github.com/tamnd/riemann-handbook/releases).
+Volumes 0 to 2 come from [tamnd/riemann](https://github.com/tamnd/riemann). Volumes 3 to 15 are written for this book, in `content/dev/`. They follow the subjects of the mathematics: geometry first (3 to 6), then representations and automorphic forms (7 and 8), Galois representations (9), lattices and estimates (10 and 11), the theta correspondence (12), and at the end the parts that belong to this proof alone (13 to 15). The books are in the [releases](https://github.com/tamnd/riemann-handbook/releases).
 
 ## The plan
 
 Volume 1 is the model for the rest. Each chapter defines its objects, states its results in standard notation with numbers (Theorem 3.1.4), proves them, and ends with notes and references.
 
-The first drafts of Volumes 3 to 12 gave a short note to each large declaration of the Lean code. The notes were accurate, but they read as notes on code, not as mathematics. We are now writing these volumes again as chapters of a textbook. A chapter takes one part of the proof and does the following:
+The first drafts of the development volumes gave a short note to each large declaration of the Lean code. The notes were accurate, but they read as notes on code, not as mathematics. We are now writing these volumes again as chapters of a textbook. A chapter takes one part of the proof and does the following:
 
 - It defines each object before it uses it, or links to its definition in Volume 1.
 - It states a known theorem in its usual form, with a source, and then says how the Lean form differs.
@@ -52,11 +55,11 @@ The first drafts of Volumes 3 to 12 gave a short note to each large declaration 
 - It puts a line `Lean:` under each statement, with the names of the declarations that prove it. Small lemmas and second names of a result go into that line or into a proof.
 - It notes what is odd in the Lean code, such as a hypothesis that is never used or a name that says something else, in a short remark.
 
-The ledger `ledger/outline.yaml` divides the proof into 255 chapters, which cover 5,756 declarations: those whose subtree in the proof has 100 or more declarations. Each declaration belongs to the subtree of exactly one other, its immediate dominator in the graph of uses from `riemannHypothesis`. `ledger/coverage.md` has the numbers.
+The ledger `ledger/outline.yaml` has 5,756 entries: the declarations whose subtree in the proof has 100 or more declarations. Each declaration belongs to the subtree of exactly one other, its immediate dominator in the graph of uses from `riemannHypothesis`. The entries are in 104 chapters of Volumes 3 to 15. `ledger/structure.yaml` gives these volumes and chapters: each chapter takes one or more chapters of the first plan, which grouped the entries by branch of the proof and by Lean folder, and a few large ones of these are split. `ledger/coverage.md` has the numbers.
 
-The work is in the milestone [M10 Mathematical chapters](https://github.com/tamnd/riemann-handbook/milestone/11), with one issue for each volume (#65 to #74). The brief for the writers is `prompts/chapter.md`. The first chapter in this form is *Étale clopen descent*, in Volume 3.
+The work is in the milestone [M10 Mathematical chapters](https://github.com/tamnd/riemann-handbook/milestone/11), with one issue for each volume of the first plan (#65 to #74). The brief for the writers is `prompts/chapter.md`. The first chapter in this form was *Étale clopen descent*, now a part of the chapter on finite étale covers in Volume 3.
 
-A chapter is a folder `content/dev/NN-volume/<chapter>/`. It has an optional `intro.md` and one file `NN-<slug>.md` for each section. A section file has `title` and `decls` in its front matter, and its text starts with a `##` heading. The build numbers the statements, and turns a link `/entry/<id>/` into the number of the statement that proves the declaration.
+A chapter is a folder `content/dev/NN-volume/<chapter>/`. It has an optional `intro.md` and one file `NN-<slug>.md` for each section. A section file has `title` and `decls` in its front matter, and its text starts with a `##` heading. The build numbers the statements, and turns a link `/entry/<id>/` into the number of the statement that proves the declaration. A chapter that also takes old chapters not yet written keeps their entry files, `<entry id>.md`, and the build puts them after the sections.
 
 ## Build
 
