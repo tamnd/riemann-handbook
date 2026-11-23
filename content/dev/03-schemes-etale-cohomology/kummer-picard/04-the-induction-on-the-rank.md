@@ -7,7 +7,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The induction on the rank
 
-This section proves the induction step of the projective bundle formula: if $\mathrm{PBF}_N$ holds for all spaces on which $q$ is invertible, then $\mathrm{PBF}_{N+1}$ holds for them too. Together with [Theorem 6.3.5](/entry/projective-bundle-formula-rank-two/) for the projective line, it gives the formula in all ranks in [Theorem 5.5.3](/entry/pbf-all/). The step blows up $\mathbb{P}^N$ at a point. The blowup is a $\mathbb{P}^1$-bundle over $\mathbb{P}^{N-1}$, so its cohomology is known from the rank two case and from $\mathrm{PBF}_N$. A Mayer-Vietoris argument then brings the result down to $\mathbb{P}^N$. We use the notation of the previous section: spaces $E$ on which $q$ is invertible, the projection $\pi : \mathbb{P}^{M-1}_E \to E$, and the class $\xi_M = c_1(\mathcal{L}) \in H^2(\mathbb{P}^{M-1}_E, \mathbb{Z}/q(1))$.
+This section proves the induction step of the projective bundle formula: if $\mathrm{PBF}_N$ holds for all spaces on which $q$ is invertible, then $\mathrm{PBF}_{N+1}$ holds for them too. Together with [Theorem 6.3.5](/entry/projective-bundle-formula-rank-two/) for the projective line, it gives the formula in all ranks in [Lemma 5.5.3](/entry/pbf-all/). The step blows up $\mathbb{P}^N$ at a point. The blowup is a $\mathbb{P}^1$-bundle over $\mathbb{P}^{N-1}$, so its cohomology is known from the rank two case and from $\mathrm{PBF}_N$. A Mayer-Vietoris argument then brings the result down to $\mathbb{P}^N$. We use the notation of the previous section: spaces $E$ on which $q$ is invertible, the projection $\pi : \mathbb{P}^{M-1}_E \to E$, and the class $\xi_M = c_1(\mathcal{L}) \in H^2(\mathbb{P}^{M-1}_E, \mathbb{Z}/q(1))$.
 
 ### Group actions and the blowup
 

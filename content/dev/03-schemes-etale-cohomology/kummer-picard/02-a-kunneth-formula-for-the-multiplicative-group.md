@@ -9,7 +9,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## A Künneth formula for the multiplicative group
 
-The next two sections prove the projective bundle formula in étale cohomology for the projective line and then for all projective spaces. The projective line is covered by two affine lines, and the two lines meet in the multiplicative group $\mathbb{G}_m$. So the first input is a formula for the cohomology of $\mathbb{G}_m \times E$: it is the cohomology of $E$ plus a copy of the cohomology of $E$ shifted by one, multiplied by the Kummer class of the coordinate. This section proves that formula. It first proves a general comparison theorem for complexes of injective sheaves, and then applies it to $\mathbb{G}_m$. The induction on the rank in [Theorem 5.5.3](/entry/pbf-all/) uses both.
+The next two sections prove the projective bundle formula in étale cohomology for the projective line and then for all projective spaces. The projective line is covered by two affine lines, and the two lines meet in the multiplicative group $\mathbb{G}_m$. So the first input is a formula for the cohomology of $\mathbb{G}_m \times E$: it is the cohomology of $E$ plus a copy of the cohomology of $E$ shifted by one, multiplied by the Kummer class of the coordinate. This section proves that formula. It first proves a general comparison theorem for complexes of injective sheaves, and then applies it to $\mathbb{G}_m$. The induction on the rank in [Lemma 5.5.3](/entry/pbf-all/) uses both.
 
 ### Spaces and their cohomology
 
