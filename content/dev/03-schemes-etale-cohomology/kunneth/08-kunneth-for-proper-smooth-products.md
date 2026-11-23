@@ -23,15 +23,7 @@ On an open with coordinates, $H^{a,i}$ is $0$ for $i \neq a$, and $H^{a,a}$ is t
 $$C^\bullet(\mathcal{T}(U_1), \operatorname{gr}^a) \times C^\bullet(\mathcal{T}(U_2), \operatorname{gr}^{a'}) \to C^\bullet(\mathcal{T}(U_3), \operatorname{gr}^{a + a'}), \qquad (x, y) \mapsto p_1^* x \cup p_2^* y,$$
 for opens $U_1 \subseteq X$, $U_2 \subseteq X'$ and $U_3 \subseteq p_1^{-1} U_1 \cap p_2^{-1} U_2$.
 
-**Theorem 1.8.3 (Künneth for proper smooth products).** Let $K$ be a field of characteristic $0$, $X$ and $X'$ proper and smooth over $K$, and $P = X \times_K X'$. Assume the six hypotheses listed in the remark below. Then for all $c, n \geq 0$ there is an isomorphism
-$$\bigoplus_{a + a' = c} \; \bigoplus_{i + j = n} H^{a, i}(X) \otimes_K H^{a', j}(X') \xrightarrow{\ \sim\ } H^{c, n}(P)$$
-that sends $[x] \otimes [y]$ to $[p_1^* x \cup p_2^* y]$.
-
-Lean: `GlobalTheory.T.kuenneth_product_proper_smooth` (also `GlobalTheory.CompanionTheory.KunGlue.kun_left`, the same statement).
-
-The classical analogue is the Künneth formula for Hodge cohomology, $H^m(X \times X', \Omega^c) \cong \bigoplus H^{m'}(X, \Omega^a) \otimes H^{m''}(X', \Omega^{a'})$, which follows from the decomposition of $\Omega^c$ of a product and the Künneth formula for coherent cohomology.
-
-**Remark 1.8.4.** The Lean statement takes six propositions as hypotheses, each about the thickening site:
+The theorem is proved under six general statements about the thickening site. We list them first.
 
 1. *Site laws:* the subcategories $\mathcal{T}(V)$ are cosieves, $\mathcal{T}(Z)$ is everything, $\mathcal{T}(V \cap V') = \mathcal{T}(V) \cap \mathcal{T}(V')$, and $\mathcal{T}(u^{-1} V)$ is the inverse image of $\mathcal{T}(V)$ under a morphism $u$. Two more laws, on thickenings whose point factors through a given morphism, are not used here.
 2. *The Mayer-Vietoris principle* of the previous section.
@@ -40,35 +32,39 @@ The classical analogue is the Künneth formula for Hodge cohomology, $H^m(X \tim
 5. *Affine computation:* on an open with coordinates, $H^{a,j} = 0$ for $j \neq a$ and $H^{a,a}$ is the space of $a$-forms.
 6. *Affine Künneth:* for opens $V \subseteq X$ and $V' \subseteq X'$ with coordinates, $p_1^{-1} V \cap p_2^{-1} V'$ has coordinates, and the cup product gives an isomorphism $\bigoplus_{a} H^{a,a}(V) \otimes H^{c-a, c-a}(V') \cong H^{c,c}(p_1^{-1} V \cap p_2^{-1} V')$.
 
-They are stated in the Lean code as `SiteLaws`, `MVBij`, `CovDesc`, `ZarAbs`, `AffOm` and `KunAff`. This section does not prove them.
+**Theorem 1.8.3 (Künneth for proper smooth products).** Let $K$ be a field of characteristic $0$, $X$ and $X'$ proper and smooth over $K$, and $P = X \times_K X'$. Assume the six statements 1 to 6 above. Then for all $c, n \geq 0$ there is an isomorphism
+$$\bigoplus_{a + a' = c} \; \bigoplus_{i + j = n} H^{a, i}(X) \otimes_K H^{a', j}(X') \xrightarrow{\ \sim\ } H^{c, n}(P)$$
+that sends $[x] \otimes [y]$ to $[p_1^* x \cup p_2^* y]$.
 
-The proof needs one more input, which we take from another statement of the folder.
+Lean: `GlobalTheory.T.kuenneth_product_proper_smooth` (also `GlobalTheory.CompanionTheory.KunGlue.kun_left`, the same statement).
 
-**Lemma 1.8.5 (Coordinate open times a proper smooth scheme).** Under the same six hypotheses, let $X$ be any scheme over $K$ and $V \subseteq X$ an open with coordinates. Let $X'$ be proper and smooth over $K$. Then the Künneth isomorphism holds for $\mathcal{T}(V)$, $\mathcal{T}(X')$ and $\mathcal{T}(p_1^{-1} V)$.
+The classical analogue is the Künneth formula for Hodge cohomology, $H^m(X \times X', \Omega^c) \cong \bigoplus H^{m'}(X, \Omega^a) \otimes H^{m''}(X', \Omega^{a'})$, which follows from the decomposition of $\Omega^c$ of a product and the Künneth formula for coherent cohomology.
+
+The proof needs one more input. It is the Künneth formula when the first factor is a single open with coordinates.
+
+**Lemma 1.8.4 (Coordinate open times a proper smooth scheme).** Under the same six hypotheses, let $X$ be any scheme over $K$ and $V \subseteq X$ an open with coordinates. Let $X'$ be proper and smooth over $K$. Then the Künneth isomorphism holds for $\mathcal{T}(V)$, $\mathcal{T}(X')$ and $\mathcal{T}(p_1^{-1} V)$.
 
 Lean: `GlobalTheory.T.kuenneth_product_local_global`.
 
-We have read the statement of this lemma, not its proof.
-
 *Proof of the theorem.*
 
-1. *A cover.* A proper morphism is separated and quasi-compact. So $X$ has a finite cover by opens $U_s$, $s \in \iota$, with coordinates, such that every nonempty finite intersection $U_S = \bigcap_{s \in S} U_s$ is affine. This is a lemma of the code on smooth coordinate covers.
+1. *A cover.* A proper morphism is separated and quasi-compact. So $X$ has a finite cover by opens $U_s$, $s \in \iota$, with coordinates, such that every nonempty finite intersection $U_S = \bigcap_{s \in S} U_s$ is affine. Indeed, $X$ is smooth, so each point has an affine neighbourhood with coordinates. Finitely many of them cover the quasi-compact $X$, and their intersections are affine because $X$ is separated.
 2. *Two families of cosieves.* Let $V_s = \mathcal{T}(U_s)$ in $\mathcal{T}(X)$ and $W_s = \mathcal{T}(p_1^{-1} U_s)$ in $\mathcal{T}(P)$. By the site laws these are cosieves, and for $S$ nonempty $V_S = \mathcal{T}(U_S)$ and $W_S = \mathcal{T}(p_1^{-1} U_S)$. A thickening in $W_S$ maps under $p_1$ to a thickening in $V_S$, so the pairing of cochains is defined for each $S$.
 3. *The local case.* Let $S$ be nonempty and $s_0 \in S$. The open $U_S$ is affine and lies in $U_{s_0}$, so the coordinates of $U_{s_0}$ restrict to coordinates on $U_S$. The lemma on a coordinate open times a proper smooth scheme gives the Künneth isomorphism for $V_S$, $\mathcal{T}(X')$ and $W_S$.
 4. *Gluing.* The theorem on Künneth on a union of cosieves, with the two factors swapped, gives the Künneth isomorphism for the unions $V_\emptyset = \bigcup_s \mathcal{T}(U_s)$ and $W_\emptyset = \bigcup_s \mathcal{T}(p_1^{-1} U_s)$, with $\mathcal{T}(X')$ as the fixed factor.
-5. *From the unions to the whole.* The $U_s$ cover $X$ and the $p_1^{-1} U_s$ cover $P$. By Zariski invariance, the restrictions $\mathcal{T}(X) \supseteq V_\emptyset$ and $\mathcal{T}(P) \supseteq W_\emptyset$ are bijective on the cohomology of each $\operatorname{gr}^a$. A transfer lemma of the folder moves the Künneth isomorphism along bijective restrictions. $\square$
+5. *From the unions to the whole.* The $U_s$ cover $X$ and the $p_1^{-1} U_s$ cover $P$. By Zariski invariance, the restrictions $\mathcal{T}(X) \supseteq V_\emptyset$ and $\mathcal{T}(P) \supseteq W_\emptyset$ are bijective on the cohomology of each $\operatorname{gr}^a$. The restrictions are compatible with the cup product. So the Künneth isomorphism for the unions, composed with the inverses of these bijections, is the Künneth isomorphism for $\mathcal{T}(X)$, $\mathcal{T}(X')$ and $\mathcal{T}(P)$. $\square$
 
-**Remark 1.8.6.** The properness and smoothness of $X$ are used only in step 1, to get the finite cover by opens with coordinates. The properness and smoothness of $X'$ are passed on to the local lemma of step 3. Characteristic $0$ is also only passed on. The statement in Lean is phrased with the open $p_1^{-1}(X) \cap p_2^{-1}(X')$ of $P$, which is all of $P$, and with two inclusion hypotheses that are always true. The theorem under the name `kuenneth_product_proper_smooth` is proved by a single `first | exact` that cites the companion theorem ([KuennethProductProperSmoothStatement.lean](lean:Development/AutomorphicSpectrum/Proofs/BlockDecomposition/KuennethProductProperSmoothStatement.lean#L11)). The gluing step uses a fixed second factor, so the previous section is applied to the pairing with the two factors swapped, which multiplies the pairing by $(-1)^{ij}$ in degrees $i$ and $j$.
+**Remark 1.8.5.** The properness and smoothness of $X$ are used only in step 1, to get the finite cover by opens with coordinates. The properness and smoothness of $X'$ are passed on to the local lemma of step 3. Characteristic $0$ is also only passed on. The gluing step uses a fixed second factor, so the previous section is applied to the pairing with the two factors swapped, which multiplies the pairing by $(-1)^{ij}$ in degrees $i$ and $j$.
 
 We now derive the slant maps.
 
-**Theorem 1.8.7 (Slant maps).** Let $K$, $X$, $X'$ and $P$ be as in the Künneth theorem, and assume the same six hypotheses together with the restriction law below. Let $a + a' = c$, $i + j = n$, and let $\varphi$ be a linear form on $H^{a, i}(X)$. Then there is a linear map
+**Theorem 1.8.6 (Slant maps).** Let $K$, $X$, $X'$ and $P$ be as in the Künneth theorem, and assume the same six hypotheses together with the restriction law below. Let $a + a' = c$, $i + j = n$, and let $\varphi$ be a linear form on $H^{a, i}(X)$. Then there is a linear map
 $$\operatorname{sl}_\varphi : H^{c, n}(P) \to H^{a', j}(X')$$
 such that $\operatorname{sl}_\varphi(p_1^* u \cup p_2^* v) = \varphi(u) \, v$ for $u \in H^{a, i}(X)$ and $v \in H^{a', j}(X')$, and $\operatorname{sl}_\varphi(p_1^* u \cup p_2^* v) = 0$ for $u \in H^{b, i'}(X)$ and $v \in H^{b', j'}(X')$ with $b + b' = c$, $i' + j' = n$ and $(b, i') \neq (a, i)$.
 
 Lean: `GlobalTheory.CompanionTheory.KunGlue.slantOf`.
 
-**Definition 1.8.8 (Restriction law).** The *restriction law* says: for a functor $F$ on a category $\mathcal{C}$ and a full subcategory $U$ that contains every object, restriction of cochains from $\mathcal{C}$ to $U$ is bijective in each degree, and a cochain vanishes on the chains that start in a given full subcategory if and only if its restriction does.
+**Definition 1.8.7 (Restriction law).** The *restriction law* says: for a functor $F$ on a category $\mathcal{C}$ and a full subcategory $U$ that contains every object, restriction of cochains from $\mathcal{C}$ to $U$ is bijective in each degree, and a cochain vanishes on the chains that start in a given full subcategory if and only if its restriction does.
 
 Lean: `CrystallineSemistableComparison.Onto.TopRes` (a proposition, used as a hypothesis).
 
@@ -78,11 +74,13 @@ Lean: `CrystallineSemistableComparison.Onto.TopRes` (a proposition, used as a hy
 2. *The slant map.* Under the Künneth isomorphism, $H^{c,n}(P)$ is a direct sum of the spaces $H^{b, i'}(X) \otimes H^{b', j'}(X')$. Define $\operatorname{sl}_\varphi$ as $\varphi \otimes \mathrm{id}$ on the summand of $(a, i, a', j)$, followed by $K \otimes H^{a', j}(X') = H^{a', j}(X')$, and as $0$ on every other summand.
 3. *The two formulas.* The class $p_1^* u \cup p_2^* v$ is the image of $u \otimes v$ in the summand of $(b, i', b', j')$. On the summand of $(a, i, a', j)$ the map gives $\varphi(u) v$. On the other summands it gives $0$. $\square$
 
-**Remark 1.8.9.** In Lean the slant theorem is the implication from the restriction law to the proposition `SlantOf`, which is itself the implication from the six hypotheses to the slant statement. The proof composes a lemma that derives slant maps from the Künneth isomorphism for all proper smooth pairs (Lean: `GlobalTheory.T.slant_of_hodge_kuenneth`) with the Künneth theorem of this section. That lemma is proved in [KuennethIsoProperSmooth.lean](lean:Development/AutomorphicSpectrum/Proofs/BlockDecomposition/KuennethIsoProperSmooth.lean#L120), a file whose name speaks of the Künneth isomorphism while it holds the slant maps. Only the summand of $(a, i, a', j)$ needs the form $\varphi$, and steps 2 and 3 use no property of $\varphi$ other than linearity.
+**Remark 1.8.8.** Only the summand of $(a, i, a', j)$ needs the form $\varphi$, and steps 2 and 3 use no property of $\varphi$ other than linearity.
+
+**Remark 1.8.9 (Formalization).** The six statements 1 to 6 and the restriction law are hypotheses of the formal theorems. They are not proved in this chapter. Their formal names are `SiteLaws`, `MVBij`, `CovDesc`, `ZarAbs`, `AffOm` and `KunAff`. In the formal Künneth theorem, $P$ is any scheme with a pullback square over $X$ and $X'$, and the site of $P$ is that of the open $p_1^{-1}(X) \cap p_2^{-1}(X')$, which is all of $P$. The formal statement also assumes that $p_1$ and $p_2$ send thickenings of $P$ to thickenings of $X$ and of $X'$. These two hypotheses are always true. The lemma on a coordinate open times a proper smooth scheme has the same two hypotheses for $p_1^{-1} V$. For this lemma we have checked the formal statement, not the formal proof. The cover of step 1 and the transfer of step 5 are separate formal results. The formal Künneth theorem is a restatement of its companion theorem ([KuennethProductProperSmoothStatement.lean](lean:Development/AutomorphicSpectrum/Proofs/BlockDecomposition/KuennethProductProperSmoothStatement.lean#L11)). The formal slant theorem is the implication from the restriction law to the implication from the six statements to the slant statement. Its proof combines the Künneth theorem with a separate result that derives slant maps from the Künneth isomorphism for all proper smooth pairs (Lean: `GlobalTheory.T.slant_of_hodge_kuenneth`). That result is proved in [KuennethIsoProperSmooth.lean](lean:Development/AutomorphicSpectrum/Proofs/BlockDecomposition/KuennethIsoProperSmooth.lean#L120).
 
 ## Notes and references
 
-This chapter collects the results of the folder `BlockDecomposition` that feed [the Galois row](/proof/galois-row/). The folder name does not describe them: they are inputs to the $\ell$-adic Hodge comparison. The level lattice feeds the result that [each level is good](/entry/lev-good/) and through it [the existence of the level system](/entry/lev-sys-ex/). The continuous functions on $\mathbb{Z}_\ell$ give the line object, which is [the continuous line](/entry/cont-line/) of the [local comparison](/entry/local-of/). The relative forms on blow-up charts and the slant maps are [parts of the Hodge-Tate comparison](/entry/parts/), which give [the bijectivity of the Hodge-Tate map](/entry/ht-bij-of/). The vanishing on affine opens is [the input of the same name](/entry/gr-aff-pf/) of the step [GeoOne holds](/step/geo-one-holds/). The cone transfer is [the transfer lemma](/entry/cone-transfer/) in the proof that [the top power of the first Chern class is nonzero](/entry/pow-k-ne-zero-of/).
+This chapter collects results that feed [the Galois row](/proof/galois-row/). They are inputs to the $\ell$-adic Hodge comparison. The level lattice feeds the result that [each level is good](/entry/lev-good/) and through it [the existence of the level system](/entry/lev-sys-ex/). The continuous functions on $\mathbb{Z}_\ell$ give the line object, which is [the continuous line](/entry/cont-line/) of the [local comparison](/entry/local-of/). The relative forms on blow-up charts and the slant maps are [parts of the Hodge-Tate comparison](/entry/parts/), which give [the bijectivity of the Hodge-Tate map](/entry/ht-bij-of/). The vanishing on affine opens is [the input of the same name](/entry/gr-aff-pf/) of the step [GeoOne holds](/step/geo-one-holds/). The cone transfer is [the transfer lemma](/entry/cone-transfer/) in the proof that [the top power of the first Chern class is nonzero](/entry/pow-k-ne-zero-of/).
 
 Sources:
 
