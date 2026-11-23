@@ -17,7 +17,7 @@ Let $E$ be a CM field with a host $H$, a datum, a level $\ell$ and a coefficient
 **Theorem.** The following three statements hold.
 
 1. `HeckeInt`. For all such data, two integrality statements hold, for the class of good points and for all points. At each split-off prime and each place $\lambda$ not over $p$, a point $z$ that is Hecke related to the image of an integral algebraic point is integral up to units, after a finite extension of the complete discrete valuation ring. Each section with nonnegative valuations has a value at $z$ that is integral.
-2. `HeckeTransform`. This is `SecTransform` and `CuspTransform`. If $1 \le p + q$, $\mathfrak{P}$ is split off, $i \le p + q$ and $n$ is even, then `HasTransform` holds at $\mathfrak{P}$, $p$, $i$ and $n$. We have not unfolded `HasTransform`. For each core with the laws `LawsM`, the Hecke operator at a split-off prime keeps the cuspidal subspace.
+2. `HeckeTransform`. This is `SecTransform` and `CuspTransform`. If $1 \le p + q$, $\mathfrak{P}$ is split off, $i \le p + q$ and $n$ is even, then `HasTransform` holds at $\mathfrak{P}$, $p$, $i$ and $n$. `HasTransform` is `HkEx`; [the section transform](/entry/sec-transform/) unfolds it. For each core with the laws `LawsM`, the Hecke operator at a split-off prime keeps the cuspidal subspace.
 3. `HeckeReadTie`. For a datum $D$, a finite group, a family, a core, real data and a face, if the level character, group, family, model, theta and tie conditions hold, then a frame pin at stage $i$ gives a reading of the core at $i$ by $\kappa(i)$. We have not unfolded `FramePin` and `ReadsAt`.
 
 ## Proof
