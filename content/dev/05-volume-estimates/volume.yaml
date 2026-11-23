@@ -43,7 +43,7 @@ chapters:
   - log-pole-along-boundary-is-simple
   - exists-log-pole-along-boundary
 - id: automorphic-kernels
-  title: Automorphic kernels
+  title: The volume theorem from its inputs
   folder: Development.WeilBound.CoreStatements.AutomorphicKernels
   entries:
   - deep-slim-use
@@ -52,7 +52,7 @@ chapters:
   - line-of-large-degree-of-use
   - given-of-use
 - id: geometry-proofs
-  title: Geometry proofs
+  title: The assembly of the volume branch
   folder: Development.AutomorphicSpectrum.Proofs.GeometryProofs
   entries:
   - final-theorem-of-inputs-right
@@ -108,7 +108,7 @@ chapters:
   - eigen-line-p-adic-frame
   - value-at-point
 - id: divisibility-proofs
-  title: Divisibility proofs
+  title: Good towers and the volume theorem
   folder: Development.AutomorphicSpectrum.Proofs.DivisibilityProofs
   entries:
   - good-tower-volume-theorem
@@ -131,7 +131,7 @@ chapters:
   - t-good-tower-real-extra
   - relay-good-tower-real-extra
 - id: multihomogeneous-squares
-  title: Multihomogeneous squares
+  title: The swap relation on a good tower
   folder: Development.WeilBound.CoreStatements.MultihomogeneousSquares
   entries:
   - good-tower-antisymmetry
@@ -139,7 +139,7 @@ chapters:
   - good-tower-antisymmetry-of
   - tie-of
 - id: metric-proofs
-  title: Metric proofs
+  title: Swaps, height defects and theta sections
   folder: Development.AutomorphicSpectrum.Proofs.MetricProofs
   entries:
   - flag-model-exists-of-given
@@ -159,13 +159,13 @@ chapters:
   - theta-function-even-bound
   - nform
 - id: heights-and-theta
-  title: Heights and theta
+  title: Rest terms over primes
   folder: GroundTheory.HeightsAndTheta
   entries:
   - rest-bound-full
   - rest-prime-bound-full
 - id: core-statements
-  title: Core statements
+  title: Hodge modules and flat sections
   folder: Development.WeilBound.CoreStatements
   entries:
   - t-c-sqsys
@@ -176,7 +176,7 @@ chapters:
   - hodge-free-every-stalk
   - at-point
 - id: algebra-proofs
-  title: Algebra proofs
+  title: Chern number relations
   folder: Development.AutomorphicSpectrum.Proofs.AlgebraProofs
   entries:
   - arithmetic-relations-statement-holds
@@ -193,7 +193,7 @@ chapters:
   - cut-closed-main
   - mahler-section
 - id: divisor-proofs
-  title: Divisor proofs
+  title: Lie eigenlattices and the Hilbert-Samuel bound
   folder: Development.AbelianVarietyTheory.Proofs.DivisorProofs
   entries:
   - sum-at-of-sizes
@@ -213,7 +213,7 @@ chapters:
   - geo-bound-of-quoted-prime
   - det-line-trivial-of-toroidal
 - id: iwasawa-decomposition
-  title: Iwasawa decomposition
+  title: The Hodge metric and its Chern integrals
   folder: Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition
   entries:
   - toroidal-flag-proportionality-of-good-chern-weil
@@ -226,12 +226,12 @@ chapters:
   - hodge-metric-lie-gram-is-good-mumford
   - lie-gram-is-good
 - id: automorphic-arithmetic
-  title: Automorphic arithmetic
+  title: The sup norm of a cusp form
   folder: Development.AutomorphicArithmetic
   entries:
   - tamagawa-local-volume-factor
 - id: weil-bound
-  title: Weil bound
+  title: Volumes of fundamental sets
   folder: Development.WeilBound
   entries:
   - plug-comp
