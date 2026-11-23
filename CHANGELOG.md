@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+## v0.1.22
+
+- Volume 5, abelian schemes: the chapter *Toroidal compactifications* is complete. It has 26 sections, from fan charts and Fourier systems to normalized blowups, canonical families, heat operators, the logarithmic Kodaira-Spencer map, Čech cocycles and smooth polarized fans.
+- Volume 8, automorphic forms: the chapter *Finiteness* is complete. It has 8 sections, from lowest K-types and derivative bounds to Harish-Chandra finiteness for GL and unitary groups, Hecke L-functions in vertical strips and a sup-norm bound.
+- Volume 8, automorphic forms: the chapter *Hecke operators* is complete. It has 12 sections, from newforms and strong multiplicity one to weight one Eisenstein series, harmonic representatives, row placement, adelic readings of Hecke operators and their integrality.
+- Volume 14, iterated theta lifts: the chapter *Doubling and scalar forms* is complete. It has 28 sections, from see-saw laws and cell sums to theta kernels at split places, level-prime operators, the diagonal row and the mean of theta-null norms.
+- Volume 5: the page range of Mumford, Compositio Math. 24 (1972), is now 239 to 288.
+
 ## v0.1.21
 
 - Volume 5, abelian schemes: the chapter *Siegel toroidal compactifications* is complete. It has 19 sections, from the integral toroidal compactification and formal algebraization to roots of the Mumford bundle, normalized blowups, p-adic Fourier systems and the minimal compactification.
