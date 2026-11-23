@@ -16,30 +16,30 @@ We keep the notation of the previous section: $\overline{S}$ is the Zariski clos
 **Theorem 4.5.2 (Small subrepresentation).** Let $\Gamma$, $K$ and $K'$ be as above. Let $\rho : \Gamma \to \mathrm{GL}_N(K)$ be continuous and semisimple. Let $S \subseteq \Gamma$ be [[dense|0BSJSX7ME2]], and for $s \in S$ let $P_s$ be a monic polynomial of degree $n$ with $P_s(\rho(s)) = 0$. Let $X \in M_N(K')$ be in the Lie algebra of $\rho$, and let the characteristic polynomial of $X$ have $n$ distinct roots $e_1, \dots, e_n$ that form a lacunary family. Let $\psi : \Gamma \to K^\times$ be a continuous character with $\psi(s) = (-1)^n P_s(0)$ for $s \in S$. Then there is a continuous semisimple $r : \Gamma \to \mathrm{GL}_n(K)$ with the following properties.
 
 1. There is $A \in M_{N \times n}(K)$ of rank $n$ with $\rho(g) A = A\, r(g)$ for all $g$.
-2. There are $k \ge 0$ and $B \in M_{nk \times N}(K)$ of rank $N$ with $(r(g) \otimes 1_k) B = B \rho(g)$ for all $g$.
+2. There are $k \ge 0$ and a matrix $B$ of rank $N$, with rows indexed by the pairs $(a, j)$ with $a \le n$, $j \le k$ and columns indexed by $1, \dots, N$, such that $(r(g) \otimes 1_k) B = B \rho(g)$ for all $g$.
 3. The characteristic polynomial of $r(g)$ kills $\rho(g)$, for all $g$.
-4. $P_s(r(s)) = 0$ and $\det r(s) = \psi(s)$, for all $s \in S$, and $\det r = \psi$ on $\Gamma$.
+4. $P_s(r(s)) = 0$ for all $s \in S$, and $\det r(g) = \psi(g)$ for all $g \in \Gamma$.
 5. The set of $g$ such that the characteristic polynomial of $r(g)$ is separable is open and dense.
 6. For $s \in S$, the characteristic polynomial of $r(s)$ is $P_s$ if it is separable, or if $P_s$ has generic products.
 
 Lean: `LateralTheory.DivDb.goal_holds`.
 
-The proof uses the key criterion, the matrix units lemma of the previous section, and eleven more statements, which the code proves in other files. We state them; we opened their statements but not their proofs, except where we give an argument.
+The roots $e_i$ are distinct, but this also follows from lacunarity: take $O = \{i\}$ and $O' = \{j\}$. The proof uses the key criterion, the matrix units statement of the previous section, and eleven more statements. We state them first, and we prove two of them.
 
 **Definition 4.5.3 (Subrepresentation datum).** Let $\rho$ be as above and $r : \Gamma \to \mathrm{GL}_n(K)$ a homomorphism. A *subrepresentation datum* is a pair of matrices $A \in M_{N \times n}(K)$ and $B \in M_{n \times N}(K)$ with $BA = 1$ and $\rho(g) A = A\, r(g)$ for all $g$, such that each $Z \in M_N(K)$ with $Z T = 0$ for all intertwiners $T$ (all $T$ with $\rho(g) T = T r(g)$) is zero.
 
-**Lemma 4.5.4 (Inputs).** Let $\rho : \Gamma \to \mathrm{GL}_N(K)$.
+**Lemma 4.5.4 (Inputs).** In this lemma $\Gamma$ is a group, $K$ is a field, and $\rho : \Gamma \to \mathrm{GL}_N(K)$ is a homomorphism. Each item states the extra hypotheses it needs.
 
-1. (Descent of the Lie element.) Let $X$ and $e$ be as in the theorem. Then there are $X_0 \in M_N(K)$ in the Lie algebra of $\rho$ and a lacunary family $e^0$ of $n$ roots of the characteristic polynomial of $X_0$.
-2. (Degree everywhere.) If $\rho$ is continuous and $\rho(s)$ has degree at most $n$ for all $s$ in a dense set, then $\rho(g)$ has degree at most $n$ for all $g$.
-3. (Structure.) If $\rho$ is semisimple, each $\rho(g)$ has degree at most $n$, $X_0$ is in the Lie algebra and $e^0$ is a lacunary family of roots of its characteristic polynomial, then there is a system $p$ with $(\rho, e^0, p)$ good.
+1. (Descent of the Lie element.) Let $K$ be algebraically closed and let $K'$ be a field that contains $K$. Let $X \in M_N(K')$ be in the Lie algebra of $\rho$, and let $e$ be a lacunary family of $n$ roots of its characteristic polynomial. Then there are $X_0 \in M_N(K)$ in the Lie algebra of $\rho$ and a lacunary family $e^0$ of $n$ roots of the characteristic polynomial of $X_0$.
+2. (Degree everywhere.) Let $\Gamma$ be a topological group and $K$ a Hausdorff topological ring. If $\rho$ is continuous and $\rho(s)$ has degree at most $n$ for all $s$ in a dense set, then $\rho(g)$ has degree at most $n$ for all $g$.
+3. (Structure.) Let $K$ be algebraically closed of characteristic $0$. If $\rho$ is semisimple, each $\rho(g)$ has degree at most $n$, $X_0$ is in the Lie algebra and $e^0$ is a lacunary family of roots of its characteristic polynomial, then there is a system $p$ with $(\rho, e^0, p)$ good.
 4. (Big corner.) Let $A$ be a subalgebra with a corner system $p$, normalized by $\rho$, that keeps the $\rho$-invariant subspaces. Assume the conclusion of part 2 of the key criterion for all $g$. Then there is a subalgebra $R$ that contains $\rho(\Gamma)$, has $p$ as a corner system, is normalized by $\rho$, and keeps the $\rho$-invariant subspaces.
 5. (Semisimplicity.) If $\rho$ is semisimple and a subalgebra $R$ is normalized by $\rho$ and keeps the invariant subspaces, then $R$ has no nil ideal.
 6. (Representation.) If $p$ is a system, $R$ contains $\rho(\Gamma)$ and has matrix units adapted to $p$, then there is a homomorphism $r : \Gamma \to \mathrm{GL}_n(K)$ with a subrepresentation datum.
 7. (Finite subrepresentation.) Given a datum and $\rho$ semisimple: $r$ is semisimple, $A$ has rank $n$, $r(g) = B \rho(g) A$, and a polynomial kills $\rho(g)$ if and only if it kills $r(g)$.
-8. (Dense separability, algebraic part.) Given a datum, let $U$ be a subgroup and $g \in \Gamma$. If $\rho(g) m$ has $n$ distinct eigenvalues for some $m \in \overline{\rho(U)}$, then $r(gu)$ has separable characteristic polynomial for some $u \in U$.
-9. (Dense separability, topological part.) Let $\Gamma$ be compact and $r$ continuous. If each coset $gU$ of each normal subgroup $U$ of finite index contains an element with separable characteristic polynomial, then the set of such elements is open and dense.
-10. (Characteristic polynomial.) Let $x \in M_n(K)$ and let $P$ be monic of degree $n$ with $P(x) = 0$. If the characteristic polynomial $\chi_x$ is separable, then $\chi_x = P$. If $P$ has generic products and $\det x = (-1)^n P(0)$, then $\chi_x = P$.
+8. (Dense separability, algebraic part.) Let $K$ have characteristic $0$. Given a datum, let $U$ be a subgroup and $g \in \Gamma$. If $\rho(g) m$ has at least $n$ distinct eigenvalues for some $m \in \overline{\rho(U)}$, then $r(gu)$ has separable characteristic polynomial for some $u \in U$.
+9. (Dense separability, topological part.) Let $\Gamma$ be a compact topological group, $K$ a Hausdorff topological ring of characteristic $0$, and $r : \Gamma \to \mathrm{GL}_n(K)$ continuous. If each coset $gU$ of each normal subgroup $U$ of finite index contains an element with separable characteristic polynomial, then the set of such elements is open and dense.
+10. (Characteristic polynomial.) Let $K$ be algebraically closed, $x \in M_n(K)$ and let $P$ be monic of degree $n$ with $P(x) = 0$. If the characteristic polynomial $\chi_x$ is separable, then $\chi_x = P$. If $P$ has generic products and $\det x = (-1)^n P(0)$, then $\chi_x = P$.
 11. (Embedding.) Given a datum with $\rho$ and $r$ semisimple, there are $k$ and matrices $T_j \in M_{n \times N}(K)$, $T'_j \in M_{N \times n}(K)$ for $j = 1, \dots, k$, with $T_j \rho(g) = r(g) T_j$, $\rho(g) T'_j = T'_j r(g)$ and $\sum_j T'_j T_j = 1$.
 
 Lean: `LateralTheory.DivDb.SpecLie` (also `LateralTheory.DivDb.DegAll`, `LateralTheory.DivDb.Struct`, `LateralTheory.DivDb.BigCorner`, `LateralTheory.DivDb.Semis`, `LateralTheory.DivDb.Rep`, `LateralTheory.DivDb.FinSub`, `LateralTheory.DivDb.DenseAlg`, `LateralTheory.DivDb.FinDense`, `LateralTheory.DivDb.FinPoly`, `LateralTheory.DivDb.FinEmbed`, the eleven statements).
@@ -48,17 +48,15 @@ Lean: `LateralTheory.DivDb.SpecLie` (also `LateralTheory.DivDb.DegAll`, `Lateral
 
 *Proof of the theorem.* By descent of the Lie element we replace $X$ and $e$ by $X_0 \in M_N(K)$ and a lacunary $e^0$. Since $P_s(\rho(s)) = 0$, each $\rho(s)$ with $s \in S$ has degree at most $n$, so each $\rho(g)$ has degree at most $n$ by degree everywhere. Structure gives a system $p$ with $(\rho, e^0, p)$ good. Let $A$ be the envelope.
 
-The [key criterion](/entry/etale-divisibility-key-criterion-of-components/) holds for $(\rho, e^0, p)$. Its part 2 with $U = \Gamma$ is the hypothesis of the big corner, since goodness gives the corner system, the normalization and the invariant subspaces. So there is a subalgebra $R \supseteq \rho(\Gamma)$ with $p$ as a corner system. By semisimplicity $R$ has no nil ideal, so $R$ has matrix units adapted to $p$ by [the matrix units lemma](/entry/etale-divisibility-key-criterion-of-components/) of the previous section. Representation gives $r$ with a subrepresentation datum $(A, B)$, and the finite subrepresentation statement gives that $r$ is semisimple, $A$ has rank $n$, and $r(g) = B \rho(g) A$. So $r$ is continuous, and claim 1 holds. Since $\chi_{r(g)}$ kills $r(g)$, it kills $\rho(g)$, which is claim 3. Since $P_s$ kills $\rho(s)$, it kills $r(s)$.
+The [key criterion](/entry/etale-divisibility-key-criterion-of-components/) holds for $(\rho, e^0, p)$. Its part 2 with $U = \Gamma$ is the hypothesis of the big corner, since goodness gives the corner system, the normalization and the invariant subspaces. So there is a subalgebra $R \supseteq \rho(\Gamma)$ with $p$ as a corner system. By semisimplicity $R$ has no nil ideal, so $R$ has matrix units adapted to $p$ by the matrix units statement of the previous section. Representation gives $r$ with a subrepresentation datum $(A, B)$, and the finite subrepresentation statement gives that $r$ is semisimple, $A$ has rank $n$, and $r(g) = B \rho(g) A$. So $r$ is continuous, and claim 1 holds. Since $\chi_{r(g)}$ kills $r(g)$, it kills $\rho(g)$, which is claim 3. Since $P_s$ kills $\rho(s)$, it kills $r(s)$.
 
-For claim 5, let $U$ be normal of finite index and $g \in \Gamma$. Part 1 of the key criterion gives $m \in \overline{\rho(U)}$ with $\rho(g) m$ of $n$ distinct eigenvalues. The algebraic part of dense separability gives $u \in U$ with $\chi_{r(gu)}$ separable. The topological part gives that the separable set $D$ is open and dense.
+For claim 5, let $U$ be normal of finite index and $g \in \Gamma$. Part 1 of the key criterion gives $m \in \overline{\rho(U)}$ such that $\rho(g) m$ has at least $n$ distinct eigenvalues. The algebraic part of dense separability gives $u \in U$ with $\chi_{r(gu)}$ separable. The topological part gives that the separable set $D$ is open and dense.
 
 By the characteristic polynomial statement, $\chi_{r(s)} = P_s$ for $s \in S \cap D$. So $\det r(s) = (-1)^n P_s(0) = \psi(s)$ on $S \cap D$. This set is dense, as $S$ is dense and $D$ is open and dense. Both $\det r$ and $\psi$ are continuous into the Hausdorff space $K$, so $\det r = \psi$ on $\Gamma$. This gives claim 4. Claim 6 follows from the characteristic polynomial statement, with $\det r(s) = \psi(s) = (-1)^n P_s(0)$ in the case of generic products.
 
-For claim 2, the embedding gives matrices $T_j$ and $T'_j$. Let $B$ be the matrix with the $T_j$ stacked as its blocks of rows, so $B \in M_{nk \times N}(K)$, and let $B'$ be the matrix with the $T'_j$ as its blocks of columns. Then $B' B = \sum_j T'_j T_j = 1$, so $B$ has rank $N$, and $(r(g) \otimes 1_k) B = B \rho(g)$ because each $T_j$ is an intertwiner. $\square$
+For claim 2, the embedding gives matrices $T_j$ and $T'_j$. Let $B$ be the matrix with entries $B_{(a, j), x} = (T_j)_{a x}$, so the $T_j$ are its blocks of rows, and let $B'$ be the matrix with the $T'_j$ as its blocks of columns. Then $B' B = \sum_j T'_j T_j = 1$, so $B$ has rank $N$, and $(r(g) \otimes 1_k) B = B \rho(g)$ because each $T_j$ is an intertwiner. $\square$
 
-**Remark 4.5.5.** The theorem asks that the roots $e_i$ be distinct and lacunary. A lacunary family is always injective: take $O = \{i\}$ and $O' = \{j\}$. So the first condition is redundant; see [OpenCoset.lean](lean:Development/EtaleCohomology/DivisorCycles/OpenCoset.lean#L12). The proof in the code drops it at once, in [DivPlus.lean](lean:Development/EtaleCohomology/DivisorCycles/DivPlus.lean#L41).
-
-**Remark 4.5.6.** The Lean statement is a single proposition, and its proof applies one lemma to thirteen inputs. Each input is passed under the name `intersectionNumber_baseChange` of its own namespace; see [GoalHolds.lean](lean:Development/EtaleCohomology/DivisorCycles/GoalHolds.lean#L19). These names do not describe the statements, which are about matrices and compact groups. We did not open the proofs of the inputs, apart from the arguments given in this chapter; the proof above uses only their statements.
+**Remark 4.5.5 (Formalization).** The formal theorem asks that the family $e$ be injective and lacunary, and its proof drops the injectivity at once; see [DivPlus.lean](lean:Development/EtaleCohomology/DivisorCycles/DivPlus.lean#L41) and [OpenCoset.lean](lean:Development/EtaleCohomology/DivisorCycles/OpenCoset.lean#L12). The formal proof applies one lemma to thirteen inputs: the key criterion, the matrix units statement and the eleven items of the lemma on inputs; see [GoalHolds.lean](lean:Development/EtaleCohomology/DivisorCycles/GoalHolds.lean#L19). We have checked the statements of these inputs, not their proofs. Each input carries the name of an intersection number and a base change, which does not describe it.
 
 ## Notes and references
 
@@ -67,7 +65,5 @@ The chapter feeds three parts of [the Galois row](/proof/galois-row/). The conti
 J. S. Milne, *Étale Cohomology*, Chapter II, §2, for the Kummer sequence; Chapter III, §1, for the continuity of étale cohomology.
 
 C. A. Weibel, *An Introduction to Homological Algebra*, Corollary 1.5.4, for the mapping cone and quasi-isomorphisms.
-
-H. Matsumura, *Commutative Ring Theory*, Theorem 7.6, for the equational criterion of flatness.
 
 A. Borel, *Linear Algebraic Groups*, Chapter I, §3, for the Lie algebra of an algebraic group.
