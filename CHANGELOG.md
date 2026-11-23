@@ -2,11 +2,17 @@
 
 ## Unreleased
 
+## v0.1.18
+
+- Volume 7, local representations: the chapter *Discrete series* is complete. It has 12 sections, from volumes of unitary groups and the Haar measure in polar coordinates to the lowest K-type, decay of matrix coefficients, the exhaustion of square integrable representations and Bernstein irreducibility.
+- Volume 8, automorphic forms: the chapter *Siegel sets and spectrum* is complete. It has 13 sections, from the Iwasawa decomposition and Siegel domains to equidistribution, wave kernels, a gallery of walls and the residual spectrum of GL(n). The notes of v0.1.17 listed this chapter by mistake; it is first in this release.
+- Volume 9, Galois representations: the chapter *Patching* is complete. It has 13 sections, from unimodular sequences and homological stability to the spectral gap, Selmer and obstruction bounds, patching and automorphy.
+- Volume 13, CM theta values: the chapter *CM zeta values* is complete. It has 10 sections, from Hilbert Eisenstein series of weight two and derivatives of CM lattice sums to p-adic theta jets, Weil operators on theta vacua and slopes of lattices.
+
 ## v0.1.17
 
 - Volume 7, local representations: the chapter *Coefficient bounds* is complete. It has 8 sections, from shifted types and word bounds on the big cell to pointwise bounds for eigenfunctions and discrete series, least values of theta generators and series of matrix coefficients.
 - Volume 8, automorphic forms: the chapter *Rankin-Selberg* is complete. It has 9 sections, from Satake parameters and the unfolding of the theta integral to non-vanishing at one, strong multiplicity one, local Langlands and base change at nonsplit places.
-- Volume 8, automorphic forms: the chapter *Siegel sets and spectrum* is complete. It has 13 sections, from the Iwasawa decomposition and Siegel domains to equidistribution, wave kernels, a gallery of walls and the residual spectrum of GL(n).
 - Volume 13, CM theta values: the chapter *Inert primes* is complete. It has 8 sections, from pairing series at inert primes and the integrality of theta kernels to self-conjugate charts, row families and local product measures at split primes.
 
 ## v0.1.16
