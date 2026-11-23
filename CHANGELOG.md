@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+## v0.1.16
+
+- Volume 11, analytic estimates: the chapter *Character sums* is complete. It has 8 sections, from zero density and the Deuring-Heilbronn phenomenon and the explicit formula to good pairs of primes, bad counts on a grid, and operator words and random polynomials.
+- Volume 11, analytic estimates: the chapter *Pieri minors* is complete. It has 6 sections, from the depth skeleton and the weight theorem at the top to lattice inclusions and corank one bounds.
+- Volume 12, theta correspondence: the chapter *Theta series* is complete. It has 8 sections, from the multiplier of a column change and the Siegel-Weil formula for definite Hermitian lattices to the kernel identity, the span of bounded forms and spherical forms at inert places.
+- Volume 12, theta correspondence: the chapter *Regularised Siegel-Weil* is complete. It has 8 sections, from heights and Fourier-Jacobi coefficients of Eisenstein series to the residue of the Siegel Eisenstein series and the non-vanishing of the down lift.
+- Volume 15, assembly: the chapter *Green window* is complete. It has 7 sections, from a Chebyshev bound from character sums and zero-free half-planes to division bounds, the shape theorem and the green window.
+
 ## v0.1.15
 
 - Volume 5, abelian schemes: the chapter *Mumford construction* is complete. It has 23 sections, from degeneration data and the quotient construction to the gluing of charts, algebraic formal endomorphisms, the degeneration data of a uniformised group and the archimedean arc condition.
