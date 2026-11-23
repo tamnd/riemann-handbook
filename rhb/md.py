@@ -152,6 +152,10 @@ class Converter:
                     out.append("```{=latex}\n\\hbstskip\\hbnoindentnext\n```\n")
                 out.append(f"[]{{#{lab}}}{head}{self.inline(rest)}")
                 continue
+            lm = re.match(r"^\*?Lean:\*? (.*)$", ln)
+            if lm and numbering:   # the source line under a statement of a chapter written as mathematics
+                out.append(f"[Lean: {self.inline(lm.group(1))}]{{latex-cmd=\"hblean\"}}")
+                continue
             out.append(self.inline(ln))
         return "\n".join(out)
 
