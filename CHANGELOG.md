@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+## v0.1.14
+
+- Volume 4, p-adic Hodge theory: the volume now has its introduction, with the main theorems of each chapter and an order of reading.
+- Volume 8, automorphic forms: the chapter *Jacquet-Rallis* is complete. It has 8 sections, from orbital integrals, the Weil representation and the rank one transfer to unit matching in every rank, lattice counts and the unit lemma.
+- Volume 9, Galois representations: the chapter *Euler systems* is complete. It has 7 sections on Siegel units, zeta classes, Coleman power series, ordinary adjoint cocycles and Hilbert modular forms congruent to one.
+- Volume 13, CM theta values: the chapter *Elliptic torsion* is complete. It has 10 sections, from the formal group of a Weierstrass curve and torsion values to Honda theory, theta jets and local index sums.
+- Volume 15, assembly: the chapter *Literature* is complete. It has 7 sections on the published results the proof takes as inputs.
+
 ## v0.1.13
 
 - Volume 4, p-adic Hodge theory: the chapter *Local Bloch-Kato* is complete, which completes the volume. It covers phi-modules and Breuil-Kisin lattices, the connection and the Taylor formula, monodromy and jumps, lifting along surjections of good lattices, packs, Galois data and the Fil^0 condition.
