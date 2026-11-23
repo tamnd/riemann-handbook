@@ -17732,7 +17732,7 @@ volumes:
         fanin: 5
         idom: UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin
         tier: 2
-        written: false
+        written: true
       - name: ReciprocityTheory.L2DbarEstimates.F.hStatement_of
         id: h-statement-of
         kind: theorem
@@ -17741,7 +17741,7 @@ volumes:
         fanin: 1
         idom: ReciprocityTheory.L2DbarEstimates.hormander
         tier: 2
-        written: false
+        written: true
     - id: poitou-tate
       folder: GroundTheory.ProfiniteCohomology.PoitouTate
       title: Poitou tate
@@ -17754,7 +17754,7 @@ volumes:
         fanin: 2
         idom: PositivityTheory.Lit1.GEN.ratioOne_of_lemmaX
         tier: 2
-        written: false
+        written: true
       - name: GroundTheory.ProfCoh.injective_gsRealRes_three
         id: injective-gs-real-res-three
         kind: theorem
@@ -17763,7 +17763,7 @@ volumes:
         fanin: 1
         idom: GroundTheory.ProfCoh.bijective_gsRealRes
         tier: 2
-        written: false
+        written: true
       - name: GroundTheory.ProfCoh.gsTatePoitouTateHypotheses
         id: gs-tate-poitou-tate-hypotheses
         kind: theorem
@@ -17865,7 +17865,7 @@ volumes:
         fanin: 1
         idom: GlobalTheory.T.theta_measure_nonzero_vectors_bound
         tier: 2
-        written: false
+        written: true
     - id: automorphic-forms
       folder: GroundTheory.AutomorphicForms
       title: Automorphic forms
@@ -17878,4 +17878,4 @@ volumes:
         fanin: 2
         idom: UpperTheory.FinalTheorems.everyCharacter
         tier: 2
-        written: false
+        written: true
