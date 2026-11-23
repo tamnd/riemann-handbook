@@ -29,7 +29,7 @@ $$h^2 = d(A_1/\ell) + d(\mathbb{F}_\ell^{S_L}) - d(1).$$
 
 Lean: `PositivityTheory.Lit1.GEN.X.finrank_H2_euler_formula`.
 
-*Proof.* Put $M' = \operatorname{Hom}(M, \mu_\ell)$. For each $v \in S$ choose a decomposition group $G_v \subseteq G$ at $v$. Since $\ell$ is odd or $K$ is totally complex, the Poitou-Tate sequence for $G_{K,S}$, built on the duality of [Theorem 2.6 of Volume 9](/entry/gs-base-case/), gives the count
+*Proof.* Put $M' = \operatorname{Hom}(M, \mu_\ell)$. For each $v \in S$ choose a decomposition group $G_v \subseteq G$ at $v$. Since $\ell$ is odd or $K$ is totally complex, the Poitou-Tate sequence for $G_{K,S}$, built on the duality of [Theorem 2.5.7 of Volume 9](/entry/gs-base-case/), gives the count
 $$\#H^2(G, M) \cdot \#H^0(G, M') = \#\text{Ш}^2(M) \cdot \prod_{v \in S} \#H^0(G_v, M'),$$
 where $\text{Ш}^2(M)$ is the kernel of $H^2(G, M) \to \prod_{v \in S} H^2(G_v, M)$. This count comes from the exact sequence $0 \to \text{Ш}^2(M) \to H^2(G, M) \to \bigoplus_{v \in S} H^2(G_v, M) \to H^0(G, M')^\vee \to 0$ and local duality $H^2(G_v, M) \cong H^0(G_v, M')^\vee$. We compute the three terms in dimensions.
 
