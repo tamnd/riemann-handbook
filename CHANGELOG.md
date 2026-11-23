@@ -2,10 +2,20 @@
 
 ## Unreleased
 
+## v0.1.8
+
 - The development volumes are now Volumes 3 to 15, grouped by subject: 104 chapters with all 5,756 planned entries. The old volumes followed the branches and folders of the Lean code. The design is in ledger/structure.yaml, and `rhb ledger` builds the outline from it. The entry ids are the same, so links to entries keep working.
 - The written chapters moved with their entries. The two chapters on cup products and Kummer classes are now one chapter of Volume 3, *The Kummer sequence, cup products and Chern classes*.
 - A chapter can mix written sections and entries: the sections come first, then the entries.
 - The old volume introductions are gone, since their volumes are gone. The new volumes have no introduction yet.
+- Chapters written as mathematics, in the style of Volume 1: numbered definitions and theorems, proofs, a `Lean:` line under each result, and notes and references. Each chapter replaces its older entries.
+- Volume 3, schemes and étale cohomology: nine of ten chapters are written. These are Künneth formulas, purity, proper base change, the Kummer sequence and Chern classes, finite étale covers, Kummer classes and Picard torsion, formal algebraization, resolution of singularities, and L2 methods. The volume has 329 pages.
+- Volume 4, p-adic Hodge theory: period rings, the comparison theorems, and Breuil-Kisin modules.
+- Volume 10, Hermitian lattices: class numbers and the first part of Hermitian genera.
+- Volume 12, the theta correspondence: theta-Parseval.
+- `rhb number --write` writes the statement numbers and the numbers of links into the chapter sources.
+- The riemann pin moves to the Volume 1 with 29 chapters.
+- The pull requests list what the writers found in the Lean code.
 
 ## v0.1.7
 
