@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.6
+
+- Volume 5, volume estimates and positivity: the 181 tier 2 entries. Twelve chapters have new titles, and the introduction lists all 13 chapters.
+- Volume 6, theta integrals: the tier 2 entries. Six chapters have new titles, and the introduction lists all 10 chapters.
+- Two wide displays in Volume 5 are split over two lines, so the volume builds with no overfull lines.
+- One statement in Volume 5 now uses the rank of the submodule, as the Lean code does.
+- The pull requests for Volumes 5 and 6 list what the writers found in the Lean code.
+
 ## v0.1.5
 
 - The outline now plans tier 2: every declaration that owns 300 or more others gets an entry. 54 entries moved to their tier 2 chapters.
