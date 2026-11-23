@@ -8,7 +8,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Torsion in the Picard group of an affine curve
 
-Let $B$ be a Dedekind domain of finite type over an algebraically closed field $k$, and let $q$ be invertible in $k$. This section proves that the $q$-torsion subgroup $\operatorname{Pic}(B)[q]$ is finite. The finiteness theorem for the étale cohomology of proper schemes, [Theorem 3.3](/entry/etale-topology-top/), uses it to show that $H^1(\operatorname{Spec} B, \mathbb{Z}/q(1))$ is finite: by the Kummer sequence of the previous section, this group is an extension of $\operatorname{Pic}(B)[q]$ by $B^\times / B^{\times q}$.
+Let $B$ be a Dedekind domain of finite type over an algebraically closed field $k$, and let $q$ be invertible in $k$. This section proves that the $q$-torsion subgroup $\operatorname{Pic}(B)[q]$ is finite. The finiteness theorem for the étale cohomology of proper schemes, [Theorem 3.7.1](/entry/etale-topology-top/), uses it to show that $H^1(\operatorname{Spec} B, \mathbb{Z}/q(1))$ is finite: by the Kummer sequence of the previous section, this group is an extension of $\operatorname{Pic}(B)[q]$ by $B^\times / B^{\times q}$.
 
 Classically, the result follows from the theory of the Jacobian: $\operatorname{Pic}(B)$ is a quotient of the Picard group of the smooth projective model of $B$, and the $q$-torsion of a Jacobian of genus $g$ is $(\mathbb{Z}/q)^{2g}$ (Mumford, *Abelian Varieties*, §4). The proof here avoids Jacobians. It works with the function field of $B$ and a Selmer group of functions whose divisors are divisible by $q$. It proves that this group is finite modulo $q$-th powers with the theorem of the previous section and a spreading-out argument.
 

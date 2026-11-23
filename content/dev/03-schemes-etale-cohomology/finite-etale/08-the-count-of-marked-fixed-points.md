@@ -48,19 +48,3 @@ Third, we write the right side by forms. A marked pair has similitude factor $\l
 **Remark 5.8.5.** A mark asks for some place of signature $(1, n - 1)$, not for the place $v$ of the count. Since $a(G) = 1$, there is only one such place, so this is the same. The theorem holds for every weight $c$, and it does not need $n$ odd or any condition on pairs with reducible polynomial. Those conditions enter only in the next step, which moves the marked sum to a sum over definite pairs, in [the count over definite pairs](/entry/weighted-count-definite-unitary/).
 
 **Remark 5.8.6 (Formalization).** The sum on the right picks the mark by a choice function, which is harmless because the mark is unique. The eigenvalue $\mu_y$ in the count is also defined by a choice, and it is set to $0$ when $y$ fixes no line, a case that the count never uses. The three facts of the first step were read as statements, not proofs. We have not unfolded the term of a pair, the point sum, or the set of points.
-
-## Notes and references
-
-The chapter feeds three parts of the Galois row. The scheme of subgroups of the torsion of an abelian scheme is used in the first step of [the representability of isogenies of type $T_j$](/entry/isogeny-rep/), and the isogenies with a given kernel are used for the quotient objects in the chapter on Galois representations. The neighbourhood lemma is an input to [the finiteness of étale cohomology](/entry/etale-topology-top/) of proper schemes, and the projective bundle formula is an input to [the formula on discrete spaces](/entry/pbf-disc/). The holomorphic Lefschetz formula and the count of marked fixed points are the two inputs of [the theorem that Hecke eigensystems occur in Dolbeault cohomology](/entry/ks-hodge-of-geo/), in [the geometric realization of weight one](/entry/geometric-realization-of-weight-one/). This is the step [GeoOne holds](/step/geo-one-holds/) of [the Galois row](/proof/galois-row/), which builds the Galois representations of weight one from the cohomology of a tower of unitary Shimura varieties.
-
-A. Grothendieck, *Techniques de construction et théorèmes d'existence en géométrie algébrique IV: Les schémas de Hilbert*, Séminaire Bourbaki, Exposé 221, for the Hilbert scheme in the proof of Theorem 5.1.4.
-
-S. Bosch, W. Lütkebohmert and M. Raynaud, *Néron Models*, §7.6, for the Weil restriction. It gives the scheme of clopen subsets without the noetherian hypothesis.
-
-M. Harris and R. Taylor, *The Geometry and Cohomology of Some Simple Shimura Varieties*, Ann. of Math. Stud. 151, Chapter III, for the moduli problem of Section 5.3 and its isogenies.
-
-J. S. Milne, *Étale Cohomology*, Chapter I, §4, for henselian rings and the strict henselization; Chapter III, §1, for the continuity of étale cohomology; Chapter VI, §10, for the projective bundle formula.
-
-SGA 5, Exposé VII, for the projective bundle formula and Chern classes in étale cohomology.
-
-M. F. Atiyah and R. Bott, *A Lefschetz fixed point formula for elliptic complexes. II. Applications*, Ann. of Math. 88 (1968), §4, for the holomorphic Lefschetz formula. Their formula is for a holomorphic map with nondegenerate fixed points. Theorem 5.7.3 is an algebraic form for a correspondence, and it takes the finite set of fixed points and the cotangent matrices as inputs.
