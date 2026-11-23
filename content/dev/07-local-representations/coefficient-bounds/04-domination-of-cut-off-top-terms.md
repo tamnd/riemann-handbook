@@ -31,7 +31,7 @@ We say that *domination holds for all places* if for every $C_b$ there is $C_c$ 
 
 The integrability input concerns the empty word. It says that coefficients of large decay order have square-integrable size on the big cell.
 
-**Definition 5.4.5 (Ξ-integrability).** *Ξ-integrability* holds if, for each place and each $A$ at least a bound $A_B(k, r)$, there is a function $\Xi$ that bounds the coefficients of decay order $A$ and that satisfies the integrability condition of exponent $2$. It is proved in the chapter on discrete series as [Theorem 3.5](/entry/xi-exists/).
+**Definition 5.4.5 (Ξ-integrability).** *Ξ-integrability* holds if, for each place and each $A$ at least a bound $A_B(k, r)$, there is a function $\Xi$ that bounds the coefficients of decay order $A$ and that satisfies the integrability condition of exponent $2$. It is proved in the chapter on discrete series as [Theorem 3.10.11](/entry/xi-exists/).
 
 We have not unfolded the bound by $\Xi$ or its integrability condition. The model is Harish-Chandra's function $\Xi$, which bounds $K$-finite matrix coefficients of tempered representations; see [asymptotics of matrix coefficients](/learn/real-groups/#asymptotics-of-matrix-coefficients).
 
