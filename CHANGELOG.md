@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## v0.1.19
+
+- Volume 7, local representations: the chapter *Unitary dual* is complete. It has 10 sections, from Frobenius reciprocity for distributions and invariant distributions in characteristic zero and p to Bernstein's theorems, segments, discrete series of unitary groups and the global inputs.
+- Volume 8, automorphic forms: the chapter *Unitary trace formula* is complete. It has 12 sections, from pseudo-coefficients and the elliptic side to lattice counts at inert places, Hecke traces on definite unitary groups, Hermitian forms and the Grothendieck ring.
+- Volume 9, Galois representations: the chapter *Global Galois cohomology* is complete. It has 10 sections, from Herbrand quotients and global reciprocity to complex multiplication, Poitou-Tate duality with real places, Selmer presentations and good twists.
+- Volume 13, CM theta values: the chapter *Rationality* is complete. It has 10 sections, from rationality and integrality via Artin reciprocity to Wach lattices, Hermitian column data, the Fock model and Chern-Weil forms.
+
 ## v0.1.18
 
 - Volume 7, local representations: the chapter *Discrete series* is complete. It has 12 sections, from volumes of unitary groups and the Haar measure in polar coordinates to the lowest K-type, decay of matrix coefficients, the exhaustion of square integrable representations and Bernstein irreducibility.
