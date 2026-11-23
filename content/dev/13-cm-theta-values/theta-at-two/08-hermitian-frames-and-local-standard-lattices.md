@@ -59,7 +59,7 @@ Assembly. Take the data of the rational step. By the lemma there is $\delta \in 
 
 Lean: `Formalism.L2.Th1.H.localStandard`.
 
-*Proof.* This is [Theorem](/entry/unimodular-local-standard/). $\square$
+*Proof.* This is [Theorem 4.5.5 of Volume 10](/entry/unimodular-local-standard/). $\square$
 
 The meaning is local. Let $\Lambda' = \delta\Lambda$. By 3 and 4, $\Lambda'$ and $L^m$ are commensurable, and $\Lambda' / (\Lambda' \cap L^m)$ has order prime to $l$. So $\Lambda' \otimes \mathbb{Z}_l \subseteq L^m \otimes \mathbb{Z}_l$. Both lattices are self-dual, $\Lambda'$ because $\delta$ is an isometry, and duality reverses inclusions. Hence $\Lambda' \otimes \mathbb{Z}_l = L^m \otimes \mathbb{Z}_l$: the lattice $\delta \Lambda$ is standard at $l$. Condition 2 says that $1$ is not an eigenvalue of $\delta$.
 

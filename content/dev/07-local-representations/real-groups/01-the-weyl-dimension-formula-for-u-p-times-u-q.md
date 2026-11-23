@@ -63,7 +63,7 @@ Next, $S$ contains an irreducible $U(p)$-subspace $X$ of highest weight $\Lambda
 
 The actions of $U(p)$ and $U(q)$ on $S$ commute, and $S$ is irreducible for their product. By Schur's lemma, $S$ is isomorphic to $X \otimes Y$ as a representation of $U(p) \times U(q)$, so $\dim S = \dim X \cdot \dim Y$. Theorem (Weyl dimension formula for $U(N)$), applied to $U(p)$ and to $U(q)$, gives $\dim X$ and $\dim Y$. Their product is the stated formula, because for $a < b$ in one block $(\Lambda + \rho_c)_a - (\Lambda + \rho_c)_b = \Lambda_a - \Lambda_b + b' - a'$. $\square$
 
-The general assembly from these steps is [Theorem](/entry/weyl-for-k-of/).
+The general assembly from these steps is [Theorem 4.2.8 of Volume 10](/entry/weyl-for-k-of/).
 
 **Example 2.1.7.** Let $\varepsilon = (+, +, -)$, so $K_\varepsilon = U(2) \times U(1)$ and $\rho_c = (\tfrac12, -\tfrac12, 0)$. For $\Lambda = (3, 0, 5)$ the only pair in one block is $(0, 1)$, and $\dim S = (3 + \tfrac12 - 0 + \tfrac12)/(0! \cdot 1! \cdot 0!) = 4$. This is $\mathrm{Sym}^3 \mathbb{C}^2 \otimes \det^5$ of $U(2) \times U(1)$.
 
