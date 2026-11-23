@@ -18,28 +18,48 @@ chapters:
   - zeta-ur
   - kato-global-unit-law-of-smoothed-classes
   - kato-global-admissibility-of-admissible
+  - th-op
   - tower-ex
   - smoothed-zeta-class-hodge-tate-law
   - k5-top
   - hco
   - kato-tame-relation-projected
+  - s-euler
+  - s-es
+  - kato-norm-relation-tame-prime
+  - xi-hecke-prime-relation
   - sym-ex
+  - tw-new-alt
+  - exists-newform-attached-twist-of-kills-mu
   - sp4-in0-alt
   - seed-iis-alt
   - seed-ii-z-alt
   - mix-seed-of-alt
+  - prop-mhol-z-alt
+  - seed-ii-of-p-alt
   - ind-cs
   - ind-cs-of-bcfl
   - ind-cs-of-gm
   - core-ind
   - arch-ex
+  - fam-ne
+  - irr-w
+  - irreducible-cuspidal-weight-component
+  - z-simple
   - cix
   - upper-theory-v-z-invariant-submodule-monic-polynomial-cix-of-2
+  - upper-theory-v-z-invariant-submodule-monic-polynomial-cix-of
+  - integral-apply-ae-eq-main
+  - kill-exempt
   - sp4-in-alt
   - main4-alt
   - modularity-rank-four-of-promodularity-case-three
+  - fin0-no-end-all-irr-of-good-con-purity-aut
   - pm-ex-of-prints-h
   - pm-exists-of-unramified-adjoint-lifting
+  - local-zero-of-modular-p
+  - eigenbasis-rank-four
+  - promodular-existence-of-local-zero
   - fourth-initial-of-prints-h
   - unitary-three-automorphy-dense-of-prints
   - unitary-three-automorphy-dense-of-prints-and-row
@@ -49,14 +69,25 @@ chapters:
   - spec-f
   - t-fid0
   - side-g
+  - base-pt
+  - kappa
+  - emb-ex
+  - dat-ok
+  - sig-main
+  - bridge-ex
+  - adjoint-automorphy-w-of-pure-weight-adjoint-lift
+  - w-core
+  - adjoint-lift-w-of-literal-automorphy-spec-out
   - prop-eg-w-of-printed-hida
   - prop-eg-complex-of-printed-hida
   - eg-core
   - half-of-printed-hida
+  - seed-in-w-alt
   - lemma-k-lit-n-alt
   - b-odd
   - lemma-k-of-lit-n-alt
   - lemma-k
+  - s-class-of
   - slope-all
   - slope-all-of
   - core-alt-bis
@@ -66,18 +97,36 @@ chapters:
   - count-ii-and-count-iii-of-prints-h-of-sp4-in
   - sp4-main-alt
   - main-big
+  - rig-sp4-alt
+  - exists-cm-field-twist-h1
+  - nonempty-link-of-fit-deep-unramified
   - count-v-of-printed-bound-k-reduced-unitary-lift
   - count-v-of-finiteness-duality-euler-host
   - modularity-n-of-printed-mult-comp
   - num-j-prime-alt
   - num-jedense-threshold-cases
   - count-e-prime-alt
+  - flath-e
   - count-i-of-printed-bound-k-kato-automorphy
   - one-char-u-of-kato-two-w-rig-adm-i-automorphy
   - one-char-unram-u
   - linked-unl-e-alt
+  - red2-alt
+  - mult-free
+  - stable-block-sa
+  - ends0-alt
+  - ends-u-alt
+  - ends-of-alt
+  - tan-a
+  - tan-a-of
+  - tan
+  - decomposition-and-automorphic-away-of-is-j
+  - arith-point-decomposition-and-irr-automorphic-of-is-j
+  - has-automorphy-of-statement
   - published-hypotheses-from-patching-alt
   - clozel-conj-c
+  - cyc-c-holds
+  - cyc-c-of-fin-js
   - cm-abelian-inputs-from-literature
 - id: foundation-proofs
   title: Foundation proofs
@@ -87,20 +136,72 @@ chapters:
   - hecke-proj-newform
   - semisimple-potentials-at-newform-eigensystem
   - ss-pot-b-at-newform
+  - hecke-semisimple-generalised-eigen-newform-gamma1-gamma0
+  - hecke-semisimple-at-newform
+  - ul-semisimple
+  - exists-eichler-shimura-decomposition-cocycle
+  - exists-per-add-cj-per
+  - odd-weight-modular-cusp-dimension-lower-bound
+  - dim-lower-bound
+  - exists-frame
+  - galois-representation-of-eigensystem
+  - hecke-proj-main
+  - cayley-hamilton-hecke-eigenvector-every-galois-element
+  - cayley-hamilton-gal-v
+  - eichler-shimura-frobenius-quadratic-mod-prime-pow
+  - cusp-functional-mod-prime-pow-commutes-hecke-diamond
+  - th-n-hecke
   - ordinary-eisenstein-eigenfunctional-exists
   - chapter-m-holds
   - chapter-m-of-level
+  - exists-hecke-eigenfunctional-depleted-eisenstein-ne-zero
+  - eig-f-value-ne-zero
+  - pet-eis-lat-eq-and-vo-eq-mul
+  - rankin-values-at-zero
   - exists-modular-function-tower-algebraic-coefficients
   - tower-exists
   - siegel-unit-edge-class-kummer-dlog-congruence
   - pair-edge-dlog
   - edge-dlog
+  - geometric-level-h1-coboundary
+  - h1-geometric-level-coboundary
+  - kummer-cocycle-twisted-coboundary
+  - top-geo-top
+  - cup-kummer-dlog-mod-prime-pow-level-l
+  - cup-kummer-dlog-mod
+  - hodge-tate-cup-kummer-classes-eq-dlog-determinant
+  - cup-kummer-dlog
+  - kummer-cochain-eq-dlog-combination-finite-level
+  - kummer-eq-dlog
+  - kummer-cocycle-value-expansion-eq-log-deriv-smul
+  - geo-cob
+  - siegel-log-coords-alt
+  - siegel-log-coords
+  - law-of-inputs
+  - local-glue
+  - eichler-shimura-kummer-function-uniform-exceptional-primes
+  - eichler-shimura-unit
+  - middle-glue2
+  - nonvanishing-transfer-character-sums-power-series
+  - nonvanishing-transfer
   - vanish-ord-l-of-zeta-ur
   - es-vanish
   - ordinary-selmer-vanishes-of-dual-vanishes
   - gr-zero-of-gr-zero-dual1
+  - exists-dual-selmer-classes-unbounded-order
+  - dual-classes-unbounded
+  - greenberg-wiles-dual-selmer-lower-bound-mod-prime-pow
+  - gw-ineq
+  - dual-selmer-unbounded-order-nonzero-ordinary-class
+  - gw-limit
   - strict-vanishing-dual-of-literature
   - strict-kill-main
+  - cohomology-unramified-lift
+  - ht-vanish-commutator
+  - tate-dual-cocycle-coboundary-of-vanish-on-fixing
+  - h1dual-of-vanish-fix
+  - exists-ker-rep-cyclotomic-ne-one-normal-form
+  - exists-ker-eps-ne-one
 - id: iwahori-reduction
   title: Iwahori reduction
   folder: Development.AutomorphicArithmetic.Foundations.IwahoriReduction
@@ -111,45 +212,88 @@ chapters:
   - law
   - mackey
   - one
+  - arith
   - kato-euler-system-integrality
   - k4-top
   - p-locu
   - local-units-roots-main
   - p-core
-- id: published-inputs
-  title: Weight one forms and weight raising
-  folder: PositivityTheory.AutomorphicForms.PublishedInputs
+  - p-rep-ex
+- id: automorphic-forms
+  title: Automorphic forms
+  folder: Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms
+  entries:
+  - rep-newform
+  - coh-bound-free
+  - coh-bound-of
+  - bdd-arith
+  - strong-mult-one-real
+- id: jacquet-langlands
+  title: Jacquet langlands
+  folder: PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands
   entries:
   - hol-wc
   - hol-wc-of
   - s-tf
+  - linear-trace-identity-holds
+  - d-ax
+- id: automorphic-forms-2
+  title: Automorphic forms
+  folder: PositivityTheory.AutomorphicForms
+  entries:
   - hilbert-eisenstein-weight-one-holds
   - fourier-expansion-holds
-- id: automorphic-varieties
-  title: Patching and forms congruent to 1
-  folder: Development.AutomorphicArithmetic.AutomorphicVarieties
+  - local-expansion-holds
+- id: gauss-sum-filtrations
+  title: Gauss sum filtrations
+  folder: Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations
   entries:
   - one-use
   - exists-hilbert-modular-form-congr-one
   - hilbert-one
-  - th-core
-  - ord-van2
-  - hida-x
-  - p-from-aut
-  - abstract-count
-  - pa-core
-  - main-holds
-  - core-holds
-  - pres
-  - part-h
+  - exists-seed-theta-lattice-fixed-point-free
+  - seed-exists
+- id: automorphic-varieties
+  title: Patching and forms congruent to 1
+  folder: Development.AutomorphicArithmetic.AutomorphicVarieties
+  entries:
+  - bl
+  - space-ex
+  - thm-bab-of-lemma-k
+  - thm-bc-free-of
+  - galois-rep-ineq-of-all-irreducible-nonvanishing
+  - ex-model
+  - exists-model
+  - components-good-rank-three
+  - gd-ok
+  - sharp3
+  - epres
+  - ferrero-washington
+  - cyc
+  - frame-ex
 - id: literature-results
   title: Homological stability
   folder: Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults
   entries:
   - b-odd-zk
   - b-star-odd
+  - s-hecke
+  - s-aff
+  - s-aff-of
+  - s-hecke-of
+  - s-pu
+  - s-pu-of
+  - s-gap-of
+  - s-mom
+  - s-mom-of
+  - s-loc
+  - s-loc-of
   - k-stability
   - k-stability-main
+  - split-seq-exact-at-of-two-mul-add-stable-range-le
+  - split-acyclic-step
+  - g2
+  - step-ex
 - id: inertia-eigenvalues
   title: Rankin-Selberg nonvanishing
   folder: Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues
@@ -162,6 +306,22 @@ chapters:
   - rsnonvan-off-diag
   - rankin-selberg-gln-glm-partial-l-eq-div-entire
   - rs-nm-partial-l-eq-div
+  - exists-matched-whittaker-vectors-shintani-relations
+  - matched-vectors
+  - exists-whittaker-bump-extension-schur-complement
+  - exists-ext
+  - rankin-selberg-same-degree-meromorphic-continuation
+  - samedeg-continuation
+  - unfolded-theta-integral-eq-mul-partial-rankin-selberg-l
+  - zint-eq-mul-partial-l-smooth
+  - unfolded-theta-integral-eq-mul-schur-euler-product
+  - theta-z-eq-mul-eul-d
+  - unfolded-whittaker-integral-eq-euler-product-schur-sums
+  - lintegral-unfolded-eq
+  - cell-lintegral
+  - local-langlands-gl-of-depth-zero-zelevinsky-bernstein
+  - local-langlands-transport
+  - field-compatible
 - id: divisor-proofs
   title: Semi-local Kirillov theory
   folder: Development.AbelianVarietyTheory.Proofs.DivisorProofs
@@ -172,6 +332,91 @@ chapters:
   - kirillov-semilocal
   - kirillov-semi-local-mirabolic-abstract
   - kirillov-semi-local
+  - semi-local-kirillov-archimedean-kernel-complex-places
+  - kirillov-arch
+  - kirillov-archimedean-totally-complex-mirabolic
+  - kirillov-cinf
+  - exists-lev-rep-inf
+  - exists-eq-on-mirabolic-of-slices-finite-places
+  - exists-eq-on-mir-s-of-slices
+  - has-good-reduction-of-many-rational-torsion-points
+  - has-good-reduction-of-torsion
+  - is-proper-of-infinitely-many-large-torsion
+  - proper-of-infinitely-many-large-torsion-counts
+  - is-proper-of-many-torsion-points-char-zero
+  - is-proper-of-many-torsion-char-zero
+- id: theorems-mu-linked
+  title: Theorems mu linked
+  folder: Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked
+  entries:
+  - th-core
+  - ord-van2
+  - hida-x
+  - b1-o
+  - b1abs-o
+- id: primitive-frobenius-fixed
+  title: Primitive frobenius fixed
+  folder: Development.AutomorphicArithmetic.AutomorphicVarieties.PrimitiveFrobeniusFixed
+  entries:
+  - iv
+  - psi-of
+  - v-char
+  - lev-case
+  - prim-case
+  - ml-count
+  - nu-sys-ex
+  - lax-ex
+- id: height-and-vanishing
+  title: Height and vanishing
+  folder: Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing
+  entries:
+  - vwin-of-counts
+  - joint-win-of-counts
+  - thm-hv-of-counts
+  - point-hv-of-counts
+- id: patching-modules
+  title: Patching modules
+  folder: Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules
+  entries:
+  - p-from-aut
+  - b2-ar
+  - obstruction-bound-of-duality
+  - raw
+  - core-bc
+  - choice
+  - detection
+  - b1-ar
+  - b1abs
+  - w1-bound-arithmetic-rank-two
+  - pa-core
+  - gal-out
+  - s6
+  - pres
+  - claim1
+- id: unitary-three-deformations
+  title: Unitary three deformations
+  folder: Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations
+  entries:
+  - abstract-count
+  - exists-relations
+  - card-ker-le
+  - exists-unobstructed
+- id: commutative-algebra
+  title: Commutative algebra
+  folder: Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra
+  entries:
+  - main-holds
+  - core-holds
+  - low-holds
+  - lemma-p
+- id: padic-hodge-theory
+  title: Padic hodge theory
+  folder: Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory
+  entries:
+  - tate-rat
+  - tate-q
+  - ord-eq
+  - sp-chart-l
 - id: convolution
   title: Descent from imaginary quadratic fields
   folder: Development.AutomorphicArithmetic.Foundations.Convolution
@@ -179,7 +424,23 @@ chapters:
   - desc-s
   - down-n
   - asai-nv
+  - fac-of
   - rev-holds
+  - key
+  - key-fock
+  - quad-bc2
+  - ne
+  - r2-weil-ex
+  - cap
+  - fock-st
+- id: conjugate-representations
+  title: Conjugate representations
+  folder: Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations
+  entries:
+  - part-h
+  - hodge-ex
+  - fn-proj
+  - rel-onto
 - id: good-reduction
   title: Good reduction
   folder: Development.AutomorphicArithmetic.ThetaCorrespondence.GoodReduction
@@ -188,3 +449,6 @@ chapters:
   - lit-neron-ogg-shafarevich
   - nos-neron-ogg-shafarevich
   - has-good-reduction-of-infinite-torsion-unramified
+  - has-good-reduction-of-inertia-fixed
+  - exists-scheme-model-descent-unramified
+  - exists-compatible-projective-embeddings
