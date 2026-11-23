@@ -65,7 +65,7 @@ Lean: `UpperTheory.LiteratureTheorems.formal_degree_compact_dual_of_literature`.
 
 By the Schur orthogonality relations the left side is the formal degree $d_\sigma$. The right side is $\prod_{\alpha > 0} |\langle \lambda, \alpha \rangle| / \langle \rho, \alpha \rangle$, Harish-Chandra's formula, with the measure normalised through the compact dual as above.
 
-*Proof.* This is Harish-Chandra's formula for the formal degree (Acta Math. 116, 1966). In the development it is [Theorem](/entry/formal-degree-compact-dual/). $\square$
+*Proof.* This is Harish-Chandra's formula for the formal degree (Acta Math. 116, 1966). In the development it is [Theorem 7.9.4 of Volume 7](/entry/formal-degree-compact-dual/). $\square$
 
 **Definition 1.1.6 (Schrödinger representation).** Let $l$ be a nonempty finite set and $\mathbb{R}^{2l} = \mathbb{R}^l \times \mathbb{R}^l$ with coordinates $w = (p, q)$. For $f \in L^2(\mathbb{R}^l)$ let
 
