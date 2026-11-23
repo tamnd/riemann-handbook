@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## v0.1.17
+
+- Volume 7, local representations: the chapter *Coefficient bounds* is complete. It has 8 sections, from shifted types and word bounds on the big cell to pointwise bounds for eigenfunctions and discrete series, least values of theta generators and series of matrix coefficients.
+- Volume 8, automorphic forms: the chapter *Rankin-Selberg* is complete. It has 9 sections, from Satake parameters and the unfolding of the theta integral to non-vanishing at one, strong multiplicity one, local Langlands and base change at nonsplit places.
+- Volume 8, automorphic forms: the chapter *Siegel sets and spectrum* is complete. It has 13 sections, from the Iwasawa decomposition and Siegel domains to equidistribution, wave kernels, a gallery of walls and the residual spectrum of GL(n).
+- Volume 13, CM theta values: the chapter *Inert primes* is complete. It has 8 sections, from pairing series at inert primes and the integrality of theta kernels to self-conjugate charts, row families and local product measures at split primes.
+
 ## v0.1.16
 
 - Volume 11, analytic estimates: the chapter *Character sums* is complete. It has 8 sections, from zero density and the Deuring-Heilbronn phenomenon and the explicit formula to good pairs of primes, bad counts on a grid, and operator words and random polynomials.
