@@ -77,7 +77,7 @@ By induction on $n$, $k$ has étale base change over $T \to T[x_1, \dots, x_n]$ 
 
 ## Notes and references
 
-The chapter proves the axioms E1 to E4 of section 1 from the axioms A to D, and power-sum classes and a Frobenius relation from them. [The proper base change theorem](/entry/proper-base-change/) takes E1 as an input, and other chapters of the Galois row use E2 and E3 together, for instance in [Theorem 1.2.4](/entry/es-gen-all/). All of these results lie below [the local steps](/entry/steps-holds/), which are used in the step [geometric realization of weight one](/step/geo-one-holds/) of [the Galois row](/proof/galois-row/).
+The chapter proves the axioms E1 to E4 of section 1 from the axioms A to D, and power-sum classes and a Frobenius relation from them. [The proper base change theorem](/entry/proper-base-change/) takes E1 as an input, and other chapters of the Galois row use E2 and E3 together, for instance in [Theorem 3.2.4 of Volume 9](/entry/es-gen-all/). All of these results lie below [the local steps](/entry/steps-holds/), which are used in the step [geometric realization of weight one](/step/geo-one-holds/) of [the Galois row](/proof/galois-row/).
 
 M. Artin, A. Grothendieck and J.-L. Verdier, *Théorie des topos et cohomologie étale des schémas* (SGA 4), Lecture Notes in Mathematics 269, 270 and 305, Springer, 1972 and 1973: Exposé VII, §5 for the passage to limits, Exposé XII, §5 for proper base change, Exposé XIV for finiteness, and Exposés XV and XVI for the acyclicity of smooth maps.
 

@@ -1,0 +1,71 @@
+---
+title: Fixed points of Hecke correspondences
+decls:
+  - UpperTheory.Gal.W2.FixLoc_holds
+  - UpperTheory.Gal.W2.fixedPoints_int_base_holds
+  - UpperTheory.Gal.FixZ.tower_fixed_points_of_isogeny_data
+  - UpperTheory.Gal.FixZ.FixK_holds
+status: drafted
+drafted_by: writer@claude-opus-5-5
+---
+## Fixed points of Hecke correspondences
+
+The holomorphic Lefschetz formula of Section 07 turns the trace of a correspondence on Hodge cohomology into a sum over its fixed points. This section computes that sum for the Hecke correspondences on the Kuga-Sato varieties, with the uniformisation of [Section 3.8.2](/entry/gunif-holds/). The answer is a weighted count of the points of the set $\mathcal{P}$ of Section 08, with a weight that depends only on the eigenvalues of a group element. Section 11 compares this count with the trace formula.
+
+We keep the setting of Section 08. For a generic model $X$ of level $N$ with universal abelian scheme $A \to X$ and for $k \geq 0$, let $A^k$ be the $k$-th fibre power of $A$ over $X$; this is the *Kuga-Sato variety*. Its fibre over a complex point $u_i(P)$ is $(\mathbb{C}^g / P(\Lambda_i))^k$.
+
+**Definition 3.9.1 (level change and legs).** A *level change* is a triple $(N, N', h)$ with $N, N' \geq 3$ prime to $p$, $N \mid N'$, and $h \in G(\mathbb{A}_f^p)$ with $h K_{N'} h^{-1} \subseteq K_N$. Let $X$ and $X'$ be generic models of levels $N$ and $N'$ over the same base, with universal abelian schemes $A$ and $A'$. A *leg of type $h$* from $X'$ to $X$ is a map $q : X' \to X$ over the base with an $\mathcal{O}$-linear isogeny $\psi : A' \to q^* A$ that has an inverse up to an integer $d$ prime to $p$ and that maps the level structure of $A'$ to $h$ times that of $q^*A$, at every level prime to $p$. A leg $c$ gives a map $c^{(k)} : A'^k \to A^k$, and for $\alpha \in \mathcal{O}_F^k$ we write $c^{\alpha}$ for $c^{(k)}$ followed by multiplication by $\alpha_s$ on the $s$-th factor.
+
+So a pair of legs $c_1$ of type $1$ and $c_2$ of type $h$ is the Hecke correspondence of the double coset of $h$, and $(c_1^{(k)}, c_2^{\alpha})$ is its lift to the Kuga-Sato varieties, twisted by $\alpha$. For a square matrix $A$ with $\det(1 - A) \neq 0$ put
+$$\ell(A, t) = \frac{\det(1 - tA)}{\det(1 - A)}.$$
+The right side of the holomorphic Lefschetz formula, $\sum_y [t^a] \det(1 + tA_y) / \det(1 - A_y)$, is the coefficient of $(-t)^a$ in $\sum_y \ell(A_y, t)$.
+
+**Definition 3.9.2 (local weight).** Let $t_0 : F \to \mathbb{C}$, let $\chi \in F[x]$ and $\mu \in \mathbb{C}$. For $\tau : F \to \mathbb{C}$ let $R_\tau$ be the multiset of roots of $\chi^\tau$, and let $R'$ be $R_{t_0}$ with one copy of $\mu$ removed if $\mu \in R_{t_0}$. Let $\varepsilon_\tau = 1$ if $\tau(\omega) = \bar\rho$ and $\varepsilon_\tau = 0$ otherwise. For $x \in F$ and $t \in \mathbb{C}$ put
+$$\phi_x(t) = (1 - t_0(x) t\mu) \prod_{r \in R'} (1 - t_0(x) r) \cdot (1 - \overline{t_0(x)}\,\bar\mu) \prod_{r \in R'} (1 - \overline{t_0(x)}\, t \bar r) \cdot \prod_{\tau \neq t_0, \bar t_0} \prod_{r \in R_\tau} (1 - \tau(x) t^{\varepsilon_\tau} r).$$
+The *local weight* of $\alpha \in \mathcal{O}_F^k$ at $(\chi, \mu)$ is
+$$w^{t_0}_\alpha(t; \chi, \mu) = \prod_{r \in R'} \frac{r - t\mu}{r - \mu} \cdot \prod_{s=1}^k \phi_{\alpha_s}(t).$$
+
+The weight is the right object because it is the value of $\sum_x \ell(A_x, t)$ over one point of the ball. The first product is $\ell(B, t)$ for the tangent action $B$ of an element with eigenvalues $R_{t_0}$ on the ball at its eigenline for $\mu$, since that tangent space is $\operatorname{Hom}(\mathbb{C} z, V/\mathbb{C} z)$. The factors $\phi_{\alpha_s}$ come from the fibres, by the following count.
+
+**Lemma 3.9.3 (fixed points on a complex torus).** Let $T = \mathbb{C}^g / \Lambda$ and $\psi(x) = Mx + c$, where $M$ is a complex matrix with $M\Lambda \subseteq \Lambda$ and $\det(1 - M) \neq 0$. Then $\psi$ has exactly $|\det(1 - M)|^2$ fixed points, the tangent matrix at each is $M$, and for any matrix $B$ with $\det(1 - B) \neq 0$
+$$\sum_{\psi(x) = x} \ell(B \oplus M, t) = \ell(B, t) \cdot \det(1 - tM) \cdot \overline{\det(1 - M)}.$$
+
+*Proof.* The fixed points are the solutions of $(1 - M)x = c$ in $T$, a coset of the kernel of the isogeny $1 - M$ of $T$. Its degree is the determinant of $1 - M$ as a real map of $\mathbb{C}^g$, which is $|\det(1 - M)|^2$. The tangent map of $\psi$ is $M$ everywhere. So the sum is $|\det(1-M)|^2 \ell(B, t) \det(1 - tM)/\det(1 - M)$, which is the right side. $\square$
+
+For $y \in \Gamma_\beta$ let $\chi_y \in F[x]$ be the monic reciprocal of the minimal polynomial of $y$, moved to $F$ by the link of $G$ with the data. For a triple $a = (x, h_p, z)$ and a subset $S \subseteq G(\mathbb{A}_f^p)$, say that $y$ *fixes $a$ modulo $S$* if $y$ fixes the line $\mathbb{C} z$, $x^{-1} y x \in S$ and $h_p^{-1} y h_p \in K_p$. Let $\mu_y(a)$ be the eigenvalue of $y$ on $\mathbb{C} z$.
+
+**Theorem 3.9.4 (local fixed-point count).** Suppose that $a = m = 1$ and $\tau_1 = t_0$, and let $v$ have signature one. Let $X$ and $X'$ be generic models over any base over $\mathbb{C}$ for a level change $(N, N', h)$, with universal abelian schemes smooth of relative dimension $g$, and let $c_1$, $c_2$ be legs of types $1$ and $h$ from $X'$ to $X$. Let $\rho$ be of signature type for $t_0$, let the family of $X$ be fine, let $X'$ be smooth of relative dimension $n - 1$, and suppose that every $g$ with $hg \in K_N$ is regular. Let $(u_i)$ be a complex uniformisation of $X'$, let $\beta$ be a form with a lattice dictionary and a period dictionary, and let $(\Lambda_i, P, j)$ have coordinates $a$ at level $N'$, where $P$ is a period. Let $y \in \Gamma_\beta$ fix $a$ modulo $\{g : hg \in K_N\}$, and let $\alpha \in \mathcal{O}_F^k$ with each $\alpha_s$ divisible by $2$. Then the set $\Phi$ of complex points $x$ of $A'^k$ over $u_i(P)$ with $c_1^{(k)}(x) = c_2^{\alpha}(x)$ is finite and nonempty, and for every choice of tangent matrices $A_x$ of size $n - 1 + kg$ at the points $x \in \Phi$ we have $\det(1 - A_x) \neq 0$ and, for all $t \in \mathbb{C}$,
+$$\sum_{x \in \Phi} \ell(A_x, t) = w^{t_0}_\alpha\bigl(t; \chi_y, \kappa(\mu_y(a))^{-1}\bigr),$$
+where $\kappa(\mu) = \mu$ if $v$ restricts to $t_0$ on $F$ and $\kappa(\mu) = \bar\mu$ otherwise.
+
+Lean: `UpperTheory.Gal.W2.FixLoc_holds`.
+
+*Proof.* The points of $\Phi$ lie in the fibre $(\mathbb{C}^g / P(\Lambda_i))^k$. The element $y$ acts on the ball with tangent matrix $B$ at the line of $a$, and $\ell(B, t)$ is the first product of the weight. On the $s$-th fibre factor the correspondence is an affine map whose linear part $M_s$ is $\alpha_s$ times the action of $y$. Since $y$ is regular, $\det(1 - B) \neq 0$. The eigenvalues of $y$ have absolute value $1$, so each eigenvalue of $M_s$ is $0$ or has absolute value at least $2$, and $\det(1 - M_s) \neq 0$. Apply the lemma to each factor in turn: the fixed points form a product of cosets, so $\Phi$ is finite and nonempty, and the sum is $\ell(B, t) \prod_s \det(1 - tM_s)\overline{\det(1 - M_s)}$. The period dictionary shows that $\kappa(\mu_y(a))^{-1}$ is a root of $\chi_y^{t_0}$, and the signature type lists the eigenvalues of $M_s$ at each embedding through the roots of $\chi_y$. This turns each factor into $\phi_{\alpha_s}(t)$. $\square$
+
+Now sum over all points. For a function $c$ of pairs $(\chi, \mu)$, a level $K$, a function $f$ on $G(\mathbb{A}_f^p)$, a subgroup $K'$ and a function $f'$ on $G_p$, let the *complex total* be
+$$\operatorname{Tot}(c; K, f, K', f') = \sum_{\beta} \sum_{a \in \mathcal{P}_\beta} \frac{1}{|\operatorname{Stab}(a)|} \sum_{y} f(x^{-1} y x)\, f'(h_p^{-1} y h_p)\, c\bigl(\chi_y, \mu_y(a)\bigr),$$
+where $\beta$ runs over the classes of forms, $a = (x, h_p, z)$ over the points at level $K \times K'$, and $y$ over the elements of $\Gamma_\beta$ that fix the line $\mathbb{C} z$.
+
+**Theorem 3.9.5 (fixed points on the Kuga-Sato varieties).** Suppose that $a = m = 1$ and $\tau_1 = t_0$, let $v$ have signature one, and let the base over $\mathbb{C}$ be standard. Let $X$, $X'$ be generic models for a level change $(N, N', h)$ with legs $c_1$, $c_2$ of types $1$ and $h$, and suppose that every $g$ with $hg \in K_N$ is regular. Let $\alpha \in \mathcal{O}_F^k$ with each $\alpha_s$ divisible by $2$, and suppose that $c_1^{(k)}$ is étale. Then:
+
+1. $A^k$ is smooth of relative dimension $n - 1 + kg$ over $\mathbb{C}$;
+2. there are a finite set $\Phi$, equal to the set of $x$ with $c_1^{(k)}(x) = c_2^{\alpha}(x)$, and tangent matrices $A_x$ at its points with $\det(1 - A_x) \neq 0$;
+3. the points of $\mathcal{P}$ at level $N'$ that some $y$ fixes modulo $\{g : hg \in K_N\}$ are finite in number;
+4. an element of $\Gamma_\beta$ that fixes a triple modulo $K_N$ is $1$;
+5. for all $t \in \mathbb{C}$,
+$$\sum_{x \in \Phi} \ell(A_x, t) = \operatorname{Tot}\bigl(w^{t_0}_\alpha(t; \chi, \kappa(\mu)^{-1}); K_{N'}, \mathbf{1}_{\{g : hg \in K_N\}}, K_p, \mathbf{1}_{K_p}\bigr).$$
+
+Lean: `UpperTheory.Gal.W2.fixedPoints_int_base_holds`.
+
+*Proof.* By [the theorem on complex points](/entry/gunif-holds/), $X$ and $X'$ are smooth of relative dimension $n - 1$, fine and uniformised. By the [lattice dictionary](/entry/pdic-ex-holds/), the [period dictionary](/entry/rdic-ex-holds/) and the [group-theoretic uniformisation](/entry/unif-g-holds/), the complex points of $X'$ are the set $\mathcal{P}$ at level $N'$. A fibre power of a smooth abelian scheme of dimension $g$ over a smooth base of dimension $n - 1$ is smooth of dimension $n - 1 + kg$, which gives 1. A complex point of $X'$ under a fixed point of the correspondence is a point of $\mathcal{P}$ fixed by some $y$ modulo $\{g : hg \in K_N\}$. A correspondence on a separated, quasi-compact scheme whose fixed points all have $\det(1 - A_x) \neq 0$ has finitely many fixed points, and this gives 2 and 3. For 4, an automorphism of a polarized abelian variety that is trivial on the $N$-torsion, with $N \geq 3$, is $1$ (Serre's lemma). So $\Phi$ is the disjoint union of the sets of the [local count](/entry/fix-loc-holds/) over the points of $\mathcal{P}$ and the elements $y$ that fix them, each pair counted once up to the stabilizer. The local count gives the tangent condition and the sum over each piece, and adding the pieces gives 5. $\square$
+
+Section 07 uses the count on the Kuga-Sato tower, where the level of the source is the level of the tower and the correspondence is the Hecke operator of a double coset. A *Kuga-Sato tower* of power $k$ over a base is a Hecke tower indexed by the levels $N \geq 3$ prime to $p$, with group $K_N$ at $N$, with the $k$-th Kuga-Sato variety $Z_N$ of a generic model of level $N$ at $N$, and with transition maps $\operatorname{tr}_h : Z_{N'} \to Z_N$, for $h$ integral with $h K_{N'} h^{-1} \subseteq K_N$, given by legs of type $h$. Such $h$ are *admitted* from $N'$ to $N$. For $\alpha \in \mathcal{O}_F^k$ let $\operatorname{tr}_{h, \alpha}$ be $\operatorname{tr}_h$ followed by $\alpha$ acting on the factors. For a subgroup $K$ and $h$ put $K_h = K \cap h^{-1} K h$.
+
+**Theorem 3.9.6 (fixed points on the tower).** Suppose that $a = m = 1$, that the unitary group has $G.a = 1$ and odd rank $n$, and that the moduli problem is compact. Let the base over $\mathbb{C}$ be standard, let $v$ have signature one, and let $T$ be a Kuga-Sato tower of power $k$ over it. Let $N \mid N'$ be levels, let $Z_N$ be smooth of relative dimension $d$, and let $1$ and $h$ be admitted from $N'$ to $N$. Suppose that every $g$ in the double coset $K_N h^{-1} K_N$ is regular, and let $\alpha \in \mathcal{O}_F^k$ with each $\alpha_s$ nonzero and divisible by $2$. Write $\mu^* = \mu^{-1}$ if $v(\omega) = \rho$ and $\mu^* = \bar\mu^{-1}$ otherwise. Then the complex total for $(K_N, \mathbf{1}_{K_N h^{-1} K_N})$ is a finite sum, $\operatorname{tr}_{h, \alpha}$ is finite and étale, and there are a finite set $\Phi$, equal to the set of $x \in Z_{N'}(\mathbb{C})$ with $\operatorname{tr}_1(x) = \operatorname{tr}_{h, \alpha}(x)$, and tangent matrices $A_x$ of size $d$ with $\det(1 - A_x) \neq 0$, such that for all $t \in \mathbb{C}$
+$$\sum_{x \in \Phi} \ell(A_x, t) = [K_{N,h} : K_{N'} \cap K_{N,h}] \cdot \operatorname{Tot}\bigl(w^{\tau_1}_\alpha(t; \chi, \mu^*); K_N, \mathbf{1}_{K_N h^{-1} K_N}, K_p, \mathbf{1}_{K_p}\bigr).$$
+
+Lean: `UpperTheory.Gal.FixZ.FixK_holds` (also `UpperTheory.Gal.FixZ.tower_fixed_points_of_isogeny_data`).
+
+*Proof.* The map $\operatorname{tr}_{h, \alpha}$ is a leg followed by the isogeny $\alpha$, both of degree prime to the characteristic, so it is finite étale. If $Z_N$ is empty there is no fixed point, and both sides are $0$. Otherwise apply the theorem above at level $N'$ to the legs of the tower. The theorem on fixed points under change of level converts the complex total at level $K_{N'}$ with the function $\mathbf{1}_{\{g : hg \in K_N\}}$ into the total at level $K_N$ with the indicator of the double coset $K_N h^{-1} K_N$. A point at level $N$ has $[K_{N,h} : K_{N'} \cap K_{N,h}]$ points above it in each orbit, so the total is multiplied by this index. The weights agree under the change of level because the tangent spaces and eigenvalues do, and with the standard base the conditions on $v$ in $\kappa$ and in $\mu^*$ agree. The same theorem gives the finiteness of the complex total. $\square$
+
+**Remark 3.9.7 (Formalization).** The local count is `UpperTheory.Gal.W2.FixLoc` (file `SphericalCoordinates/HeckeFixedPointCMCycleClass.lean`, line 89); it does not ask for a standard base, while the global count does. The short name `FixLoc` also names an unrelated statement in `LocalMaximality/ResidueOfTraceIsFiberSum.lean`, line 145. The global count is `UpperTheory.Gal.W2.HeckeFixedPointCMCycleClass` (line 108 of the same file), a fixed-point count with no cycle class in it; its proof uses sixteen facts, among them the four theorems of Section 08 and `StabTriv` (item 4). Both ask $\alpha_s$ to be even, and only the tower theorem adds $\alpha_s \neq 0$. The change of level theorem is `UpperTheory.Gal.W2.FixZ`. The name `tower_fixed_points_of_isogeny_data` hides that its main input is `FixZ`; the four isogeny facts only build the tower legs. The index is `(L.KN N').relIndex (G3.lev (L.KN N) h)`.
