@@ -137,6 +137,8 @@ class DevChapter:
     entries: list[Entry]
     text: str = ""          # a chapter written as mathematics: its section files, joined in order
     decls: list = field(default_factory=list)
+    num: int = 0            # the place of the chapter in the plan of its volume (volume.yaml), from 1
+    files: list = field(default_factory=list)   # the section files, in order
 
 
 @dataclass
@@ -160,7 +162,7 @@ def load_dev(content: str) -> list[DevVolume]:
         base = os.path.basename(d)
         intro_p = os.path.join(d, "intro.md")
         chapters = []
-        for c in v.get("chapters") or []:
+        for num, c in enumerate(v.get("chapters") or [], 1):
             cdir = os.path.join(d, c["id"])
             entries = []
             for eid in c.get("entries") or []:
@@ -184,7 +186,7 @@ def load_dev(content: str) -> list[DevVolume]:
                 continue
             chapters.append(DevChapter(c["id"], c.get("title", c["id"]),
                                        open(ip, encoding="utf-8").read() if os.path.exists(ip) else "", entries,
-                                       "\n\n".join(text), decls))
+                                       "\n\n".join(text), decls, num, secs))
         if not chapters:
             continue
         out.append(DevVolume(int(base[:2]), base[3:], v.get("title", base), v.get("summary", ""),

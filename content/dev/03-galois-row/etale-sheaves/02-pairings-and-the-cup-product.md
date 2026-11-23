@@ -15,15 +15,15 @@ on the cohomology of a space $E$. The definition has two parts. A pairing of the
 
 All sheaves in this section are sheaves of $\mathbb{Z}/q$-modules, and $q \geq 1$. We write $\mathcal{I}_i = \mathcal{I}^\bullet(\mathbb{Z}/q(i))$ and $\iota : \mathbb{Z}/q(i) \to \mathcal{I}_i^0$ for the augmentation.
 
-**Definition (Pairing).** Let $\mathcal{I}$, $\mathcal{J}$, $\mathcal{K}$ be complexes of sheaves. A *pairing* $\mu : \mathcal{I} \times \mathcal{J} \to \mathcal{K}$ is a family of bilinear maps
+**Definition 6.2.1 (Pairing).** Let $\mathcal{I}$, $\mathcal{J}$, $\mathcal{K}$ be complexes of sheaves. A *pairing* $\mu : \mathcal{I} \times \mathcal{J} \to \mathcal{K}$ is a family of bilinear maps
 $$
 \mu_U : \mathcal{I}^s(U) \times \mathcal{J}^t(U) \to \mathcal{K}^{s+t}(U),
 $$
 one for each scheme $U$ and all $s, t \in \mathbb{Z}$, with two properties. It commutes with restriction along each $V \to U$. It satisfies the Leibniz rule $d\mu(a, b) = \mu(da, b) + (-1)^s \mu(a, db)$ for $a \in \mathcal{I}^s(U)$.
 
-**Definition (Faces).** Let $x$ be an $N$-simplex of a space $E$ over $U$, and let $j + l \leq N$. The face $x_{[j, j+l]}$ is the $l$-simplex of $E$ over $U$ on the vertices $j, j+1, \dots, j+l$ of $x$.
+**Definition 6.2.2 (Faces).** Let $x$ be an $N$-simplex of a space $E$ over $U$, and let $j + l \leq N$. The face $x_{[j, j+l]}$ is the $l$-simplex of $E$ over $U$ on the vertices $j, j+1, \dots, j+l$ of $x$.
 
-**Definition (Alexander-Whitney product).** Let $\mu : \mathcal{I} \times \mathcal{J} \to \mathcal{K}$ be a pairing and $E$ a space. Let $\alpha$, $\beta$, $\gamma$ be cochains of degrees $n$, $m$ and $n + m$ with values in $\mathcal{I}$, $\mathcal{J}$ and $\mathcal{K}$. We say that $\gamma$ is an *Alexander-Whitney product* of $\alpha$ and $\beta$ for $\mu$ if, for each $N$-simplex $x$ of $E$,
+**Definition 6.2.3 (Alexander-Whitney product).** Let $\mu : \mathcal{I} \times \mathcal{J} \to \mathcal{K}$ be a pairing and $E$ a space. Let $\alpha$, $\beta$, $\gamma$ be cochains of degrees $n$, $m$ and $n + m$ with values in $\mathcal{I}$, $\mathcal{J}$ and $\mathcal{K}$. We say that $\gamma$ is an *Alexander-Whitney product* of $\alpha$ and $\beta$ for $\mu$ if, for each $N$-simplex $x$ of $E$,
 $$
 \gamma_N(x) = \sum_{p=0}^{N} (-1)^{mp}\, \mu\big(\alpha_p(x_{[0,p]}),\ \beta_{N-p}(x_{[p,N]})\big).
 $$
@@ -32,11 +32,11 @@ For a simplicial set and constant coefficients this is the cup product of simpli
 
 The code defines several classes as "the element with a property, if there is one". We make this explicit.
 
-**Definition (Choice convention).** Let $A$ be an abelian group and $P$ a property of elements of $A$. If some element of $A$ has $P$, then $\mathrm{pick}(P)$ is a fixed choice of such an element. If no element has $P$, then $\mathrm{pick}(P) = 0$.
+**Definition 6.2.4 (Choice convention).** Let $A$ be an abelian group and $P$ a property of elements of $A$. If some element of $A$ has $P$, then $\mathrm{pick}(P)$ is a fixed choice of such an element. If no element has $P$, then $\mathrm{pick}(P) = 0$.
 
-**Definition (Cup product of a pairing).** Let $\mu : \mathcal{I} \times \mathcal{J} \to \mathcal{K}$ be a pairing and $E$ a space. The cup product $\cup_\mu$ is $\mathrm{pick}(P)$, where $P$ is this property of a biadditive map $c$ from $H^n(E, \mathcal{I}) \times H^m(E, \mathcal{J})$ to $H^{n+m}(E, \mathcal{K})$: for all cocycles $\alpha$, $\beta$, $\gamma$ such that $\gamma$ is an Alexander-Whitney product of $\alpha$ and $\beta$ for $\mu$, we have $c([\alpha], [\beta]) = [\gamma]$.
+**Definition 6.2.5 (Cup product of a pairing).** Let $\mu : \mathcal{I} \times \mathcal{J} \to \mathcal{K}$ be a pairing and $E$ a space. The cup product $\cup_\mu$ is $\mathrm{pick}(P)$, where $P$ is this property of a biadditive map $c$ from $H^n(E, \mathcal{I}) \times H^m(E, \mathcal{J})$ to $H^{n+m}(E, \mathcal{K})$: for all cocycles $\alpha$, $\beta$, $\gamma$ such that $\gamma$ is an Alexander-Whitney product of $\alpha$ and $\beta$ for $\mu$, we have $c([\alpha], [\beta]) = [\gamma]$.
 
-**Definition (Twisted pairing).** A pairing $\mu : \mathcal{I}_i \times \mathcal{I}_j \to \mathcal{I}_k$ is *twisted* if
+**Definition 6.2.6 (Twisted pairing).** A pairing $\mu : \mathcal{I}_i \times \mathcal{I}_j \to \mathcal{I}_k$ is *twisted* if
 $$
 \mu\big(\iota \langle \zeta \rangle_i,\ \iota \langle \zeta \rangle_j\big) = \iota \langle \zeta \rangle_k
 $$
@@ -51,7 +51,7 @@ So the cup product is a choice made twice: first a twisted pairing, then a map o
 - (T5) If $\xi = \zeta^a$ with $a \in (\mathbb{Z}/q)^\times$, then $\langle \xi \rangle_i = a^i \langle \zeta \rangle_i$.
 - (T6) Let $M$ be a sheaf and let $e$ assign to each $\zeta \in \mathrm{Prim}_q(\Gamma(U, \mathcal{O}_U))$ a section $e(\zeta) \in M(U)$, naturally in $U$, with $e(\zeta^a) = a^i e(\zeta)$. Then there is exactly one map $\varphi : \mathbb{Z}/q(i) \to M$ with $\varphi(\langle \zeta \rangle_i) = e(\zeta)$.
 
-**Theorem (Existence, uniqueness and associativity of the cup product).** Assume (T1) to (T6) for all $q \geq 1$ and $i \in \mathbb{Z}$. Then:
+**Theorem 6.2.7 (Existence, uniqueness and associativity of the cup product).** Assume (T1) to (T6) for all $q \geq 1$ and $i \in \mathbb{Z}$. Then:
 
 1. for all $i$ and $j$, the pairing $\mu_{i,j}$ is twisted;
 2. if $\mu$ and $\nu$ are two twisted pairings $\mathcal{I}_i \times \mathcal{I}_j \to \mathcal{I}_{i+j}$, then $\cup_\mu = \cup_\nu$ on $H^*(E, -)$ for every space $E$;
@@ -71,8 +71,8 @@ Step 4: uniqueness. Two twisted pairings give two chain maps $\mathcal{I}_i \oti
 
 Step 5: associativity. Let $\mu_1$, $\mu_2$, $\nu_1$, $\nu_2$ be twisted pairings of weights $(i, j)$, $(i+j, l)$, $(j, l)$ and $(i, j+l)$. The code proves that $\mu_2$-products of $\mu_1$-products equal $\nu_2$-products of $\nu_1$-products on classes. The argument has three parts. The Alexander-Whitney formula is associative on cochains. Both bracketings factor through the triple tensor product $\mathcal{I}_i \otimes \mathcal{I}_j \otimes \mathcal{I}_l$, which is associative. The two chain maps from it to $\mathcal{I}_{i+j+l}$ extend the same map in degree $0$, so they are homotopic, as in Step 4. Now take $\mu_1 = \mu_{i,j}$, $\mu_2 = \mu_{i+j,l}$, $\nu_1 = \mu_{j,l}$ and $\nu_2 = \mu_{i,j+l}$. They are twisted by claim 1. So $(a \cup b) \cup c = a \cup (b \cup c)$. This is claim 3. $\square$
 
-**Remark.** The proof is a chain of separate lemmas in [TwPairExists.lean](lean:Development/EtaleCohomology/EtaleSheaves/TwPairExists.lean#L67). Many of the inputs are named `intersectionNumber_baseChange` in their own namespaces: the flatness of the twist sheaves, the tensor product of quasi-isomorphisms, the existence of flipped pairings, the extension property of the twisted resolutions and the compatibility of the cup product with maps of coefficients. None of them is about intersection numbers or base change. We read the statements of these inputs in the code. We did not unfold all of their proofs, so the steps above give the structure of the argument and not every detail.
+**Remark 6.2.8.** The proof is a chain of separate lemmas in [TwPairExists.lean](lean:Development/EtaleCohomology/EtaleSheaves/TwPairExists.lean#L67). Many of the inputs are named `intersectionNumber_baseChange` in their own namespaces: the flatness of the twist sheaves, the tensor product of quasi-isomorphisms, the existence of flipped pairings, the extension property of the twisted resolutions and the compatibility of the cup product with maps of coefficients. None of them is about intersection numbers or base change. We read the statements of these inputs in the code. We did not unfold all of their proofs, so the steps above give the structure of the argument and not every detail.
 
-**Remark.** The hypotheses (T1) to (T6) are proved in the code by the term `twSec` of the namespace `LeafAWCutTw`, and the users of this theorem apply it to that term: associativity is `ringAssoc` and existence is `twPairExists`. So in the proof of the Riemann Hypothesis the theorem holds with no hypothesis.
+**Remark 6.2.9.** The hypotheses (T1) to (T6) are proved in the code by the term `twSec` of the namespace `LeafAWCutTw`, and the users of this theorem apply it to that term: associativity is `ringAssoc` and existence is `twPairExists`. So in the proof of the Riemann Hypothesis the theorem holds with no hypothesis.
 
-**Remark.** The weights $i$, $j$ and the degrees $n$, $m$ are integers, and the target $\mathbb{Z}/q(i+j)$ of the cup product is not the same type as $\mathbb{Z}/q(j+i)$ in Lean. Claim 3 holds after the identification of $H^{n+m+k}(E, \mathbb{Z}/q(i+j+l))$ with itself along $(n+m)+k = n+(m+k)$ and $(i+j)+l = i+(j+l)$.
+**Remark 6.2.10.** The weights $i$, $j$ and the degrees $n$, $m$ are integers, and the target $\mathbb{Z}/q(i+j)$ of the cup product is not the same type as $\mathbb{Z}/q(j+i)$ in Lean. Claim 3 holds after the identification of $H^{n+m+k}(E, \mathbb{Z}/q(i+j+l))$ with itself along $(n+m)+k = n+(m+k)$ and $(i+j)+l = i+(j+l)$.

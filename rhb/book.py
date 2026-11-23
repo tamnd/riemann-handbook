@@ -91,7 +91,8 @@ class Book:
             for item in c.fm.get("lean") or []:
                 L.by_decl.setdefault(item["name"], []).append((2, n, f"proof-{c.slug}", c.title))
         for d in self.dev:
-            for ci, ch in enumerate(d.chapters, 1):
+            for ch in d.chapters:
+                ci = ch.num
                 L.add(f"/entry/{d.id}/{ch.id}/", d.number, str(ci), f"dev-{d.id}-{ch.id}")
                 if ch.text:
                     self._chapter_labels(L, d, ci, ch)
@@ -230,7 +231,8 @@ class Book:
         if d.intro.strip():
             out.append(f"# Introduction {{#dev-{d.id}-intro}}\n")
             out.append(conv.page(strip_title(d.intro), shift=0, prefix=f"dev-{d.id}-intro"))
-        for ci, ch in enumerate(d.chapters, 1):
+        for ch in d.chapters:
+            ci = ch.num
             out.append(f"# {conv.inline(ch.title)} {{#dev-{d.id}-{ch.id} num=\"{ci}\"}}\n")
             if ch.intro.strip():
                 out.append(conv.page(strip_title(ch.intro), shift=0, prefix=f"dev-{d.id}-{ch.id}"))

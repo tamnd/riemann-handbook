@@ -7,13 +7,13 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Relative cohomology in the derived category
 
-Let $B$ be a scheme, $W \subseteq B$ a closed subscheme and $p : Y \to B$ a map. For each étale $U \to B$ we have the scheme $Y_U = Y \times_B U$ and its part $Y_U \times_B W$ over $W$. This section constructs one object $K$ of the derived category of étale sheaves on $B$ that computes the relative cohomology of all the pairs $(Y_U, Y_U \times_B W)$ at once, naturally in $U$. It does the same for a chain $Y_2 \to Y_1 \to Y_0$ over $B$ and for the pair $(U, U \times_B W)$, and it gives the maps between these objects. The finiteness theorem for étale cohomology, [Theorem](/entry/etale-topology-top/), uses the result to move from the cohomology of single schemes to complexes of sheaves on $B$. The proof is a construction with injective sheaves. Its only inputs are two facts on restrictions of injective sheaves.
+Let $B$ be a scheme, $W \subseteq B$ a closed subscheme and $p : Y \to B$ a map. For each étale $U \to B$ we have the scheme $Y_U = Y \times_B U$ and its part $Y_U \times_B W$ over $W$. This section constructs one object $K$ of the derived category of étale sheaves on $B$ that computes the relative cohomology of all the pairs $(Y_U, Y_U \times_B W)$ at once, naturally in $U$. It does the same for a chain $Y_2 \to Y_1 \to Y_0$ over $B$ and for the pair $(U, U \times_B W)$, and it gives the maps between these objects. The finiteness theorem for étale cohomology, [Theorem 2.3](/entry/etale-topology-top/), uses the result to move from the cohomology of single schemes to complexes of sheaves on $B$. The proof is a construction with injective sheaves. Its only inputs are two facts on restrictions of injective sheaves.
 
 ### Relative cohomology and representing objects
 
 We keep the notation of the earlier sections: a scheme is a space, $R[E]$ is the complex of free sheaves on a space $E$, and $I$ is the chosen injective resolution of $\mathbb{Z}/q(i)$ on the big étale site. It vanishes in negative degrees.
 
-**Definition (Relative cohomology).** Let $f : A \to X$ be a map of spaces, and let $C(f)$ be the mapping cone of $R[f] : R[A] \to R[X]$. The *relative cohomology* $H^n(X, A; \mathbb{Z}/q(i))$ is the degree $n$ cohomology of the complex $\operatorname{Hom}^\bullet(C(f), I)$.
+**Definition 5.7.1 (Relative cohomology).** Let $f : A \to X$ be a map of spaces, and let $C(f)$ be the mapping cone of $R[f] : R[A] \to R[X]$. The *relative cohomology* $H^n(X, A; \mathbb{Z}/q(i))$ is the degree $n$ cohomology of the complex $\operatorname{Hom}^\bullet(C(f), I)$.
 
 The cone sequence $R[A] \to R[X] \to C(f)$ gives the familiar long exact sequence
 $$\cdots \to H^{n-1}(A) \to H^n(X, A) \to H^n(X) \to H^n(A) \to \cdots.$$
@@ -21,7 +21,7 @@ A commutative square of spaces from $f' : A' \to X'$ to $f : A \to X$ gives a ma
 
 Let $B_{\mathrm{et}}$ be the small étale site of $B$, and let $D(B)$ be the derived category of sheaves of $\mathbb{Z}/q$-modules on $B_{\mathrm{et}}$. For an étale $U \to B$, let $\mathcal{O}_U \in D(B)$ be the sheafification of the free presheaf $\mathbb{Z}/q[\operatorname{Hom}_B(-, U)]$, placed in degree $0$. For a sheaf $\mathcal{F}$, maps $\mathcal{O}_U \to \mathcal{F}$ are the sections $\mathcal{F}(U)$. So for $K \in D(B)$, the group $\operatorname{Hom}_{D(B)}(\mathcal{O}_U, K[n])$ is the $n$-th hypercohomology of $K$ on $U$.
 
-**Definition (Representing object).** Let $p : Y \to B$ and $\iota : W \to B$ be maps. An object $K \in D(B)$ *represents the relative cohomology of $(p, \iota)$* if there are bijections
+**Definition 5.7.2 (Representing object).** Let $p : Y \to B$ and $\iota : W \to B$ be maps. An object $K \in D(B)$ *represents the relative cohomology of $(p, \iota)$* if there are bijections
 $$e_{U,n} : H^n\bigl(Y_U, \, Y_U \times_B W; \, \mathbb{Z}/q(i)\bigr) \xrightarrow{\ \sim\ } \operatorname{Hom}_{D(B)}(\mathcal{O}_U, K[n])$$
 for all étale $U \to B$ and all $n$, natural in $U$: for a map $a : U' \to U$ over $B$, the bijection $e_{U',n}$ sends the pullback of $y$ along $a$ to $e_{U,n}(y) \circ \mathcal{O}_a$. For the pair $(B, \iota)$ the same definition with $U$ and $U \times_B W$ in place of $Y_U$ and $Y_U \times_B W$ gives an object that *represents the relative cohomology of $\iota$*.
 
@@ -42,7 +42,7 @@ with the projections $F_Y : G_{YW} \to G_Y$ and $F_B : G_{BW} \to G_B$.
 
 ### The theorem
 
-**Theorem (Leaf localization).** Assume statements 1 and 2. Let $q \ge 1$ and $i \in \mathbb{Z}$. Let $\iota : W \to B$ be a closed immersion and let $Y_2 \xrightarrow{g_2} Y_1 \xrightarrow{g_1} Y_0 \xrightarrow{p} B$ be maps of schemes. Then there are objects $K_0, K_1, K_2, L \in D(B)$ and maps
+**Theorem 5.7.3 (Leaf localization).** Assume statements 1 and 2. Let $q \ge 1$ and $i \in \mathbb{Z}$. Let $\iota : W \to B$ be a closed immersion and let $Y_2 \xrightarrow{g_2} Y_1 \xrightarrow{g_1} Y_0 \xrightarrow{p} B$ be maps of schemes. Then there are objects $K_0, K_1, K_2, L \in D(B)$ and maps
 $$K_0 \xrightarrow{f} K_1 \xrightarrow{g} K_2 \xleftarrow{\ \ell\ } L$$
 such that:
 
@@ -64,11 +64,11 @@ The cone vanishes in positive degrees and $I$ vanishes in negative degrees, so e
 
 For $B$ the spectrum of a separably closed field, $D(B)$ is the derived category of $\mathbb{Z}/q$-modules, $\mathcal{O}_B$ is $\mathbb{Z}/q$, and the theorem only says that $K_0$ is a complex whose cohomology groups are $H^n(Y_0, Y_0 \times_B W)$. The content lies in the naturality in $U$: the objects $K_j$ glue the relative cohomology of all étale neighbourhoods of points of $B$.
 
-**Remark.** The Lean statement asks that $\iota$ is a closed immersion, through an instance argument of the proposition `LateralTheory.E.LeafConsPf.LeafLoc`, but the proof at [LeafLocalizationOfInjectiveSliceOfRestrictionInj.lean](lean:Development/AutomorphicArithmetic/CommutativeAlgebra/LeafLocalizationOfInjectiveSliceOfRestrictionInj.lean#L96) never uses it: the construction works for any map $\iota$. The theorem is an implication. Statement 1 is supplied in [EtaleTopology.lean](lean:Development/AutomorphicArithmetic/CommutativeAlgebra/EtaleCohomology/EtaleTopology.lean#L220) under the name `LateralTheory.Fin.InjSlice.intersectionNumber_baseChange`, an alias at FinInjSlice.lean line 9 that has nothing to do with intersection numbers. The conclusion feeds the statement `LateralTheory.E.EtaleTopologySheaves.LeafCons` at line 223 of the same file. The proof file has thirteen private helpers, among them the map of cones `coneM` and the natural maps `mYn`, `bY`, `mWn` and `bW`.
+**Remark 5.7.4.** The Lean statement asks that $\iota$ is a closed immersion, through an instance argument of the proposition `LateralTheory.E.LeafConsPf.LeafLoc`, but the proof at [LeafLocalizationOfInjectiveSliceOfRestrictionInj.lean](lean:Development/AutomorphicArithmetic/CommutativeAlgebra/LeafLocalizationOfInjectiveSliceOfRestrictionInj.lean#L96) never uses it: the construction works for any map $\iota$. The theorem is an implication. Statement 1 is supplied in [EtaleTopology.lean](lean:Development/AutomorphicArithmetic/CommutativeAlgebra/EtaleCohomology/EtaleTopology.lean#L220) under the name `LateralTheory.Fin.InjSlice.intersectionNumber_baseChange`, an alias at FinInjSlice.lean line 9 that has nothing to do with intersection numbers. The conclusion feeds the statement `LateralTheory.E.EtaleTopologySheaves.LeafCons` at line 223 of the same file. The proof file has thirteen private helpers, among them the map of cones `coneM` and the natural maps `mYn`, `bY`, `mWn` and `bW`.
 
 ## Notes and references
 
-The chapter supplies inputs to two results of Volume 3. The projective bundle formula in all ranks, [Theorem](/entry/pbf-all/), uses the rank two case and the induction step, and through them the Künneth formula for $\mathbb{G}_m$. The finiteness theorem for étale cohomology, [Theorem](/entry/etale-topology-top/), uses the finiteness of Picard torsion, which rests on the section on Kummer classes, and the relative cohomology objects of the last section. The representation of clopen subschemes of fixed rank feeds [Theorem](/entry/exists-finite-etale-representing-clopen-subschemes/).
+The chapter supplies inputs to two results of Volume 3. The projective bundle formula in all ranks, [Theorem 3.5.3](/entry/pbf-all/), uses the rank two case and the induction step, and through them the Künneth formula for $\mathbb{G}_m$. The finiteness theorem for étale cohomology, [Theorem 2.3](/entry/etale-topology-top/), uses the finiteness of Picard torsion, which rests on the section on Kummer classes, and the relative cohomology objects of the last section. The representation of clopen subschemes of fixed rank feeds [Theorem 3.1.4](/entry/exists-finite-etale-representing-clopen-subschemes/).
 
 - J. S. Milne, *Étale Cohomology*, Princeton University Press, 1980. Chapter I, §4 (étale morphisms); Chapter III, §1 (cohomology on the étale site) and Proposition 4.9 (Hilbert's Theorem 90); Chapter VI, §2 and §4 (proper and smooth base change), §10 (the projective bundle formula).
 - A. Grothendieck et al., *SGA 4*, Exposé XIV (finiteness theorems), and *SGA 5*, Exposé VII (the projective bundle formula and Chern classes in étale cohomology).
