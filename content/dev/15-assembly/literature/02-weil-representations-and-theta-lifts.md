@@ -58,7 +58,7 @@ Lean: `UpperTheory.LiteratureTheorems.cuspidal_mirabolic_of_literature`.
 
 Part 1 follows from Green's construction of the cuspidal representations from regular characters of $\mathbb{F}_{q^{n+1}}^\times$. Part 2 is due to S. I. Gelfand (Mat. Sb. 1970). It is the finite-field form of the Gelfand-Kazhdan theory of the Kirillov model. See [cuspidal representations and segments](/learn/representations/#cuspidal-representations-and-segments).
 
-*Proof.* We take both parts from the literature. In the development they are [Theorem](/entry/cuspidal-mirabolic-holds/). $\square$
+*Proof.* We take both parts from the literature. In the development they are [Theorem 1.6.4 of Volume 8](/entry/cuspidal-mirabolic-holds/). $\square$
 
 ### The theta lift for $(\mathrm{GL}_r, \mathrm{GL}_{r+t})$
 

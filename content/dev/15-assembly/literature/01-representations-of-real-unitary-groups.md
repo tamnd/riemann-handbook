@@ -30,7 +30,7 @@ Lean: `UpperTheory.LiteratureTheorems.harish_chandra_analyticity_of_literature`.
 
 The two parts are the analyticity theorem and the density theorem of Harish-Chandra (Trans. Amer. Math. Soc. 75, 1953). They do not depend on each other.
 
-*Proof.* We take both parts from Harish-Chandra. In the development they are [Theorem 1.11 of Volume 8](/entry/harish-chandra-analyticity-density/). $\square$
+*Proof.* We take both parts from Harish-Chandra. In the development they are [Theorem 1.1.6 of Volume 8](/entry/harish-chandra-analyticity-density/). $\square$
 
 **Theorem 1.1.3 (Harish-Chandra modules determine unitary representations).** Let $G = U(J_\varepsilon)$.
 
@@ -39,7 +39,7 @@ The two parts are the analyticity theorem and the density theorem of Harish-Chan
 
 Lean: `UpperTheory.LiteratureTheorems.gk_globalisation_of_literature`.
 
-*Proof.* Both parts are due to Harish-Chandra; see Wallach, *Real Reductive Groups I*, Chapter 3. In the development this is [Theorem](/entry/gk-globalisation-holds/). $\square$
+*Proof.* Both parts are due to Harish-Chandra; see Wallach, *Real Reductive Groups I*, Chapter 3. In the development this is [Theorem 1.1.5 of Volume 8](/entry/gk-globalisation-holds/). $\square$
 
 The next theorem goes from Harish-Chandra modules to smooth representations on more general spaces. A *smooth Fréchet representation* here is a representation $\pi$ of $G$ on a complete Hausdorff locally convex space $E$, whose topology is given by a sequence of seminorms, with a derived action $d\pi$ of $\mathfrak{g}_\varepsilon$.
 
