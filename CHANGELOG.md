@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v0.1.11
+
+- Volume 4, p-adic Hodge theory: the chapter *Lattices* is complete. It has 20 sections. It covers the export bound, lattices over power series, levels and lifts of arcs, the forms of Theorem E, alternating arcs, the colength bound from frames, the congruence length and the local theory from its admitted inputs.
+- Volume 5, abelian schemes: two new chapters. *Abelian schemes* has 22 sections on the dual, the theorem of the cube, the Dieudonné crystal and Serre-Tate theory. *Integral models* has 31 sections on Harris-Taylor moduli, representability, Kodaira-Spencer maps, deformation counts, isogenies of type T_j, rigidified extensions, potential good reduction and projectivity.
+- Volume 9, Galois representations: the chapter *Local Galois cohomology* is complete. It covers Lubin-Tate towers, the local reciprocity map, the existence theorem, the local Artin map and the local Euler characteristic formula.
+
 ## v0.1.10
 
 - Volume 3, schemes and étale cohomology, is complete. It has an introduction that gives the place of the volume in the proof, a summary of each chapter with its main results, and a reading order. Stale cross-references in Chapters 1, 6 and 9 are fixed. The volume has 355 pages.
