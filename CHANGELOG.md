@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- The development volumes are now Volumes 3 to 15, grouped by subject: 104 chapters with all 5,756 planned entries. The old volumes followed the branches and folders of the Lean code. The design is in ledger/structure.yaml, and `rhb ledger` builds the outline from it. The entry ids are the same, so links to entries keep working.
+- The written chapters moved with their entries. The two chapters on cup products and Kummer classes are now one chapter of Volume 3, *The Kummer sequence, cup products and Chern classes*.
+- A chapter can mix written sections and entries: the sections come first, then the entries.
+- The old volume introductions are gone, since their volumes are gone. The new volumes have no introduction yet.
+
 ## v0.1.7
 
 - Tier 2 is complete: every declaration that owns 300 or more others has an entry. Vols 3 to 12 have all their planned entries.

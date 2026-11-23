@@ -7,10 +7,12 @@ ancestor. So when every planned entry is written, every declaration of the spine
 entry.
 
 Planned entries are the declarations with a dominated subtree of at least `--min` declarations (tier 1: 1000,
-tier 2: 300, tier 3: 100). The eight trunk declarations are in Volume 2. A declaration in one of the eight named
-branches of the spine goes to the volume of its branch; any other goes to the volume of its Lean folder. In a
-volume the chapter is the Lean folder of the declaration, and the entries of a chapter come in the order of a walk
-of the dominator tree from the top, larger subtrees first.
+tier 2: 300, tier 3: 100). The eight trunk declarations are in Volume 2. The others first get an old chapter, as
+the first plan had them: a declaration in one of the eight named branches of the spine goes to the old volume of
+its branch, any other to the old volume of its Lean folder, and in an old volume the chapter is the Lean folder of
+the declaration. Then ledger/structure.yaml puts each old chapter, or each piece of a split one, into a chapter of
+Volumes 3 to 15, grouped by subject. The entries of a chapter come in the order of the walk of the dominator tree
+from the top, larger subtrees first, one old chapter after the other.
 
     python -m rhb ledger --records /tmp/rr/records --min 1000 [--write]
 
@@ -38,40 +40,36 @@ HYPS = "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_al
 ONTO = "GlobalTheory.Fc.S0.ontoX_and_lamLow_of_unitaryGroupHypotheses'"
 OPEN0 = "GlobalTheory.T.open0_of_unitary_group_hypotheses"
 
-# number, id, title, summary, the branches (layers) or the Lean folders that make it
-VOLUMES = [
-    (3, "galois-row", "The Galois row",
-     "The proof of the row hypothesis: Galois representations attached to theta lifts, their geometric "
-     "realization in weight one, and the local-global compatibility that the trunk needs.", [GAL], []),
-    (4, "window-bound", "The window bound",
-     "The proof of VWin from the row hypothesis: automorphy, descent and vanishing, and the bound on "
-     "Tate-Shafarevich groups over the fields that a character cuts out.", [VWIN], []),
-    (5, "volume-estimates", "Volume estimates and positivity",
-     "The covolume bound of the literature layer: towers of good reduction, self-intersection volumes and the "
-     "positivity statement of Arakelov geometry.", [COVOL], []),
-    (6, "theta-integrals", "Theta integrals and the green window",
-     "The two branches of the theta chapter: the agreement of theta integrals with local matching, and the short "
-     "branch that ends in the nonvanishing of L-functions.", [THETA, GREEN], []),
-    (7, "unitary-hypotheses", "The unitary hypotheses",
-     "The three large branches below the record HypsAlt: unramified exponents, the map onto X with the low "
-     "lambda bound, and the open orbit.", [HYPS, ONTO, OPEN0], []),
-    (8, "automorphic-arithmetic", "Automorphic arithmetic",
-     "The shared results of the folder AutomorphicArithmetic: theta correspondence, automorphic varieties and "
-     "their foundations.", [], ["Development.AutomorphicArithmetic"]),
-    (9, "abelian-varieties", "Abelian varieties",
-     "The shared results on abelian varieties: their definitions, block theory, the published theorems and "
-     "their proofs.", [], ["Development.AbelianVarietyTheory"]),
-    (10, "development", "The Weil bound, the spectrum and resolution",
-     "The other shared folders of the development: the Weil bound, the automorphic spectrum, discrete groups "
-     "and the resolution of singularities.", [], ["Development"]),
-    (11, "formalism", "The formalism",
-     "Local to global arguments, Hermitian curvature, sharp restriction, period integrals and the other folders "
-     "of Formalism.", [], ["Formalism"]),
-    (12, "ground-theory", "Ground theory",
-     "Global and local fields, automorphic forms, heights and theta, profinite cohomology, reductive groups and "
-     "the companion theories.", [], ["GroundTheory", "ReciprocityTheory", "CompanionTheory", "PositivityTheory",
-                                     "Lemmata", "Supplements", "Statements", "Main", "BuildAid"]),
+# The first grouping of the entries: by the branch of the spine (layer) or else by the Lean folder, as
+# (old volume number, the branches, the Lean folders). In an old volume the chapter is the Lean folder of the entry.
+# It gives each entry its old chapter key `<old volume>/<chapter id>`, and ledger/structure.yaml maps these keys to
+# the chapters of Volumes 3 to 15.
+BRANCHES = [
+    (3, [GAL], []),
+    (4, [VWIN], []),
+    (5, [COVOL], []),
+    (6, [THETA, GREEN], []),
+    (7, [HYPS, ONTO, OPEN0], []),
+    (8, [], ["Development.AutomorphicArithmetic"]),
+    (9, [], ["Development.AbelianVarietyTheory"]),
+    (10, [], ["Development"]),
+    (11, [], ["Formalism"]),
+    (12, [], ["GroundTheory", "ReciprocityTheory", "CompanionTheory", "PositivityTheory", "Lemmata", "Supplements",
+              "Statements", "Main", "BuildAid"]),
 ]
+
+STRUCTURE = os.path.join(ROOT, "ledger", "structure.yaml")
+
+
+def load_volumes(path: str = STRUCTURE) -> list[dict]:
+    """The development volumes, from ledger/structure.yaml (key `volumes`): number, id, title, summary and the
+    chapters, each with `from` (the old chapter keys it takes), and for an old chapter that is split, `roots` (the
+    root declarations of the piece) or `folders` (its Lean subfolders)."""
+    with open(path, encoding="utf-8") as f:
+        return (yaml.safe_load(f) or {}).get("volumes") or []
+
+
+VOLUMES = load_volumes() if os.path.exists(STRUCTURE) else []
 
 
 def load_spine(records: str) -> list[dict]:
@@ -113,35 +111,13 @@ def short_ids(names: list[str]) -> dict[str, str]:
     return out
 
 
-def folder_title(folder: str) -> str:
-    """ThetaCorrespondence → Theta correspondence; GL3MeanSquares → GL3 mean squares."""
-    last = folder.split(".")[-1]
-    words = re.sub(r"([a-z0-9])([A-Z])", r"\1 \2", re.sub(r"([A-Z]+)([A-Z][a-z])", r"\1 \2", last)).split()
-    words = [w if (w.isupper() or any(ch.isdigit() for ch in w)) and len(w) > 1 else w.lower() for w in words]
-    t = " ".join(words)
-    return t[:1].upper() + t[1:]
-
-
-def plan(rows: list[dict], minsize: int) -> dict:
-    by = {r["name"]: r for r in rows}
-    kids = collections.defaultdict(list)
-    for r in rows:
-        if r["idom"]:
-            kids[r["idom"]].append(r["name"])
-    trunk = [r["name"] for r in rows if r.get("layer") == "trunk"]
-    # the walk from the top, larger subtrees first: the reading order
-    order, stack = {}, ["riemannHypothesis"]
-    while stack:
-        n = stack.pop()
-        if n in order:
-            continue
-        order[n] = len(order)
-        stack.extend(sorted(kids[n], key=lambda c: by[c]["size"]))
-    layer_vol = {}
-    for num, vid, title, summ, layers, folders in VOLUMES:
-        for la in layers:
-            layer_vol[la] = num
-    folder_vols = sorted(((f, v[0]) for v in VOLUMES for f in v[5]), key=lambda x: -len(x[0]))
+def old_chapters(rows: list[dict], minsize: int, by: dict, order: dict) -> dict[str, dict]:
+    """The planned entries in their old chapters, keyed `<old volume>/<chapter id>`: each with its Lean folder and
+    its entries in reading order. The old volume is the branch of the spine of the entry, else its Lean folder; the
+    chapter is the Lean folder at depth 4, merged up while a chapter has fewer than 4 entries."""
+    trunk = {r["name"] for r in rows if r.get("layer") == "trunk"}
+    layer_vol = {la: num for num, layers, folders in BRANCHES for la in layers}
+    folder_vols = sorted(((f, num) for num, layers, folders in BRANCHES for f in folders), key=lambda x: -len(x[0]))
 
     def volume_of(r: dict) -> int:
         if r["name"] in trunk:
@@ -154,15 +130,14 @@ def plan(rows: list[dict], minsize: int) -> dict:
                 return v
         return 12
 
-    planned = [r for r in rows if r["size"] >= minsize]
-    ids = short_ids(sorted(r["name"] for r in rows if r["size"] >= min(100, minsize)))
     vols = collections.defaultdict(list)
-    for r in planned:
-        vols[volume_of(r)].append(r)
+    for r in rows:
+        if r["size"] >= minsize:
+            vols[volume_of(r)].append(r)
     out = {}
-    for num, vid, title, summ, layers, folders in VOLUMES:
+    far = len(order)
+    for num, layers, folders in BRANCHES:
         entries = vols.get(num, [])
-        # chapters: the Lean folder at depth 4, merged up while a chapter has fewer than 4 entries
         depth = {r["name"]: 4 for r in entries}
 
         def key(r):
@@ -180,26 +155,122 @@ def plan(rows: list[dict], minsize: int) -> dict:
         chapters = collections.defaultdict(list)
         for r in entries:
             chapters[key(r)].append(r)
-        chs = []
-        far = len(order)
+        seen = collections.Counter()   # chapter ids unique in a volume
         for folder, es in sorted(chapters.items(), key=lambda kv: min(order.get(r["name"], far) for r in kv[1])):
             es.sort(key=lambda r: order.get(r["name"], far))
-            chs.append({"id": slug(folder.split(".")[-1]) or "top", "folder": folder, "title": folder_title(folder),
+            cid = slug(folder.split(".")[-1]) or "top"
+            seen[cid] += 1
+            if seen[cid] > 1:
+                cid += f"-{seen[cid]}"
+            out[f"{num}/{cid}"] = {"folder": folder, "entries": es}
+    return out
+
+
+def split_chapter(key: str, old: dict, pieces: list[tuple]) -> tuple[dict, list[str]]:
+    """Divide the entries of a split old chapter among the new chapters that take a piece of it. A piece names its
+    root declarations (`roots`) or its Lean subfolders (`folders`). An entry goes to the piece of the nearest root
+    on its chain of immediate dominators inside the old chapter, or to the piece of its subfolder. An entry under no
+    named root goes to the piece that names none, or if every piece names some, to the piece with the most
+    entries. Returns the new chapter of each entry and the names under no named root."""
+    names = {r["name"]: r for r in old["entries"]}
+    root_of, folder_of, plain = {}, {}, []
+    for where, roots, folders in pieces:
+        for n in roots or []:
+            if n not in names:
+                raise SystemExit(f"structure.yaml: {key}: the root {n} is not an entry of the old chapter")
+            root_of[n] = where
+        for f in folders or []:
+            folder_of[f] = where
+        if not roots and not folders:
+            plain.append(where)
+    if len(plain) > 1:
+        raise SystemExit(f"structure.yaml: {key}: more than one piece names no root")
+    out, rest = {}, []
+    for r in old["entries"]:
+        where = None
+        if folder_of:
+            m = r["module"]
+            tail = m[len(old["folder"]) + 1:] if m.startswith(old["folder"] + ".") else ""
+            where = folder_of.get(tail.split(".")[0])
+        else:
+            x = r
+            while x is not None and where is None:
+                where = root_of.get(x["name"])
+                x = names.get(x["idom"])
+        if where is None:
+            rest.append(r["name"])
+        out[r["name"]] = where
+    if rest:
+        if plain:
+            fill = plain[0]
+        else:
+            fill = collections.Counter(w for w in out.values() if w).most_common(1)[0][0]
+        for n in rest:
+            out[n] = fill
+    return out, rest
+
+
+def plan(rows: list[dict], minsize: int) -> dict:
+    """The planned entries in the volumes of ledger/structure.yaml. Each entry keeps its id; `from` is the key of
+    its old chapter. In a new chapter the entries come in the order of the old chapters in `from`, and in an old
+    chapter in the order of the walk."""
+    by = {r["name"]: r for r in rows}
+    kids = collections.defaultdict(list)
+    for r in rows:
+        if r["idom"]:
+            kids[r["idom"]].append(r["name"])
+    trunk = [r["name"] for r in rows if r.get("layer") == "trunk"]
+    # the walk from the top, larger subtrees first: the reading order
+    order, stack = {}, ["riemannHypothesis"]
+    while stack:
+        n = stack.pop()
+        if n in order:
+            continue
+        order[n] = len(order)
+        stack.extend(sorted(kids[n], key=lambda c: by[c]["size"]))
+    ids = short_ids(sorted(r["name"] for r in rows if r["size"] >= min(100, minsize)))
+    old = old_chapters(rows, minsize, by, order)
+    vols = load_volumes()
+    # who takes each old chapter: the new chapters (number, id) with the roots or folders of their piece
+    takers = collections.defaultdict(list)
+    for v in vols:
+        for c in v["chapters"]:
+            for k in c["from"]:
+                takers[k].append(((v["number"], c["id"]), (c.get("roots") or {}).get(k),
+                                  (c.get("folders") or {}).get(k)))
+    missing = sorted(set(old) - set(takers))
+    unknown = sorted(set(takers) - set(old))
+    if missing or unknown:
+        raise SystemExit(f"structure.yaml: old chapters with no new chapter {missing}; unknown keys {unknown}")
+    home, fallback = {}, {}
+    for k, ts in takers.items():
+        if len(ts) == 1:
+            for r in old[k]["entries"]:
+                home[r["name"]] = ts[0][0]
+        else:
+            got, rest = split_chapter(k, old[k], ts)
+            home.update(got)
+            if rest:
+                fallback[k] = rest
+    out = {}
+    for v in vols:
+        chs = []
+        for c in v["chapters"]:
+            es = [(k, r) for k in c["from"] for r in old[k]["entries"] if home[r["name"]] == (v["number"], c["id"])]
+            chs.append({"id": c["id"], "title": c["title"], "from": list(c["from"]),
                         "entries": [{"name": r["name"], "id": ids[r["name"]], "kind": r["kind"],
                                      "module": r["module"], "size": r["size"], "fanin": r.get("fanin", 0),
-                                     "idom": r["idom"],
+                                     "idom": r["idom"], "from": k,
                                      "tier": 1 if r["size"] >= 1000 else 2 if r["size"] >= 300 else 3}
-                                    for r in es]})
-        # chapter ids unique in a volume
-        seen = collections.Counter()
-        for c in chs:
-            seen[c["id"]] += 1
-            if seen[c["id"]] > 1:
-                c["id"] += f"-{seen[c['id']]}"
-        out[num] = {"number": num, "id": vid, "title": title, "summary": summ,
-                    "declarations": sum(by[la]["size"] for la in layers if la in by) if layers else None,
-                    "chapters": chs}
-    return {"min": minsize, "spine": len(rows), "trunk": trunk, "volumes": out, "_by": by, "_kids": kids}
+                                    for k, r in es]})
+        out[v["number"]] = {"number": v["number"], "id": v["id"], "title": v["title"], "summary": v["summary"],
+                            "chapters": chs}
+    placed = collections.Counter(e["name"] for v in out.values() for c in v["chapters"] for e in c["entries"])
+    planned = sum(len(o["entries"]) for o in old.values())
+    if sum(placed.values()) != planned or any(n > 1 for n in placed.values()):
+        raise SystemExit(f"ledger: {sum(placed.values())} placements for {planned} entries")
+    return {"min": minsize, "spine": len(rows), "trunk": trunk, "volumes": out, "_by": by, "_kids": kids,
+            "_fallback": fallback}
 
 
 def written_names(book) -> set[str]:
@@ -258,6 +329,11 @@ def run(book, args) -> int:
         n = sum(len(c["entries"]) for c in v["chapters"])
         w = sum(1 for c in v["chapters"] for e in c["entries"] if _is_written(e["name"], written))
         lines.append(f"| {num} | {v['title']} | {len(v['chapters'])} | {n} | {w} |")
+    fb = p["_fallback"]
+    if fb:
+        lines += ["", f"Entries of a split old chapter under none of the named roots or folders, placed in the piece "
+                      f"that names none: {sum(len(x) for x in fb.values())}, from "
+                      + ", ".join(f"{k} ({len(x)})" for k, x in sorted(fb.items())) + "."]
     report = "\n".join(lines) + "\n"
     print(report)
     if args.write:
@@ -273,15 +349,11 @@ def run(book, args) -> int:
         for num, v in sorted(p["volumes"].items()):
             d = os.path.join(ROOT, "content", "dev", f"{num:02d}-{v['id']}")
             os.makedirs(d, exist_ok=True)
-            old = {}   # keep the chapter titles that a person edited
-            if os.path.exists(os.path.join(d, "volume.yaml")):
-                old = {c["id"]: c.get("title") for c in
-                       (yaml.safe_load(open(os.path.join(d, "volume.yaml"))) or {}).get("chapters") or []}
-            vy = {"title": v["title"], "summary": v["summary"],
-                  "chapters": [{"id": c["id"], "title": old.get(c["id"]) or c["title"], "folder": c["folder"],
+            vy = {"number": num, "title": v["title"], "summary": v["summary"],
+                  "chapters": [{"id": c["id"], "title": c["title"], "from": c["from"],
                                 "entries": [e["id"] for e in c["entries"]]} for c in v["chapters"]]}
             with open(os.path.join(d, "volume.yaml"), "w") as f:
-                f.write("# Written by `rhb ledger --write` from the spine. Edit titles here; the entry list follows "
-                        "the spine.\n")
+                f.write("# Written by `rhb ledger --write` from ledger/structure.yaml and the spine. Edit the titles "
+                        "in ledger/structure.yaml.\n")
                 yaml.safe_dump(vy, f, sort_keys=False, allow_unicode=True, width=200)
     return 0

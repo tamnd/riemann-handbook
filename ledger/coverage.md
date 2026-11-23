@@ -1,18 +1,23 @@
 # Coverage of the spine (entries for subtrees of 100 or more declarations)
 
-Planned entries 5,764 (with the 8 trunk declarations of Volume 2), written 1,946.
+Planned entries 5,764 (with the 8 trunk declarations of Volume 2), written 2,007.
 
-Of the 753,805 declarations of the spine, 261,304 (34.7%) are in the subtree of a written entry below the trunk. Another 261,670 (34.7%) are in small shared subtrees that hang right under the trunk: no entry of this tier explains them, and the lower tiers must.
+Of the 753,805 declarations of the spine, 264,629 (35.1%) are in the subtree of a written entry below the trunk. Another 261,670 (34.7%) are in small shared subtrees that hang right under the trunk: no entry of this tier explains them, and the lower tiers must.
 
 | Volume | Title | Chapters | Planned | Written |
 |---|---|---|---|---|
-| 3 | The Galois row | 13 | 533 | 210 |
-| 4 | The window bound | 21 | 366 | 148 |
-| 5 | Volume estimates and positivity | 19 | 549 | 183 |
-| 6 | Theta integrals and the green window | 22 | 141 | 64 |
-| 7 | The unitary hypotheses | 50 | 1425 | 568 |
-| 8 | Automorphic arithmetic | 8 | 238 | 80 |
-| 9 | Abelian varieties | 22 | 1433 | 410 |
-| 10 | The Weil bound, the spectrum and resolution | 26 | 475 | 135 |
-| 11 | The formalism | 41 | 386 | 102 |
-| 12 | Ground theory | 33 | 210 | 38 |
+| 3 | Schemes, étale cohomology and complex algebraic geometry | 10 | 345 | 177 |
+| 4 | p-adic Hodge theory and local Galois representations | 8 | 344 | 126 |
+| 5 | Abelian schemes, their moduli and compactifications | 9 | 662 | 221 |
+| 6 | Arakelov geometry, heights and arithmetic volumes | 10 | 689 | 217 |
+| 7 | Representations of real and p-adic groups | 7 | 303 | 67 |
+| 8 | Automorphic forms, the spectrum and the trace formula | 8 | 341 | 99 |
+| 9 | Galois cohomology, Galois representations and modularity | 8 | 450 | 183 |
+| 10 | Hermitian lattices, unitary groups and mass formulas | 8 | 464 | 134 |
+| 11 | Polynomial identities, lattice combinatorics and analytic estimates | 8 | 356 | 119 |
+| 12 | The theta correspondence and the Siegel-Weil formula | 8 | 437 | 124 |
+| 13 | Complex multiplication and the integrality of theta values | 8 | 385 | 143 |
+| 14 | Iterated theta lifts on the definite side | 4 | 398 | 119 |
+| 15 | The assembly of the proof | 8 | 582 | 270 |
+
+Entries of a split old chapter under none of the named roots or folders, placed in the piece that names none: 257, from 3/galois-representations (108), 7/inertia-eigenvalues (30), 7/theta-pair-lifts (99), 9/divisor-proofs (20).

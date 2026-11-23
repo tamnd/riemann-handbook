@@ -15,7 +15,7 @@ Volume 1, Background, is the mathematics that the proof uses: algebra, analysis,
 
 Volume 2, The proof, is the top of the proof. Its first chapter shows on one page how the Lean code gets the Riemann Hypothesis from one statement about Dirichlet L-functions. Each later chapter takes one large step of the proof, with a guide to the chapter, the argument in words, and the steps that have a page of their own.
 
-Volumes 3 and later go down into the Lean development. Each volume follows one branch of the proof. Each entry is one Lean declaration with its statement, its proof in words, and a note on how the Lean code does it.
+Volumes 3 to 15 go down into the Lean development. Each volume takes one subject: schemes and étale cohomology, p-adic Hodge theory, abelian schemes, Arakelov geometry, representations of local groups, automorphic forms, Galois representations, hermitian lattices, analytic estimates and the theta correspondence. The last three volumes have the parts that belong to this proof alone: CM theta values, the iterated theta lifts and the assembly of the proof. A chapter written as mathematics has definitions, theorems and proofs. A chapter not yet written has one entry for each large Lean declaration, with its statement, its proof in words, and a note on how the Lean code does it.
 
 ## How the handbook is made
 

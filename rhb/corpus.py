@@ -140,6 +140,11 @@ class DevChapter:
     num: int = 0            # the place of the chapter in the plan of its volume (volume.yaml), from 1
     files: list = field(default_factory=list)   # the section files, in order
 
+    @property
+    def sections(self) -> int:
+        """The number of ## sections of the written text. The entries of the chapter come after them."""
+        return len(re.findall(r"(?m)^## ", self.text))
+
 
 @dataclass
 class DevVolume:
@@ -180,8 +185,8 @@ def load_dev(content: str) -> list[DevVolume]:
                 fm, body = front(open(sp, encoding="utf-8").read())
                 text.append(body.strip("\n"))
                 decls += fm.get("decls") or []
-            if secs:
-                entries = []   # the section files replace the entries of the chapter
+            # the section files replace the entries that they cover, whose files are gone; a chapter that also
+            # takes old chapters not yet written keeps their entries, after the sections
             if not entries and not secs:   # a chapter of the plan with nothing written yet
                 continue
             chapters.append(DevChapter(c["id"], c.get("title", c["id"]),
@@ -189,7 +194,7 @@ def load_dev(content: str) -> list[DevVolume]:
                                        "\n\n".join(text), decls, num, secs))
         if not chapters:
             continue
-        out.append(DevVolume(int(base[:2]), base[3:], v.get("title", base), v.get("summary", ""),
+        out.append(DevVolume(int(v.get("number") or base[:2]), base[3:], v.get("title", base), v.get("summary", ""),
                              open(intro_p, encoding="utf-8").read() if os.path.exists(intro_p) else "", chapters))
     return out
 

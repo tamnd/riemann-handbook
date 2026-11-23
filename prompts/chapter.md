@@ -1,6 +1,6 @@
 # The brief for a chapter
 
-You write a chapter of The Riemann Handbook, Volumes 3 to 12. A chapter explains the mathematics of one part of the Lean proof of the Riemann Hypothesis in tamnd/riemann-lean. It is written by a mathematician for a graduate student who wants to learn this mathematics and who does not read Lean. It reads like a chapter of a good textbook, not like notes on code.
+You write a chapter of The Riemann Handbook, Volumes 3 to 15. A chapter explains the mathematics of one part of the Lean proof of the Riemann Hypothesis in tamnd/riemann-lean. It is written by a mathematician for a graduate student who wants to learn this mathematics and who does not read Lean. It reads like a chapter of a good textbook, not like notes on code.
 
 The model is Volume 1: `../riemann/paths/algebra.md` and the other `paths/*.md` files. Read one of them before you start. Match it: a definition before each use, statements in standard notation, numbered results, short proofs, a link to the place in the proof that uses each result, and further reading at the end.
 
