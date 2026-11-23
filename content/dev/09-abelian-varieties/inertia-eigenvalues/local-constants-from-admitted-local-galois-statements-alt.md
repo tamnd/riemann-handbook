@@ -8,7 +8,7 @@ covers: 542
 status: drafted
 drafted_by: writer@claude
 ---
-This theorem is the proof of [`localConstants_from_admitted_local_Galois_statements`](/entry/local-constants-from-admitted-local-galois-statements/), which has the same statement. It passes its data to [`frobenius_lifting`](/entry/frobenius-lifting/) together with a proof that the admitted conditions hold. The real content is in `frobenius_lifting` and in the proof of the admitted conditions.
+This theorem is the proof of [`localConstants_from_admitted_local_Galois_statements`](/entry/local-constants-from-admitted-local-galois-statements/), which has the same statement. It passes its data to [`frobenius_lifting`](/entry/frobenius-lifting/) together with a proof that the admitted conditions hold. `frobenius_lifting` is only a pass-through to [`local_theory_of_admitted`](/entry/local-theory-of-admitted/). The real content is in `local_parts_of_admitted`, in `lifting_all_parts_of_admitted` and in the proof of the admitted conditions.
 
 ## Statement
 
