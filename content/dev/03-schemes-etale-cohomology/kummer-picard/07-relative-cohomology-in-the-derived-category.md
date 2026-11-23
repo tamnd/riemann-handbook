@@ -65,15 +65,3 @@ The cone vanishes in positive degrees and $I$ vanishes in negative degrees, so e
 For $B$ the spectrum of a separably closed field, $D(B)$ is the derived category of $\mathbb{Z}/q$-modules, $\mathcal{O}_B$ is $\mathbb{Z}/q$, and the theorem only says that $K_0$ is a complex whose cohomology groups are $H^n(Y_0, Y_0 \times_B W)$. The content lies in the naturality in $U$: the objects $K_j$ glue the relative cohomology of all étale neighbourhoods of points of $B$.
 
 **Remark 6.7.4 (Formalization).** The Theorem asks that $\iota$ be a closed immersion, but the proof never uses this: the construction works for any map $\iota$. Statement 1 is supplied at [EtaleTopology.lean](lean:Development/AutomorphicArithmetic/CommutativeAlgebra/EtaleCohomology/EtaleTopology.lean#L220) under a second name, `LateralTheory.Fin.InjSlice.intersectionNumber_baseChange`, that has nothing to do with intersection numbers. The identification of step 4 and the goodness of step 1 are separate results of the formal proof.
-
-## Notes and references
-
-The chapter supplies inputs to two results of Volume 3. The projective bundle formula in all ranks, [Theorem 5.5.3](/entry/pbf-all/), uses the rank two case and the induction step, and through them the Künneth formula for $\mathbb{G}_m$. The finiteness theorem for étale cohomology, [Theorem 3.7.1](/entry/etale-topology-top/), uses the finiteness of Picard torsion, which rests on the section on Kummer classes, and the relative cohomology objects of the last section. The representation of clopen subschemes of fixed rank feeds [Theorem 5.1.4](/entry/exists-finite-etale-representing-clopen-subschemes/). The treatment differs from the classical one in three places. Cohomology is defined for spaces, by maps into one fixed injective resolution, so that covers and fibre products need no separate theory. The finiteness of Picard torsion avoids Jacobians and uses Selmer groups of function fields. The derived direct images of the last section are built by hand from injective sheaves.
-
-- J. S. Milne, *Étale Cohomology*, Princeton University Press, 1980. Chapter I, §4 (étale morphisms); Chapter III, §1 (cohomology on the étale site) and Proposition 4.9 (Hilbert's Theorem 90); Chapter VI, §2 and §4 (proper and smooth base change), §10 (the projective bundle formula).
-- A. Grothendieck et al., *SGA 4*, Exposé XIV (finiteness theorems), and *SGA 5*, Exposé VII (the projective bundle formula and Chern classes in étale cohomology).
-- A. Grothendieck, *EGA IV*, 17.9.1 (étale morphisms and open immersions); and "Techniques de construction et théorèmes d'existence en géométrie algébrique IV: les schémas de Hilbert", Séminaire Bourbaki 221.
-- R. Hartshorne, *Algebraic Geometry*, Springer, 1977. Chapter I, §6 (nonsingular curves and function fields).
-- D. Mumford, *Abelian Varieties*, Oxford University Press, 1970. §4 (the $n$-torsion points of an abelian variety).
-- S. Lang, *Algebra*, revised third edition, Springer, 2002. Chapter VI, §8 (Kummer theory), used in the Lemma on descent of Selmer classes.
-- N. Spaltenstein, "Resolutions of unbounded complexes", *Compositio Math.* 65 (1988). K-injective complexes.
