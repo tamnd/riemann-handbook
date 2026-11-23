@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## v0.1.23
+
+- Volume 10, Hermitian lattices: the chapter *Orbital bounds* is complete. It has 10 sections, from jets of phase functions on formal groups and the Weyl dimension formula for U(p, q) to local Hermitian lattices, adelic unitary groups, orbital terms and the gluing mass.
+- Volume 11, analytic estimates: the chapter *Energy bounds* is complete. It has 10 sections, from positive semidefinite kernels and the block kernel of a local field to Lemma E for energy systems, the polynomial radial relation and the bounds at the infinite places.
+- Volume 10, Hermitian lattices: the chapter *Cokernel counts* is complete. It has 9 sections, from gluing unimodular lattices and row frames to local lattice counts, partner counts, covolumes at infinity and the normalizing constant.
+- Volume 11, analytic estimates: the chapter *Path polynomials* is complete. It has 11 sections, from lattices with a symmetric pairing and the Fock pairing to block valuations over Z_p, the box bound, path polynomials, admissible words and column systems.
+
 ## v0.1.22
 
 - Volume 5, abelian schemes: the chapter *Toroidal compactifications* is complete. It has 26 sections, from fan charts and Fourier systems to normalized blowups, canonical families, heat operators, the logarithmic Kodaira-Spencer map, Čech cocycles and smooth polarized fans.
