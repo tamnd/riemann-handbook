@@ -10,7 +10,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Polarization words for the Fock pairing
 
-Let $s$ and $\beta$ be two vectors of a dual Weyl module, realised as polynomials on matrices. Multiply a test polynomial by $s$, pair the product with another test polynomial multiplied by $\beta$, and view the result as a bilinear form in the two test polynomials. This section proves that the form is given by a polynomial differential operator of a bounded order: a combination of words of length at most $c$ in the polarization operators $y_a\, \partial/\partial y_b$, where $c$ bounds the first entry of the highest weight. The result, for a tensor product of several blocks, is used in [Theorem 5.6 of Volume 11](/entry/stmt-e-of-mp/) of the volume on growth bounds, where the length of the words controls the growth of a twisted test vector.
+Let $s$ and $\beta$ be two vectors of a dual Weyl module, realised as polynomials on matrices. Multiply a test polynomial by $s$, pair the product with another test polynomial multiplied by $\beta$, and view the result as a bilinear form in the two test polynomials. This section proves that the form is given by a polynomial differential operator of a bounded order: a combination of words of length at most $c$ in the polarization operators $y_a\, \partial/\partial y_b$, where $c$ bounds the first entry of the highest weight. The result, for a tensor product of several blocks, is used in [Theorem 5.5.5 of Volume 11](/entry/stmt-e-of-mp/) of the volume on growth bounds, where the length of the words controls the growth of a twisted test vector.
 
 Background: [polynomials on matrices](/learn/combinatorics/#polynomials-on-matrices), [highest weights and branching](/learn/representations/#highest-weights-and-branching).
 

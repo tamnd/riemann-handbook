@@ -10,7 +10,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The box bound and the open conditions
 
-The closed form of Theorem A is an averaged bound on bad shares: over a box of window points, the mean bad share of the segment lattices at a certain depth is at most a constant times $(t + 1) N_1 / Y$. Its proof in [Theorem 5.18](/entry/theorem-a-closed-form-holds/) reduces it to four *open conditions* on the blocks of an instance. This section proves two of the four: the block bound, from Section 4, and the box bound, from the [alternative mean value theorem](/entry/alternative-mean-value-theorem/). It follows that the closed form holds as soon as four other conditions hold, and Section 7 proves those from the lattice results of Section 1.
+The closed form of Theorem A is an averaged bound on bad shares: over a box of window points, the mean bad share of the segment lattices at a certain depth is at most a constant times $(t + 1) N_1 / Y$. Its proof in [Theorem 5.11.3](/entry/theorem-a-closed-form-holds/) reduces it to four *open conditions* on the blocks of an instance. This section proves two of the four: the block bound, from Section 4, and the box bound, from the [alternative mean value theorem](/entry/alternative-mean-value-theorem/). It follows that the closed form holds as soon as four other conditions hold, and Section 7 proves those from the lattice results of Section 1.
 
 We keep the instances $X$, blocks $G(a_{\mathrm{top}}, a_+, b)$, level lattices $\Lambda_{j,j_+}$, pairings $\beta_{j,j_+}$ and bad counts of Sections 3 and 4.
 
@@ -46,7 +46,7 @@ Lean: `Formalism.MainNotions.G.SymmetricFormBlocks.restTM_exists`.
 
 Lean: `Formalism.MainNotions.G.SymmetricFormBlocks.restTM_closed`.
 
-*Proof.* Take $C_M$ from the previous theorem. Under these hypotheses the segment data satisfy the segment facts of [Theorem 5.18](/entry/theorem-a-closed-form-holds/). The segment facts give condition 1: the index sets only depend on the class. With condition 1 they give the size conditions 2. For condition 3, the tie exponent at a tie is bounded by
+*Proof.* Take $C_M$ from the previous theorem. Under these hypotheses the segment data satisfy the segment facts of [Theorem 5.11.3](/entry/theorem-a-closed-form-holds/). The segment facts give condition 1: the index sets only depend on the class. With condition 1 they give the size conditions 2. For condition 3, the tie exponent at a tie is bounded by
 $$\frac{2 S}{Y_r} + \frac{2 \kappa + 2 S \lambda / Y_r}{Y \kappa},$$
 where $S / Y_r \leq 7 / Y$, $\kappa > 0$ and $24 \lambda \leq \kappa$; the last inequality holds because $\kappa \geq \kappa_S \geq 24 \lambda$ for $r \geq 2$ and $s \geq 0$. This is at most $(15 + C_M)/Y \leq (30 + C_M)/Y$ when $Y \geq 1$ and $C_M \geq 1$. The previous theorem applies. $\square$
 
@@ -61,7 +61,7 @@ $$\begin{aligned}
 3. The box bound with constant $C_M$.
 4. (Directions.) For every block, the sum of the level ranks $r_L$ over the levels is at most the rank of the block lattice.
 
-The closed form holds for large constants if the open conditions hold, for large constants and for all admitted instances, with some $C_M \geq 0$ depending on the constants; this is the reduction in [Theorem 5.18](/entry/theorem-a-closed-form-holds/). We now show that four other conditions suffice:
+The closed form holds for large constants if the open conditions hold, for large constants and for all admitted instances, with some $C_M \geq 0$ depending on the constants; this is the reduction in [Theorem 5.11.3](/entry/theorem-a-closed-form-holds/). We now show that four other conditions suffice:
 
 1. (Base dimension.) For every block, the rank of the block lattice is at most the sum of the ranks of its level lattices.
 2. (Level part.) $\operatorname{bad}(\beta_\ell, \Lambda_\ell, \lfloor D_1(C_M) \rfloor) \leq \operatorname{bad}_Y(a_{\mathrm{top}}, b, \ell, \lfloor D_1(C_M) \rfloor)\, d_r(B - j_+)$ at each $(\delta, a_{\mathrm{top}}, b, \ell)$, for the blocks with $a_+ = 0$.
@@ -78,6 +78,6 @@ Lean: `Formalism.MainNotions.G.SymmetricFormBlocks.openE_of_open4`.
 
 Lean: `Formalism.MainNotions.G.SymmetricFormBlocks.closed_of_open_directions`.
 
-*Proof.* The previous proposition gives the open conditions, and the reduction of [Theorem 5.18](/entry/theorem-a-closed-form-holds/) turns them into the closed form. $\square$
+*Proof.* The previous proposition gives the open conditions, and the reduction of [Theorem 5.11.3](/entry/theorem-a-closed-form-holds/) turns them into the closed form. $\square$
 
 **Remark 7.6.10 (Formalization).** The size conditions `RestTMSize`, the mean value instances `XMof` and their exponents `epsM`, the classes `clSet`, the compatibility `Compat` and the coordinate change `upd` were not unfolded beyond their statements. In `restTM_exists` ([RestTMExists.lean](lean:Formalism/SharpRestriction/GrowthBounds/MonomialFactorials/RestTMExists.lean#L14)) and in `restTM_closed` ([EpsilonBoundMConstant.lean](lean:Formalism/SharpRestriction/GrowthBounds/MonomialFactorials/EpsilonBoundMConstant.lean#L228)) the datum $D$ is a bound variable `_D` that only reaches the mean value theorem. The arithmetic in `epsilon_bound_M_constant` (same file, line 33) proves the bound $(15 + C_M)/Y$ and then weakens it to $(30 + C_M)/Y$. The hypothesis `RestOpen4E` of `openE_of_open4` asks for every $C_M \geq 1$, but the proof uses only the one value from `restTM_closed` ([ThresholdsMonoNormalized.lean](lean:Formalism/SharpRestriction/GrowthBounds/MonomialFactorials/ThresholdsMonoNormalized.lean#L40)). The reduction from the open conditions to the closed form is `closed_of_open_conditions`; it adds three more proved bounds and calls `theorem_A_closed_of_all_remaining_bounds`, which we did not follow.
