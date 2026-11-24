@@ -14,7 +14,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Whittaker idempotents of finite general linear groups
 
-This section is the finite field analogue of the Whittaker theory of the previous sections. For a prime $g$, the group $\mathrm{GL}_N(\mathbb{F}_g)$ has idempotents in its group algebra built from characters of unipotent subgroups. We bound from below the rank of such an idempotent on a generic representation, and we bound the share of the idempotent that falls outside a set of good irreducible representations. The last theorem combines two primes and gives a lower bound for the rank of the good part. It is used in [Theorem](/entry/bad-share-win/). For the background, see [generic representations and local factors](/learn/representations/#generic-representations-and-local-factors) and [generic characters](/learn/periods/#generic-characters).
+This section is the finite field analogue of the Whittaker theory of the previous sections. For a prime $g$, the group $\mathrm{GL}_N(\mathbb{F}_g)$ has idempotents in its group algebra built from characters of unipotent subgroups. We bound from below the rank of such an idempotent on a generic representation, and we bound the share of the idempotent that falls outside a set of good irreducible representations. The last theorem combines two primes and gives a lower bound for the rank of the good part. It is used in [Theorem 7.21.1 of Volume 15](/entry/bad-share-win/). For the background, see [generic representations and local factors](/learn/representations/#generic-representations-and-local-factors) and [generic characters](/learn/periods/#generic-characters).
 
 ### The group algebra
 
