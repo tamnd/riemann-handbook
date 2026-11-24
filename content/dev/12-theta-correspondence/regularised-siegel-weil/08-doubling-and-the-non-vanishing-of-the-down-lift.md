@@ -45,7 +45,7 @@ For part 2, let $n \le 1$. We take as given that then every element of $U_n$ lie
 
 ### Non-vanishing of the down lift
 
-Now let $E/F$ be a CM extension. We take the global data of the [Theorem 8.53 of Volume 15](/entry/down-ne-k-of-hypotheses-prime/) that uses this section. In short, they are the following:
+Now let $E/F$ be a CM extension. We take the global data of the [Theorem 8.14.3 of Volume 15](/entry/down-ne-k-of-hypotheses-prime/) that uses this section. In short, they are the following:
 
 - a positive definite Hermitian space $A$ of rank $n = r + t$ and a Hermitian space $W$ of rank $r \ge 1$ with the signature condition, with characters $\chi_A$, $\chi_W$ and a Weil representation $\omega$ of the pair $(U(A), U(W))$;
 - a finite set $Z$ of places, a level subgroup of $U(A)$ at $Z$, an idempotent attached to $Z$, and the condition that the places above $2$ split in $E$;
