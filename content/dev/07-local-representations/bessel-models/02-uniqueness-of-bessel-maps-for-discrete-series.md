@@ -50,7 +50,7 @@ and $B'$ is again continuous for a Sobolev norm. So $B'$ is a Bessel map of type
 
 Next, decay. Since $\sigma$ is a discrete series, it is square integrable. The gap $h \geq 120 n^3$ exceeds a threshold of the form $t(\varepsilon) + 4 n^3$. For such gaps, each matrix coefficient between smooth vectors decays: $|\langle v, \sigma(x) w \rangle| \leq C \|x\|^{-a}$, with a fixed exponent $a$ that depends only on $k$ and $r$, for $x$ in the subset of $G$ over which the orbit integral below runs.
 
-Fix a unit vector $w_0$ in the lowest $K$-type. It is smooth. By the multiplicity one theorem for the standard character, [Theorem 4.7](/entry/thm-m/), there is a Bessel map $l$ of type $(\psi_{\mathrm{std}}, \pi)$ with this property: every Bessel map of this type that is bounded on the orbit of $w_0$ is a multiple of $l$ on the vectors $\sigma(x) w_0$. That theorem is proved by an orbit integral. The reproducing formula for a square-integrable representation,
+Fix a unit vector $w_0$ in the lowest $K$-type. It is smooth. By the multiplicity one theorem for the standard character, [Theorem 4.5.6](/entry/thm-m/), there is a Bessel map $l$ of type $(\psi_{\mathrm{std}}, \pi)$ with this property: every Bessel map of this type that is bounded on the orbit of $w_0$ is a multiple of $l$ on the vectors $\sigma(x) w_0$. That theorem is proved by an orbit integral. The reproducing formula for a square-integrable representation,
 $$\int_G \overline{\langle v, \sigma(y) w_0 \rangle} \, \sigma(y) w_0 \, dy = d_\sigma^{-1} v,$$
 with $d_\sigma$ the formal degree, expresses $B'(\sigma(x) w_0)$ as an integral of $B'$ over the orbit of $w_0$ against a matrix coefficient. The decay makes the integral converge, and the equivariance under $R$ reduces it to the values of $l$.
 
