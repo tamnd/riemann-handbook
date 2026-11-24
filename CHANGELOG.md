@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## v0.1.27
+
+- Volume 12, Theta correspondence: the chapter *Howe duality* is complete. It has 8 sections, from the integral Witt theorem and Gram classes to unramified Howe duality, theta integrals and the Rallis inner product.
+- Volume 12, Theta correspondence: the chapter *Bessel ascent* is complete. It has 14 sections, from Weil representations and lowest K-types to theta lifts, seesaws and the ascent of Bessel period nonvanishing.
+- Volume 14, Iterated theta lifts: the chapter *Theta towers* is complete. It has 22 sections, from Witt towers and theta kernels to bottom class sums, moved jets, theta subspaces and first occurrence.
+- Volume 6, Arakelov geometry: the chapter *Integral depth* is complete. It has 22 sections, from Bertini over number fields and the arithmetic Hilbert-Samuel bound to covolumes, archimedean mass bounds and the theta key scalar on integral models.
+
 ## v0.1.26
 
 - Volume 6, Arakelov geometry: the chapter *Chern-Weil theory* is complete. It has 11 sections, from Chern forms of line bundles, fibre integration and the splitting principle to good metrics and the flag push-forward, Raynaud flags and Hodge-Tate points, pure periods and Mahler measures with vertical Chow terms.
