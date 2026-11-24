@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## v0.1.32
+
+- Volume 15, Assembly: the volume now opens with an introduction. It says how the volume proves that no Dirichlet L-function vanishes for Re s > 1/2, where the proof of RH uses each chapter, and in which order to read them. Every volume from 3 to 15 now has an introduction.
+- Fixed cross-reference labels in Volumes 7 and 13, five raw-URL link texts in Volume 15, and links to Volume 1 headings with accented letters.
+
 ## v0.1.31
 
 - Volume 8, Automorphic forms: the chapter *Unfolding* is complete. It has 6 sections, from twisted Eisenstein coefficients and double cosets to Hecke operators, the unimodular genus and reference frames.
