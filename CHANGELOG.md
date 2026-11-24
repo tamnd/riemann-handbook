@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## v0.1.25
+
+- Volume 10, Hermitian lattices: the chapter *Mass formula* is complete. It has 12 sections, from branching and integral lifts, square pairs and local densities to lattice indices, class masses and volumes, stabilizer volumes, Hecke operators, local weight charts and multiplicity.
+- Volume 7, local representations: the chapter *Whittaker models and Kirillov theory* is complete. It has 13 sections, from the Gelfand-Kazhdan criterion and Whittaker idempotents to the Bessel integral of a discrete series, archimedean and semi-local Kirillov models, the tensor product theorem and the global Godement-Jacquet functional equation.
+- Volume 10, Hermitian lattices: the chapter *Flag measures* is complete. It has 15 sections, from the Iwasawa integration formula and Levi factors to flag unfolding, the volume step from Siegel-Weil, the counting theorem, Theorem S and the irreducibility row.
+- Volume 8, automorphic forms: the chapter *Base change* is complete. It has 26 sections, from local base change and Satake parameters to Iwahori matching, unit orbital integrals, the Dirac inequality, descent to definite unitary groups and isobaric base change.
+
 ## v0.1.24
 
 - Volume 10, Hermitian lattices: the chapter *Local volumes* is complete. It has 9 sections, from Haar measure in Cayley and exponential coordinates and the archimedean orbit constant to the energy bound at infinity, local orbit volumes, Whittaker averages over finite fields and lattice counts.
