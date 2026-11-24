@@ -16,7 +16,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The closed form from the window condition
 
-This section finishes the reduction of the closed form of Theorem A. After Section 7 the remaining hypotheses are the orthogonal family, window and level dimension conditions and the base change property. We prove all of them except the window condition, and we derive the orthogonal family condition from the lattice results of Section 1. The final theorem says: if the two lattice inputs of Section 1 (the minimal vector and the diagonal count) hold, and the window condition holds for large constants, then the closed form holds. This is the form used by [Theorem 5.18](/entry/theorem-a-closed-form-holds/).
+This section finishes the reduction of the closed form of Theorem A. After Section 7 the remaining hypotheses are the orthogonal family, window and level dimension conditions and the base change property. We prove all of them except the window condition, and we derive the orthogonal family condition from the lattice results of Section 1. The final theorem says: if the two lattice inputs of Section 1 (the minimal vector and the diagonal count) hold, and the window condition holds for large constants, then the closed form holds. This is the form used by [Theorem 5.11.3](/entry/theorem-a-closed-form-holds/).
 
 We keep the notation of Sections 6 and 7: $\Lambda_\ell$ is a level lattice of a block with $a_+ = 0$, $\beta^{\Phi}_\ell$ its tie pairing, $\beta^{a_+}_\ell$ the pairing at $a_+$, and $D_1 = D_1(C_M)$. Each proposition below has the shape: if the listed conditions hold for large constants, for all $C_M \geq 1$ and all admitted instances satisfying the window hypotheses, then the closed form holds for large constants. We list only the conditions.
 

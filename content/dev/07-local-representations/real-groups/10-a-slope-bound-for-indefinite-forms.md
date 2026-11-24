@@ -89,7 +89,7 @@ Lean: `Formalism.L2.Indef.Tree.functional_lower_bound_of_conditions_numeric`.
 
 ## Notes and references
 
-The results on $U(p,q)$ feed the step [EveryCharacter from the literature and VWin](/step/every-character-of-literature/) and the segments feed [EveryCharacter](/step/every-character/). Branching, finiteness and the unfolding feed [HypsAlt is nonempty](/step/nonempty-hyps/); the polarization words feed [Theorem 5.6 of Volume 11](/entry/stmt-e-of-mp/), the Hecke algebras [the Flath factorisation](/entry/flath-factorisation-of-literature/), and the slope bound [Theorem](/entry/fun0-fit-of-leaves-alt/).
+The results on $U(p,q)$ feed the step [EveryCharacter from the literature and VWin](/step/every-character-of-literature/) and the segments feed [EveryCharacter](/step/every-character/). Branching, finiteness and the unfolding feed [HypsAlt is nonempty](/step/nonempty-hyps/); the polarization words feed [Theorem 5.5.5 of Volume 11](/entry/stmt-e-of-mp/), the Hecke algebras [the Flath factorisation](/entry/flath-factorisation-of-literature/), and the slope bound [Theorem](/entry/fun0-fit-of-leaves-alt/).
 
 - J. E. Humphreys, *Introduction to Lie Algebras and Representation Theory*, §24.3.
 - J. C. Jantzen, *Representations of Algebraic Groups*, Part II, Chapter 2.
