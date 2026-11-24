@@ -8,7 +8,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## A slope bound for the glued lattice of an indefinite form
 
-The lattices of the indefinite side of the theta argument are glued from local pieces, one type of piece for each finite place, and the argument needs an upper bound for their [maximal slope](/learn/arakelov/#hermitian-lattices-and-slopes). This section proves such a bound by the slope inequality of Bost: a matrix $\Psi$ maps the glued lattice injectively into a fixed lattice $M$ up to explicit denominators, so its maximal slope is bounded by that of $M$, the archimedean size of $\Psi$ and the size of the denominators. The inputs are numeric conditions, and the bound is $x^{C_H} b$. The result is used in [Theorem](/entry/fun0-fit-of-leaves-alt/).
+The lattices of the indefinite side of the theta argument are glued from local pieces, one type of piece for each finite place, and the argument needs an upper bound for their [maximal slope](/learn/arakelov/#hermitian-lattices-and-slopes). This section proves such a bound by the slope inequality of Bost: a matrix $\Psi$ maps the glued lattice injectively into a fixed lattice $M$ up to explicit denominators, so its maximal slope is bounded by that of $M$, the archimedean size of $\Psi$ and the size of the denominators. The inputs are numeric conditions, and the bound is $x^{C_H} b$. The result is used in [Theorem 3.12.5 of Volume 14](/entry/fun0-fit-of-leaves-alt/).
 
 ### Notation
 
@@ -89,7 +89,7 @@ Lean: `Formalism.L2.Indef.Tree.functional_lower_bound_of_conditions_numeric`.
 
 ## Notes and references
 
-The results on $U(p,q)$ feed the step [EveryCharacter from the literature and VWin](/step/every-character-of-literature/) and the segments feed [EveryCharacter](/step/every-character/). Branching, finiteness and the unfolding feed [HypsAlt is nonempty](/step/nonempty-hyps/); the polarization words feed [Theorem 5.5.5 of Volume 11](/entry/stmt-e-of-mp/), the Hecke algebras [the Flath factorisation](/entry/flath-factorisation-of-literature/), and the slope bound [Theorem](/entry/fun0-fit-of-leaves-alt/).
+The results on $U(p,q)$ feed the step [EveryCharacter from the literature and VWin](/step/every-character-of-literature/) and the segments feed [EveryCharacter](/step/every-character/). Branching, finiteness and the unfolding feed [HypsAlt is nonempty](/step/nonempty-hyps/); the polarization words feed [Theorem 5.5.5 of Volume 11](/entry/stmt-e-of-mp/), the Hecke algebras [the Flath factorisation](/entry/flath-factorisation-of-literature/), and the slope bound [Theorem 3.12.5 of Volume 14](/entry/fun0-fit-of-leaves-alt/).
 
 - J. E. Humphreys, *Introduction to Lie Algebras and Representation Theory*, §24.3.
 - J. C. Jantzen, *Representations of Algebraic Groups*, Part II, Chapter 2.

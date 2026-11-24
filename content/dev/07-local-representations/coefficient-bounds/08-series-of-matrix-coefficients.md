@@ -18,7 +18,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Series of matrix coefficients
 
-Let $f$ be a function of moderate growth on an indefinite unitary group $G$, and let $\sigma$ be a [[discrete series|9AB7HYGPEK]] representation. Suppose that $f$ is a limit, uniformly on compact sets, of finite sums of [[matrix coefficients|J85Q7QGGHS]] of $\sigma$. We prove that $f$ is then a convergent series of matrix coefficients, with control of all Sobolev norms. The method is the Fourier expansion of $f$ along the maximal compact subgroup $K$: its terms decay rapidly, and each is a finite sum of matrix coefficients that we rewrite with a uniform bound. The result is used in the proof of [Theorem 3.6 of Volume 14](/entry/cuspidal-lift-smooth-at-of-cuspidal-lift/) on smooth cuspidal lifts.
+Let $f$ be a function of moderate growth on an indefinite unitary group $G$, and let $\sigma$ be a [[discrete series|9AB7HYGPEK]] representation. Suppose that $f$ is a limit, uniformly on compact sets, of finite sums of [[matrix coefficients|J85Q7QGGHS]] of $\sigma$. We prove that $f$ is then a convergent series of matrix coefficients, with control of all Sobolev norms. The method is the Fourier expansion of $f$ along the maximal compact subgroup $K$: its terms decay rapidly, and each is a finite sum of matrix coefficients that we rewrite with a uniform bound. The result is used in the proof of [Theorem 3.3.4 of Volume 14](/entry/cuspidal-lift-smooth-at-of-cuspidal-lift/) on smooth cuspidal lifts.
 
 ### Groups, words and growth
 
@@ -126,7 +126,7 @@ Lean: `GlobalTheory.ClosureSeries.hasTypeAll_of_closure` (also `GlobalTheory.T.h
 
 ## Notes and references
 
-The pointwise bound for discrete series coefficients is used in the step [HypsAlt is nonempty](/step/nonempty-hyps/) of [the unitary hypotheses](/proof/unitary-hypotheses/). The least value bound for theta generators is used in the step [EveryCharacter from the literature](/step/every-character-of-literature/) of [the literature](/proof/literature/). The series of the last section feed into [Theorem 3.6 of Volume 14](/entry/cuspidal-lift-smooth-at-of-cuspidal-lift/) on smooth cuspidal lifts in Volume 14.
+The pointwise bound for discrete series coefficients is used in the step [HypsAlt is nonempty](/step/nonempty-hyps/) of [the unitary hypotheses](/proof/unitary-hypotheses/). The least value bound for theta generators is used in the step [EveryCharacter from the literature](/step/every-character-of-literature/) of [the literature](/proof/literature/). The series of the last section feed into [Theorem 3.3.4 of Volume 14](/entry/cuspidal-lift-smooth-at-of-cuspidal-lift/) on smooth cuspidal lifts in Volume 14.
 
 Sections 1 to 6 follow Harish-Chandra's method: a matrix coefficient is an eigenfunction of the center of the enveloping algebra, and its radial part is bounded by a system of differential equations. Section 7 uses formal groups and Hodge-Tate characters. Section 8 uses the $K$-Fourier series and the Casselman-Wallach theory of smooth globalizations.
 
