@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## v0.1.26
+
+- Volume 6, Arakelov geometry: the chapter *Chern-Weil theory* is complete. It has 11 sections, from Chern forms of line bundles, fibre integration and the splitting principle to good metrics and the flag push-forward, Raynaud flags and Hodge-Tate points, pure periods and Mahler measures with vertical Chow terms.
+- Volume 11, analytic estimates: the chapter *Growth bounds* is complete. It has 18 sections, from the plane Gram theorem and Statement E to Hecke operators on lattice functions, formal group systems, Theorem A and the mean value theorem, Theorem I, extremal and isotypic projectors, the first theorem with constants and the block and symbol forms.
+- Volume 11, analytic estimates: the chapter *Curvature normal forms* is complete. It has 16 sections, from the model algebra and the Yangian relation, the quantum determinant and curvature to stationary phase, Theorems P, S and U, Haar measure and volumes and the dual kernel inequality.
+- Volume 9, Galois representations: the chapter *Modularity* is complete. It has 26 sections, from the window bound and Kato vanishing to automorphic induction, potential modularity towers, symplectic automorphy in rank four, Lemma K, multiplicity one on definite unitary groups, Hida families in rank three, quadratic base change and rank two descent.
+
 ## v0.1.25
 
 - Volume 10, Hermitian lattices: the chapter *Mass formula* is complete. It has 12 sections, from branching and integral lifts, square pairs and local densities to lattice indices, class masses and volumes, stabilizer volumes, Hecke operators, local weight charts and multiplicity.
