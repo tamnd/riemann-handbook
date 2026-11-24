@@ -9,7 +9,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The local Artin map
 
-This section proves the local reciprocity law for nonarchimedean local fields of characteristic $0$: there is a continuous injective homomorphism $\operatorname{Art}_K : K^\times \to G_K^{\mathrm{ab}}$ with dense image, which sends uniformizers to Frobenius elements and induces $K^\times/N_{L/K}(L^\times) \cong \operatorname{Gal}(L/K)$ for each finite abelian $L$ ([local class field theory](/learn/class-field-theory/#local-class-field-theory)). We first build the map for a finite extension of $\mathbb{Q}_p$ inside $\overline{\mathbb{Q}}_p$, from the reciprocity elements of Section 3, and then move it to an abstract local field. The result is used by the theorem that the product of two non-norms from a quadratic extension of a local field is a norm, [Theorem 1.15 of Volume 12](/entry/mul-mem-range-norm/).
+This section proves the local reciprocity law for nonarchimedean local fields of characteristic $0$: there is a continuous injective homomorphism $\operatorname{Art}_K : K^\times \to G_K^{\mathrm{ab}}$ with dense image, which sends uniformizers to Frobenius elements and induces $K^\times/N_{L/K}(L^\times) \cong \operatorname{Gal}(L/K)$ for each finite abelian $L$ ([local class field theory](/learn/class-field-theory/#local-class-field-theory)). We first build the map for a finite extension of $\mathbb{Q}_p$ inside $\overline{\mathbb{Q}}_p$, from the reciprocity elements of Section 3, and then move it to an abstract local field. The result is used by the theorem that the product of two non-norms from a quadratic extension of a local field is a norm, [Theorem 1.1.6 of Volume 12](/entry/mul-mem-range-norm/).
 
 ### The Artin map of a subfield of $\overline{\mathbb{Q}}_p$
 
