@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+## v0.1.31
+
+- Volume 8, Automorphic forms: the chapter *Unfolding* is complete. It has 6 sections, from twisted Eisenstein coefficients and double cosets to Hecke operators, the unimodular genus and reference frames.
+- Volume 9, Galois representations: the chapter *Iwasawa* is complete. It has 10 sections, from class groups in cyclotomic towers and an Euler system of Gauss sums to the Kolyvagin bound, deformation rings and block extensions.
+- Volume 15, Assembly: the chapter *Rows and frames* is complete. It has 39 sections, from induction from distinct cuspidal labels and Wach lattices to compact Howe duality, doubled models and key values along deformations.
+- Volumes 5 to 14: each volume now opens with an introduction. It says what the volume proves, where the proof of RH uses it, what each chapter does, and in which order to read the chapters.
+- With this release every chapter in the outline has text.
+
 ## v0.1.30
 
 - Volume 12, Theta correspondence: the chapter *Seesaw periods* is complete. It has 7 sections, from the mixed model at the origin and the evaluation form of the Bessel unfolding to local flat maps and a quantitative Mahler criterion.
