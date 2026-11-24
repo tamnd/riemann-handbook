@@ -1,0 +1,59 @@
+---
+title: Fine adelic data from the literature
+decls:
+  - GlobalTheory.GeoHalfTop.exists_geoHalf
+  - GlobalTheory.T.exists_geometricHalf_phase_one_over_lawful_core
+  - GlobalTheory.Mem.R3.GeoExProof.geoExV_of_top
+  - GlobalTheory.T.geometricExistence_core_forms_analytic_phaseOne
+  - GlobalTheory.Mem.R3.Rw.datExS_evLg
+  - GlobalTheory.Mem.R3.Rw.datExS_of_harishChandra_casselmanWallach
+  - GlobalTheory.T.exists_fineAdelicDatum_of_hypotheses
+status: drafted
+drafted_by: writer@claude-opus-5-5
+---
+## Fine adelic data from the literature
+
+In this section we prove that fine adelic data exist at each pinned column datum, from seven results of the literature on real groups and automorphic forms. The proof has two parts. The first part is geometric: over a core with its laws, we find a geometric half, that is, theta lifts of the definite forms whose images are the theta functions of the real datum. The second part assembles a fine adelic datum from the geometric half and from the analytic data of the column choices. Fine adelic data are defined in [Section 1.13.6](/entry/dat-ext-rest/), and the starting choices of [Section 1.15.3](/entry/exists-row-lift-reading-definite-form-coordinates/) are built from them. The main theorem enters [the saturated bare forms](/entry/bare-form-saturated/).
+
+### The inputs from the literature
+
+We use the seven hypotheses of Section 13 in the same notation. They are: (DS) the discrete series of $U(p,q)$ are covered by their Harish-Chandra parameters; (HC) the theory of Harish-Chandra modules (the $K$-finite vectors of a unitary representation are smooth, admissible irreducible Harish-Chandra modules exist, infinitesimal equivalence of irreducible unitary representations implies unitary equivalence, and $K$-finite matrix coefficients are analytic); (RD) cusp forms decay rapidly; (CW) the Casselman-Wallach theorem, which extends a $(\mathfrak{g}, K)$-map from the $K$-finite vectors of an irreducible unitary representation into a smooth Fréchet representation to a unique smooth $G$-map with closed image; (WU) the Weil representation of a unitary dual pair; (DE) the discrete series of $U(p,q)$ exist; (HF) the finiteness theorem of Harish-Chandra for automorphic forms of fixed type and level. Their sources are in the notes at the end of the chapter. For the background see [admissible representations and discrete series](/learn/real-groups/#discrete-series-and-formal-degrees), [cusp forms](/learn/automorphic-forms/#constant-terms-and-cusp-forms) and [the Weil representation](/learn/theta/#the-weil-representation).
+
+### The geometric half over a lawful core
+
+Let $D$ be an ambient datum and $G$ a finite group with a family $A$ of multiplicity spaces. A core $T$ for $D$ carries a coefficient field, a level datum and a pullback datum $T_{\mathrm{pb}}$. We say that $T$ is lawful if it satisfies the laws of cores and the laws of the level $J$. Let $R$ be a real datum for $A$ with the coefficient field of $T$. The real datum gives for each step $i$ and each definite vector $x$ the theta function $\theta_{G}(i, \mu_0, j_V(x))$, where $\mu_0$ is the reference tuple and $j_V$ is the inclusion of the definite space. A geometric half over a core is a family of forms $F_W$ on the steps, with a map $j$ on each, together with a theta comparison: the forms of $F_W$ are theta lifts of the definite forms of the core.
+
+**Theorem 1.16.1 (Geometric half over a lawful core).** Assume (RD). Let $D$, $G$, $A$ be as above, $T$ a lawful core and $R$ a real datum with $T_{\mathrm{pb}} = R_{\mathrm{pb}}$. Assume the volume tie of $D$, the algebraic tie of $T$, the preliminary character conditions of $R$, the value condition at $L_0$, the conditions on the field $K_s$ and on its frames, the guard on the set $Q$ of primes, and that each definite space is standard of dimension $n_V$ with $8r + 4 \le n_V$, where $r$ is the rank of the face. Assume that the set $T_0$ of tuples is finite. Then there are a dictionary, scalars $\mu$, a character $\chi_W$, a base point $x_0$, constants $c_E$, numbers $n_W$ and forms $F_W$, and a geometric half $B$ over the core $T'$ obtained from $T$ by these data, with the following properties. The constant $\kappa$ of $B$ is the top constant of $D$. The half $B$ lies in the geometric part, its steps are fired, and each row of $B$ is a one-map row. The input and output extensions hold, $R$ keeps its preliminary character conditions, $\chi_W$ is the group character of $G$, the forms are uniformised and integral, and $T'$ is again lawful.
+
+Lean: `GlobalTheory.GeoHalfTop.exists_geoHalf` (also `GlobalTheory.T.exists_geometricHalf_phase_one_over_lawful_core`, a second name).
+
+*Proof.* Step 1. There are adelic data and characters that are compatible with the core $T$. The input and output extensions of $R$ hold with them. Step 2. There is a reference tuple whose theta comparison with the definite forms has normalised data. Step 3. For each tuple there are constants for the theta comparison, and the finiteness of $T_0$ makes the family of constants finite. Step 4. The constants have a base solution that is equivariant under $G$. This fixes $\mu$, $\chi_W$, $x_0$ and $c_E$. Step 5. The geometric half is realised by the action of $G$ on the forms, with $\kappa$ the top constant. Step 6. The forms of the geometric half are uniformised by the core forms and are integral. This step uses (RD): the theta lifts are cusp forms, so they decay rapidly, and the integrals that define the uniformisation converge. Step 7. The theta comparison data do not depend on the choice of algebraic forms, so the new core $T'$ keeps the laws of $T$. $\square$
+
+### Geometric existence
+
+The next result keeps only what the construction uses from the geometric half: the forms $F_W$, their tie to the theta functions of $R$, and the existence of a half.
+
+**Theorem 1.16.2 (Geometric existence in the analytic phase).** Assume (RD). Let $D$ be an ambient datum, $G$ a finite group, $A$ a family over $G$, $C$ a core and $F$ a face. Assume the volume tie of $D$, the laws of the level $J$ and of the core for $C$, the algebraic tie of $C$, that the set $T_0$ is finite, that each definite space is standard, and that $8r + 4 \le n_V$. Let $R$ be a real datum and $c_G$ a group isomorphism such that the value condition at $L_0$ and the preliminary character conditions hold, the group levels are those of the column choices, $C_{\mathrm{pb}} = R_{\mathrm{pb}}$, and the kept clauses hold. Then there are a dictionary, $\mu$, $\chi_W$, $x_0$, $c_E$, $n_W$ and $F_W$ such that $\chi_W$ is the group character, a geometric half over the new core exists, and for each step $i$ and each definite vector $x$ there is $y$ with
+$$F_W(i).j(y) = \theta_G(i, \mu_0, j_V(x)).$$
+
+Lean: `GlobalTheory.Mem.R3.GeoExProof.geoExV_of_top` (also `GlobalTheory.T.geometricExistence_core_forms_analytic_phaseOne`, a second name).
+
+*Proof.* Apply the theorem on the geometric half over a lawful core to $C$ and $R$. Its fired steps give, for each $i$, an adelic form of the half at step $i$. The theta comparison of this form gives, for each $x$, a vector $y$ with $F_W(i).j(y) = \theta_G(i, \mu_0, j_V(x))$. $\square$
+
+### Fine adelic data
+
+Let $K$ be a context, $B$ a base with frame $f$ and twist data $T$, and $w$ a column datum over $B$. The column datum is pinned if it carries a pin of its frames. For a stage $Z$ of $w$ we write $w.\mathrm{st}(Z)$ for the stage of the construction and $W_T = \{v : \text{the residue characteristic of } v \text{ lies in the prime set of } T\}$. Recall from Section 13 that an adelic datum $z$ over $w.\mathrm{st}(Z)$ with places $W_T$ is fine if it is exact at its places, lies in the geometric part, has a pinned core, and is standard.
+
+**Lemma 1.16.3 (Fine adelic data, eventual form).** Assume (DS), (HC), (RD), (CW), (WU), (DE) and (HF). Then eventually in the context the following holds. For each base $B$, frame $f$, twist data $T$, pinned column datum $w$, stage $Z$ of $w$ with good fields, such that the groups of $Z$ are true, the group of the stage fits the column input, and the volume tie holds, there is a fine adelic datum over $w.\mathrm{st}(Z)$ with places $W_T$.
+
+Lean: `GlobalTheory.Mem.R3.Rw.datExS_evLg`.
+
+*Proof.* Eventually in the context, the frames of the host hold, the definite spaces are standard and large, and the coefficient field of a large base contains the values of the twists, by [the theorem on large coefficient fields](/entry/large-coefficient-field-contains-twist-values/). Fix $B$, $f$, $T$, $w$ and $Z$ as in the claim, and let $X = w.\mathrm{st}(Z)$ and $I$ the column input of $w$. The set $W_T$ is finite and stable under conjugation. Step 1. Since the infinite part of the character is $1$, the character values lie in a small field. This gives a core $C$ with a pin, with the laws of the core and of $J$, and with the algebraic tie. Step 2. The analytic data of the column choices exist and keep their clauses. This uses (DE). It gives a finite group, a trace datum, a first real datum $R_0$, the group isomorphism $c_G$, the good set and the idempotents. Step 3. At these choices the intertwiners and lifts exist at each real datum with the preliminary conditions, by (DS), (HC), (RD) and (CW). Step 4. The theorem on geometric existence applies to $C$ and the face of the column choices, by (RD). Step 5. The analytic hypotheses of the links follow from (WU), (DE), (HF) and (RD). With Steps 3 and 4 they give a seed of standard weight characters: a new real datum $R$ with the same level data as $R_0$, pins, the exactness at the places and a geometric half. Step 6. Since $R$ and $R_0$ have the same levels, the good set of $R_0$ is good for $R$. These data form an adelic datum $z$ over $X$ with places $W_T$. It is exact by Step 5, its core is pinned by Step 1, it is standard by Step 5, and it lies in the geometric part because the geometric half is uniformised and integral, by (RD). So $z$ is fine. $\square$
+
+**Theorem 1.16.4 (Fine adelic data from the literature).** Assume (DS), (HC), (RD), (CW), (WU), (DE) and (HF). Then there is a column step from "pinned" to the following: for each stage $Z$ with good fields such that the groups of $Z$ are true, the group of the stage fits the column input, and the volume tie holds, there is a fine adelic datum over $w.\mathrm{st}(Z)$ with places $W_T$.
+
+Lean: `GlobalTheory.T.exists_fineAdelicDatum_of_hypotheses` (also `GlobalTheory.Mem.R3.Rw.datExS_of_harishChandra_casselmanWallach`, the proof).
+
+*Proof.* A property that holds eventually in the context gives a column step. Apply this to the lemma on the eventual form. $\square$
+
+**Remark 1.16.5 (Formalization).** In [ExistsFineAdelicDatumOfHyp.lean](lean:Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsFineAdelicDatumOfHyp.lean#L91) the hypothesis that the groups of $Z$ are true is taken as `_` and not used; it stays in the statement because it is part of `DatExS` ([CoefAEqOfHeq.lean](lean:Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/CoefAEqOfHeq.lean#L168)). Fine is `ExAt ∧ InGeo ∧ CoreP ∧ Std` at line 166 of that file. In [GeometricExistenceCoreFormsAnalyticPhaseOne.lean](lean:Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/GeometricExistenceCoreFormsAnalyticPhaseOne.lean#L24) the hypothesis on the group levels is `_hlev` and is not used, and most outputs of the geometric half theorem are dropped. The steps of the proof of the geometric half ([ExistsGeometricHalfPhaseOneOverLawfulCore.lean](lean:Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsGeometricHalfPhaseOneOverLawfulCore.lean#L29)) are lemmas that we have not opened; we state only their conclusions as they are used. The three statement files with the names `GlobalTheory.T.*` prove the statement by `first | exact` with the proof name, so they are second names.
