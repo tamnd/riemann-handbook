@@ -1,0 +1,41 @@
+---
+title: Notes and references
+decls:
+  - GlobalTheory.AbLaw.AllLaws.laws_of_h0_eq_one
+status: drafted
+drafted_by: writer@claude-opus-5-5
+---
+## Notes and references
+
+The chapter proves the analytic and geometric inputs of the volume branch of [the Weil bound](/proof/weil-bound/). The theta bound of Sections 1, 2 and 11 enters [the line bound of a key](/entry/line-of-key/), through [the theta bound in full](/entry/theta-bound-full/). The cusp weight bound of Section 3 enters [the volume of a good tower](/entry/good-tower-and-volume/), and the convergence of mixed integrals of Sections 5 and 12 enters [the volume theorem from its inputs](/entry/volume-theorem-x-of-inputs/). The flag models, square systems and log-sine integrals of Sections 6 to 10 and 16 give the antisymmetry of the height polynomial, and Section 17 turns it into [the swap relation from seven statements](/entry/good-tower-antisymmetry-of/) and [the full intersection relation of a tower](/entry/full-intersection-tower-i8-relation/). The Poincaré-Lelong formula of Section 13 and the arithmetic intersection calculus of Section 14 serve [Poincaré-Lelong on leaves](/entry/poincare-lelong-of-leaves/) and [the arithmetic intersection calculus](/entry/ar-calc-direct/). The lower bounds of Section 18 feed [the near boundary bound](/entry/near-bdd/) and [the final intersection estimate](/entry/relay-intersection-final-estimate/). The flag degrees of Section 19 serve [the covolume bound on the boundary](/entry/top-covol-slim2-use-alt-alt/). The holomorphic arcs and theta sections of Section 20 give [the closed arc clause](/entry/arc-clause-closed/) and [the theta rule sum](/entry/theta-rule-sum-lower/). The charts and laws of Section 21 are used wherever the chapter quotes a property of abelian schemes or the integrality of a section at a finite place.
+
+The theta functions of Sections 1, 2, 11 and 20 are the classical theta functions with characteristics on a principally polarized complex torus ([theta functions on complex tori](/learn/theta-functions-cm/#theta-functions-on-complex-tori), [theta functions with characteristics](/learn/theta-functions-cm/#theta-functions-with-characteristics)). The bound of the sup norm by the $L^2$ norm in one frame uses a reduced period matrix. Siegel reduction gives a symplectic basis in which the imaginary part of the period matrix is reduced in the sense of Minkowski, and Section 11 proves the form of this reduction that the bound needs. In the arithmetic setting, sup norms and $L^2$ norms of theta functions appear in the comparison of heights of abelian varieties; the mean over complex places in Section 2 is a version of this comparison with a constant that depends only on the dimension and the mean of the $L^2$ norms.
+
+The plurisubharmonic functions, their regularization and the Monge-Ampère operator on locally bounded potentials in Sections 4, 5 and 12 are those of Bedford and Taylor, with the regularization of Demailly. The mixed integrals off a divisor are integrals of products of currents with singularities along the boundary of a toroidal compactification, in the spirit of the work of Burgos Gil, Kramer and Kühn on automorphic bundles with log singular metrics. The Poincaré-Lelong formula of Section 13 is classical ([metrics, curvature and positivity](/learn/positivity-resolution/#metrics-curvature-and-positivity), [Chern-Weil forms](/learn/positivity-resolution/#chern-weil-forms)); the point of that section is that the formula holds for sections that need not be invariant under complex conjugation.
+
+The arithmetic intersection numbers and the projection formula of Section 14 are those of Gillet and Soulé ([hermitian line bundles](/learn/arakelov/#hermitian-line-bundles), [arithmetic intersection numbers](/learn/arakelov/#arithmetic-varieties-and-intersection-numbers)). The Grassmannian and Chow form heights of Sections 15 and 19 are those of Bost, Gillet and Soulé. The normal crossing charts of Section 15 and the resolutions behind the flag models come from resolution of singularities and principalization in characteristic zero, due to Hironaka, with constructive proofs by Bierstone and Milman and by Włodarczyk ([resolution of singularities](/learn/positivity-resolution/#resolution-of-singularities-and-principalization)).
+
+The toroidal compactifications and the boundary behaviour used in Sections 3, 18 and 19 are those of Faltings and Chai for the Siegel case and of Lan for PEL type. The Stokes limit of Section 18 is a boundary computation of the type that appears in Mumford's proportionality theorem for non-compact quotients, where the forms of good metrics with log growth along the boundary define the same classes as smooth forms.
+
+The laws of abelian schemes in Section 21 are classical. The theorem of the cube, the theorem of the square, the Riemann-Roch theorem for abelian varieties, the Weil pairing and the theta group are in Mumford's book on abelian varieties, and rigidity for abelian schemes is in Chapter 6 of Geometric Invariant Theory. The theory of theta functions over a base, with symmetric line bundles and level structures, is due to Mumford and to Moret-Bailly. The derivation of all these laws from the single fact that a principal polarization has a one dimensional space of sections over an algebraically closed field is specific to this chapter.
+
+The fibre integral of the log-sine function and the reflection sum of Sections 9 and 10 have no classical counterpart that we know of.
+
+- E. Bedford and B. A. Taylor, A new capacity for plurisubharmonic functions, Acta Math. 149 (1982), 1 to 40.
+- E. Bierstone and P. D. Milman, Canonical desingularization in characteristic zero by blowing up the maximum strata of a local invariant, Invent. Math. 128 (1997), 207 to 302.
+- J.-B. Bost, H. Gillet and C. Soulé, Heights of projective varieties and positive Green forms, J. Amer. Math. Soc. 7 (1994), 903 to 1027.
+- J.-P. Demailly, *Complex Analytic and Differential Geometry*, Chapters I and III.
+- G. Faltings and C.-L. Chai, *Degeneration of Abelian Varieties*, Ergeb. Math. Grenzgeb. (3) 22, Springer, 1990, Chapters IV and V.
+- H. Gillet and C. Soulé, Arithmetic intersection theory, Publ. Math. IHÉS 72 (1990), 93 to 174.
+- P. Griffiths and J. Harris, *Principles of Algebraic Geometry*, Wiley, 1978, Chapter 3.
+- H. Hironaka, Resolution of singularities of an algebraic variety over a field of characteristic zero. I, II, Ann. of Math. 79 (1964), 109 to 203 and 205 to 326.
+- K.-W. Lan, *Arithmetic Compactifications of PEL-Type Shimura Varieties*, London Math. Soc. Monogr. 36, Princeton Univ. Press, 2013.
+- L. Moret-Bailly, *Pinceaux de variétés abéliennes*, Astérisque 129, Soc. Math. France, 1985.
+- D. Mumford, *Abelian Varieties*, Tata Inst. Fund. Res. Stud. Math. 5, Oxford Univ. Press, 1970, Chapters II and III.
+- D. Mumford, *Tata Lectures on Theta I*, Progr. Math. 28, Birkhäuser, 1983, Chapter II.
+- D. Mumford, Hirzebruch's proportionality theorem in the non-compact case, Invent. Math. 42 (1977), 239 to 272.
+- D. Mumford, J. Fogarty and F. Kirwan, *Geometric Invariant Theory*, 3rd ed., Ergeb. Math. Grenzgeb. (2) 34, Springer, 1994, Chapter 6.
+- C. Soulé, D. Abramovich, J.-F. Burnol and J. Kramer, *Lectures on Arakelov Geometry*, Cambridge Stud. Adv. Math. 33, Cambridge Univ. Press, 1992, Chapters II and III.
+- J. Włodarczyk, Simple Hironaka resolution in characteristic zero, J. Amer. Math. Soc. 18 (2005), 779 to 822.
+
+**Remark 10.22.1 (Formalization).** The classical laws of abelian schemes enter through `GlobalTheory.AbLaw.AllLaws.laws_of_h0_eq_one` (`Development/AbelianVarietyTheory/Proofs/AbelianSchemeLawProofs/LawsOfH0EqOneClosedFields.lean:64`). Its one hypothesis, that a principal polarization over an algebraically closed field has one dimensional sections, is proved in `FinrankSectionsPrincipalPolarisationEqOne.lean:12` of the same folder as an antisymmetry of an upper bound and a lower bound (line 16). The unconditional laws `GlobalTheory.abelianSchemeLaws_all` (`AbelianSchemeLawsUnconditional.lean:14`) apply the theorem to this fact and nothing else. So the facts that the chapter quotes from Mumford and from Moret-Bailly are proved, and are not taken as inputs.
