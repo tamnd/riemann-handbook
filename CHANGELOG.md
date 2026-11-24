@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## v0.1.29
+
+- Volume 12, Theta correspondence: the chapter *Siegel-Weil* is complete. It has 17 sections, from Gram fibres and the hyperbolic stage to the constant term, the standard formula and the continuation of Siegel Eisenstein series.
+- Volume 12, Theta correspondence: the chapter *Weil representation* is complete. It has 19 sections, from norms in a local quadratic extension and the Gauss integral of a Hermitian form to Poincaré series, the cusp form period and the real branch.
+- Volume 10, Hermitian lattices: the chapter *Covolumes* is complete. It has 32 sections, from the weights of split terms and orbit sums to the modulus of an isotropic flag and the Siegel step for lattice volumes.
+- Volume 15, Assembly: the chapter *Unitary hypotheses* is complete. It has 17 sections, from the record of hypotheses and the rows from Siegel-Weil to depth zero types, theta lifts that do not vanish and base change on the Galois side.
+
 ## v0.1.28
 
 - Volume 6, Arakelov geometry: the chapter *Theta sup norms* is complete. It has 22 sections, from reduced symplectic bases and Poincaré-Lelong to arithmetic intersection numbers, Stokes limits, holomorphic arcs and the laws of abelian schemes.
