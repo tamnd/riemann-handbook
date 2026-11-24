@@ -8,7 +8,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Geometry of unitary groups at infinity
 
-This section covers the region where the real group $U(p, q)$ goes to infinity by finitely many parabolic charts. On each chart a height function grows linearly along a one-parameter subgroup, controls the Hilbert-Schmidt norm, and measures how fast conjugation contracts the nilradical. These are the geometric facts that the decay estimate for discrete series in [Theorem 3.9.8](/entry/back-of-inputs/) needs. The proof is linear algebra in the eigenspaces of a grading matrix, together with an eigenvalue gap argument for the covering. For background see [representations of real groups](/learn/representations/#representations-of-real-groups).
+This section covers the region where the real group $U(p, q)$ goes to infinity by finitely many parabolic charts. On each chart a height function grows linearly along a one-parameter subgroup, controls the Hilbert-Schmidt norm, and measures how fast conjugation contracts the nilradical. These are the geometric facts that the decay estimate for discrete series in [Proposition 3.9.8](/entry/back-of-inputs/) needs. The proof is linear algebra in the eigenspaces of a grading matrix, together with an eigenvalue gap argument for the covering. For background see [representations of real groups](/learn/representations/#representations-of-real-groups).
 
 ### Parabolic charts of U(p, q)
 

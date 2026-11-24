@@ -29,7 +29,7 @@ A *theta function* is a continuous function $f : \mathbb{W} \to \mathbb{C}$ with
 2. $\rho(u) f = f$ for all $u$ in an open subgroup of $\mathbb{W}$ with zero archimedean component;
 3. $t \mapsto f(w + L(t))$ is smooth for each continuous additive map $L : \mathbb{R}^k \to \mathbb{W}$ with values in the archimedean part.
 
-The theta functions are the functions $\Theta(\varphi)$ of the [Schrödinger model](/learn/theta/#the-schrödinger-model) written on $\mathbb{W}$ itself: the first condition is the quasi-periodicity of a theta series, and the second says that $\varphi$ is fixed by a compact open subgroup at the finite places.
+The theta functions are the functions $\Theta(\varphi)$ of the [Schrödinger model](/learn/theta/#the-schrdinger-model) written on $\mathbb{W}$ itself: the first condition is the quasi-periodicity of a theta series, and the second says that $\varphi$ is fixed by a compact open subgroup at the finite places.
 
 **Definition 8.1.3 (Weil datum).** A character $\psi$ of $\mathbb{A}_F / F$ is *standard* if $\psi_\infty(x) = \exp(-2\pi i \operatorname{tr} x)$. A *Weil datum* for $(V, W)$ is a standard $\psi$, two Hecke characters $\chi_V, \chi_W$ of $\mathbb{A}_E^\times / E^\times$ with $\chi_V|_{\mathbb{A}_F^\times} = \eta^{n_V}$ and $\chi_W|_{\mathbb{A}_F^\times} = \eta^{n_W}$ for the quadratic character $\eta$ of $E/F$, and a homomorphism $\omega : G_V \times G_W \to \operatorname{End}(\mathbb{C}^{\mathbb{W}})$ such that, for every theta function $f$:
 
