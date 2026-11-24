@@ -8,7 +8,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The tensor product theorem
 
-An irreducible admissible representation of an adelic group is a restricted tensor product of local representations. This is the tensor product theorem of Flath. This section proves it for $\mathrm{GL}_n$ over a number field, first for the finite adeles and then for $(\mathfrak{g}, K_\infty) \times \mathrm{GL}_n(\mathbb{A}_f)$-modules. The local components are what the local theory of this chapter (Sections 1 to 4) applies to. The result is used in the proof of [Theorem](/entry/loc-iff/). For automorphic representations and their factorization, see [automorphic representations](/learn/automorphic-forms/#automorphic-representations).
+An irreducible admissible representation of an adelic group is a restricted tensor product of local representations. This is the tensor product theorem of Flath. This section proves it for $\mathrm{GL}_n$ over a number field, first for the finite adeles and then for $(\mathfrak{g}, K_\infty) \times \mathrm{GL}_n(\mathbb{A}_f)$-modules. The local components are what the local theory of this chapter (Sections 1 to 4) applies to. The result is used in the proof of [Theorem 7.21.2 of Volume 8](/entry/loc-iff/). For automorphic representations and their factorization, see [automorphic representations](/learn/automorphic-forms/#automorphic-representations).
 
 ### Restricted tensor products
 

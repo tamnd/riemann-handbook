@@ -8,7 +8,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## The global Godement-Jacquet functional equation
 
-Godement and Jacquet attach to a cusp form on $\mathrm{GL}_n$ and a Schwartz-Bruhat function on $n \times n$ matrices a zeta integral over $\mathrm{GL}_n(\mathbb{A})$. This section proves that the zeta integral of a matrix coefficient of two cusp forms converges in a right half-plane, has an entire continuation, and satisfies the functional equation $s \mapsto 1 - s$ under the Fourier transform of the Schwartz-Bruhat function. The tool is Poisson summation on matrices, applied to a theta pairing of the two cusp forms. The result is used in the proof of [Theorem 7.30 of Volume 8](/entry/gen-fe/). For cusp forms see [constant terms and cusp forms](/learn/automorphic-forms/#constant-terms-and-cusp-forms), and for the Fourier transform see [the Fourier transform](/learn/analysis/#the-fourier-transform).
+Godement and Jacquet attach to a cusp form on $\mathrm{GL}_n$ and a Schwartz-Bruhat function on $n \times n$ matrices a zeta integral over $\mathrm{GL}_n(\mathbb{A})$. This section proves that the zeta integral of a matrix coefficient of two cusp forms converges in a right half-plane, has an entire continuation, and satisfies the functional equation $s \mapsto 1 - s$ under the Fourier transform of the Schwartz-Bruhat function. The tool is Poisson summation on matrices, applied to a theta pairing of the two cusp forms. The result is used in the proof of [Theorem 7.24.3 of Volume 8](/entry/gen-fe/). For cusp forms see [constant terms and cusp forms](/learn/automorphic-forms/#constant-terms-and-cusp-forms), and for the Fourier transform see [the Fourier transform](/learn/analysis/#the-fourier-transform).
 
 ### Setting
 
