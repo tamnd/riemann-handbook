@@ -28,7 +28,7 @@ $$(\rho(g)\varphi)(x) = s(\det A)\, \psi\bigl(\tfrac12 \langle xA, xB \rangle\bi
 
 **Definition 1.3.3 (Fourier transform).** For $\varphi \in S$ put $(\mathcal{F}\varphi)(x) = \int_X \psi(\langle x, y \rangle)\, \varphi(y)\, d\mu(y)$.
 
-So $\rho(m(a))\varphi(x) = s(\det a)\varphi(xa)$ and $\rho(n(b))$ is multiplication by $\psi(\tfrac12\langle x, xb\rangle)$. These are the [Schrödinger model](/learn/theta/#the-schrödinger-model) formulas of Volume 1, with the splitting character $\chi$ in place of the quadratic character of an orthogonal space. Since $\psi \circ \langle\ ,\ \rangle$ is a self-dual pairing, $\mathcal{F}$ maps $S$ onto $S$, and $\mathcal{F}^2 \varphi(x) = C\varphi(-x)$ for a constant $C > 0$ that depends on $\mu$. Each $\rho(g)$ maps $S$ to $S$, and $\rho$ is a homomorphism on $P$.
+So $\rho(m(a))\varphi(x) = s(\det a)\varphi(xa)$ and $\rho(n(b))$ is multiplication by $\psi(\tfrac12\langle x, xb\rangle)$. These are the [Schrödinger model](/learn/theta/#the-schrdinger-model) formulas of Volume 1, with the splitting character $\chi$ in place of the quadratic character of an orthogonal space. Since $\psi \circ \langle\ ,\ \rangle$ is a self-dual pairing, $\mathcal{F}$ maps $S$ onto $S$, and $\mathcal{F}^2 \varphi(x) = C\varphi(-x)$ for a constant $C > 0$ that depends on $\mu$. Each $\rho(g)$ maps $S$ to $S$, and $\rho$ is a homomorphism on $P$.
 
 ### The relation
 

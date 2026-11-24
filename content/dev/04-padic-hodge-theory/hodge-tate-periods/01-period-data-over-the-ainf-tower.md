@@ -30,7 +30,7 @@ So $\pi_n$ is a square-zero thickening, and $\hat\zeta_n$ is a lift of the root 
 
 ### Groups with a tangent space and a biextension
 
-We work with a group functor on local $\Lambda$-algebras that has the two structures we need: a tangent space that describes it on square-zero thickenings, and a biextension that gives the Weil pairing ([duality and the Poincaré bundle](/learn/abelian-varieties/#duality-and-the-poincare-bundle)).
+We work with a group functor on local $\Lambda$-algebras that has the two structures we need: a tangent space that describes it on square-zero thickenings, and a biextension that gives the Weil pairing ([duality and the Poincaré bundle](/learn/abelian-varieties/#duality-and-the-poincar-bundle)).
 
 **Definition 4.1.3 (Group with tangent space and biextension).** A *framed group* $\mathcal{B}$ over $\Lambda$ consists of:
 

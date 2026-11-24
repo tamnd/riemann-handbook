@@ -36,7 +36,7 @@ Let $c = (A, P, \lambda)$ be a Siegel object of genus $h$ over $t : S \to \opera
 
 2. (A complementary isogeny.) There are an abelian scheme $B$ over $S$, a line bundle $Q$ on $A \times_S B$ and maps of group schemes $\lambda_B : A \to B$ and $\mu : B \to A$ with these properties: $B$ is a [[dual abelian scheme|HZXSESHC8P]] of $A$ with Poincaré bundle $Q$, and $A$ is a dual of $B$ with Poincaré bundle $\sigma^* Q$; $\mu \lambda_B = d$ on $A$ and $\lambda_B \mu = d$ on $B$; and $P \cong (1 \times \lambda_B)^* Q$.
 
-So $\lambda_B$ is the polarization of $c$ ([duality and the Poincaré bundle](/learn/abelian-varieties/#duality-and-the-poincare-bundle)), and $\mu$ exists because $d$ kills its kernel.
+So $\lambda_B$ is the polarization of $c$ ([duality and the Poincaré bundle](/learn/abelian-varieties/#duality-and-the-poincar-bundle)), and $\mu$ exists because $d$ kills its kernel.
 
 **Definition 8.11.2 (Zarhin object).** Let $Z = A^4 \times_S B^4$, an abelian scheme over $S$. Write a point of $Z$ as $(a, b) = (a_1, \dots, a_4, b_1, \dots, b_4)$.
 

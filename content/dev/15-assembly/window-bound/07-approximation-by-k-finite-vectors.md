@@ -7,7 +7,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Approximation by K-finite vectors
 
-This section proves that, in a unitary representation of a real [[unitary group|0R9R0Y1HDK]], each smooth vector is a limit of smooth $K$-finite vectors, in any finite set of Sobolev seminorms. The result is used where an estimate is first proved on the $K$-finite vectors, the [[Harish-Chandra module|2MKHH636C3]], and must then be extended to all smooth vectors: in the density of $K$-finite vectors for the Hecke vectors, in the central character argument of Gelfand type, and in the Casselman-Wallach inputs. All of them lie below the step [EveryCharacter from the literature and VWin](/step/every-character-of-literature/). The Background for $(\mathfrak g, K)$-modules is at [/learn/real-groups/#admissible-representations-and-mathfrakg-k-modules](/learn/real-groups/#admissible-representations-and-mathfrakg-k-modules).
+This section proves that, in a unitary representation of a real [[unitary group|0R9R0Y1HDK]], each smooth vector is a limit of smooth $K$-finite vectors, in any finite set of Sobolev seminorms. The result is used where an estimate is first proved on the $K$-finite vectors, the [[Harish-Chandra module|2MKHH636C3]], and must then be extended to all smooth vectors: in the density of $K$-finite vectors for the Hecke vectors, in the central character argument of Gelfand type, and in the Casselman-Wallach inputs. All of them lie below the step [EveryCharacter from the literature and VWin](/step/every-character-of-literature/). For $(\mathfrak g, K)$-modules see [admissible representations and $(\mathfrak{g}, K)$-modules](/learn/real-groups/#admissible-representations-and-mathfrakg-k-modules).
 
 We work with matrices. Let $G \in M_n(\mathbb{C})$, and let $U(G) = \{g \in M_n(\mathbb{C}) : g^* G g = G\}$ be its unitary group. Its [[Lie algebra|5JJYBJ6A8K]] is $\mathfrak g = \{X : X^* G + G X = 0\}$, a real subspace of $M_n(\mathbb{C})$. For $X_1, \dots, X_d \in \mathfrak g$ and $t \in \mathbb{R}^d$ put
 $$e(X; t) = \exp(t_1 X_1) \exp(t_2 X_2) \cdots \exp(t_d X_d).$$
@@ -26,7 +26,7 @@ If $G$ is diagonal with $p$ entries $1$ and $q$ entries $-1$, then $s = G$ is a 
 
 Lean: `Formalism.L2.Theta.SmoothVec` (also `Formalism.IndefR.Tow.SobPf.KFinG`, `Formalism.IndefR.Tow.SobPf.IsGRep`).
 
-The seminorms $w \mapsto \|d\pi(l)w\|$, for finite lists $l$, define the Sobolev topology on the smooth vectors; see [/learn/analysis/#sobolev-norms](/learn/analysis/#sobolev-norms).
+The seminorms $w \mapsto \|d\pi(l)w\|$, for finite lists $l$, define the Sobolev topology on the smooth vectors; see [Sobolev norms](/learn/analysis/#sobolev-norms).
 
 **Theorem 2.7.3 (Approximation by $K$-finite vectors).** Let $s$ be a Cartan involution for $G$, let $H$ be complete, and let $\pi$ be a unitary representation of $U(G)$ on $H$. Let $w$ be a smooth vector, let $S$ be a finite set of finite lists in $\mathfrak g$, and let $\varepsilon > 0$. Then there is a smooth $K$-finite vector $v$ with $\|d\pi(l)v - d\pi(l)w\| < \varepsilon$ for each $l \in S$.
 

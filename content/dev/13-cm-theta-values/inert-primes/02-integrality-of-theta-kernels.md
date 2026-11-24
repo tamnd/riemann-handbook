@@ -13,7 +13,7 @@ drafted_by: writer@claude-opus-5-5
 
 This section proves that the theta kernels of pairs of self-dual Hermitian lattices, read in the logarithmic coordinates of a curve with complex multiplication, have integral Taylor coefficients at a prime $p \ge 5$ that is inert in $K$. The coordinates come from an orthonormal local basis, and the series is corrected by the sigma factor of Section 1. The proof reduces the statement in two steps: first from a general pair of lattices to the standard lattice, by weak approximation in the unitary group, and then from the standard lattice in any rank to one copy of rank $1$. The theorem is the integrality input of [the first kernel law](/entry/first-kernel-small-of-frame/) in Section 3, and it is one of the results on complex multiplication that [the service row from Artin reciprocity](/entry/serv-h-row-of-artin/) uses.
 
-Throughout, we assume the existence of good models, which [the chapter on elliptic torsion](/entry/good-model/) treats.
+Throughout, we assume the existence of good models, which [Theorem 5.14.6](/entry/good-model/) gives.
 
 **Theorem 6.2.1 (Good models).** Let $d$ be a squarefree integer with $d \equiv 3 \pmod 4$, and $L$ a lattice in $\mathbb{C}$ with complex multiplication by $\mathbb{Q}(\sqrt{-d})$. Let $l \ge 5$ be a prime with $l \nmid d$ and $\iota : \mathbb{C} \to \mathbb{C}_l$ a field isomorphism. Then there are $g_2, g_3$ in the maximal unramified extension of $\mathbb{Q}_l$ in $\mathbb{C}_l$, of norm at most $1$, with $|g_2^3 - 27 g_3^2| = 1$, and $\mu \ne 0$ with $g_2 = \mu^4\,\iota g_2(L)$ and $g_3 = \mu^6\,\iota g_3(L)$.
 
