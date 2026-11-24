@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## v0.1.28
+
+- Volume 6, Arakelov geometry: the chapter *Theta sup norms* is complete. It has 22 sections, from reduced symplectic bases and Poincaré-Lelong to arithmetic intersection numbers, Stokes limits, holomorphic arcs and the laws of abelian schemes.
+- Volume 14, Iterated theta lifts: the chapter *Level four* is complete. It has 24 sections, from fine adelic data and Hecke operators at split primes to twisted chains, multiplicity spaces and the equations of the theta family.
+- Volume 6, Arakelov geometry: the chapter *Good towers* is complete. It has 24 sections, from good root towers and Hodge ties to the mean volume slope, flat degrees at CM points and local exponentials.
+- Volume 15, Assembly: the chapter *Surjectivity* is complete. It has 12 sections, from runs and the export statement to automorphy and Galois representations at small places, the exponent bound and the lower bound for lambda.
+
 ## v0.1.27
 
 - Volume 12, Theta correspondence: the chapter *Howe duality* is complete. It has 8 sections, from the integral Witt theorem and Gram classes to unramified Howe duality, theta integrals and the Rallis inner product.
