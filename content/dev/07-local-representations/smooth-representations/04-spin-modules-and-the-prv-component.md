@@ -11,7 +11,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Spin modules and the PRV component
 
-Dirac operator methods for $(\mathfrak{g}, K)$-modules tensor a module with a spin module and look for a specific $K$-type in the product. This section proves the one fact of this kind that the base change argument of Volume 8 needs: if a unitary $\mathfrak{gl}_n$-module $V$ has a $K$-type of highest weight $\nu$, then $V \otimes S$, with $S$ a spin module, contains a highest weight vector of weight $\nu - \rho$ moved to the dominant chamber. This is the case $\mu = \rho$ of the theorem of Parthasarathy, Ranga Rao and Varadarajan on the component of extreme weight in a tensor product. It is used in [Theorem 7.29 of Volume 8](/entry/core-g/) of Volume 8. For highest weights of $\mathfrak{gl}_n$ see [highest weights and branching](/learn/representations/#highest-weights-and-branching).
+Dirac operator methods for $(\mathfrak{g}, K)$-modules tensor a module with a spin module and look for a specific $K$-type in the product. This section proves the one fact of this kind that the base change argument of Volume 8 needs: if a unitary $\mathfrak{gl}_n$-module $V$ has a $K$-type of highest weight $\nu$, then $V \otimes S$, with $S$ a spin module, contains a highest weight vector of weight $\nu - \rho$ moved to the dominant chamber. This is the case $\mu = \rho$ of the theorem of Parthasarathy, Ranga Rao and Varadarajan on the component of extreme weight in a tensor product. It is used in [Theorem 7.23.6 of Volume 8](/entry/core-g/) of Volume 8. For highest weights of $\mathfrak{gl}_n$ see [highest weights and branching](/learn/representations/#highest-weights-and-branching).
 
 ### Highest weight vectors
 
