@@ -42,7 +42,7 @@ $$C = 40 \bigl( 4 C_1 K^2 + C_2 K + 2 C_1 \bigr) C_2, \qquad K = 2 C_1 + C_2 + 1
 
 Lean: `GlobalTheory.RefSum.sumPt_of_sizes_alt` (also `GlobalTheory.T.sum_pt_of_wt_pt_num_pt`, a second name).
 
-*Proof.* At each point and level, this is [Theorem 3.1](/entry/sum-at-of-sizes/) of the chapter on integral depth, applied to the weight bounds with $C_1$ and the numerical bounds with $C_2$. The constant does not depend on the point, so the pointwise statements combine into a level statement. $\square$
+*Proof.* At each point and level, this is [Theorem 3.3.3](/entry/sum-at-of-sizes/) of the chapter on integral depth, applied to the weight bounds with $C_1$ and the numerical bounds with $C_2$. The constant does not depend on the point, so the pointwise statements combine into a level statement. $\square$
 
 **Theorem 2.5.6 (Oscillation sums from the size condition).** The size condition implies the oscillation statement.
 
@@ -54,7 +54,7 @@ Lean: `GlobalTheory.RefSum.sumPt_of_size_alt` (also `GlobalTheory.T.sum_pt_of_si
 
 Lean: `GlobalTheory.RefSum.refCore_of_size_sumPt` (also `GlobalTheory.T.reference_core_of_size_and_sum_point`, a second name).
 
-*Proof.* Let $C_1$ be the constant of the oscillation statement. The size condition gives, as level statements, bounds on the gaps of the quotient weights and bounds on the jet numbers, the number of columns and the length; let $C_3$ be the constant of the second, which includes $T(\log g_0 + \log g_1) \le C_3 E$. Fix a point, a level and a quotient weight $u_1$, with the oscillation prime sum $(S, e, s)$. Add the two host primes to the sum: put $S' = S \cup \{g_0, g_1\}$, $e' = e + \mathbf{1}_{\{g_0, g_1\}}$ and $s' = s + \log g_0 + \log g_1$. This is a prime sum, and $T s' \le (C_1 + C_3) E$. Now let $q$ be a prime. If $q$ is a host prime, the reference exponent of the theta weight at level $i + 1$ is at most $1 \le e'_q$. If $q$ is not a host prime, the oscillation at $q$ is at most $e_q$, so by [Theorem 3.4](/entry/base-locus-exponent-le-oscillation-non-type-prime/) of the chapter on integral depth the reference exponent of the theta weight at $q$ is at most $e_q = e'_q$; this theorem uses the jet number and column bounds given by the size condition. $\square$
+*Proof.* Let $C_1$ be the constant of the oscillation statement. The size condition gives, as level statements, bounds on the gaps of the quotient weights and bounds on the jet numbers, the number of columns and the length; let $C_3$ be the constant of the second, which includes $T(\log g_0 + \log g_1) \le C_3 E$. Fix a point, a level and a quotient weight $u_1$, with the oscillation prime sum $(S, e, s)$. Add the two host primes to the sum: put $S' = S \cup \{g_0, g_1\}$, $e' = e + \mathbf{1}_{\{g_0, g_1\}}$ and $s' = s + \log g_0 + \log g_1$. This is a prime sum, and $T s' \le (C_1 + C_3) E$. Now let $q$ be a prime. If $q$ is a host prime, the reference exponent of the theta weight at level $i + 1$ is at most $1 \le e'_q$. If $q$ is not a host prime, the oscillation at $q$ is at most $e_q$, so by [Theorem 3.4.7](/entry/base-locus-exponent-le-oscillation-non-type-prime/) of the chapter on integral depth the reference exponent of the theta weight at $q$ is at most $e_q = e'_q$; this theorem uses the jet number and column bounds given by the size condition. $\square$
 
 The constant of the result is $C_1 + C_3$.
 
