@@ -1,0 +1,60 @@
+---
+title: Column input and character indices
+decls:
+  - GlobalTheory.Mem.Col2.IdxEx.exists_chIdx_of_cst
+  - GlobalTheory.Mem.Col2.exists_chIdx
+  - GlobalTheory.Mem.Col2.InEx.exists_colIn
+status: drafted
+drafted_by: writer@claude-opus-5-5
+---
+## Column input and character indices
+
+A column of the construction is a chain of spaces $Y_0, Y_1, \dots, Y_{m-1}$ over $E$, with local data at two finite sets of primes: the primes $V_G$ over the auxiliary primes $g_i$, and the ramified primes $Q$ of the twisting character. At each prime and each step, the chain needs a finite set of representatives $h$ in the automorphism group of the step, such that the local zeta sums between consecutive steps do not vanish. A character index is such a family of representatives. In this section we construct character indices, and from them column input data with prescribed characters. The column input enters [the nonempty hypotheses at unramified exponents](/entry/hypotheses-nonempty-of-unramified-exponents-alt/).
+
+### Character indices
+
+Let $X$ be field data with a CM field $E$, its real subfield $F$ and a coefficient field $K$. Let $\mathrm{Pr}$ be prime data, with the auxiliary primes $g_i$ and the set $V_G$ of primes of $E$ over them. Let $R$ be ranks, with the number $m \ge 2$ of steps, and for each step $j$ the dimension $N_j$ of $Y_j$ and the codimension $c_j$. Let $\mathrm{Ch}$ be characters for these data, $\mathrm{sel}$ a selection of a prime of $E$ over each prime of $F$, and $\mu$ a tuple of characters. Let $Q$ be the set of primes of $E$ selected over the ramified primes of $\mu$, and let the row set be $V_G \cup Q$. For a prime $P$ of $E$ we write $q_P$ for its norm, and $\Lambda_j(P)$ for the standard lattice of step $j$ at $P$.
+
+The local constants $c$ of the row set are numbers $M$, $A$, $B$, a depth $D_P$ at each prime $P$, a sharpness flag, local characters $\psi_P$ of $E_P$ and the values $\mu_q(i, P)$. For $h$ in step $i$ and $h'$ in step $i + 1$, the local sum $E_1(c; i, P, h, h')$ is the finite sum of the local integrand at $P$ over the lattice points bounded by $A$ and $B$. We say that the sum is nonzero at large depth if there are $A_0$, $B_0$ with $E_1 \ne 0$ for all $A' \ge A_0$ and $B' \ge B_0$. Two elements $h$, $h'$ of step $j$ are in the same double coset at $P$ if $h' = r h \kappa$ with $r$ in the parabolic subgroup $R_1$ and $\kappa$ in the level group $J_P$.
+
+**Definition 1.19.1 (Character index).** A character index consists of a finite set $\beta_j$ for each step $j$, an element $h_j(b, P)$ of the automorphism group of step $j$ for each $b \in \beta_j$ and each prime $P$ of the row set, and level families at $V_G$ and at $Q$. It is good for $(\mathrm{Ch}, \mathrm{sel}, \mu, c, G)$ if, with $m = m_2 + 2$:
+
+1. the constants are good, the unit $\xi_0$ of $G$ is a unit at the row set, and the constants are tied to the Weil data of $G$;
+2. the values $\mu_q(i + 1, P)$ are $\mu_i(P)^{-1} q_\mu(P)^{-1}$ off $V_G$, and are given by the local components of $\mu_0$ at $V_G$, and $\psi_P$ is the reduction of $\psi_0$ at $V_G$;
+3. the sums do not change when $A$ and $B$ grow;
+4. $\beta_0$ and $\beta_{m-1}$ have one element, with $h_0 = h_{m-1} = 1$, and the levels at step $0$ are the column level and the top level;
+5. for $i < m_2$ and each $b \in \beta_{i+1}$ and $P$ there is $a \in \beta_i$ with $E_1(c; i, P, h_i(a, P), h_{i+1}(b, P))$ nonzero at large depth;
+6. distinct elements of $\beta_{i+1}$ give distinct double cosets at some $P$, and each family of admissible elements with a nonzero sum is in the double coset of some $b$ at each $P$;
+7. at $P \in V_G$ the elements $h_j(b, P)$ stabilise $\Lambda_j(P)$, and $D_P = 1$; at $P \notin V_G$, $2M \le D_P$, $2(m - 1) + 1 \le D_P$, and $h^{-1}\Lambda_j(P) \subset \Lambda_j(P)$ and $q_P^{\,j} h \Lambda_j(P) \subset \Lambda_j(P)$.
+
+An element $h$ of step $j$ is in normal form at $P$ if there are integers $e_1, \dots, e_{c_j}$ with $-j \le e_i \le 0$ and a vector $z$ in the standard lattice of $E_P^{N_j}$ such that $h \Lambda_j(P)$ is the lattice $\Lambda(e, z)$ spanned by $\Lambda_{N_j}$, $z$ and $\varpi^{e_i}$ times the last basis vectors.
+
+**Lemma 1.19.2 (Primes of the twist are not auxiliary).** Assume the field and prime data are good, $\mathrm{sel}$ is a selection, and each $g_i$ lies in the set $S$ of the tuple $\mu$. Then no prime of $Q$ lies in $V_G$.
+
+*Proof.* A prime of $Q$ is selected over a place $v$ of $F$ that is good for $S$, so the norm of $v$ is not in $S$. The selection keeps the norm, since $v$ splits. A prime of $V_G$ has norm $g_i$, and $g_i \in S$. $\square$
+
+**Theorem 1.19.3 (Character indices from local constants).** Let $G$ be global character data. Assume that each prime of the row set has degree one and is unramified, that $Q \cap V_G = \emptyset$, that the constants $c$ are good and sharp with $m \le M$, that $\xi_0$ is a unit at the row set, that $c$ is tied to the Weil data, and that the values $\mu_q$, the components of $\mu_0$ at $V_G$, the characters $\psi_P$ and the depths satisfy the identities and bounds of items 2 and 7. Then there is a good character index $L$ for $(\mathrm{Ch}, \mathrm{sel}, \mu, c, G)$ with $m_2 = m - 2$, and $h_j(b, P)$ is in normal form at each $P \notin V_G$.
+
+Lean: `GlobalTheory.Mem.Col2.IdxEx.exists_chIdx_of_cst`.
+
+*Proof.* Write $m = m_2 + 2$, so $m \le A$ and $m \le B$. Fix a prime $P$ of the row set. Since the values $\mu_q(i + 1, P)$ are units, we build sets $F(P, j)$ of representatives step by step. Put $F(P, 0) = \{1\}$. Given $F(P, i)$ with $i < m_2$, take for $F(P, i + 1)$ one representative of each double coset of admissible elements $h$ for which some $a \in F(P, i)$ gives a sum nonzero at large depth. There are finitely many such double cosets, and their representatives can be taken in normal form. Put $F(P, m_2 + 1) = \{1\}$ and $F(P, j) = \emptyset$ for $j > m_2 + 1$. Each $h \in F(P, j)$ is multiplicative and trivial for the twisted character on its level group. At $P \in V_G$ this gives a level group modulo the type prime; at $P \in Q$ the step zero level is the twist level, and at the other steps the level comes from the representative. Now let $\beta_j = \prod_P F(P, j)$, which is finite, and $h_j(b, P) = b(P)$. The sets at steps $0$ and $m - 1$ are $\{1\}$, which gives item 4. Item 3 holds because the representatives are bounded, so the sums are finite and stable for large $A$ and $B$. Items 5 and 6 follow from the construction of $F(P, i + 1)$ at each $P$. The other items are the hypotheses. $\square$
+
+**Theorem 1.19.4 (Character indices).** Let $X$ and $\mathrm{Pr}$ be good, $\mathrm{Ch}$ characters, $\mathrm{sel}$ a selection, $S$ a set of numbers with $g_i \in S$, $\mu$ a tuple over $S$, $G$ global character data, $e_j(\tau)$ integer weights and $\eta$ a Hecke character. Assume that the characters are tied to $(e, \mu_0, \eta)$ and to the Weil data, and that $\xi_0$ is a unit at the row set. Let $M$, $A$, $B$, $D_q$ be numbers with $m \le M \le A$, $M \le B$ and $2M \le D_q$. Assume that $q_P$ is a square in $K$ for each $P$ in the row set, and that $K$ contains a primitive root of unity of order $q_P^{D_q}$ for $P \notin V_G$. Then there are local constants $c$ and a character index $L$ such that $c$ is sharp, $c$ has the numbers $M$, $A$, $B$, $D_P = D_q$ off $V_G$, $L$ is good with $m_2 = m - 2$, each $h_j(b, P)$ is in normal form off $V_G$, and there are integers $n_i$ with $-j \le n_i \le 0$ and a vector $z$ with
+$$h_j(b, P)\,\Lambda_j(P) = N(n, z)\,\Lambda_j(P),$$
+where $N(n, z)$ is the matrix of the normal form, and $(z, 0) \in \Lambda_j(P)$.
+
+Lean: `GlobalTheory.Mem.Col2.exists_chIdx`.
+
+*Proof.* The local constants with the given numbers exist. Their depths, values and characters satisfy the identities of the previous theorem, and the tameness of the Hecke characters turns the components of $\mu_0$ at $V_G$ into the inverses of the type characters. The primes of the row set have degree one and are unramified, and $Q \cap V_G = \emptyset$ by the lemma. So the theorem on character indices from local constants gives $L$. The last claim is the matrix form of the normal form. $\square$
+
+### Column input
+
+A base $B$ has fields, a host with the primes $d$, $g_i$ and $T_u$, ranks with $m$ steps, a coefficient field $L_L$ with an embedding, and the conductor $N$ of the host. A frame $f$ over a pre-datum $X$ has the characters $\mu_0$, $\eta$ and the twists $\delta$, $\delta'$. The frame is oriented if its divisors at the primes $g_k$ are the primes of $V_G$. A column input $I$ over $B$ consists of the frame $f = I.C$, characters $\mathrm{Ch}$, a selection, the set $S$, the ambient input $J$, a finite index set with twisting characters $\xi_a$, and for each index $a$ local constants $c_a$ with a good character index.
+
+**Theorem 1.19.5 (Existence of column input).** Let $B$ be a base, $X$ a pre-datum and $f$ an oriented frame. Assume that the spaces of $B$ are diagonal, that the numbers $d^*_u$ of $B$ are the values of the host, and that $S$ is a set of numbers that contains each $T_u$, each $g_i$ and each prime divisor of $N$. Let $\Xi$ be a finite set of Hecke characters of $E$ with $1, \delta, \delta' \in \Xi$, such that each $\xi \in \Xi$ is a twist for $S$ and satisfies the hold condition of weight $2m$. Assume that the components of $\mu_0$ have values of weight $0$ in $L_L$, that $\eta$ has values of weight $1/2$, that each $g_i$ is a square in $L_L$, that $\mathrm{sel}$ is a selection and that $J$ is a good ambient input. Then there is good column input $I$ with frame $f$, set $S$, $\{\xi_a\} = \Xi$, selection $\mathrm{sel}$ and ambient input $J$, such that for each index $a$ the constants of $c_a$ are $M = A = B = m$ and $D_P = 2m$ for each $P \notin V_G$.
+
+Lean: `GlobalTheory.Mem.Col2.InEx.exists_colIn`.
+
+*Proof.* The fields and primes of the base are good. The primes of $V_G$ are the divisors of $f$ at the $g_k$, by the orientation. The unit $\xi_0$ has valuation $1$ at each prime of $V_G$, since $g_k \not\equiv 0 \pmod d$ by the congruence condition on $g_k$. Step 1. True characters $\mathrm{Ch}$ exist for the weights of the host, $\mu_0$ and $\eta$. The conditions are the unitarity, unramifiedness and tameness of the $\mu_0$, the values of $\mu_0$ and $\eta$, the bound $m + 3 \le g_i - 1$ that comes from $g_i$ large, and the roots of unity of order $g_i(g_i - 1)$ in $K_s$. Step 2. Each $\xi \in \Xi$ is read by a tuple $\mu$ over $S$, since $\xi$ is a twist and satisfies the hold condition. Step 3. For each $\xi \in \Xi$, apply the theorem on character indices with $M = A = B = m$ and $D_q = 2m$. The unit condition holds at $V_G$ by the remark above, and at $Q$ because a prime of $Q$ containing $d$ would have norm $d$, while the norm of a ramified prime of a twist is not in $S$ and $d \in S$ since $d$ divides $N$. The norms are squares: at $V_G$ the norm is $g_k$, and at $Q$ by the hold condition, which also gives the roots of unity. Step 4. These data form the column input. $\square$
+
+**Remark 1.19.6 (Formalization).** The character index and its goodness are `ChIdx` and `ChIdx.Ok` ([FiniteSumNonzeroLargeDepth.lean](lean:Formalism/LocalToGlobal/Columns/FiniteSumNonzeroLargeDepth.lean#L950), line 993), and the normal form is `NF` ([SandwichNormalForm.lean](lean:Development/AbelianVarietyTheory/BlockTheory/GlobalSignature/SandwichNormalForm.lean#L29)). The lemma on the primes of the twist is `notMem_vGs_of_mem_QE` ([NotMemVGsOfMemQE.lean](lean:Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NotMemVGsOfMemQE.lean#L408)), and the step by step sets are `exists_sets` at line 357 of that file. We have not opened the proof of `exists_sets`; the description of the sets in the proof above follows its statement. In [ExistsColumnInputAssembled.lean](lean:Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsColumnInputAssembled.lean#L270) the last component of the theorem on character indices, the matrix form of the normal form, is dropped with `_`.
