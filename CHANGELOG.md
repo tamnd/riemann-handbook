@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v0.1.33
+
+- Volume 2, The proof: all twelve chapters are rewritten as numbered mathematics. Each chapter has definitions, theorems and proofs with automatic numbers, a Lean line under each statement, and a Notes and references section with page ranges.
+- Volume 2: the new text checks each chapter against the Lean source. It corrects many old claims, and it shows that on the trunk no literature input of any branch is open.
+- Volume 2: the chapter guides now refer to section numbers instead of the old steps.
+
 ## v0.1.32
 
 - Volume 15, Assembly: the volume now opens with an introduction. It says how the volume proves that no Dirichlet L-function vanishes for Re s > 1/2, where the proof of RH uses each chapter, and in which order to read them. Every volume from 3 to 15 now has an introduction.
