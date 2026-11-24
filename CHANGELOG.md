@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## v0.1.24
+
+- Volume 10, Hermitian lattices: the chapter *Local volumes* is complete. It has 9 sections, from Haar measure in Cayley and exponential coordinates and the archimedean orbit constant to the energy bound at infinity, local orbit volumes, Whittaker averages over finite fields and lattice counts.
+- Volume 11, analytic estimates: the chapter *Sharp restriction* is complete. It has 8 sections, from Weyl and dual Weyl lattices and saturation to path weights, theta kernels of formal groups, Theorem B for families of Hermitian lattices, host fields and the theorem of the cube.
+- Volume 8, automorphic forms: the chapter *Base change* is complete. It has 26 sections, from local base change and Satake parameters to Iwahori matching, unit orbital integrals, the Dirac inequality, descent to definite unitary groups and isobaric base change.
+- Volume 6, Arakelov geometry: the chapter *Boundary forms* is complete. It has 18 sections, from separating orbits by cusp forms and the low defect bound to Bergman kernels, the height lower bound, log poles along the boundary, flat units and Chow heights.
+
 ## v0.1.23
 
 - Volume 10, Hermitian lattices: the chapter *Orbital bounds* is complete. It has 10 sections, from jets of phase functions on formal groups and the Weyl dimension formula for U(p, q) to local Hermitian lattices, adelic unitary groups, orbital terms and the gluing mass.
