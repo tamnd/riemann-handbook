@@ -11,7 +11,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Bernstein irreducibility and ramified multiplicity one
 
-This section proves that a representation of $\mathrm{GL}_{a+b}$ over a $p$-adic field induced from two unitary characters of determinant type is irreducible, unless the two blocks have the same size and the same character. It then deduces two local facts for theta lifts between unitary groups: the existence of irreducible local quotients at the places outside the ramification set that split in $E$, and multiplicity one for local equivariant functionals at the ramified places. Both facts are inputs of [Theorem 2.5 of Volume 12](/entry/theorem-k-head2-of-mod/), which is used in the step [theta integrals agree and local matching](/step/theta-integrals-agree-and-local-matching-of-literature/).
+This section proves that a representation of $\mathrm{GL}_{a+b}$ over a $p$-adic field induced from two unitary characters of determinant type is irreducible, unless the two blocks have the same size and the same character. It then deduces two local facts for theta lifts between unitary groups: the existence of irreducible local quotients at the places outside the ramification set that split in $E$, and multiplicity one for local equivariant functionals at the ramified places. Both facts are inputs of [Theorem 2.6.4 of Volume 12](/entry/theorem-k-head2-of-mod/), which is used in the step [theta integrals agree and local matching](/step/theta-integrals-agree-and-local-matching-of-literature/).
 
 Background: [smooth representations of p-adic groups](/learn/representations/#smooth-representations-of-p-adic-groups), [parabolic induction and the Jacquet module](/learn/representations/#parabolic-induction-and-the-jacquet-module), [[induction|JJP4JFH3C6]], [[irreducible representation|FX3NEFYFFN]], [[theta correspondence|ZBGT50BW0Z]], [[Weil representation|CD20HVR9V8]].
 
@@ -29,7 +29,7 @@ This is a case of Bernstein's theorem that $\sigma_1 \times \sigma_2$ is irreduc
 
 Let $W$ be a subrepresentation and $W'$ a complement. Assume $W \ne 0$ and $W \ne I$. Then $W' \ne 0$, since a complement of $0$ is $I$ and the complement of $W$ is $W'$. The fourth result contradicts the third. So the subrepresentations of $I$ are $0$ and $I$, and $I \ne 0$. $\square$
 
-**Definition 3.12.3 (Local data at a place).** The global setting is that of the theta lift in [Theorem 2.5 of Volume 12](/entry/theorem-k-head2-of-mod/): number fields $F \subseteq E$, an $F$-automorphism $\sigma$ of $E$, a base $B$, a geometry $G$ with dimension indices $a, a'$ and integers $p, q$, characters $X$ with a finite ramification set $T$, and two Weil representations $\omega$, $\omega'$. Local finite maps at a finite place $v$ are a space $\Pi_v$ and linear maps $p_v$, $p'_v$ from the Schwartz-Bruhat spaces of the two Weil models at $v$ to $\Pi_v$. They are good at $v$ if:
+**Definition 3.12.3 (Local data at a place).** The global setting is that of the theta lift in [Theorem 2.6.4 of Volume 12](/entry/theorem-k-head2-of-mod/): number fields $F \subseteq E$, an $F$-automorphism $\sigma$ of $E$, a base $B$, a geometry $G$ with dimension indices $a, a'$ and integers $p, q$, characters $X$ with a finite ramification set $T$, and two Weil representations $\omega$, $\omega'$. Local finite maps at a finite place $v$ are a space $\Pi_v$ and linear maps $p_v$, $p'_v$ from the Schwartz-Bruhat spaces of the two Weil models at $v$ to $\Pi_v$. They are good at $v$ if:
 
 1. $p_v$ and $p'_v$ are onto;
 2. they vanish on the augmentation subspaces of $\omega$ and $\omega'$ at $v$;
