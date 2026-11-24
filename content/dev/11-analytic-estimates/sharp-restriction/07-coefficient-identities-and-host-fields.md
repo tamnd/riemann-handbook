@@ -11,7 +11,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Coefficient identities and host fields
 
-This section has two parts. The first part proves that in a self-conjugate raw chart, a family of good vectors that is independent modulo the maximal ideal has at most $j'$ members. The proof uses a coefficient identity that comes from two congruences for power series. The bound feeds [Theorem 6.6.3 of Volume 13](/entry/label-set-geo-of-even-of-rank-ok-of-not-dvd-discr/). The second part builds the CM host field $E = \mathbb{Q}(\sqrt{-q}, \sqrt{-d}, \zeta + \zeta^{-1})$ and proves its derived properties. This feeds the host field example in [Theorem](/entry/host-ax0/).
+This section has two parts. The first part proves that in a self-conjugate raw chart, a family of good vectors that is independent modulo the maximal ideal has at most $j'$ members. The proof uses a coefficient identity that comes from two congruences for power series. The bound feeds [Theorem 6.6.3 of Volume 13](/entry/label-set-geo-of-even-of-rank-ok-of-not-dvd-discr/). The second part builds the CM host field $E = \mathbb{Q}(\sqrt{-q}, \sqrt{-d}, \zeta + \zeta^{-1})$ and proves its derived properties. This feeds the host field example in [Theorem 7.25.1 of Volume 15](/entry/host-ax0/).
 
 ### Valued fields and raw charts
 
@@ -109,7 +109,7 @@ Lean: `Formalism.HC.D7.hostAx`
 
 *Proof.* This is Theorem (Derived properties of the host field) attached to the raw host data. $\square$
 
-**Example 8.7.16.** Take $q = 11$, $d = 7$ and $e = 2$. Then $11 \equiv 3 \pmod 8$, $7 \equiv 7 \pmod{16}$, and $-7 \equiv 4 = 2^2 \pmod{11}$, so the host hypothesis holds. A layer of level $4$ exists, and the corollary gives $E = \mathbb{Q}(\sqrt{-11}, \sqrt{-7}, \zeta_{16} + \zeta_{16}^{-1})$, of degree $16$ over $\mathbb{Q}$. This is the host field of [Theorem](/entry/host-ax0/).
+**Example 8.7.16.** Take $q = 11$, $d = 7$ and $e = 2$. Then $11 \equiv 3 \pmod 8$, $7 \equiv 7 \pmod{16}$, and $-7 \equiv 4 = 2^2 \pmod{11}$, so the host hypothesis holds. A layer of level $4$ exists, and the corollary gives $E = \mathbb{Q}(\sqrt{-11}, \sqrt{-7}, \zeta_{16} + \zeta_{16}^{-1})$, of degree $16$ over $\mathbb{Q}$. This is the host field of [Theorem 7.25.1 of Volume 15](/entry/host-ax0/).
 
 For background see [splitting of primes](/learn/number-fields/#the-splitting-of-primes) and [global class field theory](/learn/class-field-theory/#global-class-field-theory).
 

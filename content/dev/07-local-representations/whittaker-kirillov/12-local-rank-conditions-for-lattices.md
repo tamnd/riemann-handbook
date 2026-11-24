@@ -7,7 +7,7 @@ drafted_by: writer@claude-opus-5-5
 ---
 ## Local rank conditions for lattices
 
-The index bounds of the indefinite tree are proved from a long list of conditions on a family of lattices over the ring of integers of a number field. One of these conditions asks for a global inclusion of two lattices. This section shows that the inclusion is only needed after localization at each place of a finite set: the bound then holds with the same error terms. The argument replaces the larger lattice by the sum of the two, which does not change any local index. The result is used in the proof of [Theorem](/entry/on-of-has-at-places/). For lattices over Dedekind domains and their localizations, see [lattices over Dedekind domains](/learn/hermitian-lattices/#lattices-over-dedekind-domains).
+The index bounds of the indefinite tree are proved from a long list of conditions on a family of lattices over the ring of integers of a number field. One of these conditions asks for a global inclusion of two lattices. This section shows that the inclusion is only needed after localization at each place of a finite set: the bound then holds with the same error terms. The argument replaces the larger lattice by the sum of the two, which does not change any local index. The result is used in the proof of [Theorem 7.9.3 of Volume 15](/entry/on-of-has-at-places/). For lattices over Dedekind domains and their localizations, see [lattices over Dedekind domains](/learn/hermitian-lattices/#lattices-over-dedekind-domains).
 
 ### Lattices and localization
 
