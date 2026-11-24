@@ -26,7 +26,7 @@ Lean: `UpperTheory.LiteratureTheorems.good_chern_weil_of_literature`.
 
 Part 1 is Mumford, *Hirzebruch's proportionality theorem in the non-compact case* (Invent. Math. 42, 1977), §1. Part 2 is the push-forward formula for flag bundles. See [Mumford's proportionality theorem](/learn/abelian-varieties/#mumfords-proportionality-theorem).
 
-*Proof.* We take both parts from the literature. In the development they are [Theorem 5.1 of Volume 6](/entry/good-chern-weil/). $\square$
+*Proof.* We take both parts from the literature. In the development they are [Theorem 5.3.6 of Volume 6](/entry/good-chern-weil/). $\square$
 
 ### $L^2$ extension
 
@@ -71,7 +71,7 @@ Lean: `UpperTheory.LiteratureTheorems.semi_abelian_lie_seminegative_of_literatur
 
 Equivalently, the dual $\omega_G = \mathrm{Lie}(G)^\vee$ is nef: each of its quotient bundles has degree at least $0$. This is a theorem of Moret-Bailly (*Pinceaux de variétés abéliennes*, Astérisque 129, 1985) and of Faltings and Chai (*Degeneration of Abelian Varieties*, Chapter V).
 
-*Proof.* We take the result from the literature. In the development it is [Theorem 5.6 of Volume 6](/entry/semi-abelian-lie-seminegative/). $\square$
+*Proof.* We take the result from the literature. In the development it is [Theorem 5.4.9 of Volume 6](/entry/semi-abelian-lie-seminegative/). $\square$
 
 ### Toroidal compactifications
 
