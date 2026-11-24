@@ -67,7 +67,7 @@ Lean: `Formalism.L2.DIV.BrJ.branching_interlacing_pairs`.
 
 The identity $\deg = \lambda_0 - D_0$ holds by the definitions: $\lambda_0 - D_0 = \lambda_0 + \sum_{i \geq 1} \lambda_i - \sum_i \sigma_i$.
 
-*Proof.* This is [Theorem 4.3.3 of Volume 10](/entry/g-tlower-of/) applied to the duality of the two lattices. That theorem adds three facts over $\mathbb{C}$: $\nabla(\lambda)_\mathbb{C} = \Delta(\lambda)_\mathbb{C}$ is irreducible with a unique highest weight line; the branching rule; and Schur orthogonality for the Fock pairing. It then applies [Theorem 7.1 of Volume 10](/entry/wgl-g-tlower-of/). We describe the steps.
+*Proof.* This is [Theorem 4.3.3 of Volume 10](/entry/g-tlower-of/) applied to the duality of the two lattices. That theorem adds three facts over $\mathbb{C}$: $\nabla(\lambda)_\mathbb{C} = \Delta(\lambda)_\mathbb{C}$ is irreducible with a unique highest weight line; the branching rule; and Schur orthogonality for the Fock pairing. It then applies [Theorem 7.1.7 of Volume 10](/entry/wgl-g-tlower-of/). We describe the steps.
 
 First, the numbers. Each factor $(v - i) - \sigma_j + j$ of $c$ with $v \in R_i$, $v \neq \sigma_i$, is nonzero, by the interlacing inequalities and the strict decrease of $\sigma_j - j$. There are at most $n \cdot \sum_i \min(\lambda_i - \lambda_{i+1}, D_0) \leq N D_1$ factors, and each has absolute value at most $2\,\mathrm{spread}(\lambda)$, which gives $|c| \leq C$. The vector $\xi$ is a product of nonzero minors, so it is nonzero. It lies in $\nabla(\lambda)_\mathbb{C}$, it is fixed by the upper unitriangular matrices of $\mathrm{GL}_n$, it has weight $\sigma$ for the diagonal torus of $\mathrm{GL}_n$, and $\ell(a)$ acts on it by $a^{\deg}$.
 
