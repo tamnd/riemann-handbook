@@ -31,7 +31,7 @@ Lean: `UpperTheory.LiteratureTheorems.kudla_splitting_split_unitary_of_literatur
 
 The theorem says that the metaplectic cover of $U(J_\nu)$ splits over $U(J_\nu)$, with a splitting fixed by the character $\chi$. This is Kudla, *Splitting metaplectic covers of dual reductive pairs* (Israel J. Math. 87, 1994), for the split unitary group in the Schrödinger model.
 
-*Proof.* We take the result from Kudla. In the development it is [Theorem 1.7 of Volume 12](/entry/kudla-splitting-split-unitary/). $\square$
+*Proof.* We take the result from Kudla. In the development it is [Theorem 1.4.4 of Volume 12](/entry/kudla-splitting-split-unitary/). $\square$
 
 ### Howe duality at the archimedean places
 
@@ -43,7 +43,7 @@ Lean: `UpperTheory.LiteratureTheorems.howe_duality_real_of_literature`.
 
 In the standard form (Howe, *Transcending classical invariant theory*, J. Amer. Math. Soc. 2, 1989) the theorem says that for each irreducible Harish-Chandra module $\pi$ of one member of the pair, the maximal $\pi$-isotypic quotient of $\mathcal{P}$ has a unique irreducible quotient. The two conclusions above are the finiteness and the uniqueness parts of this statement, written as a statement on the lattice of submodules.
 
-*Proof.* We take the result from Howe. In the development it is [Theorem 1.16 of Volume 12](/entry/howe-duality-real-holds/). $\square$
+*Proof.* We take the result from Howe. In the development it is [Theorem 1.5.10 of Volume 12](/entry/howe-duality-real-holds/). $\square$
 
 ### Cuspidal representations over a finite field
 
