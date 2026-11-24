@@ -1,0 +1,91 @@
+---
+title: The weight of a split term near the reference lattice
+decls:
+  - GlobalTheory.DegCnt.NormalPos.exists_near
+  - GlobalTheory.T.hermFramePairNormalForm_exists_conj_near_reference
+  - GlobalTheory.DegCnt.Weight.om_le
+  - GlobalTheory.T.splitTermWeight_le_near_referenceLattice
+status: drafted
+drafted_by: writer@claude-opus-5-5
+---
+## The weight of a split term near the reference lattice
+
+This section sets up the objects of the chapter and proves the first bound on weights. A pair of isotropic flags in a [[Hermitian form|8NJ7XY6F1S]] space can be put in a normal form. The normal form gives a group $R$ of unipotent isometries, a reference lattice $P_0$ and, for each lattice $\Lambda$, a weight $\omega(\Lambda)$. The weight is a ratio of covolumes: the covolume of the stabilizer of $\Lambda$ in $R$ divided by the covolume of the stabilizer of a reference lattice. We show that a term can be moved by $R$ so that it lies near $P_0$, and that a split term near $P_0$ has a weight bounded by a power of the norm of an ideal. These two results are the base of the orbit sums of the next section, and through them of the type bound that the step [HypsAlt is nonempty](/step/nonempty-hyps/) uses.
+
+### The field and the space
+
+Let $K$ be a number field with an involution $x \mapsto x^*$, and let $\mathcal{O}$ be its ring of integers. Let $f$ be the number of infinite places of $K$ and put $c_f = 1 + \log_2 [K : \mathbb{Q}]$.
+
+**Definition 2.1.1 (Unramified CM field).** $K$ is an *unramified CM field* if $K$ is totally complex, if $\sigma(x^*) = \overline{\sigma(x)}$ for every embedding $\sigma \colon K \to \mathbb{C}$ and every $x \in K$, and if for every maximal ideal $P$ of $\mathcal{O}$ there is an integer $\theta \in \mathcal{O}$ with $\theta - \theta^* \notin P$.
+
+Let $V$ be a finite dimensional vector space over $K$ with a form $H \colon V \times V \to K$ that is linear in the first variable, conjugate linear in the second, Hermitian and nondegenerate (see [Hermitian forms](/learn/algebra/#hermitian-and-skew-hermitian-forms)). For a subspace $S$ we write $S^\perp$ for its orthogonal space. A lattice is a finitely generated $\mathcal{O}$-submodule of $V$ that spans $V$ (see [lattices in Hermitian spaces](/learn/hermitian-lattices/#lattices-in-quadratic-and-hermitian-spaces)).
+
+### Flags and their unipotent groups
+
+**Definition 2.1.2 (Flag datum).** Let $r \ge 0$. A *flag datum* $F$ of length $r$ is a family $e_0, \dots, e_{r-1}$ of linearly independent vectors with $H(e_a, e_b) = 0$ for all $a, b$, and a vector $z = e_r$ with $H(z, e_a) = 0$ for all $a < r$ and $H(z, z) = -T$ for some $T \ne 0$. Put $X_a = \operatorname{span}(e_b : b < a)$ and $X = X_r$.
+
+**Definition 2.1.3 (Unipotent element of a flag).** A $K$-linear map $g \colon V \to V$ is *unipotent for $F$* if it is a bijective isometry, if $g e_a - e_a \in X_a$ for each $a$, and if $g y - y \in X$ for each $y$ that is orthogonal to all $e_a$ with $a < r$.
+
+These maps form the unipotent radical of the stabilizer of the flag $X_1 \subseteq \dots \subseteq X_r$ in the [unitary group](/learn/groups/#unitary-groups) of $H$. For two flag data $F$ and $F'$ put $I = X \cap X'$ and $V_0 = X + X' + \operatorname{span}(z, z')$.
+
+**Definition 2.1.4 (Normal form).** A *normal form* $N$ of length $r$ consists of two flag data $F$ and $F'$, an index $j \le r$, a scalar $c \in K$ with $c c^* = 1$, a natural number $T$ with $H(z,z) = H(z',z') = -T$, a matrix $w$ of size $j$ and signs $\varepsilon_0, \dots, \varepsilon_{j-1}$, vectors $\iota_0, \dots, \iota_{r-1}$ and a nonzero ideal $\mathfrak{d}$ of $\mathcal{O}$ with $\mathfrak{d}^* = \mathfrak{d}$, such that:
+
+1. $e'_a = c\, e_a$ for $j \le a \le r$;
+2. $H(e_a, e'_b) = w_{ab}\, \varepsilon_b$ for $a, b < j$;
+3. for $b \ge j$: $H(e_a, \iota_b) = \delta_{ab}$ for all $a$, $H(e'_a, \iota_b) = 0$ for $a < j$, $H(z, \iota_b) = 0$, and $H(\iota_a, \iota_b) = 0$ for $a \ge j$;
+4. the flag $F$ satisfies a positivity condition at every embedding $\sigma \colon K \to \mathbb{C}$, which we do not unfold.
+
+From a normal form we build the following objects. Let $I_s$ be the span of the $\iota_b$ with $b \ge j$. Put
+$$\widetilde W = (V_0 + I_s)^\perp, \qquad W_n = (X + X' + I_s)^\perp, \qquad \Pi = \widetilde W^\perp.$$
+For $a < r$ let $\mathfrak{a}_a = \mathfrak{d}^{-(r-a)}$. The *reference lattice* $P_0$ is the sum of the lines $\mathfrak{a}_a e_a$ for $a < r$, the lines $\mathfrak{a}_a e'_a$ for $a < j$, the line $\mathcal{O} z$ and the lines $\mathfrak{d}^{\,r-a} \iota_a$ for $j \le a < r$. For a lattice $L$ put $\operatorname{Ref}(L) = P_0 + (L \cap W_n)$.
+
+Let $D_l$ be the $l$-th leading minor of the pairing matrix of the two flags. Put
+$$\Delta_l = |N_{K/\mathbb{Q}}(D_l)| \cdot N\mathfrak{d}^{-2\sum_{a<l}(r-a)},$$
+put $\Delta = \Delta_j$, let $D_b$ be the product of the nonzero $\Delta_l$ with $1 \le l \le j$, and put $N_T = T^f$.
+
+### The groups and the weight
+
+Let $R$ be the group generated by the maps that are unipotent for both $F$ and $F'$. Let $R_1$ be the subgroup of $R$ that fixes $V_0$ pointwise, let $Z = R_1 \cap \operatorname{Fix}(\widetilde W)$ and let $R_s = R \cap \operatorname{Fix}(\widetilde W)$. For a lattice $\Lambda$ let $\Gamma(\Lambda)$ be the stabilizer of $\Lambda$ in $R$.
+
+**Definition 2.1.5 (Index ratio).** For subgroups $K_0$ and $K_1$ of a group put
+$$v(K_0, K_1) = \frac{[K_0 : K_0 \cap K_1]}{[K_1 : K_0 \cap K_1]},$$
+where an infinite index counts as $0$.
+
+If $K_0$ and $K_1$ are commensurable lattices in a unimodular group, then $v(K_0, K_1)$ is the covolume of $K_1$ divided by the covolume of $K_0$, since both covolumes are fixed multiples of the covolume of $K_0 \cap K_1$.
+
+For a lattice $\Lambda$ let $L(\Lambda) = (X + X')^\perp \cap (\Lambda + X)$.
+
+**Definition 2.1.6 (Weight).** The *weight* of $\Lambda$ for the normal form $N$ is
+$$\omega(\Lambda) = v\big(\Gamma(\operatorname{Ref}(L(\Lambda))),\, \Gamma(\Lambda)\big).$$
+
+**Definition 2.1.7 (Term).** Let $g \ge 1$. A lattice $\Lambda$ is a *term of level $g$* if it is framed along $F$ and $F'$ with the leading ideals $\mathfrak{a}_a$ and admissible modulo $g$. We do not unfold these two conditions.
+
+A term $\Lambda$ has three attached positive integers. The first two are indices $g_I(\Lambda)$ and $i_I(\Lambda)$ between the definite part $L(\Lambda) \cap V_0^\perp$, the lattice fixed by the gluing of $\Lambda$ modulo $g$, and a lattice $L_\theta(\Lambda)$. The third, $b_I(\Lambda)$, is a further index of the definite part. Here an index $[M : M \cap M']$ is a natural number.
+
+**Definition 2.1.8 (Split and near).** A lattice $\Lambda$ is *split* if $L_\theta(\Lambda) = (\Lambda \cap \widetilde W) + I$. For an ideal $\mathfrak{c}$, $\Lambda$ is *near $P_0$ at $\mathfrak{c}$* if
+$$\mathfrak{c} P_0 \subseteq \Lambda \cap \Pi \quad\text{and}\quad \mathfrak{c}\,(\Lambda \cap \Pi) \subseteq P_0.$$
+
+### Moving a term near the reference lattice
+
+The two results below share a list of hypotheses on an ideal $\mathfrak{c}$. We say that $\mathfrak{c}$ *absorbs the minors* if $\mathfrak{c} \ne 0$, $\mathfrak{c}^* = \mathfrak{c}$, $T$ divides every element of $\mathfrak{c}$, and for each $l \le j$ with $D_l \ne 0$ both ideals
+$$\mathfrak{c}\, \mathfrak{d}^{2\sum_{a<l}(r-a)} D_l^{-1} \quad\text{and}\quad \mathfrak{c}\, \mathfrak{d}^{2\sum_{a<l}(r-a)} (D_l^*)^{-1}$$
+lie in $\mathcal{O}$.
+
+**Lemma 2.1.9 (Moving a split term near the reference lattice).** Let $K$ be an unramified CM field, let $N$ be a normal form of length $r$, let $g \ge 1$, and let $\Lambda$ be a split term of level $g$. Let $\mathfrak{c}$ absorb the minors. Then there is $s \in R_s$ such that $s\Lambda$ is split and near $P_0$ at $\mathfrak{c}^{12r+50}$.
+
+Lean: `GlobalTheory.DegCnt.NormalPos.exists_near` (also `GlobalTheory.T.hermFramePairNormalForm_exists_conj_near_reference`, a second name).
+
+*Proof.* We compose three moves in $R_s$. The first move brings the parts of $\Lambda$ along the two flags close to the lines of $P_0$. The second uses that the ideal of the normal form divides the minors in the way that the hypothesis on $\mathfrak{c}$ gives. The third move is a skew move in the direction of the vectors $\iota_b$, and it brings the remaining part near $P_0$ with an exponent $2r + 2$. Each element of $R_s$ fixes $\widetilde W$ pointwise, so it maps terms to terms with the same datum and keeps the split condition. The exponents of the three moves add up to at most $12r + 50$. Nearness at an ideal implies nearness at every ideal that it contains, and this gives the result. $\square$
+
+**Theorem 2.1.10 (Weight of a split term near the reference lattice).** Let $K$ be an unramified CM field, let $N$ be a normal form of length $r$, let $g \ge 1$, and let $\Lambda$ be a split term of level $g$. Let $\mathfrak{c}$ absorb the minors and let $e \ge 0$. If $\Lambda$ is near $P_0$ at $\mathfrak{c}^e$, then
+$$\omega(\Lambda) \le b_I(\Lambda)^{\dim \widetilde W}\, \Delta^r\, N\mathfrak{c}^{\,2(3e+11)(2r+1)^2}.$$
+
+Lean: `GlobalTheory.DegCnt.Weight.om_le` (also `GlobalTheory.T.splitTermWeight_le_near_referenceLattice`, a second name).
+
+*Proof.* The groups $Z \subseteq R_1 \subseteq R$ are normal in $R$, since all three come from the common unipotent stabilizer of the two flags. The index ratio is multiplicative along such a chain, so $\omega(\Lambda)$ is the product of three index ratios, one for each layer $R/R_1$, $R_1/Z$ and $Z$.
+
+Every element $s$ of these groups is unipotent: $(s - 1)^{2r+1} = 0$ on $\Pi$. So scaling a lattice by an ideal changes the stabilizer only by a finite index, and all indices that occur are finite and nonzero.
+
+The bottom layer is a skew layer. A bound for skew layers of a normal form, applied with the nearness of $\Lambda$ at $\mathfrak{c}^e$, gives that its index ratio is at most $N\mathfrak{c}^{(3e+11)(2r+1)^2}$. A bound for the top layer gives the same estimate for $R/R_1$. The middle layer acts on $\widetilde W$ through the definite part. Its index ratio is at most $b_I(\Lambda)^{\dim \widetilde W} (g_I(\Lambda)\, i_I(\Lambda))^{r-j}$. The indices $g_I$ and $i_I$ are bounded by the fixed index bound for the theta lattice, which gives $(g_I i_I)^{r-j} \le \Delta^r$. The product of the three bounds is the claim. $\square$
+
+**Remark 2.1.11 (Formalization).** The normal form is the structure `GlobalTheory.DegCnt.NF` in NormalFormDualOrthogonalLast.lean; that file is named after its field `normalForm_dual_orthogonal_last`, which is condition 3 for $z$. The index ratio is `GlobalTheory.HL.invVol` in IsHermND.lean, line 86. It is a real number built from `relIndex`, so it is $0$ when an index is infinite. The group $R$ is `Subgroup.closure` of the common unipotent maps. The conditions `IsFramed` and `IsAdm` of a term and the positivity condition `PosDefAt` are not unfolded here; neither are the lattices `latTh`, `latLa` and `bOne` behind $L_\theta$, $g_I$, $i_I$ and $b_I$. The proof of the lemma uses `normalForm_flag_lattices_near_under_stabiliser`, `normal_form_ideal_divisibility`, `hermFramePair_split_term_near_reference_by_skew`, `commonUnipotent_stabiliser_preserves_terms_and_datum` and `near_mono` ([HermFramePairNormalFormExistsConjNearReference.lean](lean:Development/AbelianVarietyTheory/Proofs/FlagMeasures/HermFramePairNormalFormExistsConjNearReference.lean#L143)). The proof of the theorem uses `invVol_three`, `common_unipotent_stabiliser`, `invVol_smul`, `hermFramePairNormalForm_invVol_skew_layer_le`, `hermFramePairNormalForm_invVol_top_layer_le`, `haarInvVolume_middleLayer_eichler_le` and `flagPairDefiniteThetaLattice_le_fixed_index_bound` ([SplitTermWeightLeNearReferenceLattice.lean](lean:Development/AbelianVarietyTheory/Proofs/FlagMeasures/SplitTermWeightLeNearReferenceLattice.lean#L35)). The hypothesis that $T$ divides every element of $\mathfrak{c}$ is stated with $T$ viewed in $\mathcal{O}$. The second names are proved by a `first | exact ...` combinator under `set_option maxHeartbeats 1000000`.
