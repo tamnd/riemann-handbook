@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## v0.1.30
+
+- Volume 12, Theta correspondence: the chapter *Seesaw periods* is complete. It has 7 sections, from the mixed model at the origin and the evaluation form of the Bessel unfolding to local flat maps and a quantitative Mahler criterion.
+- Volume 15, Assembly: the chapter *Open orbit* is complete. It has 20 sections, from the twelve open parameter statements and the period identity to true family data, true packs, the defect row and row labels.
+- Volume 15, Assembly: the chapter *Unramified exponents* is complete. It has 17 sections, from level three to level four and the pair theorem to comparison choices at all places, the group side and the weight case condition.
+- Volume 6, Arakelov geometry: the chapter *Volumes* is complete. It has 17 sections, from weights, flag degrees and root towers to the volume theorem, finite adelic covolume and Moriwaki bigness.
+
 ## v0.1.29
 
 - Volume 12, Theta correspondence: the chapter *Siegel-Weil* is complete. It has 17 sections, from Gram fibres and the hyperbolic stage to the constant term, the standard formula and the continuation of Siegel Eisenstein series.
